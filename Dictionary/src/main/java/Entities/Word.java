@@ -1,8 +1,8 @@
 package Entities;
 
 public class Word {
-    private String wordTarget;
-    private String wordExplain;
+    private final String wordTarget;
+    private final String wordExplain;
     private static int wordId;
 
     Word(){
