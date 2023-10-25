@@ -1,4 +1,4 @@
-package Entities;
+package Model;
 
 public class Word {
     private final String wordTarget;
