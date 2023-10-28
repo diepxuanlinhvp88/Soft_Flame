@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="73d70507-e844-4e96-a40e-319ceb06e4da" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/Dictionary/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Dictionary/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Dictionary/src/main/java/com/example/dictionary/HelloApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/Dictionary/src/main/java/com/example/dictionary/HelloApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Dictionary/src/main/java/com/example/dictionary/HelloController.java" beforeDir="false" afterPath="$PROJECT_DIR$/Dictionary/src/main/java/com/example/dictionary/HelloController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Dictionary/src/main/java/module-info.java" beforeDir="false" afterPath="$PROJECT_DIR$/Dictionary/src/main/java/module-info.java" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;chienthancoder&quot;
+  }
+}</component>
+  <component name="GithubPullRequestsUISettings">
+    <option name="selectedUrlAndAccountId">
+      <UrlAndAccount>
+        <option name="accountId" value="9285826a-58b0-4e05-b42e-5cf3e52fe5f8" />
+        <option name="url" value="https://github.com/diepxuanlinh88/Soft_Flame.git" />
+      </UrlAndAccount>
+    </option>
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 0
+}</component>
+  <component name="ProjectId" id="2XFC4PbNFKNbEtr1wxnIn7esDxp" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;last_opened_file_path&quot;: &quot;D:/java_code/Soft_Flame&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  }
+}</component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="73d70507-e844-4e96-a40e-319ceb06e4da" name="Changes" comment="" />
+      <created>1698215249046</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1698215249046</updated>
+      <workItem from="1698215250459" duration="3207000" />
+      <workItem from="1698219133759" duration="1948000" />
+      <workItem from="1698301197101" duration="778000" />
+      <workItem from="1698314470059" duration="24000" />
+      <workItem from="1698389122084" duration="675000" />
+      <workItem from="1698391728677" duration="1289000" />
+      <workItem from="1698484795926" duration="4047000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+</project>
