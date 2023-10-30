@@ -25,7 +25,7 @@ public class lookUp {
         return conn.getInfoWord(querry);
     }
     public static  void main(String[] args){
-        lookUp tmp = new lookUp("hi");
+        lookUp tmp = new lookUp("1-byte character");
         System.out.println(tmp.connectAndQuerry());
     }
 }

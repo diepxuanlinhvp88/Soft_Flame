@@ -16,7 +16,16 @@ public class Word {
         this.wordTarget = wordTarget.trim().toLowerCase();
         this.wordExplain = wordExplain.trim().toLowerCase();
         this.pronounce = pronounce;
-        wordId++;
+    }
+
+    public Word(String wordTarget, String wordExplain) {
+        this.wordTarget = wordTarget;
+        this.wordExplain = wordExplain;
+        this.pronounce = "";
+    }
+
+    public String getPronounce() {
+        return pronounce;
     }
 
     public String getWordTarget(){
