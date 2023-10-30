@@ -3,7 +3,10 @@ package Model;
 public class Word {
     private final String wordTarget;
     private final String wordExplain;
+
     private final String pronounce;
+
+
     private static int wordId;
 
     Word(){
@@ -16,6 +19,11 @@ public class Word {
         this.wordTarget = wordTarget.trim().toLowerCase();
         this.wordExplain = wordExplain.trim().toLowerCase();
         this.pronounce = pronounce;
+    }
+
+    Word(String wordTarget, String wordExplain){
+        this.wordTarget = wordTarget.trim().toLowerCase();
+        this.wordExplain = wordExplain.trim().toLowerCase();
         wordId++;
     }
 
