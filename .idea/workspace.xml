@@ -5,11 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="73d70507-e844-4e96-a40e-319ceb06e4da" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Dictionary/dict_hh.db" beforeDir="false" afterPath="$PROJECT_DIR$/Dictionary/dict_hh.db" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Dictionary/src/main/java/Entities/Dictionary.java" beforeDir="false" afterPath="$PROJECT_DIR$/Dictionary/src/main/java/Model/Dictionary.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Dictionary/src/main/java/Entities/Word.java" beforeDir="false" afterPath="$PROJECT_DIR$/Dictionary/src/main/java/Model/Word.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Dictionary/src/main/java/Model/DatabaseOfDict.java" beforeDir="false" afterPath="$PROJECT_DIR$/Dictionary/src/main/java/Model/DatabaseOfDict.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Dictionary/src/main/java/Model/Dictionary.java" beforeDir="false" afterPath="$PROJECT_DIR$/Dictionary/src/main/java/Model/Dictionary.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Dictionary/src/main/java/Model/Word.java" beforeDir="false" afterPath="$PROJECT_DIR$/Dictionary/src/main/java/Model/Word.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -56,7 +55,7 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
-    "git-widget-placeholder": "hoa",
+    "git-widget-placeholder": "Merging hoa",
     "last_opened_file_path": "D:/java_code/dictionary",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
@@ -81,7 +80,8 @@
       <workItem from="1698391728677" duration="1289000" />
       <workItem from="1698484795926" duration="4794000" />
       <workItem from="1698585606368" duration="11108000" />
-      <workItem from="1698631472911" duration="1564000" />
+      <workItem from="1698631472911" duration="1842000" />
+      <workItem from="1698639993396" duration="16731000" />
     </task>
     <servers />
   </component>
@@ -95,6 +95,11 @@
           <properties class="java.util.UnknownFormatConversionException" package="java.util" />
           <option name="timeStamp" value="1" />
         </breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/Dictionary/src/main/java/Model/Dictionary.java</url>
+          <line>89</line>
+          <option name="timeStamp" value="7" />
+        </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
   </component>
