@@ -6,6 +6,10 @@ public class Dictionary {
     ArrayList<Word> dictionary = new ArrayList<Word>();
 //    private int count = 0;
 
+
+    public void addWord(String wordTarget, String wordExplain,String pronounce){
+        Word word = new Word(wordTarget,wordExplain, pronounce);
+
     public void addWord(String wordTarget, String wordExplain){
         Word word = new Word(wordTarget,wordExplain);
         this.dictionary.add(word);
