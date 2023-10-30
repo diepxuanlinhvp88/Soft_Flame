@@ -5,10 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="73d70507-e844-4e96-a40e-319ceb06e4da" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/Dictionary/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Dictionary/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Dictionary/src/main/java/com/example/dictionary/HelloApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/Dictionary/src/main/java/com/example/dictionary/HelloApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Dictionary/src/main/java/com/example/dictionary/HelloController.java" beforeDir="false" afterPath="$PROJECT_DIR$/Dictionary/src/main/java/com/example/dictionary/HelloController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Dictionary/src/main/java/module-info.java" beforeDir="false" afterPath="$PROJECT_DIR$/Dictionary/src/main/java/module-info.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Dictionary/dict_hh.db" beforeDir="false" afterPath="$PROJECT_DIR$/Dictionary/dict_hh.db" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Dictionary/src/main/java/Entities/Dictionary.java" beforeDir="false" afterPath="$PROJECT_DIR$/Dictionary/src/main/java/Model/Dictionary.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Dictionary/src/main/java/Entities/Word.java" beforeDir="false" afterPath="$PROJECT_DIR$/Dictionary/src/main/java/Model/Word.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Dictionary/src/main/java/Model/DatabaseOfDict.java" beforeDir="false" afterPath="$PROJECT_DIR$/Dictionary/src/main/java/Model/DatabaseOfDict.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -50,20 +51,20 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
-    &quot;last_opened_file_path&quot;: &quot;D:/java_code/Soft_Flame&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "git-widget-placeholder": "hoa",
+    "last_opened_file_path": "D:/java_code/dictionary",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -78,11 +79,23 @@
       <workItem from="1698314470059" duration="24000" />
       <workItem from="1698389122084" duration="675000" />
       <workItem from="1698391728677" duration="1289000" />
-      <workItem from="1698484795926" duration="4047000" />
+      <workItem from="1698484795926" duration="4794000" />
+      <workItem from="1698585606368" duration="11108000" />
+      <workItem from="1698631472911" duration="1564000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <breakpoint enabled="true" type="java-exception">
+          <properties class="java.util.UnknownFormatConversionException" package="java.util" />
+          <option name="timeStamp" value="1" />
+        </breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>
