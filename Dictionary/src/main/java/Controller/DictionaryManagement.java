@@ -6,6 +6,7 @@ import Model.Word;
 import java.io.*;
 import java.nio.charset.StandardCharsets;
 import java.nio.file.WatchEvent;
+import java.util.List;
 
 public class DictionaryManagement {
     private static final Dictionary dictionary = new Dictionary();
@@ -46,6 +47,9 @@ public class DictionaryManagement {
     public static void main(String[] args) throws FileNotFoundException {
         DictionaryManagement dict = new DictionaryManagement();
         dict.readDataFromLocalFile("1");
-        System.out.println(dictionary.getInfo(dictionary.find("find")));
+        List<Word> list = dictionary.getWordList("hi");
+        for(Word i: list){
+            System.out.println(i.getWordTarget());
+        }
     }
 }
