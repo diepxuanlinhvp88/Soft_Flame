@@ -7,7 +7,7 @@ public class lookUp {
     private String word;
     private static DatabaseOfDict conn = new DatabaseOfDict();
 
-    lookUp(String word){
+    public lookUp(String word){
         this.word = word;
     }
 

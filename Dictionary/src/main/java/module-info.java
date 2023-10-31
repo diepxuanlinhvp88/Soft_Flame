@@ -1,9 +1,9 @@
-module com.example.dictionary {
+module view {
     requires javafx.controls;
     requires javafx.fxml;
     requires java.sql;
 
 
-    opens com.example.dictionary to javafx.fxml;
-    exports com.example.dictionary;
+    opens view to javafx.fxml;
+    exports view;
 }
