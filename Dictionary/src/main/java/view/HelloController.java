@@ -10,21 +10,18 @@ import java.io.FileNotFoundException;
 
 public class HelloController {
 
-    public static DictionaryManagement tmp;
+    
 
-    static {
-        try {
-            tmp = new DictionaryManagement();
-        } catch (FileNotFoundException e) {
-            throw new RuntimeException(e);
-        }
-    }
+    public DictionaryManagement tmp = new DictionaryManagement();
 
-    HelloController() throws FileNotFoundException {
+
+
+    public HelloController() throws FileNotFoundException {
     }
 
     @FXML
     public void Dich(){
+
 
     }
     @FXML
@@ -37,8 +34,11 @@ public class HelloController {
     }
     @FXML
     public void Erase(){
-
     }
+
+   
+    
+   
     @FXML
     public void Add(){
 
