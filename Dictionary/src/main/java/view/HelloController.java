@@ -9,8 +9,7 @@ import javafx.scene.control.ListView;
 import java.io.FileNotFoundException;
 
 public class HelloController {
-    @FXML
-    private Label welcomeText;
+
     public static DictionaryManagement tmp;
 
     static {
@@ -24,11 +23,25 @@ public class HelloController {
     HelloController() throws FileNotFoundException {
     }
 
-    public static void main(String[] args) throws FileNotFoundException {
-        System.out.println(tmp.lookUp("department"));
+    @FXML
+    public void Dich(){
+
     }
     @FXML
-    protected void onHelloButtonClick() {
-        welcomeText.setText(tmp.find("interesting"));
+    public void Tra(){
+
     }
+    @FXML
+    public void Sua(){
+
+    }
+    @FXML
+    public void Erase(){
+
+    }
+    @FXML
+    public void Add(){
+
+    }
+
 }
