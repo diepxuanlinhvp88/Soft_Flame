@@ -11,24 +11,43 @@ import java.io.FileNotFoundException;
 public class HelloController {
     @FXML
     private Label welcomeText;
-    public static DictionaryManagement tmp;
+    public DictionaryManagement tmp = new DictionaryManagement();
 
-    static {
-        try {
-            tmp = new DictionaryManagement();
-        } catch (FileNotFoundException e) {
-            throw new RuntimeException(e);
-        }
+//    static {
+//        try {
+//            tmp = new DictionaryManagement();
+//        } catch (FileNotFoundException e) {
+//            throw new RuntimeException(e);
+//        }
+//    }
+
+    public HelloController() throws FileNotFoundException {
     }
 
-    HelloController() throws FileNotFoundException {
-    }
+    //    public HelloController() throws FileNotFoundException {
+//    }
+//
+//        public static void main(String[] args) throws FileNotFoundException {
+//        System.out.println(tmp.lookUp("department"));
+//    }
+    @FXML
+    public void Dich(){
 
-    public static void main(String[] args) throws FileNotFoundException {
-        System.out.println(tmp.lookUp("department"));
     }
     @FXML
-    protected void onHelloButtonClick() {
-        welcomeText.setText(tmp.find("interesting"));
+    public void Tra(){
+
+    }
+    @FXML
+    public void Sua(){
+
+    }
+    @FXML
+    public void Erase(){
+
+    }
+    @FXML
+    public void Add(){
+
     }
 }
