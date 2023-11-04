@@ -11,16 +11,16 @@ import java.io.FileNotFoundException;
 public class HelloController {
     @FXML
     private Label welcomeText;
-    public DictionaryManagement tmp = new DictionaryManagement();
-
-//    static {
-//        try {
-//            tmp = new DictionaryManagement();
-//        } catch (FileNotFoundException e) {
-//            throw new RuntimeException(e);
-//        }
-//    }
-
+    private DictionaryManagement tmp = new DictionaryManagement();
+//
+////    static {
+////        try {
+////            tmp = new DictionaryManagement();
+////        } catch (FileNotFoundException e) {
+////            throw new RuntimeException(e);
+////        }
+////    }
+//
     public HelloController() throws FileNotFoundException {
     }
 
