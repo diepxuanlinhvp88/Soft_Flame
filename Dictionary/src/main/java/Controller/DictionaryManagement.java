@@ -13,7 +13,7 @@ public class DictionaryManagement {
     private static final Dictionary dictionary = new Dictionary();
 
     public DictionaryManagement() throws FileNotFoundException {
-        FileInputStream fileInputStream = new FileInputStream("D:/UET/Soft_Flame/Dictionary/EngtoV.txt");
+        FileInputStream fileInputStream = new FileInputStream("D:/java_code/Soft_Flame/Dictionary/data/EngtoV.txt");
         InputStreamReader inputStreamReader = new InputStreamReader(fileInputStream
                 , StandardCharsets.UTF_8);
         BufferedReader bufferedReader = new BufferedReader(inputStreamReader);
