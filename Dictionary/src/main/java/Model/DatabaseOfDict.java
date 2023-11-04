@@ -10,11 +10,10 @@ import java.util.List;
 import java.util.Locale;
 
 public class DatabaseOfDict {
-    private static String DB_URL = "jdbc:sqlite:D:/UET/Soft_Flame/Dictionary/dict_hh.db";
+    private static String DB_URL = "jdbc:sqlite:D:/java_code/Soft_Flame/Dictionary/data/dict_hh.db";
 
 
     /**
-     *
      * @param dbURL
      * @return
      */
@@ -31,52 +30,62 @@ public class DatabaseOfDict {
         return conn;
     }
 
-    public static String getInfoWord(String Querry){
-        String tmp = "";
-        try{
+    public static long getMaxId() {
+        long lastID = 0;
+        try {
             Connection conn = getConnection(DB_URL);
             Statement stmt = conn.createStatement();
-            ResultSet rs = stmt.executeQuery(Querry);
-            while(rs.next()){
-                tmp+=rs.getString("id")+"\n"
-                        +rs.getString("word")+"\n"
-                        + rs.getString("html")+"\n"
-                        +rs.getString("description")+"\n"
-                        +rs.getString("pronounce") +"\n";
+            ResultSet rs = stmt.executeQuery("select max(id) from av");
+            if (rs.next()) {
+                lastID = rs.getInt(1);
             }
             conn.close();
-        } catch (Exception ex){
+        } catch (Exception ex) {
+            ex.printStackTrace();
+        }
+        return lastID;
+    }
+
+    public String getInfoWord(String querry) {
+        String tmp = "";
+        try {
+            Connection conn = getConnection(DB_URL);
+            Statement stmt = conn.createStatement();
+            ResultSet rs = stmt.executeQuery(querry);
+            while (rs.next()) {
+                tmp += rs.getString("id") + "\n"
+                        + rs.getString("word") + "\n"
+                        + rs.getString("html") + "\n"
+                        + rs.getString("description") + "\n"
+                        + rs.getString("pronounce") + "\n";
+            }
+            conn.close();
+        } catch (Exception ex) {
             ex.printStackTrace();
         }
         return tmp;
     }
-//    private static String USER_NAME = "root";
-//    private static String PASSWORD = "utequyen2372004";
 
-//    public void connect(String querry) {
-//        try {
-//            // connnect to database 'testdb'
-//            Connection conn = getConnection(DB_URL);
-//            // crate statement
-//            Statement stmt = conn.createStatement();
-//            // get data from table 'student'
-//            ResultSet rs = stmt.executeQuery(querry);
-//            // show data
-//           while (rs.next()) {
-//               System.out.println(rs.getString("word"));
-//           }
-//            // close connection
-//            conn.close();
-//        } catch (Exception ex) {
-//            ex.printStackTrace();
-//        }
-//    }
+    public boolean addWord(String language,String wordTarget, String wordExplain, String pronounce, String html) {
+        String querry = String.format("INSERT INTO %s(ID,WORD,HTML,DESCRIPTION,PRONOUNCE) VALUES(%d,'%s','%s','%s','%s');"
+                ,language,getMaxId()+1,wordTarget,html, wordExplain,pronounce);
+        try {
+            Connection conn = getConnection(DB_URL);
+            Statement stmt = conn.createStatement();
+            ResultSet rs = stmt.executeQuery(querry);
+            conn.close();
+            return true;
+        } catch (Exception ex) {
+            ex.printStackTrace();
+            return false;
+        }
+    }
 
-//    public static void main(String[] args){
-//        DatabaseOfDict tmp = new DatabaseOfDict();
-//        System.out.println(tmp.getInfoWord("select * from av where word = 'hello'"));
-//    }
-
+    public static void main(String[] args) {
+        DatabaseOfDict tmp = new DatabaseOfDict();
+//        System.out.println(tmp.addWord("ads","a d s", "",""));
+        System.out.println(tmp.getInfoWord("ads"));
+    }
 
 }
 

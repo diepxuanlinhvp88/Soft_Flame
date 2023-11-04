@@ -38,7 +38,7 @@ public class Dictionary {
         /**
          * get the number of child of a Node
          *
-         * @return
+         * @return the amount of node.
          */
         public int numberOfChild() {
             int cnt = 0;
@@ -153,18 +153,4 @@ public class Dictionary {
         return target.getWord().getWordTarget();
     }
 
-
-    public static void main(String[] args) {
-        Dictionary dict = new Dictionary();
-        Word w1 = new Word("hello", "xin chao", "\'Helo");
-        Word w2 = new Word("hi", "chao", "\'hi");
-        Word w3 = new Word("helen", "xin chao", "\'He");
-        dict.add(w1);
-        dict.add(w2);
-        dict.add(w3);
-        List<Word> tmp = dict.getWordList("he");
-        for (Word i : tmp) {
-            System.out.println(i.getPronounce());
-        }
-    }
 }

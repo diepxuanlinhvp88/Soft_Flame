@@ -1,5 +1,5 @@
 import sqlite3
-conn = sqlite3.connect(r"D:\java_code\Soft_Flame\Dictionary\dict_hh.db")
+conn = sqlite3.connect(r"D:\java_code\Soft_Flame\Dictionary\data\dict_hh.db")
 cursor = conn.cursor()
 cnt = 0
 file = open("EngtoV.txt",'w',encoding = "utf8")
