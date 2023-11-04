@@ -6,19 +6,19 @@
 <?import javafx.scene.control.ListView?>
 <?import javafx.scene.control.Tab?>
 <?import javafx.scene.control.TabPane?>
+<?import javafx.scene.control.TextArea?>
 <?import javafx.scene.control.TextField?>
 <?import javafx.scene.control.TitledPane?>
 <?import javafx.scene.layout.AnchorPane?>
 
-<TabPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" tabClosingPolicy="UNAVAILABLE" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8.0.171"
-         fx:controller="view.HelloController">
+<TabPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" tabClosingPolicy="UNAVAILABLE" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="view.HelloController">
     <tabs>
         <Tab text="Dịch">
             <content>
                 <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
                     <children>
-                        <TextField layoutX="45.0" layoutY="94.0" prefHeight="209.0" prefWidth="149.0" />
-                        <TextField layoutX="387.0" layoutY="94.0" prefHeight="209.0" prefWidth="149.0" />
+                        <TextField fx:id="DichA" alignment="CENTER" layoutX="45.0" layoutY="94.0" prefHeight="209.0" prefWidth="149.0" promptText="Điền từ cần dịch" />
+                  <TextArea fx:id="DichVi" layoutX="369.0" layoutY="97.0" prefHeight="203.0" prefWidth="200.0" />
                         <Label layoutX="106.0" layoutY="67.0" text="Anh" />
                         <Label layoutX="448.0" layoutY="67.0" text="Việt" />
                         <Button layoutX="274.0" layoutY="186.0" mnemonicParsing="false" onAction="#Dich" text="Dịch" />
@@ -30,11 +30,11 @@
             <content>
                 <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
                     <children>
-                        <TextField alignment="CENTER" layoutX="52.0" layoutY="48.0" prefHeight="71.0" prefWidth="149.0" promptText="Điền từ cần tra" />
-                        <TextField alignment="CENTER" layoutX="371.0" layoutY="48.0" prefHeight="71.0" prefWidth="149.0" promptText="Nghĩa" />
+                        <TextField fx:id="TraA" alignment="CENTER" layoutX="52.0" layoutY="48.0" onAction="#showListWord" prefHeight="71.0" prefWidth="149.0" promptText="Điền từ cần tra" />
+                        <TextField fx:id="TraB" alignment="CENTER" layoutX="371.0" layoutY="48.0" prefHeight="71.0" prefWidth="149.0" promptText="Nghĩa" />
                         <Button layoutX="274.0" layoutY="71.0" mnemonicParsing="false" onAction="#Tra" text="Tra" />
-                        <ListView layoutX="53.0" layoutY="157.0" prefHeight="200.0" prefWidth="147.0" />
                         <Label layoutX="101.0" layoutY="140.0" text="List Word" />
+                  <ListView fx:id="listV" layoutX="52.0" layoutY="171.0" prefHeight="186.0" prefWidth="151.0" />
                     </children></AnchorPane>
             </content>
         </Tab>
@@ -81,5 +81,3 @@
         </Tab>
     </tabs>
 </TabPane>
-
-
