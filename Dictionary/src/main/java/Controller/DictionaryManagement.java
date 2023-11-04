@@ -6,13 +6,14 @@ import Model.Word;
 import java.io.*;
 import java.nio.charset.StandardCharsets;
 import java.nio.file.WatchEvent;
+import java.util.ArrayList;
 import java.util.List;
 
 public class DictionaryManagement {
     private static final Dictionary dictionary = new Dictionary();
 
     public DictionaryManagement() throws FileNotFoundException {
-        FileInputStream fileInputStream = new FileInputStream("D:/java_code/Soft_Flame/Dictionary/EngtoV.txt");
+        FileInputStream fileInputStream = new FileInputStream("D:/UET/Soft_Flame/Dictionary/EngtoV.txt");
         InputStreamReader inputStreamReader = new InputStreamReader(fileInputStream
                 , StandardCharsets.UTF_8);
         BufferedReader bufferedReader = new BufferedReader(inputStreamReader);
@@ -40,13 +41,26 @@ public class DictionaryManagement {
         return dictionary;
     }
 
-    public String find(String target){
+    public String find(String target) {
         return dictionary.getInfo(dictionary.find(target));
     }
 
-    public String lookUp(String target){
+    public String lookUp(String target) {
         return dictionary.getInfo(dictionary.find(target));
     }
+
+    public List<String> wordListTarget(String target) {
+        List<Word> a = dictionary.getWordList(target);
+
+        List<String> res = new ArrayList<>();
+        for (int i = 0; i < a.size(); i++) {
+            res.add(a.get(i).getWordTarget());
+        }
+
+        return res;
+    }
+
+
 
 //    public void readDataFromLocalFile(String filePath) throws FileNotFoundException {
 //        FileInputStream fileInputStream = new FileInputStream("D:/java_code/Soft_Flame/Dictionary/EngtoV.txt");
@@ -73,4 +87,16 @@ public class DictionaryManagement {
 //        }
 //    }
 
+    public static void main(String[] args) throws FileNotFoundException {
+        DictionaryManagement d = new DictionaryManagement();
+        List<Word> a = d.getDictionary().getWordList("he");
+        List<String> b = new ArrayList<>();
+//        for (int i = 0; i < a.size();i++) {
+//            //System.out.println(a.get(i).getWordTarget());
+//           // System.out.println(b.get(i));
+//            b.set(i,a.get(i).getWordTarget());
+//
+//        }
+        System.out.println(d.wordListTarget("he"));
+    }
 }

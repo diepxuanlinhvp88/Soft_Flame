@@ -7,13 +7,16 @@ import javafx.scene.Scene;
 import javafx.stage.Stage;
 
 import java.io.IOException;
+import Controller.DictionaryManagement;
 
 public class HelloApplication extends Application {
     @Override
     public void start(Stage stage) throws IOException {
-        Parent root = FXMLLoader.load(HelloApplication.class.getResource("hello-view.fxml"));
+        Parent root = FXMLLoader.load(HelloApplication.class.getResource("find.fxml"));
         Scene scene = new Scene(root);
-        stage.setTitle("play");
+
+        stage.setTitle("Dictionary");
+
         stage.setScene(scene);
         stage.show();
     }
