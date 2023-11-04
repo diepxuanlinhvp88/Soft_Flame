@@ -10,7 +10,7 @@ import java.util.List;
 import java.util.Locale;
 
 public class DatabaseOfDict {
-    private static String DB_URL = "jdbc:sqlite:D:/java_code/Soft_Flame/Dictionary/dict_hh.db";
+    private static String DB_URL = "jdbc:sqlite:D:/UET/Soft_Flame/Dictionary/dict_hh.db";
 
 
     /**
