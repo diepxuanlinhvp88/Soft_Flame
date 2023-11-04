@@ -75,10 +75,6 @@ public class HelloController {
         //ListW.setText(tmp.wordListTarget("he").toString());
 
         TraB.setText(tmp.find(TraA.getText()));
-
-
-
-
     }
     @FXML
     public void Sua(){
@@ -97,3 +93,4 @@ public class HelloController {
     }
 
 }
+
