@@ -1,0 +1,15 @@
+#button1 {
+    -fx-font-size: 20px;
+    -fx-background-color: blue;
+}
+#FindA{
+
+    border-radius: 25px;
+    background-position: left top;
+    background-repeat: repeat;
+    padding: 20px;
+    width: 200px;
+    height: 150px;
+
+
+}

@@ -143,7 +143,7 @@ public class Dictionary {
     }
 
     public String getInfo(Node target) {
-        return target.getWord().getWordTarget() + ":     "
+        return target.getWord().getWordTarget() + " "
                 + target.getWord().getWordExplain();
     }
     public String getWordVi(Node target) {

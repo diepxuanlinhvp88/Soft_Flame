@@ -8,18 +8,18 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="view.Find">
+<AnchorPane id="pane" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="387.0" prefWidth="635.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="view.Find">
    <children>
       <Label layoutX="109.0" layoutY="40.0" text="Word" />
       <TextField fx:id="FindA" layoutX="49.0" layoutY="66.0" onAction="#showListWord" prefHeight="62.0" prefWidth="165.0" promptText="Điền từ cần tìm" />
       <ListView fx:id="ListW" layoutX="49.0" layoutY="166.0" onMouseClicked="#sellect" prefHeight="200.0" prefWidth="200.0" />
-      <Button layoutX="274.0" layoutY="78.0" mnemonicParsing="false" onAction="#Find" text="Find" />
+      <Button id="button1" layoutX="274.0" layoutY="78.0" mnemonicParsing="false" onAction="#Find" text="Find" />
       <Label layoutX="440.0" layoutY="40.0" text="Nghĩa" />
       <Label layoutX="102.0" layoutY="145.0" text="ListWord">
          <font>
             <Font size="15.0" />
          </font>
       </Label>
-      <TextArea fx:id="FindB" layoutX="372.0" layoutY="66.0" prefHeight="296.0" prefWidth="200.0" />
+      <TextArea fx:id="FindB" layoutX="372.0" layoutY="66.0" prefHeight="296.0" prefWidth="232.0" wrapText="true" />
    </children>
 </AnchorPane>
