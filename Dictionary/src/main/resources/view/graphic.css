@@ -21,7 +21,7 @@
     -fx-transition: 500ms;
 }
 
-.textfield {
+.text-field {
     -fx-border: none;
     -fx-background-radius: 15px;
     -fx-padding: 15px;
@@ -33,7 +33,7 @@
     -fx-max-width: 200px;
 }
 
-.textfield:focused {
+.text-field:focused {
     -fx-focus-color: white;
     -fx-prompt-text: "Enter your message!";
 }
@@ -70,4 +70,22 @@
 .list-view:focused {
     -fx-focus-color: white;
     -fx-prompt-text: "Enter your message!";
+}
+.title-pane  {
+    -fx-background-image: url('image/7.jpg');
+    -fx-background-repeat: no-repeat;
+    -fx-background-size: cover;
+    -fx-background-position: center center;
+
+
+}
+.title-pane >.title {
+    -fx-background-image: url('image/7.jpg');
+    -fx-background-repeat: no-repeat;
+    -fx-background-size: cover;
+    -fx-background-position: center center;
+    -fx-background-radius: 15px;
+    -fx-padding: 3px;
+    -fx-font-size: 20;
+
 }
