@@ -14,8 +14,8 @@ public class DatabaseOfDict {
 
 
     /**
-     * @param dbURL
-     * @return
+     * @param dbURL: the path to the database file.
+     * @return the connection.
      */
     public static Connection getConnection(String dbURL) {
         Connection conn = null;
@@ -30,6 +30,10 @@ public class DatabaseOfDict {
         return conn;
     }
 
+    /**
+     * get max id(primary key) of table.
+     * @return max id.
+     */
     public static long getMaxId() {
         long lastID = 0;
         try {
@@ -46,6 +50,11 @@ public class DatabaseOfDict {
         return lastID;
     }
 
+    /**
+     * find the word in database.
+     * @param querry SQL language.
+     * @return the information of word.
+     */
     public String getInfoWord(String querry) {
         String tmp = "";
         try {
@@ -66,6 +75,15 @@ public class DatabaseOfDict {
         return tmp;
     }
 
+    /**
+     * add new word to database.
+     * @param language: has 2 values: av(English to Vietnamese), va(Vietnamese to English)
+     * @param wordTarget word.
+     * @param wordExplain meaning.
+     * @param pronounce pronounce.
+     * @param html html code.
+     * @return true if success, otherwise false.
+     */
     public boolean addWord(String language,String wordTarget, String wordExplain, String pronounce, String html) {
         String querry = String.format("INSERT INTO %s(ID,WORD,HTML,DESCRIPTION,PRONOUNCE) VALUES(%d,'%s','%s','%s','%s');"
                 ,language,getMaxId()+1,wordTarget,html, wordExplain,pronounce);
@@ -79,12 +97,6 @@ public class DatabaseOfDict {
             ex.printStackTrace();
             return false;
         }
-    }
-
-    public static void main(String[] args) {
-        DatabaseOfDict tmp = new DatabaseOfDict();
-//        System.out.println(tmp.addWord("ads","a d s", "",""));
-        System.out.println(tmp.getInfoWord("ads"));
     }
 
 }
