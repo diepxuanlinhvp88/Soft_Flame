@@ -37,6 +37,32 @@ public class DictionaryManagement {
         }
     }
 
+    /**
+     * find the cost in order to transform str1 to str2.
+     * @param str1 : str 1
+     * @param str2 : str 2
+     * @return the cost.
+     */
+    public static int  LevenshteinDistance(String str1, String str2){
+        int[][] dp = new int[str1.length() + 1][str2.length() + 1];
+
+        for (int i = 0; i <= str1.length(); i++) {
+            dp[i][0] = i;
+        }
+
+        for (int j = 0; j <= str2.length(); j++) {
+            dp[0][j] = j;
+        }
+
+        for (int i = 1; i <= str1.length(); i++) {
+            for (int j = 1; j <= str2.length(); j++) {
+                int cost = (str1.charAt(i - 1) == str2.charAt(j - 1)) ? 0 : 1;
+                dp[i][j] = Math.min(Math.min(dp[i - 1][j] + 1, dp[i][j - 1] + 1), dp[i - 1][j - 1] + cost);
+            }
+        }
+
+        return dp[str1.length()][str2.length()];
+    }
     public static Dictionary getDictionary() {
         return dictionary;
     }
@@ -45,10 +71,28 @@ public class DictionaryManagement {
         return dictionary.getInfo(dictionary.find(target));
     }
 
-    public String lookUp(String target) {
-        return dictionary.getInfo(dictionary.find(target));
+
+    public String findWithWrong(String target) {
+        String tmp = target.substring(0,target.length()-1);
+        while(dictionary.getWordList(tmp).size()==0){
+            tmp = tmp.substring(0,tmp.length()-1);
+        }
+        int min = 100000;
+        String s= "";
+        for (Word i : dictionary.getWordList(tmp)) {
+            if (LevenshteinDistance(target,i.getWordTarget())<min){
+                min = LevenshteinDistance(target,i.getWordTarget());
+                s = i.getWordTarget();
+            }
+        }
+        return s;
     }
 
+    /**
+     * get the list of Word start with target.
+     * @param target the target Word
+     * @return List.
+     */
     public List<String> wordListTarget(String target) {
         List<Word> a = dictionary.getWordList(target);
 
@@ -56,7 +100,6 @@ public class DictionaryManagement {
         for (int i = 0; i < a.size(); i++) {
             res.add(a.get(i).getWordTarget());
         }
-
         return res;
     }
 
@@ -90,13 +133,9 @@ public class DictionaryManagement {
     public static void main(String[] args) throws FileNotFoundException {
         DictionaryManagement d = new DictionaryManagement();
         List<Word> a = d.getDictionary().getWordList("he");
-        List<String> b = new ArrayList<>();
-//        for (int i = 0; i < a.size();i++) {
-//            //System.out.println(a.get(i).getWordTarget());
-//           // System.out.println(b.get(i));
-//            b.set(i,a.get(i).getWordTarget());
-//
-//        }
         System.out.println(d.wordListTarget("he"));
+        String s= d.findWithWrong("condietion");
+        System.out.println(s);
+        System.out.println(d.find(s));
     }
 }
