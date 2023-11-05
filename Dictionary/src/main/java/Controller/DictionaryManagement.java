@@ -22,10 +22,6 @@ public class DictionaryManagement {
         try {
             while ((line = bufferedReader.readLine()) != null) {
                 words = line.split("<token>");
-//                if(words.length!=5) {
-//                    System.out.println(words[0]);
-//                    System.out.println(words.length);
-//                }
                 if (words.length >= 4) {
                     Word word = new Word(words[1], words[3]);
                     if (dictionary.find(words[1]) == null)
@@ -39,11 +35,12 @@ public class DictionaryManagement {
 
     /**
      * find the cost in order to transform str1 to str2.
+     *
      * @param str1 : str 1
      * @param str2 : str 2
      * @return the cost.
      */
-    public static int  LevenshteinDistance(String str1, String str2){
+    public static int LevenshteinDistance(String str1, String str2) {
         int[][] dp = new int[str1.length() + 1][str2.length() + 1];
 
         for (int i = 0; i <= str1.length(); i++) {
@@ -63,6 +60,7 @@ public class DictionaryManagement {
 
         return dp[str1.length()][str2.length()];
     }
+
     public static Dictionary getDictionary() {
         return dictionary;
     }
@@ -73,15 +71,15 @@ public class DictionaryManagement {
 
 
     public String findWithWrong(String target) {
-        String tmp = target.substring(0,target.length()-1);
-        while(dictionary.getWordList(tmp).size()==0){
-            tmp = tmp.substring(0,tmp.length()-1);
+        String tmp = target.substring(0, target.length() - 1);
+        while (dictionary.getWordList(tmp).size() == 0) {
+            tmp = tmp.substring(0, tmp.length() - 1);
         }
         int min = 100000;
-        String s= "";
+        String s = "";
         for (Word i : dictionary.getWordList(tmp)) {
-            if (LevenshteinDistance(target,i.getWordTarget())<min){
-                min = LevenshteinDistance(target,i.getWordTarget());
+            if (LevenshteinDistance(target, i.getWordTarget()) < min) {
+                min = LevenshteinDistance(target, i.getWordTarget());
                 s = i.getWordTarget();
             }
         }
@@ -90,6 +88,7 @@ public class DictionaryManagement {
 
     /**
      * get the list of Word start with target.
+     *
      * @param target the target Word
      * @return List.
      */
@@ -103,39 +102,83 @@ public class DictionaryManagement {
         return res;
     }
 
-
-
-//    public void readDataFromLocalFile(String filePath) throws FileNotFoundException {
-//        FileInputStream fileInputStream = new FileInputStream("D:/java_code/Soft_Flame/Dictionary/EngtoV.txt");
-//        InputStreamReader inputStreamReader = new InputStreamReader(fileInputStream
-//                , StandardCharsets.UTF_8);
-//        BufferedReader bufferedReader = new BufferedReader(inputStreamReader);
-//        String line;
-//        String[] words;
-//        try {
-//            while ((line = bufferedReader.readLine()) != null) {
-//                words = line.split("<token>");
-////                if(words.length!=5) {
-////                    System.out.println(words[0]);
-////                    System.out.println(words.length);
-////                }
-//                if (words.length >= 4) {
-//                    Word word = new Word(words[1], words[3]);
-//                    if (dictionary.find(words[1]) == null)
-//                        dictionary.add(word);
-//                }
-//            }
-//        } catch (IOException e) {
-//            e.printStackTrace();
-//        }
-//    }
-
-    public static void main(String[] args) throws FileNotFoundException {
-        DictionaryManagement d = new DictionaryManagement();
-        List<Word> a = d.getDictionary().getWordList("he");
-        System.out.println(d.wordListTarget("he"));
-        String s= d.findWithWrong("condietion");
-        System.out.println(s);
-        System.out.println(d.find(s));
+    public void add(Word word) {
+        dictionary.add(word);
     }
+
+    public Word remove(String target) {
+        return dictionary.erase_from_tree(target);
+    }
+
+    public boolean update(Word oldWord, Word newWord) {
+        return dictionary.update(oldWord, newWord);
+    }
+
+    /**
+     * renew the dictionary if user want to update the changes.
+     * @param filePath path.
+     * @return true if success.
+     * @throws FileNotFoundException throw ex.
+     */
+    public boolean reLoadDictionaryFromFile(String filePath) throws FileNotFoundException {
+        if (!reNewtxtFileFromDB()) return false;
+        FileInputStream fileInputStream = new FileInputStream("D:/java_code/Soft_Flame/Dictionary/EngtoV.txt");
+        InputStreamReader inputStreamReader = new InputStreamReader(fileInputStream
+                , StandardCharsets.UTF_8);
+        BufferedReader bufferedReader = new BufferedReader(inputStreamReader);
+        String line;
+        String[] words;
+        try {
+            while ((line = bufferedReader.readLine()) != null) {
+                words = line.split("<token>");
+//                if(words.length!=5) {
+//                    System.out.println(words[0]);
+//                    System.out.println(words.length);
+//                }
+                if (words.length >= 4) {
+                    Word word = new Word(words[1], words[3]);
+                    if (dictionary.find(words[1]) == null)
+                        dictionary.add(word);
+                }
+            }
+            return true;
+        } catch (IOException e) {
+            e.printStackTrace();
+            return false;
+        }
+    }
+
+    /**
+     * call a python script to renew the txt file that is extracted form database.
+     * @return true if success.
+     */
+    public static boolean reNewtxtFileFromDB() {
+        try {
+            String cmd = "python D:/java_code/Soft_Flame/Dictionary/export_data.py"; // Ví dụ: lệnh "dir" sẽ hiển thị danh sách tệp trong thư mục hiện tại
+            ProcessBuilder processBuilder = new ProcessBuilder("cmd.exe", "/c", cmd);
+
+//            processBuilder.redirectErrorStream(true);
+            Process process = processBuilder.start();
+
+//            InputStream inputStream = process.getInputStream();
+//            BufferedReader reader = new BufferedReader(new InputStreamReader(inputStream));
+//            String line;
+//            while ((line = reader.readLine()) != null) {
+//                System.out.println(line);
+//            }
+            // Đọc kết quả từ quy trình
+            int exitCode = process.waitFor();
+            if (exitCode == 0) {
+                System.out.println("Lệnh cmd đã hoàn thành.");
+                return true;
+            } else {
+                System.err.println("Lệnh cmd đã hoàn thành với mã thoát: " + exitCode);
+                return false;
+            }
+        } catch (IOException | InterruptedException e) {
+            e.printStackTrace();
+            return false;
+        }
+    }
+
 }
