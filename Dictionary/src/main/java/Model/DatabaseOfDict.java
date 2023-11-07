@@ -72,7 +72,28 @@ public class DatabaseOfDict {
         } catch (Exception ex) {
             ex.printStackTrace();
         }
-        return tmp;
+        if(tmp.length() !=0) return tmp;
+        return "Not Found";
+    }
+
+    public String remove(String word,String language) {
+        String tmp = this.getInfoWord(word);
+        if (tmp.length() != 0) {
+            String querry = String.format("DELETE FROM %s WHERE word = %s",language,word);
+            try {
+                Connection conn = getConnection(DB_URL);
+                Statement stmt = conn.createStatement();
+                ResultSet rs = stmt.executeQuery(querry);
+                conn.close();
+                return tmp;
+            } catch (Exception ex) {
+                ex.printStackTrace();
+                return("Not Found");
+            }
+        }
+        else{
+            return("Not Found");
+        }
     }
 
     /**
