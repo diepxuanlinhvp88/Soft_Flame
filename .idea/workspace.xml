@@ -6,12 +6,11 @@
   <component name="ChangeListManager">
     <list default="true" id="73d70507-e844-4e96-a40e-319ceb06e4da" name="Changes" comment="fixed">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Dictionary/export_data.py" beforeDir="false" afterPath="$PROJECT_DIR$/Dictionary/export_data.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Dictionary/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Dictionary/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Dictionary/data/dict_hh.db" beforeDir="false" afterPath="$PROJECT_DIR$/Dictionary/data/dict_hh.db" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Dictionary/src/main/java/Controller/DatabaseManagement.java" beforeDir="false" afterPath="$PROJECT_DIR$/Dictionary/src/main/java/Controller/DatabaseManagement.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Dictionary/src/main/java/Controller/DictionaryManagement.java" beforeDir="false" afterPath="$PROJECT_DIR$/Dictionary/src/main/java/Controller/DictionaryManagement.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Dictionary/src/main/java/Controller/lookUp.java" beforeDir="false" afterPath="$PROJECT_DIR$/Dictionary/src/main/java/Controller/DatabaseManagement.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Dictionary/src/main/java/Model/DatabaseOfDict.java" beforeDir="false" afterPath="$PROJECT_DIR$/Dictionary/src/main/java/Model/DatabaseOfDict.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Dictionary/src/main/java/Model/Dictionary.java" beforeDir="false" afterPath="$PROJECT_DIR$/Dictionary/src/main/java/Model/Dictionary.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Dictionary/src/main/java/view/HelloController.java" beforeDir="false" afterPath="$PROJECT_DIR$/Dictionary/src/main/java/view/HelloController.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -58,24 +57,25 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;hoa&quot;,
-    &quot;last_opened_file_path&quot;: &quot;D:/java_code/DSA&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;Project&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "git-widget-placeholder": "hoa",
+    "ignore.virus.scanning.warn.message": "true",
+    "last_opened_file_path": "D:/java_code/DSA",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "project.structure.last.edited": "Project",
+    "project.structure.proportion": "0.0",
+    "project.structure.side.proportion": "0.0",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -100,6 +100,10 @@
       <workItem from="1698824086627" duration="1842000" />
       <workItem from="1698854771484" duration="1974000" />
       <workItem from="1698862632099" duration="3340000" />
+      <workItem from="1699163656605" duration="20000" />
+      <workItem from="1699199441686" duration="1782000" />
+      <workItem from="1699319144933" duration="2541000" />
+      <workItem from="1699340288286" duration="23000" />
     </task>
     <servers />
   </component>

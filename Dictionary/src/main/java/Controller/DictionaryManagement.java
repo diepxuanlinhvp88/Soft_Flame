@@ -11,6 +11,7 @@ import java.util.List;
 
 public class DictionaryManagement {
     private static final Dictionary dictionary = new Dictionary();
+    private final DatabaseManagement db = new DatabaseManagement();
 
     public DictionaryManagement() throws FileNotFoundException {
         FileInputStream fileInputStream = new FileInputStream("D:/java_code/Soft_Flame/Dictionary/data/EngtoV.txt");
@@ -71,7 +72,7 @@ public class DictionaryManagement {
 
 
     public String findWithWrong(String target) {
-        String tmp = target.substring(0, target.length() - 1);
+        String tmp = target.substring(0, target.length() - 1);//helo hello
         while (dictionary.getWordList(tmp).size() == 0) {
             tmp = tmp.substring(0, tmp.length() - 1);
         }
@@ -104,10 +105,13 @@ public class DictionaryManagement {
 
     public void add(Word word) {
         dictionary.add(word);
+        db.addWordtoDatabase("av",word.getWordTarget(),word.getWordExplain(),"","");
     }
 
     public Word remove(String target) {
+        db.removeWordFromDb(target,"av");
         return dictionary.erase_from_tree(target);
+
     }
 
     public boolean update(Word oldWord, Word newWord) {
@@ -180,5 +184,10 @@ public class DictionaryManagement {
             return false;
         }
     }
+
+//    public static void main(String[] args) throws FileNotFoundException {
+//        DictionaryManagement tmp = new DictionaryManagement();
+//        System.out.println(tmp.findWithWrong("condietion"));
+//    }
 
 }
