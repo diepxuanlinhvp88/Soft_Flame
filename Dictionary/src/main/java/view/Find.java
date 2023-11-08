@@ -13,6 +13,7 @@ import javafx.scene.control.TextArea;
 import javafx.scene.control.TextField;
 import javafx.scene.image.ImageView;
 import javafx.scene.layout.AnchorPane;
+import javafx.scene.web.WebView;
 
 import java.io.FileNotFoundException;
 import java.net.URL;
@@ -32,7 +33,8 @@ public class Find implements Initializable {
 
 
 
-
+    @FXML
+    WebView abc;
 
     public void showListWord(){
         FindA.textProperty().addListener(new ChangeListener<String>() {
