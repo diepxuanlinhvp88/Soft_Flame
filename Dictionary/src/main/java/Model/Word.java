@@ -6,7 +6,7 @@ public class Word {
     private final String pronounce;
     private static int wordId;
 
-    Word(){
+    public Word(){
         wordExplain = "";
         wordTarget = "";
         pronounce = "";

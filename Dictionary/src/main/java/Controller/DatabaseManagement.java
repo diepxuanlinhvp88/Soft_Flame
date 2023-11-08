@@ -6,10 +6,12 @@ import Model.Word;
 public class DatabaseManagement {
     private String word;
     private static DatabaseOfDict conn = new DatabaseOfDict();
+    public DatabaseManagement(){}
 
     public DatabaseManagement(String word){
         this.word = word;
     }
+
 
     public String getWord() {
         return word;
@@ -27,6 +29,7 @@ public class DatabaseManagement {
     public String connectAndQuerry(String language){
         String querry = String.format("SELECT * FROM %s WHERE word  = '%s';",language, this.word);
         System.out.println(querry);
+        System.out.println(conn.getInfoWord(querry));
         return conn.getInfoWord(querry);
     }
 

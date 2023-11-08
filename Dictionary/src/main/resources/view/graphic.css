@@ -20,8 +20,45 @@
     -fx-text-fill: #c5c5c5;
     -fx-transition: 500ms;
 }
+.button2 {
+    -fx-margin: 12px;
+    -fx-pref-height: 34px;
+    -fx-pref-width: 236px;
+    -fx-background-radius: 10;
+    -fx-background-color: #ffffff;
+    -fx-alignment: center;
+    -fx-effect: dropshadow(gaussian, #444, 5, 0, -5, -5);
+    -fx-font-family: 'Damion';
+    -fx-font-size: 16px;
+    -fx-text-fill: rgb(161, 161, 161);
+    -fx-cursor: hand;
+    -fx-transition: 500ms;
+}
 
-.text-field {
+.button2:hover{
+    -fx-effect: dropshadow(gaussian, #888, 5, 0, -5, -5),
+    dropshadow(gaussian, #222, 5, 0, 5, 5),
+    innershadow(gaussian, #222, 5, 0, 5, 5);
+    -fx-text-fill: #c5c5c5;
+    -fx-transition: 500ms;
+}
+.buttonmenu {
+    /*-fx-margin: 12px;*/
+    /*-fx-pref-height: 34px;*/
+    /*-fx-pref-width: 236px;*/
+    /*-fx-background-radius: 10;*/
+    /*-fx-background-color: #ffffff;*/
+    /*-fx-alignment: center;*/
+    /*-fx-effect: dropshadow(gaussian, #444, 5, 0, -5, -5);*/
+    /*-fx-font-family: 'Damion';*/
+    /*-fx-font-size: 16px;*/
+    /*-fx-text-fill: rgb(161, 161, 161);*/
+    /*-fx-cursor: hand;*/
+    /*-fx-transition: 500ms;*/
+    -fx-background-image: url('image/1.png');
+}
+
+.text-field1 {
     -fx-border: none;
     -fx-background-radius: 15px;
     -fx-padding: 15px;
@@ -33,12 +70,12 @@
     -fx-max-width: 200px;
 }
 
-.text-field:focused {
+.text-field1:focused {
     -fx-focus-color: white;
     -fx-prompt-text: "Enter your message!";
 }
 
-.text-area {
+.text-area1 {
     -fx-border: none;
     -fx-background-radius: 15px;
     -fx-padding: 3px;
@@ -50,7 +87,7 @@
 
 }
 
-.text-area:focused {
+.text-area1:focused {
     -fx-focus-color: white;
     -fx-prompt-text: "Enter your message!";
 }
@@ -72,7 +109,7 @@
     -fx-prompt-text: "Enter your message!";
 }
 .title-pane  {
-    -fx-background-image: url('image/7.jpg');
+    /*-fx-background-image: url('image/Soft/8.png');*/
     -fx-background-repeat: no-repeat;
     -fx-background-size: cover;
     -fx-background-position: center center;
@@ -80,12 +117,103 @@
 
 }
 .title-pane >.title {
-    -fx-background-image: url('image/7.jpg');
+    -fx-background-color:  #B48D77;
     -fx-background-repeat: no-repeat;
     -fx-background-size: cover;
     -fx-background-position: center center;
-    -fx-background-radius: 15px;
+
     -fx-padding: 3px;
     -fx-font-size: 20;
 
+}
+/*@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');*/
+
+/*.root {*/
+/*    -fx-font-family: 'Poppins', sans-serif;*/
+/*    -fx-background-image: url('image/1.png');*/
+/*    -fx-background-repeat: no-repeat;*/
+/*    -fx-background-size: cover;*/
+/*    -fx-background-position: center;*/
+/*    -fx-display: flex;*/
+/*    -fx-justify-content: center;*/
+/*    -fx-align-items: center;*/
+/*    -fx-min-height: 100vh;*/
+/*    -fx-margin: 0;*/
+/*    -fx-padding: 0;*/
+/*    -fx-box-sizing: border-box;*/
+/*}*/
+
+.form {
+    -fx-padding: 20px;
+    -fx-background-color: #cc864c ;
+    /*lightgrey*/
+    -fx-spacing: 20px;
+    -fx-border-radius: 5px;
+    -fx-border-width: 2px;
+    -fx-border-color: #323232;
+    -fx-effect: innershadow(three-pass-box, #323232, 4, 4, 0, 0);
+    -fx-alignment: CENTER_LEFT;
+    -fx-justify-content: CENTER;
+    -fx-display: VERTICAL;
+}
+
+.title {
+    -fx-text-fill: #323232;
+    -fx-font-weight: bold;
+    -fx-font-size: 20px;
+    -fx-margin: 0 0 25px 0;
+}
+
+.title >.span {
+    -fx-text-fill: #666;
+    -fx-font-weight: normal;
+    -fx-font-size: 20px;
+}
+
+.input {
+    -fx-pref-width: 200px;
+    -fx-pref-height: 40px;
+    -fx-background-color: #fff;
+    -fx-border-radius: 5px;
+    -fx-border-width: 1px;
+    -fx-border-color: #323232;
+    -fx-effect: innershadow(three-pass-box, #323232, 4, 4, -1, -4);
+    -fx-font-size: 14px;
+    -fx-font-weight: bold;
+    -fx-text-fill: #323232;
+    -fx-padding: 5px 10px;
+}
+
+.input:focused {
+    -fx-border-width: 1px;
+    -fx-border-color: #2d8cf0;
+}
+
+
+
+
+
+
+
+.icon {
+    -fx-pref-width: 24px;
+    -fx-pref-height: 24px;
+    -fx-fill: #323232;
+}
+
+
+
+.button-confirm {
+    -fx-margin: 50px 0 0 0;
+    -fx-pref-width: 120px;
+    -fx-pref-height: 40px;
+    -fx-background-color: #fff;
+    -fx-border-radius: 5px;
+    -fx-border-width: 2px;
+    -fx-border-color: #323232;
+    -fx-effect: innershadow(three-pass-box, #323232, 4, 4, 0, 0);
+    -fx-font-size: 17px;
+    -fx-font-weight: bold;
+    -fx-text-fill: #323232;
+    -fx-cursor: HAND;
 }

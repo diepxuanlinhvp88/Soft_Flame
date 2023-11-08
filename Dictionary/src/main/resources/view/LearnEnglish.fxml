@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane fx:id="anchorParentLearn" prefHeight="505.0" prefWidth="720.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="view.LearnEnglishController">
+    <children>
+        <AnchorPane fx:id="anchorPaneChild" layoutY="100.0" prefHeight="405.0" prefWidth="720.0" />
+        <AnchorPane prefHeight="100.0" prefWidth="720.0" style="-fx-background-color: #B48D77;">
+         <children>
+            <Button layoutX="37.0" layoutY="21.0" mnemonicParsing="false" onAction="#Menu" style="-fx-background-color: #ffffff; -fx-background-radius: 10;">
+               <graphic>
+                  <ImageView fitHeight="50.0" fitWidth="50.0">
+                     <image>
+                        <Image url="@image/home_FILL0_wght400_GRAD0_opsz24.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+            <Button layoutX="159.0" layoutY="21.0" mnemonicParsing="false" onAction="#Findcontroller" style="-fx-background-color: #ffffff; -fx-background-radius: 10;">
+               <graphic>
+                  <ImageView fitHeight="50.0" fitWidth="50.0" onMouseClicked="#Findcontroller" opacity="0.71">
+                     <image>
+                        <Image url="@image/seo-social-web-network-internet_340_icon-icons.com_61497.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+            <Button layoutX="274.0" layoutY="21.0" mnemonicParsing="false" onAction="#Editcontroller" style="-fx-background-color: #ffffff; -fx-background-radius: 10;">
+               <graphic>
+                  <ImageView fitHeight="50.0" fitWidth="50.0" onMouseClicked="#Editcontroller">
+                     <image>
+                        <Image url="@image/edit_modify_icon-icons.com_72390.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+            <Button layoutX="386.0" layoutY="21.0" mnemonicParsing="false" onAction="#DichVanBan" prefHeight="58.0" prefWidth="66.0" style="-fx-background-color: #ffffff; -fx-background-radius: 10;">
+               <graphic>
+                  <ImageView fitHeight="54.0" fitWidth="49.0" opacity="0.66" preserveRatio="true">
+                     <image>
+                        <Image url="@image/pngtree-google-translate-translation-icon-vector-png-image_9183337.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+         </children>
+        </AnchorPane>
+    </children>
+</AnchorPane>
