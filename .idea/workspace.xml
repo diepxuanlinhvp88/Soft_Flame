@@ -4,51 +4,27 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="73d70507-e844-4e96-a40e-319ceb06e4da" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+    <list default="true" id="96bbf342-694a-4090-ac6d-69bcab52916a" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/.name" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Dictionary/src/main/java/view/HelloApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/Dictionary/src/main/java/view/HelloApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Dictionary/src/main/java/view/HelloController.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Dictionary/src/main/resources/view/graphic.css" beforeDir="false" afterPath="$PROJECT_DIR$/Dictionary/src/main/resources/view/graphic.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Dictionary/src/main/resources/view/hello-view.fxml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Dictionary/.idea/.name" beforeDir="false" afterPath="$PROJECT_DIR$/Dictionary/.idea/.name" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="FileTemplateManagerImpl">
-    <option name="RECENT_TEMPLATES">
-      <list>
-        <option value="Class" />
-        <option value="FxmlFile" />
-      </list>
-    </option>
-  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
-  </component>
-  <component name="GitHubPullRequestSearchHistory">{
-  &quot;lastFilter&quot;: {
-    &quot;state&quot;: &quot;OPEN&quot;,
-    &quot;assignee&quot;: &quot;chienthancoder&quot;
-  }
-}</component>
-  <component name="GithubPullRequestsUISettings">
-    <option name="selectedUrlAndAccountId">
-      <UrlAndAccount>
-        <option name="accountId" value="9285826a-58b0-4e05-b42e-5cf3e52fe5f8" />
-        <option name="url" value="https://github.com/diepxuanlinh88/Soft_Flame.git" />
-      </UrlAndAccount>
-    </option>
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
   <component name="ProjectColorInfo">{
+  &quot;customColor&quot;: &quot;&quot;,
   &quot;associatedIndex&quot;: 0
 }</component>
-  <component name="ProjectId" id="2XFC4PbNFKNbEtr1wxnIn7esDxp" />
+  <component name="ProjectId" id="2Xt8dPNq51BLs5WGnu2iGL9mKyR" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -59,63 +35,27 @@
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
     &quot;git-widget-placeholder&quot;: &quot;culinh&quot;,
-    &quot;last_opened_file_path&quot;: &quot;D:/java_code/DSA&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
     &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;Project&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;,
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
 }</component>
-  <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="D:\UET\Soft_Flame\Dictionary\src\main\resources\view" />
-    </key>
-  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="73d70507-e844-4e96-a40e-319ceb06e4da" name="Changes" comment="" />
-      <created>1698215249046</created>
+      <changelist id="96bbf342-694a-4090-ac6d-69bcab52916a" name="Changes" comment="" />
+      <created>1699437105461</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1698215249046</updated>
-      <workItem from="1698215250459" duration="3207000" />
-      <workItem from="1698219133759" duration="1948000" />
-      <workItem from="1698301197101" duration="778000" />
-      <workItem from="1698314470059" duration="24000" />
-      <workItem from="1698389122084" duration="675000" />
-      <workItem from="1698391728677" duration="1289000" />
-      <workItem from="1698484795926" duration="4794000" />
-      <workItem from="1698585606368" duration="11108000" />
-      <workItem from="1698631472911" duration="1842000" />
-      <workItem from="1698639993396" duration="17447000" />
-      <workItem from="1698714215713" duration="1382000" />
-      <workItem from="1698736159689" duration="56000" />
-      <workItem from="1698762543567" duration="3602000" />
-      <workItem from="1698824086627" duration="1842000" />
-      <workItem from="1698854771484" duration="1974000" />
-      <workItem from="1698862632099" duration="3340000" />
-      <workItem from="1699120840121" duration="2860000" />
-      <workItem from="1699168873314" duration="5900000" />
+      <updated>1699437105461</updated>
+      <workItem from="1699437111765" duration="1198000" />
+      <workItem from="1699438492113" duration="277000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <breakpoint enabled="true" type="java-exception">
-          <properties class="java.util.UnknownFormatConversionException" package="java.util" />
-          <option name="timeStamp" value="1" />
-        </breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
   </component>
 </project>
