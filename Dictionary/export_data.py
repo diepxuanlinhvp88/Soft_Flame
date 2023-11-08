@@ -13,4 +13,3 @@ for i in range(1,108855):
 	except:
 		cnt+=1
 		print("error id{}".format(i))
-print("success")
