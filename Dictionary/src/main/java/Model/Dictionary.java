@@ -38,7 +38,7 @@ public class Dictionary {
         /**
          * get the number of child of a Node
          *
-         * @return
+         * @return the amount of node.
          */
         public int numberOfChild() {
             int cnt = 0;
@@ -77,7 +77,7 @@ public class Dictionary {
     }
 
     /**
-     * dfs to the Node that
+     * Add new Word to appropriate position in tree.
      *
      * @param word the word need to add.
      */
@@ -109,6 +109,11 @@ public class Dictionary {
         curr.setWord(word);
     }
 
+    /**
+     * find the Node that contains target.
+     * @param target the word nees to find.
+     * @return Node.
+     */
     public Node find(String target) {
         Node curr = this.root;
         for (int i = 0; i < target.length(); i++) {
@@ -120,6 +125,11 @@ public class Dictionary {
         return curr;
     }
 
+    /**
+     * remove a Node that contains the target,
+     * @param target word target.
+     * @return the Node that is removed.
+     */
     public Word erase_from_tree(String target) {
         Node curr = find(target);
         Word tmp = curr.getWord();
@@ -127,6 +137,26 @@ public class Dictionary {
         return tmp;
     }
 
+    /**
+     * Update the Word.
+     * @param oldWord old.
+     * @param newWord new.
+     * @return true if the oldWord exists, otherwise return false.
+     */
+    public boolean update(Word oldWord, Word newWord){
+        Node target = find(oldWord.getWordTarget());
+        if(target !=null) {
+            target.setWord(newWord);
+            return true;
+        }
+        return false;
+    }
+
+    /**
+     * get the list of word from Node curr.
+     * @param curr Node
+     * @param a List
+     */
     void getList(Node curr, List<Word> a) {
         if (curr == null) return;
         if (curr.getWord() != null) {
@@ -135,6 +165,11 @@ public class Dictionary {
         for (int i = 0; i < 40; i++) getList(curr.getChild(i), a);
     }
 
+    /**
+     * find the List of Word that start with target.
+     * @param target the word need to find.
+     * @return List.
+     */
     public List<Word> getWordList(String target) {
         Node tmp = find(target);
         List<Word> result = new ArrayList<>();
@@ -142,6 +177,11 @@ public class Dictionary {
         return result;
     }
 
+    /**
+     * get the information of target.
+     * @param target word need to find.
+     * @return String.
+     */
     public String getInfo(Node target) {
         return target.getWord().getWordTarget() + " "
                 + target.getWord().getWordExplain();
@@ -153,18 +193,4 @@ public class Dictionary {
         return target.getWord().getWordTarget();
     }
 
-
-    public static void main(String[] args) {
-        Dictionary dict = new Dictionary();
-        Word w1 = new Word("hello", "xin chao", "\'Helo");
-        Word w2 = new Word("hi", "chao", "\'hi");
-        Word w3 = new Word("helen", "xin chao", "\'He");
-        dict.add(w1);
-        dict.add(w2);
-        dict.add(w3);
-        List<Word> tmp = dict.getWordList("he");
-        for (Word i : tmp) {
-            System.out.println(i.getPronounce());
-        }
-    }
 }

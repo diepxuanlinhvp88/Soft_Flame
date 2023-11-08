@@ -10,13 +10,12 @@ import java.util.List;
 import java.util.Locale;
 
 public class DatabaseOfDict {
-    private static String DB_URL = "jdbc:sqlite:D:/UET/Soft_Flame/Dictionary/dict_hh.db";
+    private static String DB_URL = "jdbc:sqlite:D:/UET/hk3/oop/Soft_Flame/Dictionary/data/dict_hh.db";
 
 
     /**
-     *
-     * @param dbURL
-     * @return
+     * @param dbURL: the path to the database file.
+     * @return the connection.
      */
     public static Connection getConnection(String dbURL) {
         Connection conn = null;
@@ -31,52 +30,74 @@ public class DatabaseOfDict {
         return conn;
     }
 
-    public static String getInfoWord(String Querry){
-        String tmp = "";
-        try{
+    /**
+     * get max id(primary key) of table.
+     * @return max id.
+     */
+    public static long getMaxId() {
+        long lastID = 0;
+        try {
             Connection conn = getConnection(DB_URL);
             Statement stmt = conn.createStatement();
-            ResultSet rs = stmt.executeQuery(Querry);
-            while(rs.next()){
-                tmp+=rs.getString("id")+"\n"
-                        +rs.getString("word")+"\n"
-                        + rs.getString("html")+"\n"
-                        +rs.getString("description")+"\n"
-                        +rs.getString("pronounce") +"\n";
+            ResultSet rs = stmt.executeQuery("select max(id) from av");
+            if (rs.next()) {
+                lastID = rs.getInt(1);
             }
             conn.close();
-        } catch (Exception ex){
+        } catch (Exception ex) {
+            ex.printStackTrace();
+        }
+        return lastID;
+    }
+
+    /**
+     * find the word in database.
+     * @param querry SQL language.
+     * @return the information of word.
+     */
+    public String getInfoWord(String querry) {
+        String tmp = "";
+        try {
+            Connection conn = getConnection(DB_URL);
+            Statement stmt = conn.createStatement();
+            ResultSet rs = stmt.executeQuery(querry);
+            while (rs.next()) {
+                tmp += rs.getString("id") + "\n"
+                        + rs.getString("word") + "\n"
+                        + rs.getString("html") + "\n"
+                        + rs.getString("description") + "\n"
+                        + rs.getString("pronounce") + "\n";
+            }
+            conn.close();
+        } catch (Exception ex) {
             ex.printStackTrace();
         }
         return tmp;
     }
-//    private static String USER_NAME = "root";
-//    private static String PASSWORD = "utequyen2372004";
 
-//    public void connect(String querry) {
-//        try {
-//            // connnect to database 'testdb'
-//            Connection conn = getConnection(DB_URL);
-//            // crate statement
-//            Statement stmt = conn.createStatement();
-//            // get data from table 'student'
-//            ResultSet rs = stmt.executeQuery(querry);
-//            // show data
-//           while (rs.next()) {
-//               System.out.println(rs.getString("word"));
-//           }
-//            // close connection
-//            conn.close();
-//        } catch (Exception ex) {
-//            ex.printStackTrace();
-//        }
-//    }
-
-//    public static void main(String[] args){
-//        DatabaseOfDict tmp = new DatabaseOfDict();
-//        System.out.println(tmp.getInfoWord("select * from av where word = 'hello'"));
-//    }
-
+    /**
+     * add new word to database.
+     * @param language: has 2 values: av(English to Vietnamese), va(Vietnamese to English)
+     * @param wordTarget word.
+     * @param wordExplain meaning.
+     * @param pronounce pronounce.
+     * @param html html code.
+     * @return true if success, otherwise false.
+     */
+    public boolean addWord(String language,String wordTarget, String wordExplain, String pronounce, String html) {
+        String querry = String.format("INSERT INTO %s(ID,WORD,HTML,DESCRIPTION,PRONOUNCE) VALUES(%d,'%s','%s','%s','%s');"
+                ,language,getMaxId()+1,wordTarget,html, wordExplain,pronounce);
+        try {
+            Connection conn = getConnection(DB_URL);
+            Statement stmt = conn.createStatement();
+            ResultSet rs = stmt.executeQuery(querry);
+            conn.close();
+            return true;
+        } catch (Exception ex) {
+            ex.printStackTrace();
+            return false;
+        }
+    }
 
 }
 

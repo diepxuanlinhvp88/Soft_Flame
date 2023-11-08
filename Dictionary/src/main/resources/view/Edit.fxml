@@ -1,12 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <?import javafx.scene.control.Accordion?>
+<<<<<<< HEAD
+=======
+<?import javafx.scene.control.Button?>
+>>>>>>> 436e493d109ef1671cbe64edb26874038ebcc190
 <?import javafx.scene.control.ListView?>
 <?import javafx.scene.control.TextField?>
 <?import javafx.scene.control.TitledPane?>
 <?import javafx.scene.image.Image?>
 <?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.AnchorPane?>
+<<<<<<< HEAD
 
 <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" styleClass="title-pane" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1">
    <children>
@@ -61,4 +66,101 @@
          </panes>
       </Accordion>
    </children>
+=======
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="405.0" prefWidth="720.0" style="-fx-background-color: #B48D77;" styleClass="title-pane" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="view.EditController">
+    <children>
+      <ImageView fitHeight="405.0" fitWidth="720.0" opacity="0.5" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@image/Soft/8.png" />
+         </image>
+      </ImageView>
+        <Accordion maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="405.0" prefWidth="720.0">
+            <panes>
+                <TitledPane id="titlepan" animated="false" prefWidth="720.0" styleClass="title-pane" stylesheets="@graphic.css" text="Add" textFill="#c60f0f">
+                    <content>
+                        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="247.0" prefWidth="720.0">
+                            <children>
+                        <ImageView fitHeight="405.0" fitWidth="720.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@image/Soft/8.png" />
+                           </image>
+                        </ImageView>
+                                <TextField fx:id="target" alignment="CENTER" layoutX="133.0" layoutY="105.0" prefHeight="40.0" prefWidth="158.0" promptText="WordTarget" styleClass="text-field1" />
+                        <TextField fx:id="meaning" alignment="CENTER" layoutX="134.0" layoutY="172.0" prefHeight="38.0" prefWidth="157.0" promptText="Meaning" styleClass="text-field1" />
+                        <TextField fx:id="pronpunce" alignment="CENTER" layoutX="324.0" layoutY="106.0" prefHeight="38.0" prefWidth="157.0" promptText="Pronpunce" styleClass="text-field1" />
+                        <TextField fx:id="html" alignment="CENTER" layoutX="324.0" layoutY="171.0" prefHeight="40.0" prefWidth="157.0" promptText="HTML" styleClass="text-field1" />
+                        <Button layoutX="521.0" layoutY="122.0" mnemonicParsing="false" style="-fx-background-color: #ffffff;">
+                           <graphic>
+                              <ImageView fitHeight="56.0" fitWidth="58.0">
+                                 <image>
+                                    <Image url="@image/add_FILL0_wght400_GRAD0_opsz24.png" />
+                                 </image>
+                              </ImageView>
+                           </graphic>
+                        </Button>
+                            </children>
+                        </AnchorPane>
+                    </content>
+               <font>
+                  <Font name="Arial Bold" size="14.0" />
+               </font>
+                </TitledPane>
+                <TitledPane animated="false" styleClass="title-pane" stylesheets="@graphic.css" text="Remove" textFill="#c60f0f">
+                    <content>
+                        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="720.0" style="-fx-background-image: image/1.png;" styleClass="title-pane" stylesheets="@graphic.css">
+                            <children>
+                        <ImageView fitHeight="405.0" fitWidth="720.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@image/Soft/8.png" />
+                           </image>
+                        </ImageView>
+                                <TextField fx:id="wordremove" layoutX="152.0" layoutY="39.0" maxWidth="206.0" prefHeight="50.0" prefWidth="206.0" promptText="Nhập từ cần xóa" styleClass="text-field1" />
+                                <ListView fx:id="listToRemove" layoutX="151.0" layoutY="98.0" onMouseClicked="#selectRemove" prefHeight="200.0" prefWidth="209.0" />
+                        <Button layoutX="405.0" layoutY="39.0" mnemonicParsing="false" prefHeight="79.0" prefWidth="82.0" style="-fx-background-color: #ffffff; -fx-background-radius: 10;">
+                           <graphic>
+                              <ImageView fitHeight="51.0" fitWidth="49.0" styleClass="button-confirm">
+                                 <image>
+                                    <Image url="@image/delete_remove_bin_icon-icons.com_72400.png" />
+                                 </image>
+                              </ImageView>
+                           </graphic>
+                        </Button>
+                            </children>
+                        </AnchorPane>
+                    </content>
+               <font>
+                  <Font name="Arial Bold" size="14.0" />
+               </font>
+                </TitledPane>
+                <TitledPane animated="false" prefHeight="403.0" prefWidth="720.0" styleClass="title-pane" stylesheets="@graphic.css" text="Edit" textFill="#c60f0f">
+                    <content>
+                        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="369.0" prefWidth="658.0" styleClass="title-pane" stylesheets="@graphic.css">
+                            <children>
+                        <ImageView fitHeight="405.0" fitWidth="1001.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@image/Soft/8.png" />
+                           </image>
+                        </ImageView>
+                                <ListView fx:id="listToEdit" layoutX="111.0" layoutY="108.0" prefHeight="200.0" prefWidth="200.0" />
+                                <TextField layoutX="111.0" layoutY="38.0" prefHeight="41.0" prefWidth="201.0" promptText="Nhập từ cần sửa " styleClass="text-field1" />
+                                <TextField layoutX="401.0" layoutY="38.0" prefHeight="41.0" prefWidth="201.0" promptText="Từ mới" styleClass="text-field1" />
+                        <Text fill="#ffebeb" layoutX="405.0" layoutY="148.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Nhấn Enter để sửa ">
+                           <font>
+                              <Font name="Arial" size="22.0" />
+                           </font>
+                        </Text>
+                            </children>
+                        </AnchorPane>
+                    </content>
+               <font>
+                  <Font name="Arial Bold" size="14.0" />
+               </font>
+                </TitledPane>
+            </panes>
+        </Accordion>
+    </children>
+>>>>>>> 436e493d109ef1671cbe64edb26874038ebcc190
 </AnchorPane>
