@@ -14,7 +14,7 @@ public class DictionaryManagement {
     private static final Word word = new Word();
 
     public DictionaryManagement() throws FileNotFoundException {
-        FileInputStream fileInputStream = new FileInputStream("D:/UET/hk3/oop/Soft_Flame/Dictionary/data/EngtoV.txt");
+        FileInputStream fileInputStream = new FileInputStream(".\\/Dictionary/data/EngtoV.txt");
         InputStreamReader inputStreamReader = new InputStreamReader(fileInputStream
                 , StandardCharsets.UTF_8);
         BufferedReader bufferedReader = new BufferedReader(inputStreamReader);
@@ -124,7 +124,7 @@ public class DictionaryManagement {
      */
     public boolean reLoadDictionaryFromFile(String filePath) throws FileNotFoundException {
         if (!reNewtxtFileFromDB()) return false;
-        FileInputStream fileInputStream = new FileInputStream("D:/UET/hk3/oop/Soft_Flame/Dictionary/EngtoV.txt");
+        FileInputStream fileInputStream = new FileInputStream(".\\/Dictionary/data/EngtoV.txt");
         InputStreamReader inputStreamReader = new InputStreamReader(fileInputStream
                 , StandardCharsets.UTF_8);
         BufferedReader bufferedReader = new BufferedReader(inputStreamReader);
