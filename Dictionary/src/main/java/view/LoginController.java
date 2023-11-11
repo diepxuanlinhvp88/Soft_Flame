@@ -41,7 +41,7 @@ public class LoginController implements Initializable {
 
         try {
 
-            BufferedWriter writer = new BufferedWriter(new FileWriter(".\\/Dictionary/account.txt",true));
+            BufferedWriter writer = new BufferedWriter(new FileWriter(".\\/Dictionary/data/account.txt",true));
             writer.write(username + "," + pass + System.lineSeparator());
             writer.close();
         } catch (FileNotFoundException e) {
