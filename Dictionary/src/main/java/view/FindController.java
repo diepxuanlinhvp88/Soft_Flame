@@ -64,6 +64,7 @@ public class FindController implements Initializable {
     public void sellect(){
 
 
+
         FindA.setText(ListW.getSelectionModel().getSelectedItems().toString().replace("[","").replace("]",""));
         webEngine.loadContent(LoginController.dic.getHtml(FindA.getText()));
        // LoginController.data.setWord(FindA.getText());
@@ -78,6 +79,7 @@ public class FindController implements Initializable {
             System.out.println("chua nhap tu ");
         }
         else {
+            FindA.setText(LoginController.dic.findWithWrong(FindA.getText()));
             webEngine.loadContent(LoginController.dic.getHtml(FindA.getText()));
            // LoginController.data.setWord(FindA.getText());
         }
