@@ -4,13 +4,15 @@ import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.ResultSet;
 import java.sql.Statement;
-import java.sql.SQLException;
+import https://github.com/diepxuanlinhvp88/Soft_Flame/pull/18/conflict?name=Dictionary%252Fsrc%252Fmain%252Fjava%252FModel%252FDatabaseOfDict.java&ancestor_oid=8e09a17c912135e1dbee4a449dfe5322765ada42&base_oid=52c1094eaff3fe565e5ac292b045caa613019055&head_oid=95f2c257bc5427832a074aad9bf47d8e7af6b5fbjava.sql.SQLException;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Locale;
 
 public class DatabaseOfDict {
-    private static String DB_URL = "jdbc:sqlite:.\\Dictionary/data/dict_hh.db";
+
+    private static String DB_URL = "jdbc:sqlite:.\\/Dictionary/data/dict_hh.db";
+
 
 
     /**
@@ -79,7 +81,7 @@ public class DatabaseOfDict {
     public String remove(String word,String language) {
         String tmp = this.getInfoWord(word);
         if (tmp.length() != 0) {
-            String querry = String.format("DELETE FROM %s WHERE word = %s",language,word);
+            String querry = String.format("DELETE FROM %s WHERE word = '%s';",language,word);
             try {
                 Connection conn = getConnection(DB_URL);
                 Statement stmt = conn.createStatement();
@@ -118,6 +120,10 @@ public class DatabaseOfDict {
             ex.printStackTrace();
             return false;
         }
+    }
+    public static void main(String[] args){
+        DatabaseOfDict tmp = new DatabaseOfDict();
+        System.out.println(tmp.getInfoWord("SELECT * FROM av WHERE word  = 'hello';"));
     }
 
 }

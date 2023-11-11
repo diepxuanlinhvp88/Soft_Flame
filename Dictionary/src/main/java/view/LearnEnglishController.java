@@ -14,14 +14,13 @@ public class LearnEnglishController implements Initializable {
     @FXML
     AnchorPane anchorParentLearn;
     @FXML
-    private AnchorPane  anchorPaneChild;
+    AnchorPane  anchorPaneChild;
+    Node node;
 
     public void Editcontroller() throws IOException {
-        Node node;
+
         node = FXMLLoader.load(getClass().getResource("Edit.fxml"));
         anchorPaneChild.getChildren().setAll(node);
-
-
     }
 
     public void Findcontroller() throws IOException {
@@ -36,17 +35,20 @@ public class LearnEnglishController implements Initializable {
         anchorParentLearn.getChildren().setAll(node);
 
     }
-    public void DichVanBan() throws IOException{
+    public void Translate() throws IOException{
+        Node node;
+        node = FXMLLoader.load(getClass().getResource("Translate.fxml"));
+        anchorPaneChild.getChildren().setAll(node);
 
     }
 
     @Override
     public void initialize(URL url, ResourceBundle resourceBundle) {
-        try {
-            Findcontroller();
-        } catch (IOException e) {
-            throw new RuntimeException(e);
-        }
+//        try {
+//            Findcontroller();
+//        } catch (IOException e) {
+//            throw new RuntimeException(e);
+//        }
 //        Node node;
 //        try {
 //            node = FXMLLoader.load(getClass().getResource("find.fxml"));

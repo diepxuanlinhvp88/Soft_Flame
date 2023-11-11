@@ -37,7 +37,7 @@
                   </ImageView>
                </graphic>
             </Button>
-            <Button layoutX="386.0" layoutY="21.0" mnemonicParsing="false" onAction="#DichVanBan" prefHeight="58.0" prefWidth="66.0" style="-fx-background-color: #ffffff; -fx-background-radius: 10;">
+            <Button layoutX="386.0" layoutY="21.0" mnemonicParsing="false" onAction="#Translate" prefHeight="58.0" prefWidth="66.0" style="-fx-background-color: #ffffff; -fx-background-radius: 10;">
                <graphic>
                   <ImageView fitHeight="54.0" fitWidth="49.0" opacity="0.66" preserveRatio="true">
                      <image>
