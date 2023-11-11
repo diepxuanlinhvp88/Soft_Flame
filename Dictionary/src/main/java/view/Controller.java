@@ -13,7 +13,7 @@ import java.util.ResourceBundle;
 
 public class Controller implements Initializable {
     @FXML
-    private AnchorPane anchorPaneParent;
+    AnchorPane anchorPaneParent;
 
     @FXML
     private void LearnEngController() throws IOException {

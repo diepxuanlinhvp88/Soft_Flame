@@ -24,7 +24,7 @@ public class DictionaryManagement {
             while ((line = bufferedReader.readLine()) != null) {
                 words = line.split("<token>");
                 if (words.length >= 4) {
-                    Word word = new Word(words[1], words[3]);
+                    Word word = new Word(words[1], words[3], words[2]);
                     if (dictionary.find(words[1]) == null)
                         dictionary.add(word);
                 }
@@ -69,6 +69,10 @@ public class DictionaryManagement {
 
     public String find(String target) {
         return dictionary.getInfo(dictionary.find(target));
+    }
+
+    public String getHtml(String targetWord){
+        return dictionary.getHtml(dictionary.find(targetWord));
     }
 
 
@@ -124,7 +128,7 @@ public class DictionaryManagement {
      */
     public boolean reLoadDictionaryFromFile(String filePath) throws FileNotFoundException {
         if (!reNewtxtFileFromDB()) return false;
-        FileInputStream fileInputStream = new FileInputStream(".\\/Dictionary/data/EngtoV.txt");
+        FileInputStream fileInputStream = new FileInputStream(".\\/Dictionary/EngtoV.txt");
         InputStreamReader inputStreamReader = new InputStreamReader(fileInputStream
                 , StandardCharsets.UTF_8);
         BufferedReader bufferedReader = new BufferedReader(inputStreamReader);
@@ -183,4 +187,8 @@ public class DictionaryManagement {
         }
     }
 
+    public static void main(String[] args) throws FileNotFoundException {
+        DictionaryManagement tmp = new DictionaryManagement();
+        System.out.println(tmp.getHtml("hello"));
+    }
 }

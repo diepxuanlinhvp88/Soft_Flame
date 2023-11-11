@@ -4,24 +4,22 @@ public class Word {
     private final String wordTarget;
     private final String wordExplain;
     private final String pronounce;
+    private final String html;
     private static int wordId;
 
     public Word(){
         wordExplain = "";
         wordTarget = "";
         pronounce = "";
+        html = "";
     }
 
-    Word(String wordTarget, String wordExplain, String pronounce){
-        this.wordTarget = wordTarget.trim().toLowerCase();
-        this.wordExplain = wordExplain.trim().toLowerCase();
-        this.pronounce = pronounce;
-    }
 
     public Word(String wordTarget, String wordExplain) {
         this.wordTarget = wordTarget;
         this.wordExplain = wordExplain;
         this.pronounce = "";
+        html = "";
     }
 
     public String getPronounce() {
@@ -34,4 +32,16 @@ public class Word {
     public String getWordExplain(){
         return this.wordExplain;
     }
+
+    public Word(String wordTarget, String wordExplain, String html) {
+        this.wordTarget = wordTarget;
+        this.wordExplain = wordExplain;
+        this.pronounce = "";
+        this.html = html;
+    }
+
+    public String getHtml() {
+        return html;
+    }
+
 }

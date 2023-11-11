@@ -10,7 +10,7 @@ import java.util.List;
 import java.util.Locale;
 
 public class DatabaseOfDict {
-    private static String DB_URL = "jdbc:sqlite:.\\Dictionary/data/dict_hh.db";
+    private static String DB_URL = "jdbc:sqlite:.\\/Dictionary/data/dict_hh.db";
 
 
     /**
@@ -79,7 +79,7 @@ public class DatabaseOfDict {
     public String remove(String word,String language) {
         String tmp = this.getInfoWord(word);
         if (tmp.length() != 0) {
-            String querry = String.format("DELETE FROM %s WHERE word = %s",language,word);
+            String querry = String.format("DELETE FROM %s WHERE word = '%s';",language,word);
             try {
                 Connection conn = getConnection(DB_URL);
                 Statement stmt = conn.createStatement();
@@ -118,6 +118,10 @@ public class DatabaseOfDict {
             ex.printStackTrace();
             return false;
         }
+    }
+    public static void main(String[] args){
+        DatabaseOfDict tmp = new DatabaseOfDict();
+        System.out.println(tmp.getInfoWord("SELECT * FROM av WHERE word  = 'hello';"));
     }
 
 }

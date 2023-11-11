@@ -5,16 +5,25 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="73d70507-e844-4e96-a40e-319ceb06e4da" name="Changes" comment="fixed">
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Dictionary/src/main/java/view/TranslateController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Dictionary/src/main/resources/view/Translate.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Dictionary/request.py" beforeDir="false" afterPath="$PROJECT_DIR$/Dictionary/request.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Dictionary/data/dict_hh.db" beforeDir="false" afterPath="$PROJECT_DIR$/Dictionary/data/dict_hh.db" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Dictionary/src/main/java/Controller/DatabaseManagement.java" beforeDir="false" afterPath="$PROJECT_DIR$/Dictionary/src/main/java/Controller/DatabaseManagement.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Dictionary/src/main/java/Controller/DictionaryManagement.java" beforeDir="false" afterPath="$PROJECT_DIR$/Dictionary/src/main/java/Controller/DictionaryManagement.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Dictionary/src/main/java/Model/DatabaseOfDict.java" beforeDir="false" afterPath="$PROJECT_DIR$/Dictionary/src/main/java/Model/DatabaseOfDict.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Dictionary/src/main/java/module-info.java" beforeDir="false" afterPath="$PROJECT_DIR$/Dictionary/src/main/java/module-info.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Dictionary/src/main/java/Model/Dictionary.java" beforeDir="false" afterPath="$PROJECT_DIR$/Dictionary/src/main/java/Model/Dictionary.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Dictionary/src/main/java/Model/Word.java" beforeDir="false" afterPath="$PROJECT_DIR$/Dictionary/src/main/java/Model/Word.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Dictionary/src/main/java/view/Controller.java" beforeDir="false" afterPath="$PROJECT_DIR$/Dictionary/src/main/java/view/Controller.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Dictionary/src/main/java/view/EditController.java" beforeDir="false" afterPath="$PROJECT_DIR$/Dictionary/src/main/java/view/EditController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Dictionary/src/main/java/view/FindController.java" beforeDir="false" afterPath="$PROJECT_DIR$/Dictionary/src/main/java/view/FindController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Dictionary/src/main/java/view/HelloApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/Dictionary/src/main/java/view/HelloApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Dictionary/src/main/java/view/LearnEnglishController.java" beforeDir="false" afterPath="$PROJECT_DIR$/Dictionary/src/main/java/view/LearnEnglishController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Dictionary/src/main/java/view/LoginController.java" beforeDir="false" afterPath="$PROJECT_DIR$/Dictionary/src/main/java/view/LoginController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/EngtoV.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Dictionary/src/main/resources/view/Edit.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/Dictionary/src/main/resources/view/Edit.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Dictionary/src/main/resources/view/LearnEnglish.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/Dictionary/src/main/resources/view/LearnEnglish.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Dictionary/src/main/resources/view/find.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/Dictionary/src/main/resources/view/find.fxml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -25,16 +34,16 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="JavaFXApplication" />
-        <option value="FxmlFile" />
         <option value="CSS File" />
         <option value="Class" />
+        <option value="FxmlFile" />
       </list>
     </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="hoa" />
+        <entry key="$PROJECT_DIR$" value="main" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -116,6 +125,10 @@
       <workItem from="1699351982789" duration="538000" />
       <workItem from="1699372258516" duration="9064000" />
       <workItem from="1699411525683" duration="14500000" />
+      <workItem from="1699586597018" duration="217000" />
+      <workItem from="1699596823498" duration="7906000" />
+      <workItem from="1699631381550" duration="8274000" />
+      <workItem from="1699674224782" duration="273000" />
     </task>
     <servers />
   </component>

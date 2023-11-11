@@ -186,6 +186,9 @@ public class Dictionary {
         return target.getWord().getWordTarget() + " "
                 + target.getWord().getWordExplain();
     }
+    public String getHtml(Node target){
+        return target.getWord().getHtml();
+    }
     public String getWordVi(Node target) {
         return target.getWord().getWordExplain();
     }
