@@ -16,8 +16,6 @@ import java.util.List;
 import java.util.ResourceBundle;
 
 public class EditController implements Initializable {
-    public DictionaryManagement dic = new DictionaryManagement();
-    public DatabaseManagement db = new DatabaseManagement();
     public EditController() throws FileNotFoundException {
     }
     @FXML
@@ -44,8 +42,12 @@ public class EditController implements Initializable {
      * add db .
      */
     public void Add(){
-        db.addWordtoDatabase("av",target.getText(),meaning.getText(),pronpunce.getText(),html.getText());
+        LoginController.data.addWordtoDatabase("av",target.getText(),meaning.getText(),pronpunce.getText(),html.getText());
 
+    }
+
+    public void Remove(){
+        LoginController.data.removeWord(wordremove.getText(),"av");
     }
 
     /**
@@ -55,7 +57,7 @@ public class EditController implements Initializable {
         wordremove.textProperty().addListener(new ChangeListener<String>() {
             @Override
             public void changed(ObservableValue<? extends String> observable, String oldValue, String newValue) {
-                List<String> stringList = dic.wordListTarget(wordremove.getText());
+                List<String> stringList = LoginController.dic.wordListTarget(wordremove.getText());
                 ObservableList<String> observableList = FXCollections.observableList(stringList);
 
                 listToRemove.setItems(observableList);
@@ -80,7 +82,7 @@ public class EditController implements Initializable {
         targetEdit.textProperty().addListener(new ChangeListener<String>() {
             @Override
             public void changed(ObservableValue<? extends String> observable, String oldValue, String newValue) {
-                List<String> stringList = dic.wordListTarget(targetEdit.getText());
+                List<String> stringList =LoginController.dic.wordListTarget(targetEdit.getText());
                 ObservableList<String> observableList = FXCollections.observableList(stringList);
 
                 listToEdit.setItems(observableList);

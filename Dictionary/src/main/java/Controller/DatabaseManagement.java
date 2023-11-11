@@ -36,8 +36,11 @@ public class DatabaseManagement {
     public boolean addWordtoDatabase(String language,String wordTarget, String meaning, String pronpunce, String html){
         return conn.addWord(language,wordTarget,html,pronpunce,meaning);
     }
+    public void removeWord(String word, String language){
+        conn.remove(word,language);
+    }
     public static  void main(String[] args){
-        DatabaseManagement tmp = new DatabaseManagement("1-byte character");
+        DatabaseManagement tmp = new DatabaseManagement("hehe");
         System.out.println(tmp.connectAndQuerry("av"));
     }
 }

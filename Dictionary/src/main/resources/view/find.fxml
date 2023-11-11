@@ -19,7 +19,7 @@
             <Image url="@image/Soft/9.png" />
          </image>
       </ImageView>
-      <TextField id="textfield" fx:id="FindA" layoutX="49.0" layoutY="72.0" onAction="#showListWord" prefHeight="62.0" prefWidth="200.0" promptText="Điền từ cần tìm" styleClass="text-field1" />
+      <TextField id="textfield" fx:id="FindA" layoutX="49.0" layoutY="72.0" prefHeight="62.0" prefWidth="200.0" promptText="Điền từ cần tìm" styleClass="text-field1" />
       <ListView fx:id="ListW" layoutX="49.0" layoutY="166.0" onMouseClicked="#sellect" prefHeight="218.0" prefWidth="200.0" stylesheets="@graphic.css" />
       <Button id="button1" layoutX="287.0" layoutY="78.0" mnemonicParsing="false" onAction="#Find" text="Find" />
       <WebView fx:id="webView" layoutX="437.0" layoutY="72.0" prefHeight="306.0" prefWidth="216.0" />
