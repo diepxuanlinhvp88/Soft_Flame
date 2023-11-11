@@ -15,12 +15,12 @@
             <Image url="@image/Soft/4.png" />
          </image>
       </ImageView>
-      <TextField fx:id="TextExplain" alignment="TOP_LEFT" layoutX="380.0" layoutY="127.0" prefHeight="130.0" prefWidth="300.0" promptText="Bản dịch">
+      <TextField fx:id="TextExplain" alignment="TOP_LEFT" layoutX="380.0" layoutY="127.0" prefHeight="130.0" prefWidth="300.0" promptText="Bản dịch" style="-fx-background-color: #ffffff;">
          <font>
             <Font name="System Bold" size="20.0" />
          </font>
       </TextField>
-      <TextField fx:id="TextTarget" alignment="TOP_LEFT" layoutX="40.0" layoutY="127.0" prefHeight="130.0" prefWidth="300.0" promptText="Nhập đoạn văn bản ">
+      <TextField fx:id="TextTarget" alignment="TOP_LEFT" layoutX="40.0" layoutY="127.0" prefHeight="130.0" prefWidth="300.0" promptText="Nhập đoạn văn bản " style="-fx-background-color: #ffffff;">
          <font>
             <Font name="System Bold" size="20.0" />
          </font>
@@ -34,12 +34,23 @@
             </ImageView>
          </graphic>
       </Button>
-      <Label fx:id="En" layoutX="172.0" layoutY="95.0" text="Anh">
+      <Label fx:id="En" layoutX="89.0" layoutY="-41.0" text="Anh">
          <font>
             <Font size="20.0" />
          </font>
       </Label>
-      <Label fx:id="Vi" layoutX="513.0" layoutY="95.0" text="Việt">
+      <Label fx:id="Vi" layoutX="453.0" layoutY="-41.0" text="Việt">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <Button layoutX="252.0" layoutY="300.0" mnemonicParsing="false" onAction="#tran" prefHeight="39.0" prefWidth="128.0" styleClass="button2" text="Translate for me" />
+      <Label fx:id="Anh" layoutX="167.0" layoutY="95.0" prefHeight="30.0" prefWidth="46.0" text="Anh">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <Label fx:id="Viet" layoutX="507.0" layoutY="95.0" prefHeight="30.0" prefWidth="46.0" text="Việt">
          <font>
             <Font size="20.0" />
          </font>

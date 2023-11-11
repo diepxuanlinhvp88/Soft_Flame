@@ -54,5 +54,10 @@ public class textToSpeech {
             System.out.println("erro: " + e.getMessage());
         }
     }
+    public static void  main(String args[]){
+        textToSpeech tmp = new textToSpeech();
+        tmp.Speak("hello", "en-us");
+
+    }
 
 }

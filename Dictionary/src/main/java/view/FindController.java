@@ -3,6 +3,7 @@ package view;
 import Controller.DictionaryManagement;
 import Controller.DatabaseManagement;
 
+
 import javafx.beans.value.ChangeListener;
 import javafx.beans.value.ObservableValue;
 import javafx.collections.FXCollections;
@@ -85,6 +86,10 @@ public class FindController implements Initializable {
 
 
 
+
+    }
+    public void voice(){
+        LoginController.tts.Speak(FindA.getText(),"en-us");
     }
 
     @Override

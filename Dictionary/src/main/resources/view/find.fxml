@@ -22,6 +22,15 @@
       <TextField id="textfield" fx:id="FindA" layoutX="49.0" layoutY="72.0" prefHeight="62.0" prefWidth="200.0" promptText="Điền từ cần tìm" styleClass="text-field1" />
       <ListView fx:id="ListW" layoutX="49.0" layoutY="166.0" onMouseClicked="#sellect" prefHeight="218.0" prefWidth="200.0" stylesheets="@graphic.css" />
       <Button id="button1" layoutX="287.0" layoutY="78.0" mnemonicParsing="false" onAction="#Find" text="Find" />
-      <WebView fx:id="webView" layoutX="437.0" layoutY="72.0" prefHeight="306.0" prefWidth="216.0" />
+      <WebView fx:id="webView" layoutX="437.0" layoutY="72.0" prefHeight="306.0" prefWidth="225.0" />
+      <Button layoutX="593.0" layoutY="76.0" mnemonicParsing="false" onAction="#voice" style="-fx-background-color: #ffffff;">
+         <graphic>
+            <ImageView fitHeight="46.0" fitWidth="46.0" opacity="0.79">
+               <image>
+                  <Image url="@image/3643734-high-sound-speaker-voice-volume_113403.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </Button>
    </children>
 </AnchorPane>

@@ -226,4 +226,8 @@
     -fx-text-fill: #323232;
     -fx-cursor: HAND;
 }
+.Alert{
+    -fx-background-color: #ffffff;
+
+}
 
