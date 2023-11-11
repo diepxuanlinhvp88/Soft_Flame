@@ -54,7 +54,7 @@ public class LoginController implements Initializable {
     }
 
     public boolean checkAccount(String username, String pass) throws IOException {
-        FileInputStream fileInputStream = new FileInputStream(".\\/Dictionary/account.txt");
+        FileInputStream fileInputStream = new FileInputStream(".\\/Dictionary/data/account.txt");
         InputStreamReader inputStreamReader = new InputStreamReader(fileInputStream
                 , StandardCharsets.UTF_8);
         BufferedReader bufferedReader = new BufferedReader(inputStreamReader);
