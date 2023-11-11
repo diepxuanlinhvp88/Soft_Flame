@@ -23,8 +23,7 @@ import java.util.List;
 import java.util.ResourceBundle;
 
 public class FindController implements Initializable {
-//    public DictionaryManagement dic = HelloApplication.dic;
-//    public DatabaseManagement data = HelloApplication.data;
+
     public FindController() throws FileNotFoundException {
     }
     @FXML
@@ -46,6 +45,7 @@ public class FindController implements Initializable {
 
 
     public void showListWord(){
+
         FindA.textProperty().addListener(new ChangeListener<String>() {
             @Override
             public void changed(ObservableValue<? extends String> observable, String oldValue, String newValue) {
@@ -58,16 +58,20 @@ public class FindController implements Initializable {
         });
 
 
+
     }
     public void sellect(){
+
 
         FindA.setText(ListW.getSelectionModel().getSelectedItems().toString().replace("[","").replace("]",""));
         webEngine.loadContent(LoginController.dic.getHtml(FindA.getText()));
        // LoginController.data.setWord(FindA.getText());
 
+
     }
 
     public void Find(){
+
         if(FindA.getText() == "") {
             text.setText("Bạn chưa nhập từ cần điền");
             System.out.println("chua nhap tu ");
@@ -85,12 +89,14 @@ public class FindController implements Initializable {
 
     @Override
     public void initialize(URL url, ResourceBundle resourceBundle) {
+
         showListWord();
         webEngine = webView.getEngine();
         //webEngine.loadContent(LoginController.dic.find(FindA.getText()));
 
 
         //sellect();
+
 
     }
 
