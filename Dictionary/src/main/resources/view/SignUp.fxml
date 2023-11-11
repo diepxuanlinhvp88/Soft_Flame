@@ -17,30 +17,26 @@
       <ImageView fitHeight="505.0" fitWidth="720.0" pickOnBounds="true" preserveRatio="true">
          <image>
             <Image url="@image/13.png" />
-         </image></ImageView>
+         </image>
+      </ImageView>
       <Pane fx:id="LogPane" layoutX="239.0" layoutY="206.0" prefHeight="277.0" prefWidth="243.0" styleClass="form" stylesheets="@graphic.css">
          <children>
-            <TextField fx:id="acc" layoutX="18.0" layoutY="71.0" promptText="username" styleClass="input" stylesheets="@graphic.css">
+            <TextField fx:id="newAcc" layoutX="22.0" layoutY="87.0" promptText="username" styleClass="input" stylesheets="@graphic.css">
                <cursor>
                   <Cursor fx:constant="DEFAULT" />
-               </cursor></TextField>
+               </cursor>
+            </TextField>
             <Text layoutX="18.0" layoutY="29.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="title" text="Welcome" />
-            <PasswordField fx:id="password" layoutX="18.0" layoutY="119.0" promptText="password" styleClass="input" stylesheets="@graphic.css" />
-            <Text layoutX="18.0" layoutY="52.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="span" text="Login to continue">
+            <PasswordField fx:id="newpassword" layoutX="22.0" layoutY="139.0" promptText="password" styleClass="input" stylesheets="@graphic.css" />
+            <Text layoutX="18.0" layoutY="52.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="span" text="Create an account!">
                <font>
                   <Font name="Bell MT" size="20.0" />
                </font>
             </Text>
-            <Button layoutX="62.0" layoutY="168.0" mnemonicParsing="false" onAction="#Letgo" styleClass="button-confirm" text="Let's go" />
-            <Label layoutX="169.0" layoutY="231.0" onMouseClicked="#SignUp" text="Sign Up" textFill="#00b9fc">
+            <Button layoutX="62.0" layoutY="199.0" mnemonicParsing="false" onAction="#SignUpStart" styleClass="button-confirm" text="SignUp" />
+            <Label fx:id="sc" layoutX="71.0" layoutY="179.0" prefHeight="20.0" prefWidth="22.0" textFill="#fa0000">
                <font>
                   <Font name="System Bold" size="14.0" />
-               </font>
-            </Label>
-            <Text layoutX="42.0" layoutY="245.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Don't have an account ?" />
-            <Label fx:id="er" layoutX="16.0" layoutY="210.0" textFill="#fa0000">
-               <font>
-                  <Font name="System Italic" size="13.0" />
                </font>
             </Label>
          </children>

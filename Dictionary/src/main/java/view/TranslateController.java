@@ -14,6 +14,7 @@ import java.util.List;
 import java.util.ResourceBundle;
 
 public class TranslateController implements Initializable {
+    int cnt = 0;
     @FXML
     TextField TextTarget;
     @FXML
@@ -21,9 +22,27 @@ public class TranslateController implements Initializable {
     @FXML
     Label En;
     @FXML
+    Label Anh;
+    @FXML
+    Label Viet;
+
+    @FXML
     Label Vi;
     public void Swap(){
-       TextExplain.setText(LoginController.tranapi.lookUp(TextTarget.getText(),"vi","en"));
+        ++cnt;
+      if(cnt % 2 == 0) {
+          En.setText("en");
+          Vi.setText("vi");
+          Anh.setText("Anh");
+          Viet.setText("Việt");
+
+      }
+      else {
+          En.setText("vi");
+          Vi.setText("en");
+          Anh.setText("Việt");
+          Viet.setText("Anh");
+      }
 //        TextTarget.textProperty().addListener(new ChangeListener<String>() {
 //
 //
@@ -35,8 +54,14 @@ public class TranslateController implements Initializable {
 //        });
 
     }
+    public void tran(){
+        TextExplain.setText(LoginController.tranapi.lookUp(TextTarget.getText(), Vi.getText(), En.getText()));
+
+
+    }
     @Override
     public void initialize(URL url, ResourceBundle resourceBundle) {
+        Swap();
 
 
     }
