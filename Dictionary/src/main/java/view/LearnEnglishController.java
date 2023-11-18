@@ -49,13 +49,13 @@ public class LearnEnglishController implements Initializable {
 //        } catch (IOException e) {
 //            throw new RuntimeException(e);
 //        }
-//        Node node;
-//        try {
-//            node = FXMLLoader.load(getClass().getResource("find.fxml"));
-//        } catch (IOException e) {
-//            throw new RuntimeException(e);
-//        }
-//        anchorPaneChild.getChildren().setAll(node);
+        Node node;
+        try {
+            node = FXMLLoader.load(getClass().getResource("find.fxml"));
+        } catch (IOException e) {
+            throw new RuntimeException(e);
+        }
+        anchorPaneChild.getChildren().setAll(node);
 
     }
 
