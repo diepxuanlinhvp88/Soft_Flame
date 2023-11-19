@@ -1,8 +1,8 @@
 import sqlite3
-conn = sqlite3.connect(r"D:\java_code\Soft_Flame\Dictionary\data\dict_hh.db")
+conn = sqlite3.connect(r"D:\UET\Soft_Flame\Dictionary\data\dict_hh.db")
 cursor = conn.cursor()
 cnt = 0
-file = open(r"D:\java_code\Soft_Flame\Dictionary\data\EngtoV.txt",'w',encoding = "utf8")
+file = open(r"D:\UET\Soft_Flame\Dictionary\data\EngtoV.txt",'w',encoding = "utf8")
 for i in range(1,108855):
 	tmp = ""
 	try:

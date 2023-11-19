@@ -1,18 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <?import javafx.scene.control.Accordion?>
-
 <?import javafx.scene.control.Button?>
-
 <?import javafx.scene.control.ListView?>
 <?import javafx.scene.control.TextField?>
 <?import javafx.scene.control.TitledPane?>
 <?import javafx.scene.image.Image?>
 <?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.AnchorPane?>
-
-
-
 <?import javafx.scene.text.Font?>
 
 <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="405.0" prefWidth="720.0" style="-fx-background-color: #ffffff;" styleClass="title-pane" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="view.EditController">
@@ -36,7 +31,7 @@
                            <graphic>
                               <ImageView fitHeight="56.0" fitWidth="58.0">
                                  <image>
-                                    <Image url="@image/add_FILL0_wght400_GRAD0_opsz24.png" />
+                                    <Image url="@image/18.png" />
                                  </image>
                               </ImageView>
                            </graphic>
@@ -63,7 +58,7 @@
                            <graphic>
                               <ImageView fitHeight="51.0" fitWidth="49.0" styleClass="button-confirm">
                                  <image>
-                                    <Image url="@image/delete_remove_bin_icon-icons.com_72400.png" />
+                                    <Image url="@image/26.png" />
                                  </image>
                               </ImageView>
                            </graphic>

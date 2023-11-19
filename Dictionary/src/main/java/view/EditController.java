@@ -45,7 +45,12 @@ public class EditController implements Initializable {
      */
     public void Add(){
 
-        LoginController.data.addWordtoDatabase("av",target.getText(),meaning.getText(),pronpunce.getText(),html.getText());
+        if(LoginController.data.addWordtoDatabase("av",target.getText(),
+                meaning.getText(),pronpunce.getText(),html.getText())){
+            System.out.println("ss");
+
+        };
+
 
 
 
