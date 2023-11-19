@@ -8,6 +8,9 @@ import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
 import javafx.scene.control.Label;
 import javafx.scene.control.TextField;
+import javafx.scene.image.Image;
+import javafx.scene.image.ImageView;
+
 
 import java.net.URL;
 import java.util.List;
@@ -22,26 +25,37 @@ public class TranslateController implements Initializable {
     @FXML
     Label En;
     @FXML
-    Label Anh;
+    ImageView Anh;
+
+
+
     @FXML
-    Label Viet;
+    ImageView Viet;
 
     @FXML
     Label Vi;
     public void Swap(){
-        ++cnt;
+        Image Eng = new Image(getClass().getResource("image/16.jpg").toExternalForm());
+        Image Vie = new Image(getClass().getResource("image/15.png").toExternalForm());
+        cnt++;
       if(cnt % 2 == 0) {
           En.setText("en");
           Vi.setText("vi");
-          Anh.setText("Anh");
-          Viet.setText("Việt");
+//          Anh.setImage(new Image(getClass().getResource("view/image/16.jpg").toExternalForm()));
+//          Viet.setImage(new Image(getClass().getResource("view/image/15.png").toExternalForm()));
+          Anh.setImage(Eng);
+          Viet.setImage(Vie);
+          System.out.println("anhviet");
 
       }
       else {
           En.setText("vi");
           Vi.setText("en");
-          Anh.setText("Việt");
-          Viet.setText("Anh");
+//          Anh.setImage(new Image(getClass().getResource("/view/image/15.png").toExternalForm()));
+//          Viet.setImage(new Image(getClass().getResource("/view/image/16.jpg").toExternalForm()));
+          Anh.setImage(Vie);
+          Viet.setImage(Eng);
+          System.out.println("vietanh");
       }
 //        TextTarget.textProperty().addListener(new ChangeListener<String>() {
 //

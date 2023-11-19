@@ -162,7 +162,7 @@ public class DictionaryManagement {
      */
     public static boolean reNewtxtFileFromDB() {
         try {
-            String cmd = "python D:/UET/hk3/oop/Soft_Flame/Dictionary/export_data.py"; // Ví dụ: lệnh "dir" sẽ hiển thị danh sách tệp trong thư mục hiện tại
+            String cmd = "python D:/UET/Soft_Flame/Dictionary/export_data.py";
             ProcessBuilder processBuilder = new ProcessBuilder("cmd.exe", "/c", cmd);
 
 //            processBuilder.redirectErrorStream(true);
@@ -191,6 +191,8 @@ public class DictionaryManagement {
 
     public static void main(String[] args) throws FileNotFoundException {
         DictionaryManagement tmp = new DictionaryManagement();
-        System.out.println(tmp.getHtml("hello"));
+        System.out.println(tmp.find("account"));
+        System.out.println(DictionaryManagement.reNewtxtFileFromDB());
+
     }
 }

@@ -10,9 +10,14 @@
 
 <AnchorPane prefHeight="405.0" prefWidth="720.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="view.TranslateController">
    <children>
-      <ImageView fitHeight="405.0" fitWidth="720.0" opacity="0.82" pickOnBounds="true" preserveRatio="true">
+      <ImageView fitHeight="405.0" fitWidth="726.0" opacity="0.66" pickOnBounds="true" preserveRatio="true">
          <image>
             <Image url="@image/Soft/4.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="Anh" fitHeight="37.0" fitWidth="59.0" layoutX="151.0" layoutY="88.0" opacity="0.82" pickOnBounds="true">
+         <image>
+            <Image url="@image/16.jpg" />
          </image>
       </ImageView>
       <TextField fx:id="TextExplain" alignment="TOP_LEFT" layoutX="380.0" layoutY="127.0" prefHeight="130.0" prefWidth="300.0" promptText="Bản dịch" style="-fx-background-color: #ffffff;">
@@ -44,16 +49,11 @@
             <Font size="20.0" />
          </font>
       </Label>
-      <Button layoutX="252.0" layoutY="300.0" mnemonicParsing="false" onAction="#tran" prefHeight="39.0" prefWidth="128.0" styleClass="button2" text="Translate for me" />
-      <Label fx:id="Anh" layoutX="167.0" layoutY="95.0" prefHeight="30.0" prefWidth="46.0" text="Anh">
-         <font>
-            <Font size="20.0" />
-         </font>
-      </Label>
-      <Label fx:id="Viet" layoutX="507.0" layoutY="95.0" prefHeight="30.0" prefWidth="46.0" text="Việt">
-         <font>
-            <Font size="20.0" />
-         </font>
-      </Label>
+      <Button layoutX="252.0" layoutY="300.0" mnemonicParsing="false" onAction="#tran" prefHeight="39.0" prefWidth="128.0" styleClass="button2" text="Translate" />
+      <ImageView fx:id="Viet" fitHeight="37.0" fitWidth="59.0" layoutX="501.0" layoutY="88.0">
+         <image>
+            <Image url="@image/15.png" />
+         </image>
+      </ImageView>
    </children>
 </AnchorPane>

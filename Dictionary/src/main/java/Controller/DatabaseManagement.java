@@ -40,7 +40,7 @@ public class DatabaseManagement {
         conn.remove(word,language);
     }
     public static  void main(String[] args){
-        DatabaseManagement tmp = new DatabaseManagement("xin chào");
+        DatabaseManagement tmp = new DatabaseManagement("chào");
         System.out.println(tmp.connectAndQuerry("va"));
     }
 }

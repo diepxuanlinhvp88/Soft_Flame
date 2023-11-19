@@ -14,7 +14,7 @@
                <graphic>
                   <ImageView fitHeight="50.0" fitWidth="50.0">
                      <image>
-                        <Image url="@image/home_FILL0_wght400_GRAD0_opsz24.png" />
+                        <Image url="@image/31.png" />
                      </image>
                   </ImageView>
                </graphic>
@@ -23,7 +23,7 @@
                <graphic>
                   <ImageView fitHeight="50.0" fitWidth="50.0" onMouseClicked="#Findcontroller" opacity="0.71">
                      <image>
-                        <Image url="@image/seo-social-web-network-internet_340_icon-icons.com_61497.png" />
+                        <Image url="@image/38.png" />
                      </image>
                   </ImageView>
                </graphic>
@@ -32,7 +32,7 @@
                <graphic>
                   <ImageView fitHeight="50.0" fitWidth="50.0" onMouseClicked="#Editcontroller">
                      <image>
-                        <Image url="@image/edit_modify_icon-icons.com_72390.png" />
+                        <Image url="@image/29.png" />
                      </image>
                   </ImageView>
                </graphic>
@@ -41,7 +41,7 @@
                <graphic>
                   <ImageView fitHeight="54.0" fitWidth="49.0" opacity="0.66" preserveRatio="true">
                      <image>
-                        <Image url="@image/pngtree-google-translate-translation-icon-vector-png-image_9183337.png" />
+                        <Image url="@image/35.png" />
                      </image>
                   </ImageView>
                </graphic>
