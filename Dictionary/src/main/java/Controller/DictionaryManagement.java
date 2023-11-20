@@ -71,8 +71,15 @@ public class DictionaryManagement {
         return dictionary.getInfo(dictionary.find(target));
     }
 
+
     public String getHtml(String targetWord){
         return dictionary.getHtml(dictionary.find(targetWord));
+    }
+    public String getWordEn(String target){
+        return dictionary.getWordEn(dictionary.find(target));
+    }
+    public String getWordVi(String target){
+        return dictionary.getWordVi(dictionary.find(target));
     }
 
 
@@ -192,7 +199,7 @@ public class DictionaryManagement {
     public static void main(String[] args) throws FileNotFoundException {
         DictionaryManagement tmp = new DictionaryManagement();
         System.out.println(tmp.find("account"));
-        System.out.println(DictionaryManagement.reNewtxtFileFromDB());
+
 
     }
 }

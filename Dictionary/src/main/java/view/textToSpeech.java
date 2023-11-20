@@ -1,3 +1,7 @@
+
+/**
+ * Viết lỗi bỏ, dùng cái trên controller .
+ */
 //package view;
 //
 //import javax.speech.AudioException;

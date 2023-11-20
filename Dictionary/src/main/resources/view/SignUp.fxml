@@ -34,9 +34,9 @@
                </font>
             </Text>
             <Button layoutX="62.0" layoutY="199.0" mnemonicParsing="false" onAction="#SignUpStart" styleClass="button-confirm" text="SignUp" />
-            <Label fx:id="sc" layoutX="71.0" layoutY="179.0" prefHeight="20.0" prefWidth="22.0" textFill="#fa0000">
+            <Label fx:id="sc" layoutX="53.0" layoutY="179.0" prefHeight="20.0" prefWidth="138.0" textFill="#fa0000">
                <font>
-                  <Font name="System Bold" size="14.0" />
+                  <Font name="System Bold Italic" size="14.0" />
                </font>
             </Label>
          </children>
