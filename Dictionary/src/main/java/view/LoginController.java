@@ -1,20 +1,35 @@
 package view;
 
 import Model.Word;
+
 import javafx.beans.property.ObjectProperty;
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
+
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.fxml.Initializable;
 import javafx.scene.Node;
+
+import javafx.scene.control.Alert;
+import javafx.scene.control.Label;
+import javafx.scene.control.PasswordField;
+import javafx.scene.control.TextField;
+
 import javafx.scene.control.*;
+
 import javafx.scene.layout.AnchorPane;
 import Controller.DictionaryManagement;
 import Controller.DatabaseManagement;
 import Controller.ParaTransWithAPI;
 import Controller.textToSpeech;
 import javafx.scene.layout.Pane;
+
+
+import java.io.*;
+import java.net.URL;
+import java.nio.charset.StandardCharsets;
+
 import javafx.scene.media.Media;
 import javafx.scene.media.MediaPlayer;
 
@@ -24,6 +39,7 @@ import java.net.URL;
 import java.nio.charset.StandardCharsets;
 import java.util.ArrayList;
 import java.util.Objects;
+
 import java.util.ResourceBundle;
 
 
@@ -41,6 +57,7 @@ public class LoginController implements Initializable {
     public static DatabaseManagement data = new DatabaseManagement();
     public static ParaTransWithAPI tranapi = new ParaTransWithAPI();
     public static textToSpeech tts = new textToSpeech();
+
     public static MediaPlayer mediaPlayer;
     public static String songs ="music/1.mp3";
     @FXML
@@ -51,6 +68,7 @@ public class LoginController implements Initializable {
     Pane SignPane;
     @FXML
     TextField acc;
+
     @FXML
     TextField newAcc;
     @FXML
@@ -105,7 +123,25 @@ public class LoginController implements Initializable {
 
 
     @FXML
+    Pane LogPane;
+    @FXML
+    Pane SignPane;
+    @FXML
+    TextField acc;
+    @FXML
+    TextField newAcc;
+    @FXML
+    PasswordField newpassword;
+    @FXML
+    PasswordField password;
+    @FXML
+    Label er;
+    @FXML
+    Label sc;
+
+    @FXML
     private void Letgo() throws IOException {
+
 
         Node node;
         if (checkAccount(acc.getText(), password.getText())) {
@@ -115,9 +151,11 @@ public class LoginController implements Initializable {
         } else er.setText("username or password is not correct");
 
 
+
     }
 
     public void SignUp() throws IOException {
+
         Node node;
         node = FXMLLoader.load(getClass().getResource("SignUp.fxml"));
         anchorPaneLogin.getChildren().setAll(node);
@@ -189,6 +227,7 @@ public class LoginController implements Initializable {
         } catch (IOException e) {
             throw new RuntimeException(e);
         }
+
 
 
     }
