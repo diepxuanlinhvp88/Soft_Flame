@@ -16,6 +16,8 @@ import java.util.List;
 import java.util.ResourceBundle;
 
 public class EditController implements Initializable {
+
+
     public EditController() throws FileNotFoundException {
     }
     @FXML
@@ -42,7 +44,15 @@ public class EditController implements Initializable {
      * add db .
      */
     public void Add(){
-        LoginController.data.addWordtoDatabase("av",target.getText(),meaning.getText(),pronpunce.getText(),html.getText());
+
+        if(LoginController.data.addWordtoDatabase("av",target.getText(),
+                meaning.getText(),pronpunce.getText(),html.getText())){
+            System.out.println("ss");
+
+        };
+
+
+
 
     }
 
@@ -54,6 +64,7 @@ public class EditController implements Initializable {
      * show listview in the remove word tab .
      */
     public void showListWordremove(){
+
         wordremove.textProperty().addListener(new ChangeListener<String>() {
             @Override
             public void changed(ObservableValue<? extends String> observable, String oldValue, String newValue) {
@@ -66,6 +77,7 @@ public class EditController implements Initializable {
         });
 
 
+
     }
 
     /**
@@ -73,12 +85,13 @@ public class EditController implements Initializable {
      */
     public void selectRemove(){
 
-        wordremove.setText(listToRemove.getSelectionModel().getSelectedItems().toString().replace("[","").replace("]",""));
-
+//        wordremove.setText(listToRemove.getSelectionModel().getSelectedItems().toString().replace("[","").replace("]",""));
+//
 
     }
 
     public void showListWordEdit(){
+
         targetEdit.textProperty().addListener(new ChangeListener<String>() {
             @Override
             public void changed(ObservableValue<? extends String> observable, String oldValue, String newValue) {
@@ -91,6 +104,7 @@ public class EditController implements Initializable {
         });
 
 
+
     }
 
     /**
@@ -98,7 +112,7 @@ public class EditController implements Initializable {
      */
     public void selectEdit(){
 
-        targetEdit.setText(listToEdit.getSelectionModel().getSelectedItems().toString().replace("[","").replace("]",""));
+//        targetEdit.setText(listToEdit.getSelectionModel().getSelectedItems().toString().replace("[","").replace("]",""));
 
 
     }

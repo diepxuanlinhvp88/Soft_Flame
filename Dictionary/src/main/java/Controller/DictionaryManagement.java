@@ -5,6 +5,7 @@ import Model.Word;
 
 import java.io.*;
 import java.nio.charset.StandardCharsets;
+import java.nio.file.WatchEvent;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -13,7 +14,7 @@ public class DictionaryManagement {
     private static final Word word = new Word();
 
     public DictionaryManagement() throws FileNotFoundException {
-        FileInputStream fileInputStream = new FileInputStream(".\\Dictionary/data/EngtoV.txt");
+        FileInputStream fileInputStream = new FileInputStream(".\\/Dictionary/data/EngtoV.txt");
         InputStreamReader inputStreamReader = new InputStreamReader(fileInputStream
                 , StandardCharsets.UTF_8);
         BufferedReader bufferedReader = new BufferedReader(inputStreamReader);
@@ -65,15 +66,21 @@ public class DictionaryManagement {
         return dictionary;
     }
 
-    public String getHtml(String target){
-        return dictionary.getHtml(dictionary.find(target));
-    }
 
     public String find(String target) {
-        if(target.isEmpty()||target == null) return "Type your target";
         return dictionary.getInfo(dictionary.find(target));
     }
 
+
+    public String getHtml(String targetWord){
+        return dictionary.getHtml(dictionary.find(targetWord));
+    }
+    public String getWordEn(String target){
+        return dictionary.getWordEn(dictionary.find(target));
+    }
+    public String getWordVi(String target){
+        return dictionary.getWordVi(dictionary.find(target));
+    }
 
 
     public String findWithWrong(String target) {
@@ -128,7 +135,9 @@ public class DictionaryManagement {
      */
     public boolean reLoadDictionaryFromFile(String filePath) throws FileNotFoundException {
         if (!reNewtxtFileFromDB()) return false;
+
         FileInputStream fileInputStream = new FileInputStream(".\\/Dictionary/data/EngtoV.txt");
+
         InputStreamReader inputStreamReader = new InputStreamReader(fileInputStream
                 , StandardCharsets.UTF_8);
         BufferedReader bufferedReader = new BufferedReader(inputStreamReader);
@@ -160,7 +169,7 @@ public class DictionaryManagement {
      */
     public static boolean reNewtxtFileFromDB() {
         try {
-            String cmd = "python D:/java_code/Soft_Flame/Dictionary/export_data.py"; // Ví dụ: lệnh "dir" sẽ hiển thị danh sách tệp trong thư mục hiện tại
+            String cmd = "python D:/UET/Soft_Flame/Dictionary/export_data.py";
             ProcessBuilder processBuilder = new ProcessBuilder("cmd.exe", "/c", cmd);
 
 //            processBuilder.redirectErrorStream(true);
@@ -186,10 +195,11 @@ public class DictionaryManagement {
             return false;
         }
     }
+
     public static void main(String[] args) throws FileNotFoundException {
         DictionaryManagement tmp = new DictionaryManagement();
-        System.out.println(DictionaryManagement.reNewtxtFileFromDB());
-        System.out.println(tmp.reLoadDictionaryFromFile("ads"));
-        System.out.println(tmp.find("acc"));
+        System.out.println(tmp.find("account"));
+
+
     }
 }

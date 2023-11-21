@@ -14,15 +14,9 @@
 
 
 <?import javafx.scene.text.Font?>
-<?import javafx.scene.text.Text?>
 
-<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="405.0" prefWidth="720.0" style="-fx-background-color: #B48D77;" styleClass="title-pane" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="view.EditController">
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="405.0" prefWidth="720.0" style="-fx-background-color: #ffffff;" styleClass="title-pane" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="view.EditController">
     <children>
-      <ImageView fitHeight="405.0" fitWidth="720.0" opacity="0.5" pickOnBounds="true" preserveRatio="true">
-         <image>
-            <Image url="@image/Soft/8.png" />
-         </image>
-      </ImageView>
         <Accordion maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="405.0" prefWidth="720.0">
             <panes>
                 <TitledPane id="titlepan" animated="false" prefWidth="720.0" styleClass="title-pane" stylesheets="@graphic.css" text="Add" textFill="#c60f0f">
@@ -38,11 +32,11 @@
                         <TextField fx:id="meaning" alignment="CENTER" layoutX="134.0" layoutY="172.0" prefHeight="38.0" prefWidth="157.0" promptText="Meaning" styleClass="text-field1" />
                         <TextField fx:id="pronpunce" alignment="CENTER" layoutX="324.0" layoutY="106.0" prefHeight="38.0" prefWidth="157.0" promptText="Pronpunce" styleClass="text-field1" />
                         <TextField fx:id="html" alignment="CENTER" layoutX="324.0" layoutY="171.0" prefHeight="40.0" prefWidth="157.0" promptText="HTML" styleClass="text-field1" />
-                        <Button layoutX="521.0" layoutY="122.0" mnemonicParsing="false" style="-fx-background-color: #ffffff;">
+                        <Button layoutX="521.0" layoutY="122.0" mnemonicParsing="false" onAction="#Add" style="-fx-background-color: #ffffff;">
                            <graphic>
                               <ImageView fitHeight="56.0" fitWidth="58.0">
                                  <image>
-                                    <Image url="@image/add_FILL0_wght400_GRAD0_opsz24.png" />
+                                    <Image url="@image/18.png" />
                                  </image>
                               </ImageView>
                            </graphic>
@@ -65,11 +59,11 @@
                         </ImageView>
                                 <TextField fx:id="wordremove" layoutX="152.0" layoutY="39.0" maxWidth="206.0" prefHeight="50.0" prefWidth="206.0" promptText="Nhập từ cần xóa" styleClass="text-field1" />
                                 <ListView fx:id="listToRemove" layoutX="151.0" layoutY="98.0" onMouseClicked="#selectRemove" prefHeight="200.0" prefWidth="209.0" />
-                        <Button layoutX="405.0" layoutY="39.0" mnemonicParsing="false" prefHeight="79.0" prefWidth="82.0" style="-fx-background-color: #ffffff; -fx-background-radius: 10;">
+                        <Button layoutX="405.0" layoutY="39.0" mnemonicParsing="false" onAction="#Remove" prefHeight="79.0" prefWidth="82.0" style="-fx-background-color: #ffffff; -fx-background-radius: 10;">
                            <graphic>
                               <ImageView fitHeight="51.0" fitWidth="49.0" styleClass="button-confirm">
                                  <image>
-                                    <Image url="@image/delete_remove_bin_icon-icons.com_72400.png" />
+                                    <Image url="@image/26.png" />
                                  </image>
                               </ImageView>
                            </graphic>
@@ -93,11 +87,7 @@
                                 <ListView fx:id="listToEdit" layoutX="111.0" layoutY="108.0" prefHeight="200.0" prefWidth="200.0" />
                                 <TextField layoutX="111.0" layoutY="38.0" prefHeight="41.0" prefWidth="201.0" promptText="Nhập từ cần sửa " styleClass="text-field1" />
                                 <TextField layoutX="401.0" layoutY="38.0" prefHeight="41.0" prefWidth="201.0" promptText="Từ mới" styleClass="text-field1" />
-                        <Text fill="#ffebeb" layoutX="405.0" layoutY="148.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Nhấn Enter để sửa ">
-                           <font>
-                              <Font name="Arial" size="22.0" />
-                           </font>
-                        </Text>
+                        <Button layoutX="462.0" layoutY="131.0" mnemonicParsing="false" styleClass="button-confirm" text="OK!" />
                             </children>
                         </AnchorPane>
                     </content>
