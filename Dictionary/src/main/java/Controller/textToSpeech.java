@@ -108,12 +108,7 @@ public class textToSpeech {
             synthesizer.getSynthesizerProperties().setVoice(voice);
         }
 
-    }
-    public static void  main(String args[]){
-        textToSpeech tmp = new textToSpeech();
-        tmp.Speak("hello", "en-us");
-
-    }
+    }   
 
     public void terminate() throws EngineException, EngineStateError {
         synthesizer.deallocate();
@@ -127,12 +122,6 @@ public class textToSpeech {
 
     }
 
-    public static void main(String args[]) throws PropertyVetoException, AudioException, EngineException, InterruptedException {
-        textToSpeech tmp = new textToSpeech();
-        tmp.init("kevin16");
-        tmp.doSpeak("Tên tôi là Linh");
 
-
-    }
 
 }

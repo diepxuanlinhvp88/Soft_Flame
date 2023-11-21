@@ -121,9 +121,23 @@ public class DatabaseOfDict {
             return false;
         }
     }
+    public boolean addBookMard(long id,String word, String meaning, String dateTime){
+        String tmp = String.format("insert into bookMark values (%d,'%s','%s','%s')",id,word,meaning,dateTime);
+        try {
+            Connection conn = getConnection(DB_URL);
+            Statement stmt = conn.createStatement();
+            ResultSet rs = stmt.executeQuery(tmp);
+            conn.close();
+            return true;
+        } catch (Exception ex) {
+            ex.printStackTrace();
+            return false;
+        }
+
+    }
     public static void main(String[] args){
         DatabaseOfDict tmp = new DatabaseOfDict();
-        System.out.println(tmp.getInfoWord("SELECT * FROM av WHERE word  = 'hello';"));
+        System.out.println(tmp.getInfoWord("SELECT * FROM av WHERE word  = 'acc';"));
     }
 
 }
