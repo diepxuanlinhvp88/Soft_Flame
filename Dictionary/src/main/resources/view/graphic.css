@@ -86,8 +86,7 @@
     -fx-background-color: #ffffff;
     /*-fx-effect: dropshadow(gaussian, #ffffff, 1, 1, 1, 0),*/
     /*dropshadow(gaussian, #f5f5f5, -6, -6, 12, 0);*/
-    -fx-font-size: medium;
-    -fx-font-weight: bold;
+
 
 }
 

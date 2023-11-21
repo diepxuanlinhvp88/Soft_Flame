@@ -2,29 +2,30 @@
 
 <?import javafx.scene.control.Button?>
 <?import javafx.scene.control.Label?>
-<?import javafx.scene.control.TextField?>
+
+<?import javafx.scene.control.TextArea?>
+
 <?import javafx.scene.image.Image?>
 <?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane prefHeight="405.0" prefWidth="720.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="view.TranslateController">
+
+<AnchorPane fx:id="pane" prefHeight="405.0" prefWidth="720.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="view.TranslateController">
    <children>
-      <ImageView fitHeight="405.0" fitWidth="720.0" opacity="0.82" pickOnBounds="true" preserveRatio="true">
+      <ImageView fitHeight="405.0" fitWidth="726.0" opacity="0.66" pickOnBounds="true" preserveRatio="true">
+
          <image>
             <Image url="@image/Soft/4.png" />
          </image>
       </ImageView>
-      <TextField fx:id="TextExplain" alignment="TOP_LEFT" layoutX="380.0" layoutY="127.0" prefHeight="130.0" prefWidth="300.0" promptText="Bản dịch" style="-fx-background-color: #ffffff;">
-         <font>
-            <Font name="System Bold" size="20.0" />
-         </font>
-      </TextField>
-      <TextField fx:id="TextTarget" alignment="TOP_LEFT" layoutX="40.0" layoutY="127.0" prefHeight="130.0" prefWidth="300.0" promptText="Nhập đoạn văn bản " style="-fx-background-color: #ffffff;">
-         <font>
-            <Font name="System Bold" size="20.0" />
-         </font>
-      </TextField>
+
+      <ImageView fx:id="Anh" fitHeight="37.0" fitWidth="59.0" layoutX="151.0" layoutY="88.0" opacity="0.82" pickOnBounds="true">
+         <image>
+            <Image url="@image/16.jpg" />
+         </image>
+      </ImageView>
+
       <Button layoutX="337.0" layoutY="94.0" mnemonicParsing="false" onAction="#Swap" prefHeight="32.0" prefWidth="46.0" style="-fx-background-color: #ffffff; -fx-background-radius: 5;">
          <graphic>
             <ImageView>
@@ -44,16 +45,28 @@
             <Font size="20.0" />
          </font>
       </Label>
-      <Button layoutX="252.0" layoutY="300.0" mnemonicParsing="false" onAction="#tran" prefHeight="39.0" prefWidth="128.0" styleClass="button2" text="Translate for me" />
-      <Label fx:id="Anh" layoutX="167.0" layoutY="95.0" prefHeight="30.0" prefWidth="46.0" text="Anh">
+
+      <Button layoutX="252.0" layoutY="300.0" mnemonicParsing="false" onAction="#tran" prefHeight="39.0" prefWidth="128.0" styleClass="button2" text="Translate" />
+      <ImageView fx:id="Viet" fitHeight="37.0" fitWidth="59.0" layoutX="501.0" layoutY="88.0">
+         <image>
+            <Image url="@image/15.png" />
+         </image>
+      </ImageView>
+      <TextArea fx:id="TextTarget" layoutX="40.0" layoutY="127.0" prefHeight="130.0" prefWidth="300.0" promptText="Nhập văn bản cần dịch" styleClass="text-area1">
          <font>
-            <Font size="20.0" />
+            <Font name="System Bold" size="20.0" />
          </font>
-      </Label>
-      <Label fx:id="Viet" layoutX="507.0" layoutY="95.0" prefHeight="30.0" prefWidth="46.0" text="Việt">
+      </TextArea>
+      <TextArea fx:id="TextExplain" layoutX="380.0" layoutY="127.0" prefHeight="130.0" prefWidth="300.0" promptText="Bản dịch" styleClass="text-area1" stylesheets="@graphic.css">
          <font>
-            <Font size="20.0" />
+            <Font name="System Bold" size="20.0" />
          </font>
-      </Label>
+      </TextArea>
+      <ImageView fx:id="CamereIcon" fitHeight="52.0" fitWidth="59.0" layoutX="288.0" layoutY="205.0" onMouseClicked="#FindwithImage" opacity="0.74" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@image/cameraIcon.png" />
+         </image>
+      </ImageView>
+
    </children>
 </AnchorPane>

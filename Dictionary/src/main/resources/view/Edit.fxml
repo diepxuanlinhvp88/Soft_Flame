@@ -36,7 +36,7 @@
                            <graphic>
                               <ImageView fitHeight="56.0" fitWidth="58.0">
                                  <image>
-                                    <Image url="@image/add_FILL0_wght400_GRAD0_opsz24.png" />
+                                    <Image url="@image/18.png" />
                                  </image>
                               </ImageView>
                            </graphic>
@@ -63,7 +63,7 @@
                            <graphic>
                               <ImageView fitHeight="51.0" fitWidth="49.0" styleClass="button-confirm">
                                  <image>
-                                    <Image url="@image/delete_remove_bin_icon-icons.com_72400.png" />
+                                    <Image url="@image/26.png" />
                                  </image>
                               </ImageView>
                            </graphic>

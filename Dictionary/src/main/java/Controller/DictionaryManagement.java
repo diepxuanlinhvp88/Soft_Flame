@@ -1,5 +1,6 @@
 package Controller;
 
+import Model.DatabaseOfDict;
 import Model.Dictionary;
 import Model.Word;
 
@@ -11,6 +12,7 @@ import java.util.List;
 
 public class DictionaryManagement {
     private static final Dictionary dictionary = new Dictionary();
+    private static final DatabaseManagement db = new DatabaseManagement();
     private static final Word word = new Word();
 
     public DictionaryManagement() throws FileNotFoundException {
@@ -71,8 +73,17 @@ public class DictionaryManagement {
         return dictionary.getInfo(dictionary.find(target));
     }
 
-    public String getHtml(String targetWord){
+
+    public String getHtml(String targetWord) {
         return dictionary.getHtml(dictionary.find(targetWord));
+    }
+
+    public String getWordEn(String target) {
+        return dictionary.getWordEn(dictionary.find(target));
+    }
+
+    public String getWordVi(String target) {
+        return dictionary.getWordVi(dictionary.find(target));
     }
 
 
@@ -122,6 +133,7 @@ public class DictionaryManagement {
 
     /**
      * renew the dictionary if user want to update the changes.
+     *
      * @param filePath path.
      * @return true if success.
      * @throws FileNotFoundException throw ex.
@@ -156,41 +168,46 @@ public class DictionaryManagement {
         }
     }
 
-    /**
-     * call a python script to renew the txt file that is extracted form database.
-     * @return true if success.
-     */
-    public static boolean reNewtxtFileFromDB() {
-        try {
-            String cmd = "python D:/UET/hk3/oop/Soft_Flame/Dictionary/export_data.py"; // Ví dụ: lệnh "dir" sẽ hiển thị danh sách tệp trong thư mục hiện tại
-            ProcessBuilder processBuilder = new ProcessBuilder("cmd.exe", "/c", cmd);
+    public String addedWords() {
+        String fileName = ".\\/Dictionary/data/infoEditWord.txt";
+        List<String> tmp = new ArrayList<>();
+        try (BufferedReader reader = new BufferedReader(new FileReader(fileName))) {
 
-//            processBuilder.redirectErrorStream(true);
-            Process process = processBuilder.start();
-
-//            InputStream inputStream = process.getInputStream();
-//            BufferedReader reader = new BufferedReader(new InputStreamReader(inputStream));
-//            String line;
-//            while ((line = reader.readLine()) != null) {
-//                System.out.println(line);
-//            }
-            // Đọc kết quả từ quy trình
-            int exitCode = process.waitFor();
-            if (exitCode == 0) {
-                System.out.println("Lệnh cmd đã hoàn thành.");
-                return true;
-            } else {
-                System.err.println("Lệnh cmd đã hoàn thành với mã thoát: " + exitCode);
-                return false;
+            String line;
+            while ((line = reader.readLine()) != null) {
+                tmp.add(line);
             }
-        } catch (IOException | InterruptedException e) {
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+        String result = "";
+        for (String i : tmp) {
+            long index = Long.parseLong(i);
+            String data = db.connectAndQuerry("av", index);
+            String[] words = data.split("\n");
+            System.out.println(words.length);
+            result += words[0] + "<token>" + words[1] + "<token>" + words[2] + "<token>" + words[3] + "<token>" + words[4] + "\n";
+        }
+        return result;
+    }
+
+    public boolean reNewtxtFileFromDB() {
+
+        String tmp = addedWords();
+        try (BufferedWriter writer = new BufferedWriter(new FileWriter(".\\/Dictionary/data/EngtoV.txt", true))) {
+            writer.write(tmp);
+            return true;
+        } catch (IOException e) {
             e.printStackTrace();
             return false;
         }
     }
 
+
     public static void main(String[] args) throws FileNotFoundException {
         DictionaryManagement tmp = new DictionaryManagement();
-        System.out.println(tmp.getHtml("hello"));
+        System.out.println(tmp.find("zonal"));
+
+
     }
 }

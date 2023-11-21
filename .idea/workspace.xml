@@ -4,7 +4,34 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="73d70507-e844-4e96-a40e-319ceb06e4da" name="Changes" comment="fixed" />
+    <list default="true" id="73d70507-e844-4e96-a40e-319ceb06e4da" name="Changes" comment="fixed">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+
+      <change beforePath="$PROJECT_DIR$/Dictionary/data/wordConttest.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Dictionary/data/wordh.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Dictionary/src/main/java/view/ContestController.java" beforeDir="false" afterPath="$PROJECT_DIR$/Dictionary/src/main/java/view/ContestController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Dictionary/src/main/java/view/LoginController.java" beforeDir="false" afterPath="$PROJECT_DIR$/Dictionary/src/main/java/view/LoginController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Dictionary/src/main/resources/view/contest.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/Dictionary/src/main/resources/view/contest.fxml" afterDir="false" />
+
+      <change beforePath="$PROJECT_DIR$/Dictionary/callAPIOCR.py" beforeDir="false" afterPath="$PROJECT_DIR$/Dictionary/callAPIOCR.py" afterDir="false" />
+
+      <change beforePath="$PROJECT_DIR$/Dictionary/src/main/java/Controller/DictionaryManagement.java" beforeDir="false" afterPath="$PROJECT_DIR$/Dictionary/src/main/java/Controller/DictionaryManagement.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Dictionary/src/main/java/Controller/ParaTransWithAPI.java" beforeDir="false" afterPath="$PROJECT_DIR$/Dictionary/src/main/java/Controller/ParaTransWithAPI.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Dictionary/src/main/java/module-info.java" beforeDir="false" afterPath="$PROJECT_DIR$/Dictionary/src/main/java/module-info.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Dictionary/src/main/java/view/Controller.java" beforeDir="false" afterPath="$PROJECT_DIR$/Dictionary/src/main/java/view/Controller.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Dictionary/src/main/java/view/HelloApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/Dictionary/src/main/java/view/HelloApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Dictionary/src/main/java/view/LearnEnglishController.java" beforeDir="false" afterPath="$PROJECT_DIR$/Dictionary/src/main/java/view/LearnEnglishController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Dictionary/src/main/java/view/LoginController.java" beforeDir="false" afterPath="$PROJECT_DIR$/Dictionary/src/main/java/view/LoginController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Dictionary/src/main/java/view/TranslateController.java" beforeDir="false" afterPath="$PROJECT_DIR$/Dictionary/src/main/java/view/TranslateController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Dictionary/src/main/java/view/textToSpeech.java" beforeDir="false" afterPath="$PROJECT_DIR$/Dictionary/src/main/java/view/textToSpeech.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Dictionary/src/main/resources/view/Controller.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/Dictionary/src/main/resources/view/Controller.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Dictionary/src/main/resources/view/Login.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/Dictionary/src/main/resources/view/Login.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Dictionary/src/main/resources/view/SignUp.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/Dictionary/src/main/resources/view/SignUp.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Dictionary/src/main/resources/view/Translate.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/Dictionary/src/main/resources/view/Translate.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Dictionary/src/main/resources/view/graphic.css" beforeDir="false" afterPath="$PROJECT_DIR$/Dictionary/src/main/resources/view/graphic.css" afterDir="false" />
+
+
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -15,6 +42,7 @@
       <list>
         <option value="JavaFXApplication" />
         <option value="CSS File" />
+        <option value="FxmlFile" />
         <option value="Class" />
         <option value="FxmlFile" />
       </list>
@@ -42,6 +70,9 @@
       </UrlAndAccount>
     </option>
   </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/Dictionary/src/main/resources/view/contest.fxml" root0="FORCE_HIGHLIGHTING" />
+  </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
@@ -53,27 +84,29 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
-    &quot;ignore.preview.features.used&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;D:/java_code/DSA&quot;,
-    &quot;list.type.of.created.stylesheet&quot;: &quot;CSS&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;Project&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.4597701&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;reference.settings.project.maven.repository.indices&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "git-widget-placeholder": "hoa",
+    "ignore.preview.features.used": "true",
+    "last_opened_file_path": "D:/java_code/Data_Structure_and_Algorithms",
+    "list.type.of.created.stylesheet": "CSS",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "project.structure.last.edited": "Project",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.4597701",
+    "settings.editor.selected.configurable": "reference.settings.project.maven.repository.indices",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
+
   <component name="Push.Settings">
     <option name="SHOW_DETAILS_PANEL" value="false" />
   </component>
@@ -120,8 +153,23 @@
       <workItem from="1699674224782" duration="273000" />
       <workItem from="1699675256301" duration="1227000" />
       <workItem from="1699707599403" duration="10644000" />
+
+      <workItem from="1699727232809" duration="3290000" />
+      <workItem from="1700197880019" duration="1514000" />
+      <workItem from="1700314959650" duration="3342000" />
+      <workItem from="1700444611941" duration="20311000" />
+      <workItem from="1700495498678" duration="14405000" />
+      <workItem from="1700534521248" duration="2292000" />
+      <workItem from="1700551525017" duration="2038000" />
+      <workItem from="1700557115528" duration="2611000" />
+      <workItem from="1700563777103" duration="15911000" />
+
       <workItem from="1699726134784" duration="13000" />
       <workItem from="1699726169786" duration="678000" />
+      <workItem from="1700382610673" duration="4379000" />
+      <workItem from="1700410372269" duration="806000" />
+
+
     </task>
     <servers />
   </component>
@@ -132,15 +180,5 @@
     <MESSAGE value="commit" />
     <MESSAGE value="fixed" />
     <option name="LAST_COMMIT_MESSAGE" value="fixed" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <breakpoint enabled="true" type="java-exception">
-          <properties class="java.util.UnknownFormatConversionException" package="java.util" />
-          <option name="timeStamp" value="1" />
-        </breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
   </component>
 </project>

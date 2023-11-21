@@ -5,6 +5,8 @@ module view {
     requires javafx.web;
     requires java.net.http;
     requires java.desktop;
+    requires freetts;
+    requires javafx.media;
 
     opens view to javafx.fxml;
     exports view;

@@ -1,11 +1,8 @@
 package Controller;
 
-import java.io.OutputStream;
-import java.io.OutputStreamWriter;
+import java.io.*;
 import java.net.HttpURLConnection;
 import java.net.URL;
-import java.io.BufferedReader;
-import java.io.InputStreamReader;
 import java.net.URLEncoder;
 
 public class ParaTransWithAPI {
@@ -75,67 +72,31 @@ public class ParaTransWithAPI {
             return "error";
         }
     }
-//    public static  void main(String[] args){
-//        ParaTransWithAPI tmp = new ParaTransWithAPI();
-//        System.out.println(tmp.lookUp("tôi rất thích cô ấy","en","vi"));
-//    }
 
-//    public static String reFormatData(String data){
-//
-//    }
 
-//    public static void main(String[] args) {
-//        try {
-//            String scriptUrl = "https://script.google.com/macros/s/AKfycbyW-nmxwX7Cch739uccKFTGpJQXzB-9R0jBzwoKO5lkBU5BkWSgR1t17oafUwb-pTSm/exec";
-//
-//            // Dữ liệu bạn muốn gửi
-//            String requestData = "text=I Love her&target=vi&source=";  // Thay đổi dữ liệu theo nhu cầu
-//
-//            // Tạo URL
-//            URL url = new URL(scriptUrl);
-//
-//            // Mở kết nối HTTP
-//            HttpURLConnection connection = (HttpURLConnection) url.openConnection();
-//
-//            // Thiết lập phương thức POST
-//            connection.setRequestMethod("POST");
-//
-//            // Cho phép viết dữ liệu lên kết nối
-//            connection.setDoOutput(true);
-//
-//            // Ghi dữ liệu vào luồng đầu ra của kết nối
-//            try (OutputStream os = connection.getOutputStream();
-//                 OutputStreamWriter osw = new OutputStreamWriter(os, "UTF-8")) {
-//                osw.write(requestData);
-//                osw.flush();
-//            }
-//
-//            // Lấy mã trạng thái HTTP của phản hồi
-//            int responseCode = connection.getResponseCode();
-//
-//            if (responseCode == 200) {
-//                // Nếu mã trạng thái là 200 (OK), đọc dữ liệu từ phản hồi
-//                BufferedReader reader = new BufferedReader(new InputStreamReader(connection.getInputStream()));
-//                StringBuilder response = new StringBuilder();
-//                String line;
-//
-//                while ((line = reader.readLine()) != null) {
-//                    response.append(line);
-//                }
-//                reader.close();
-//
-//                String responseData = response.toString();
-//
-//                // Xử lý dữ liệu từ phản hồi thành công (responseData)
-//                System.out.println(responseData);
-//            } else {
-//                // Xử lý phản hồi lỗi
-//            }
-//
-//            // Đóng kết nối
-//            connection.disconnect();
-//        } catch (Exception e) {
-//            e.printStackTrace();
-//        }
-//    }
+    public String imageToText(String path) {
+        try {
+            String pythonFile = ".\\/Dictionary/callAPIOCR.py";
+
+            ProcessBuilder pb = new ProcessBuilder("python", pythonFile,path);
+
+            Process process = pb.start();
+
+            BufferedReader reader = new BufferedReader(new InputStreamReader(process.getInputStream()));
+            String line;
+            StringBuilder target = new StringBuilder();
+            while ((line = reader.readLine()) != null) {
+                target.append(line).append(" ");
+            }
+            int exitCode = process.waitFor();
+            System.out.println("Tiến trình đã kết thúc với mã thoát: " + exitCode);
+            return String.valueOf(target);
+
+        } catch (IOException | InterruptedException e) {
+            e.printStackTrace();
+            return "cannot resolve python file";
+        }
+    }
+
+
 }
