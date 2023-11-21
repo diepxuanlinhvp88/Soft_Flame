@@ -1,53 +1,55 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<?import javafx.scene.control.Button?>
 <?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.AnchorPane?>
-<?import javafx.scene.layout.ColumnConstraints?>
-<?import javafx.scene.layout.GridPane?>
-<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.Pane?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane prefHeight="505.0" prefWidth="720.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="view.ContestController">
+<AnchorPane fx:id="anchorPane" prefHeight="505.0" prefWidth="720.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="view.ContestController">
    <children>
-      <GridPane fx:id="words" layoutX="182.0" layoutY="151.0" prefHeight="35.0" prefWidth="356.0">
-        <columnConstraints>
-          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
-            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
-            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
-            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
-            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
-            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
-            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
-            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
-            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
-            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
-            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
-            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
-            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
-            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
-        </columnConstraints>
-        <rowConstraints>
-            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
-        </rowConstraints>
-      </GridPane>
-      <Label fx:id="wordVi" layoutX="182.0" layoutY="46.0" prefHeight="25.0" prefWidth="479.0" text="Label">
+      <ImageView fitHeight="505.0" fitWidth="768.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@image/questionbg.jpg" />
+         </image>
+      </ImageView>
+      <Label fx:id="question" layoutX="66.0" layoutY="71.0" prefHeight="25.0" prefWidth="603.0" style="-fx-background-color: #ffffff; -fx-background-radius: 10; -fx-border-color: red;">
          <font>
             <Font size="15.0" />
          </font>
       </Label>
-      <GridPane fx:id="input" layoutX="182.0" layoutY="342.0">
-        <columnConstraints>
-          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
-          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
-            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
-            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
-        </columnConstraints>
-        <rowConstraints>
-          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
-          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
-          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
-            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
-        </rowConstraints>
-      </GridPane>
+      <Label fx:id="success" layoutX="66.0" layoutY="96.0" prefHeight="17.0" prefWidth="479.0">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Button fx:id="A" layoutX="93.0" layoutY="253.0" mnemonicParsing="false" prefHeight="105.0" prefWidth="89.0" />
+      <Button fx:id="B" layoutX="246.0" layoutY="253.0" mnemonicParsing="false" prefHeight="105.0" prefWidth="89.0" />
+      <Button fx:id="C" layoutX="413.0" layoutY="253.0" mnemonicParsing="false" prefHeight="105.0" prefWidth="89.0" />
+      <Button fx:id="D" layoutX="563.0" layoutY="253.0" mnemonicParsing="false" prefHeight="105.0" prefWidth="89.0" />
+      <Label fx:id="explainquestion" layoutX="66.0" layoutY="128.0" prefHeight="105.0" prefWidth="603.0" wrapText="true" />
+      <ImageView fitHeight="42.0" fitWidth="46.0" layoutY="5.0" onMouseClicked="#out" pickOnBounds="true" preserveRatio="true" rotate="180.0">
+         <image>
+            <Image url="@image/2606505_5844.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="98.0" fitWidth="156.0" layoutX="283.0" layoutY="382.0" onMouseClicked="#next" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@image/next.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="62.0" fitWidth="54.0" layoutX="66.0" layoutY="1.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@image/rate.png" />
+         </image>
+      </ImageView>
+      <Label fx:id="rate" layoutX="119.0" layoutY="8.0" prefHeight="33.0" prefWidth="38.0" textFill="RED">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Label>
+      <Pane fx:id="pane" layoutX="158.0" layoutY="25.0" prefHeight="239.0" prefWidth="443.0" />
    </children>
 </AnchorPane>

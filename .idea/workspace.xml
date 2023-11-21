@@ -6,6 +6,13 @@
   <component name="ChangeListManager">
     <list default="true" id="73d70507-e844-4e96-a40e-319ceb06e4da" name="Changes" comment="fixed">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+
+      <change beforePath="$PROJECT_DIR$/Dictionary/data/wordConttest.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Dictionary/data/wordh.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Dictionary/src/main/java/view/ContestController.java" beforeDir="false" afterPath="$PROJECT_DIR$/Dictionary/src/main/java/view/ContestController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Dictionary/src/main/java/view/LoginController.java" beforeDir="false" afterPath="$PROJECT_DIR$/Dictionary/src/main/java/view/LoginController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Dictionary/src/main/resources/view/contest.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/Dictionary/src/main/resources/view/contest.fxml" afterDir="false" />
+
       <change beforePath="$PROJECT_DIR$/Dictionary/callAPIOCR.py" beforeDir="false" afterPath="$PROJECT_DIR$/Dictionary/callAPIOCR.py" afterDir="false" />
 
       <change beforePath="$PROJECT_DIR$/Dictionary/src/main/java/Controller/DictionaryManagement.java" beforeDir="false" afterPath="$PROJECT_DIR$/Dictionary/src/main/java/Controller/DictionaryManagement.java" afterDir="false" />
@@ -22,6 +29,7 @@
       <change beforePath="$PROJECT_DIR$/Dictionary/src/main/resources/view/SignUp.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/Dictionary/src/main/resources/view/SignUp.fxml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Dictionary/src/main/resources/view/Translate.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/Dictionary/src/main/resources/view/Translate.fxml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Dictionary/src/main/resources/view/graphic.css" beforeDir="false" afterPath="$PROJECT_DIR$/Dictionary/src/main/resources/view/graphic.css" afterDir="false" />
+
 
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -145,10 +153,22 @@
       <workItem from="1699674224782" duration="273000" />
       <workItem from="1699675256301" duration="1227000" />
       <workItem from="1699707599403" duration="10644000" />
+
+      <workItem from="1699727232809" duration="3290000" />
+      <workItem from="1700197880019" duration="1514000" />
+      <workItem from="1700314959650" duration="3342000" />
+      <workItem from="1700444611941" duration="20311000" />
+      <workItem from="1700495498678" duration="14405000" />
+      <workItem from="1700534521248" duration="2292000" />
+      <workItem from="1700551525017" duration="2038000" />
+      <workItem from="1700557115528" duration="2611000" />
+      <workItem from="1700563777103" duration="15911000" />
+
       <workItem from="1699726134784" duration="13000" />
       <workItem from="1699726169786" duration="678000" />
       <workItem from="1700382610673" duration="4379000" />
       <workItem from="1700410372269" duration="806000" />
+
 
     </task>
     <servers />
