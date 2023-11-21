@@ -1,0 +1,12 @@
+<component name="libraryTable">
+  <library name="javadoc">
+    <CLASSES />
+    <JAVADOC>
+      <root url="jar://$PROJECT_DIR$/../../freetts-1.2.2-bin.zip!/freetts-1.2/javadoc" />
+    </JAVADOC>
+    <SOURCES />
+    <excluded>
+      <root url="jar://$PROJECT_DIR$/../../freetts-1.2.2-bin.zip!/" />
+    </excluded>
+  </library>
+</component>

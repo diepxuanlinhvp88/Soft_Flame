@@ -1,13 +1,24 @@
 package view;
 
+
 import javafx.beans.value.ChangeListener;
 import javafx.beans.value.ObservableValue;
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
+
+import javafx.scene.Node;
 import javafx.scene.control.Label;
+import javafx.scene.control.TextArea;
 import javafx.scene.control.TextField;
+import javafx.scene.image.Image;
+import javafx.scene.image.ImageView;
+import javafx.scene.layout.AnchorPane;
+import javafx.stage.FileChooser;
+
+
+import java.io.File;
 
 import java.net.URL;
 import java.util.List;
@@ -16,32 +27,51 @@ import java.util.ResourceBundle;
 public class TranslateController implements Initializable {
     int cnt = 0;
     @FXML
-    TextField TextTarget;
+
+    TextArea TextTarget;
     @FXML
-    TextField TextExplain;
+    TextArea TextExplain;
     @FXML
     Label En;
     @FXML
-    Label Anh;
+    ImageView Anh;
     @FXML
-    Label Viet;
+    ImageView CamereIcon;
+    @FXML
+    AnchorPane pane;
+
+
+
+    @FXML
+    ImageView Viet;
+
 
     @FXML
     Label Vi;
     public void Swap(){
-        ++cnt;
+
+        Image Eng = new Image(getClass().getResource("image/16.jpg").toExternalForm());
+        Image Vie = new Image(getClass().getResource("image/15.png").toExternalForm());
+        cnt++;
       if(cnt % 2 == 0) {
           En.setText("en");
           Vi.setText("vi");
-          Anh.setText("Anh");
-          Viet.setText("Việt");
+//          Anh.setImage(new Image(getClass().getResource("view/image/16.jpg").toExternalForm()));
+//          Viet.setImage(new Image(getClass().getResource("view/image/15.png").toExternalForm()));
+          Anh.setImage(Eng);
+          Viet.setImage(Vie);
+          System.out.println("anhviet");
+
 
       }
       else {
           En.setText("vi");
           Vi.setText("en");
-          Anh.setText("Việt");
-          Viet.setText("Anh");
+//          Anh.setImage(new Image(getClass().getResource("/view/image/15.png").toExternalForm()));
+//          Viet.setImage(new Image(getClass().getResource("/view/image/16.jpg").toExternalForm()));
+          Anh.setImage(Vie);
+          Viet.setImage(Eng);
+          System.out.println("vietanh");
       }
 //        TextTarget.textProperty().addListener(new ChangeListener<String>() {
 //
@@ -58,10 +88,41 @@ public class TranslateController implements Initializable {
         TextExplain.setText(LoginController.tranapi.lookUp(TextTarget.getText(), Vi.getText(), En.getText()));
 
 
+
+
+    }
+    public void FindwithImage(){
+        // Tạo một FileChooser
+        FileChooser fileChooser = new FileChooser();
+        fileChooser.setTitle("Chọn ảnh");
+
+        // Thêm bộ lọc để chỉ hiển thị các file hình ảnh
+        FileChooser.ExtensionFilter imageFilter =
+                new FileChooser.ExtensionFilter("Hình ảnh (*.png, *.jpg, *.jpeg, *.gif, *.bmp)", "*.png", "*.jpg", "*.jpeg", "*.gif", "*.bmp");
+        fileChooser.getExtensionFilters().add(imageFilter);
+
+        // Hiển thị hộp thoại chọn file và lấy đường dẫn của file được chọn
+
+
+        File selectedFile = fileChooser.showOpenDialog(pane.getScene().getWindow());
+
+        // Kiểm tra xem người dùng đã chọn file hay chưa
+        if (selectedFile != null) {
+            System.out.println("Đường dẫn hình ảnh: " + selectedFile.getAbsolutePath());
+
+            // Gọi phương thức xử lý tìm kiếm hình ảnh với đường dẫn này
+            TextTarget.setText(LoginController.tranapi.imageToText(selectedFile.getAbsolutePath()));
+        }
+
+
     }
     @Override
     public void initialize(URL url, ResourceBundle resourceBundle) {
         Swap();
+
+        TextTarget.setWrapText(true);
+        TextExplain.setWrapText(true);
+
 
 
     }

@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="freetts-1.2.2-bin" type="kotlin.js">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/../../freetts-1.2.2-bin.zip!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

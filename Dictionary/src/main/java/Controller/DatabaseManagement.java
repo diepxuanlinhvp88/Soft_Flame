@@ -39,8 +39,5 @@ public class DatabaseManagement {
     public void removeWord(String word, String language){
         conn.remove(word,language);
     }
-    public static  void main(String[] args){
-        DatabaseManagement tmp = new DatabaseManagement("xin chào");
-        System.out.println(tmp.connectAndQuerry("va"));
-    }
+
 }

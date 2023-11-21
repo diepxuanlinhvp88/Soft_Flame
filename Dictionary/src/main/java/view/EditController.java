@@ -44,6 +44,19 @@ public class EditController implements Initializable {
     public void Add(){
         LoginController.data.addWordtoDatabase("av",target.getText(),meaning.getText(),pronpunce.getText(),html.getText());
 
+        if(LoginController.data.addWordtoDatabase("av",target.getText(),
+                meaning.getText(),pronpunce.getText(),html.getText())){
+            System.out.println("ss");
+
+        };
+
+
+
+
+    }
+
+    public void Remove(){
+        LoginController.data.removeWord(wordremove.getText(),"av");
     }
 
     public void Remove(){
@@ -79,6 +92,7 @@ public class EditController implements Initializable {
     }
 
     public void showListWordEdit(){
+
         targetEdit.textProperty().addListener(new ChangeListener<String>() {
             @Override
             public void changed(ObservableValue<? extends String> observable, String oldValue, String newValue) {

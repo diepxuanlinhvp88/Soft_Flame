@@ -7,6 +7,22 @@
     <list default="true" id="73d70507-e844-4e96-a40e-319ceb06e4da" name="Changes" comment="fixed">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Dictionary/callAPIOCR.py" beforeDir="false" afterPath="$PROJECT_DIR$/Dictionary/callAPIOCR.py" afterDir="false" />
+
+      <change beforePath="$PROJECT_DIR$/Dictionary/src/main/java/Controller/DictionaryManagement.java" beforeDir="false" afterPath="$PROJECT_DIR$/Dictionary/src/main/java/Controller/DictionaryManagement.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Dictionary/src/main/java/Controller/ParaTransWithAPI.java" beforeDir="false" afterPath="$PROJECT_DIR$/Dictionary/src/main/java/Controller/ParaTransWithAPI.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Dictionary/src/main/java/module-info.java" beforeDir="false" afterPath="$PROJECT_DIR$/Dictionary/src/main/java/module-info.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Dictionary/src/main/java/view/Controller.java" beforeDir="false" afterPath="$PROJECT_DIR$/Dictionary/src/main/java/view/Controller.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Dictionary/src/main/java/view/HelloApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/Dictionary/src/main/java/view/HelloApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Dictionary/src/main/java/view/LearnEnglishController.java" beforeDir="false" afterPath="$PROJECT_DIR$/Dictionary/src/main/java/view/LearnEnglishController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Dictionary/src/main/java/view/LoginController.java" beforeDir="false" afterPath="$PROJECT_DIR$/Dictionary/src/main/java/view/LoginController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Dictionary/src/main/java/view/TranslateController.java" beforeDir="false" afterPath="$PROJECT_DIR$/Dictionary/src/main/java/view/TranslateController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Dictionary/src/main/java/view/textToSpeech.java" beforeDir="false" afterPath="$PROJECT_DIR$/Dictionary/src/main/java/view/textToSpeech.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Dictionary/src/main/resources/view/Controller.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/Dictionary/src/main/resources/view/Controller.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Dictionary/src/main/resources/view/Login.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/Dictionary/src/main/resources/view/Login.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Dictionary/src/main/resources/view/SignUp.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/Dictionary/src/main/resources/view/SignUp.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Dictionary/src/main/resources/view/Translate.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/Dictionary/src/main/resources/view/Translate.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Dictionary/src/main/resources/view/graphic.css" beforeDir="false" afterPath="$PROJECT_DIR$/Dictionary/src/main/resources/view/graphic.css" afterDir="false" />
+
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -18,6 +34,7 @@
       <list>
         <option value="JavaFXApplication" />
         <option value="CSS File" />
+        <option value="FxmlFile" />
         <option value="Class" />
         <option value="FxmlFile" />
       </list>
@@ -45,6 +62,9 @@
       </UrlAndAccount>
     </option>
   </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/Dictionary/src/main/resources/view/contest.fxml" root0="FORCE_HIGHLIGHTING" />
+  </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
@@ -56,6 +76,7 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
+
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
     "RunOnceActivity.OpenProjectViewOnStart": "true",
@@ -77,6 +98,7 @@
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
+
   <component name="Push.Settings">
     <option name="SHOW_DETAILS_PANEL" value="false" />
   </component>
@@ -127,6 +149,7 @@
       <workItem from="1699726169786" duration="678000" />
       <workItem from="1700382610673" duration="4379000" />
       <workItem from="1700410372269" duration="806000" />
+
     </task>
     <servers />
   </component>

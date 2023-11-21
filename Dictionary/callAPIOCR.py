@@ -8,7 +8,8 @@ def imageToText(path):
 	r = requests.post(api_url,headers = header, files=files).json()
 	tmp = ""
 	for i in r:
-		tmp+=i["text"]
+		tmp+=i["text"] + " "
+
 	return tmp;
 
 if __name__ == "__main__":
