@@ -42,7 +42,7 @@ public class LoginController implements Initializable {
     public static ParaTransWithAPI tranapi = new ParaTransWithAPI();
     public static textToSpeech tts = new textToSpeech();
     public static MediaPlayer mediaPlayer;
-    public static String songs ="music/3.mp3";
+    public static String songs ="music/1.mp3";
     @FXML
     public AnchorPane anchorPaneLogin;
     @FXML
