@@ -4,14 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="73d70507-e844-4e96-a40e-319ceb06e4da" name="Changes" comment="fixed">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Dictionary/data/account.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Dictionary/data/account.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Dictionary/src/main/java/Controller/DatabaseManagement.java" beforeDir="false" afterPath="$PROJECT_DIR$/Dictionary/src/main/java/Controller/DatabaseManagement.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Dictionary/src/main/java/view/FindController.java" beforeDir="false" afterPath="$PROJECT_DIR$/Dictionary/src/main/java/view/FindController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Dictionary/src/main/java/view/LearnEnglishController.java" beforeDir="false" afterPath="$PROJECT_DIR$/Dictionary/src/main/java/view/LearnEnglishController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Dictionary/src/main/java/view/LoginController.java" beforeDir="false" afterPath="$PROJECT_DIR$/Dictionary/src/main/java/view/LoginController.java" afterDir="false" />
-    </list>
+    <list default="true" id="73d70507-e844-4e96-a40e-319ceb06e4da" name="Changes" comment="fixed" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
