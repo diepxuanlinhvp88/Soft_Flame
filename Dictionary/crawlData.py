@@ -9,9 +9,7 @@ for tmp in my_list:
 	tmp1 = " "
 	tmp2 = "-"
 	tmp3 = "."
-	tmp4 = "số nhiều"
-	tmp5 = ";"
-	if tmp2 in source or tmp1 in source or tmp3 in source or tmp4 in meaning or tmp5 in meaning:
+	if tmp2 in source or tmp1 in source or tmp3 in source:
 		continue
 	else:
 		line = source+"<>" + meaning

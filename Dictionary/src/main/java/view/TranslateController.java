@@ -7,6 +7,7 @@ import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
+
 import javafx.scene.Node;
 import javafx.scene.control.Label;
 import javafx.scene.control.TextArea;
@@ -18,6 +19,7 @@ import javafx.stage.FileChooser;
 
 
 import java.io.File;
+
 import java.net.URL;
 import java.util.List;
 import java.util.ResourceBundle;
@@ -25,6 +27,7 @@ import java.util.ResourceBundle;
 public class TranslateController implements Initializable {
     int cnt = 0;
     @FXML
+
     TextArea TextTarget;
     @FXML
     TextArea TextExplain;
@@ -42,9 +45,11 @@ public class TranslateController implements Initializable {
     @FXML
     ImageView Viet;
 
+
     @FXML
     Label Vi;
     public void Swap(){
+
         Image Eng = new Image(getClass().getResource("image/16.jpg").toExternalForm());
         Image Vie = new Image(getClass().getResource("image/15.png").toExternalForm());
         cnt++;
@@ -84,6 +89,7 @@ public class TranslateController implements Initializable {
 
 
 
+
     }
     public void FindwithImage(){
         // Tạo một FileChooser
@@ -108,12 +114,15 @@ public class TranslateController implements Initializable {
             TextTarget.setText(LoginController.tranapi.imageToText(selectedFile.getAbsolutePath()));
         }
 
+
     }
     @Override
     public void initialize(URL url, ResourceBundle resourceBundle) {
         Swap();
+
         TextTarget.setWrapText(true);
         TextExplain.setWrapText(true);
+
 
 
     }
