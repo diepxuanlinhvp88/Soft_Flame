@@ -2,7 +2,7 @@ import requests
 import sys
 def imageToText(path):
 	api_url = 'https://api.api-ninjas.com/v1/imagetotext'
-	image_file_descriptor = open(r'D:\java_code\DSA\test.jpg', 'rb')
+	image_file_descriptor = open(path, 'rb')
 	files = {'image': image_file_descriptor}
 	header = {'X-Api-Key': 'tMLnXM+X9y8sDHxxFgZ51Q==AvB6keikrBbShmFg'}
 	r = requests.post(api_url,headers = header, files=files).json()
