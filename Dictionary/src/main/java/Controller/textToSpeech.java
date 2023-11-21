@@ -109,6 +109,11 @@ public class textToSpeech {
         }
 
     }
+    public static void  main(String args[]){
+        textToSpeech tmp = new textToSpeech();
+        tmp.Speak("hello", "en-us");
+
+    }
 
     public void terminate() throws EngineException, EngineStateError {
         synthesizer.deallocate();
