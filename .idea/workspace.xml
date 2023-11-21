@@ -4,14 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="73d70507-e844-4e96-a40e-319ceb06e4da" name="Changes" comment="fixed">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Dictionary/data/wordConttest.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Dictionary/data/wordh.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Dictionary/src/main/java/view/ContestController.java" beforeDir="false" afterPath="$PROJECT_DIR$/Dictionary/src/main/java/view/ContestController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Dictionary/src/main/java/view/LoginController.java" beforeDir="false" afterPath="$PROJECT_DIR$/Dictionary/src/main/java/view/LoginController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Dictionary/src/main/resources/view/contest.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/Dictionary/src/main/resources/view/contest.fxml" afterDir="false" />
-    </list>
+    <list default="true" id="73d70507-e844-4e96-a40e-319ceb06e4da" name="Changes" comment="fixed" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -140,6 +133,7 @@
       <workItem from="1700551525017" duration="2038000" />
       <workItem from="1700557115528" duration="2611000" />
       <workItem from="1700563777103" duration="15911000" />
+      <workItem from="1700595384644" duration="277000" />
     </task>
     <servers />
   </component>
