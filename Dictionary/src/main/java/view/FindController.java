@@ -1,11 +1,6 @@
 package view;
 
-import Controller.DictionaryManagement;
-import Controller.DatabaseManagement;
 
-
-import com.sun.speech.freetts.Voice;
-import com.sun.speech.freetts.VoiceManager;
 import javafx.beans.value.ChangeListener;
 import javafx.beans.value.ObservableValue;
 import javafx.collections.FXCollections;
@@ -20,15 +15,11 @@ import javafx.scene.text.Text;
 import javafx.scene.web.WebView;
 import javafx.scene.web.WebEngine;
 
-import com.sun.speech.freetts.VoiceManager;
-import com.sun.speech.freetts.VoiceManager;
-
 import javax.speech.AudioException;
 import javax.speech.EngineException;
 import java.beans.PropertyVetoException;
 import java.io.FileNotFoundException;
 import java.net.URL;
-import java.util.EventListener;
 import java.util.List;
 import java.util.ResourceBundle;
 

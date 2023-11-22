@@ -32,7 +32,7 @@ The ____________ of the experiment yielded unexpected results.	<>	Outcome, Twist
 The ____________ of the company's mission statement is to promote sustainability.	<>	Essence, Detail, Side effect, Exception	<>	Essence: Tính chất cơ bản hoặc mục tiêu chính của tuyên bố sứ mệnh của công ty.
 The ____________ of the movie was intensified by the gripping soundtrack.	<>	Tension, Relaxation, Excitement, Calmness	<>	Tension: Sự căng thẳng cảm xúc tạo ra bởi bộ phim, được nâng cao bởi âm nhạc hấp dẫn.
 The ____________ of the decision will impact the entire team.	<>	Ramification, Simplification, Elaboration, Clarification	<>	Ramification: Những ảnh hưởng phức tạp và có tác động xa rộng của quyết định đối với toàn bộ đội.
-The ____________ of the mountain offers breathtaking views of the valley.	<>	Summit, Slope, Plateau, Base	<>	Summit: Điểm cao nhất của núi, mang đến khung cảnh đẹp tuyệt vời của thung lũng.
+The ____________ of the mountain offers breathtaking view of the valley.	<>	Summit, Slope, Plateau, Base	<>	Summit: Điểm cao nhất của núi, mang đến khung cảnh đẹp tuyệt vời của thung lũng.
 The ____________ of the debate was a well-reasoned argument.	<>	Lowlight, Highlight, Twilight, Spotlight	<>	Lowlight: Phần ít thuận lợi hoặc hứng thú của cuộc tranh luận.
 The ____________ of the restaurant is its diverse menu.	<>	Appeal, Unappealing, Attraction, Repellent	<>	Appeal: Chất lượng hấp dẫn thu hút người đến nhà hàng.
 The ____________ of the negotiation led to a mutually beneficial agreement.	<>	Progress, Regression, Stagnation, Retreat	<>	Progress: Sự di chuyển về phía trước và sự phát triển tích cực đạt được thông qua đàm phán.

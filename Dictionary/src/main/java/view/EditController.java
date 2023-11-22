@@ -1,12 +1,11 @@
 package view;
-import Controller.DictionaryManagement;
-import Controller.DatabaseManagement;
 import javafx.beans.value.ChangeListener;
 import javafx.beans.value.ObservableValue;
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
+import javafx.scene.control.Label;
 import javafx.scene.control.ListView;
 import javafx.scene.control.TextField;
 
@@ -38,6 +37,8 @@ public class EditController implements Initializable {
     TextField meaningEdit;
     @FXML
     ListView listToEdit;
+    @FXML
+    Label addwordsuccess, removess,editss;
 
 
     /**
@@ -50,18 +51,32 @@ public class EditController implements Initializable {
             System.out.println("ss");
 
         };
+<<<<<<< HEAD
 //        LoginController.dic.reNewtxtFileFromDB();
+=======
+
+>>>>>>> c41102f264fc238b02ad5ef3b8332fc7c065de8e
         try {
             LoginController.dic.reLoadDictionaryFromFile("dfg");
         } catch (FileNotFoundException e) {
             throw new RuntimeException(e);
         }
+<<<<<<< HEAD
+=======
+        addwordsuccess.setText("Add Word success!");
+>>>>>>> c41102f264fc238b02ad5ef3b8332fc7c065de8e
 
 
     }
 
     public void Remove(){
         LoginController.data.removeWord(wordremove.getText(),"av");
+        try {
+            LoginController.dic.reLoadDictionaryFromFile("dfg");
+        } catch (FileNotFoundException e) {
+            throw new RuntimeException(e);
+        }
+        removess.setText("Remove success!");
     }
 
     /**
@@ -74,11 +89,11 @@ public class EditController implements Initializable {
             public void changed(ObservableValue<? extends String> observable, String oldValue, String newValue) {
                 List<String> stringList = LoginController.dic.wordListTarget(wordremove.getText());
                 ObservableList<String> observableList = FXCollections.observableList(stringList);
-
                 listToRemove.setItems(observableList);
 
             }
         });
+
 
 
 
@@ -89,9 +104,16 @@ public class EditController implements Initializable {
      */
     public void selectRemove(){
 
-//        wordremove.setText(listToRemove.getSelectionModel().getSelectedItems().toString().replace("[","").replace("]",""));
-//
+        wordremove.setText(listToRemove.getSelectionModel().getSelectedItems().toString().replace("[","").replace("]",""));
 
+
+    }
+    public void editw(){
+        LoginController.data.removeWord(targetEdit.getText(),"av");
+        LoginController.data.addWordtoDatabase("av",meaningEdit.getText(),
+                meaningEdit.getText(),meaningEdit.getText(),meaningEdit.getText());
+
+        editss.setText("Edit Word success!");
     }
 
     public void showListWordEdit(){
@@ -116,7 +138,7 @@ public class EditController implements Initializable {
      */
     public void selectEdit(){
 
-//        targetEdit.setText(listToEdit.getSelectionModel().getSelectedItems().toString().replace("[","").replace("]",""));
+        targetEdit.setText(listToEdit.getSelectionModel().getSelectedItems().toString().replace("[","").replace("]",""));
 
 
     }
@@ -125,6 +147,8 @@ public class EditController implements Initializable {
 
     @Override
     public void initialize(URL url, ResourceBundle resourceBundle) {
+        showListWordremove();
+        showListWordEdit();
 
     }
 }

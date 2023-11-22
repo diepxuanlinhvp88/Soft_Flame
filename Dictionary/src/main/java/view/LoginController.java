@@ -1,29 +1,22 @@
 package view;
 
-import Model.Word;
-import javafx.beans.property.ObjectProperty;
-import javafx.collections.FXCollections;
-import javafx.collections.ObservableList;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.fxml.Initializable;
 import javafx.scene.Node;
 import javafx.scene.control.*;
 import javafx.scene.layout.AnchorPane;
-import Controller.DictionaryManagement;
-import Controller.DatabaseManagement;
-import Controller.ParaTransWithAPI;
-import Controller.textToSpeech;
+import data.db.DictionaryManagement;
+import data.db.DatabaseManagement;
+import data.api.ParaTransWithAPI;
+import data.api.TextToSpeech;
 import javafx.scene.layout.Pane;
 import javafx.scene.media.Media;
 import javafx.scene.media.MediaPlayer;
 
 import java.io.*;
-import java.net.URISyntaxException;
 import java.net.URL;
 import java.nio.charset.StandardCharsets;
-import java.util.ArrayList;
-import java.util.Objects;
 import java.util.ResourceBundle;
 
 
@@ -40,7 +33,7 @@ public class LoginController implements Initializable {
 
     public static DatabaseManagement data = new DatabaseManagement();
     public static ParaTransWithAPI tranapi = new ParaTransWithAPI();
-    public static textToSpeech tts = new textToSpeech();
+    public static TextToSpeech tts = new TextToSpeech();
     public static MediaPlayer mediaPlayer;
     public static String songs ="music/1.mp3";
     @FXML
@@ -110,7 +103,7 @@ public class LoginController implements Initializable {
         Node node;
         if (checkAccount(acc.getText(), password.getText())) {
 
-            node = FXMLLoader.load(getClass().getResource("Controller.fxml"));
+            node = FXMLLoader.load(getClass().getResource("controller.fxml"));
             anchorPaneLogin.getChildren().setAll(node);
         } else er.setText("username or password is not correct");
 
