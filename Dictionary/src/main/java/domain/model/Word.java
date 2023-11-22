@@ -1,4 +1,4 @@
-package Model;
+package domain.model;
 
 public class Word {
     private final String wordTarget;

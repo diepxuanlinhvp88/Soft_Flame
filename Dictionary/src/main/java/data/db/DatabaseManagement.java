@@ -1,14 +1,14 @@
-package Controller;
+package data.db;
 
-import Model.DatabaseOfDict;
-import Model.Word;
+import domain.db.IDatabaseManagement;
+import domain.model.DatabaseOfDict;
 
 import java.io.BufferedWriter;
 import java.io.FileWriter;
 import java.io.IOException;
 
 
-public class DatabaseManagement {
+public class DatabaseManagement implements IDatabaseManagement {
     private String word;
     private static DatabaseOfDict conn = new DatabaseOfDict();
     public DatabaseManagement(){}

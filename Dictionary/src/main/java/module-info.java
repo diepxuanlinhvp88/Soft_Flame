@@ -8,6 +8,6 @@ module view {
     requires freetts;
     requires javafx.media;
 
-    opens view to javafx.fxml;
     exports view;
+    opens view to javafx.fxml;
 }

@@ -1,6 +1,4 @@
 package view;
-import Controller.DictionaryManagement;
-import Controller.DatabaseManagement;
 import javafx.beans.value.ChangeListener;
 import javafx.beans.value.ObservableValue;
 import javafx.collections.FXCollections;

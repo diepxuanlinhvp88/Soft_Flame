@@ -1,17 +1,16 @@
 
-package Controller;
+package data.db;
 
-import Model.DatabaseOfDict;
-import Model.Dictionary;
-import Model.Word;
+import domain.db.IDictionaryManagement;
+import domain.model.Dictionary;
+import domain.model.Word;
 
 import java.io.*;
 import java.nio.charset.StandardCharsets;
-import java.nio.file.WatchEvent;
 import java.util.ArrayList;
 import java.util.List;
 
-public class DictionaryManagement {
+public class DictionaryManagement implements IDictionaryManagement {
     private static final Dictionary dictionary = new Dictionary();
     private static final DatabaseManagement db = new DatabaseManagement();
     private static final Word word = new Word();
@@ -211,8 +210,5 @@ public class DictionaryManagement {
         DictionaryManagement tmp = new DictionaryManagement();
 
         System.out.println(tmp.reNewtxtFileFromDB());
-
-
-
     }
 }

@@ -6,20 +6,13 @@ import javafx.fxml.Initializable;
 import javafx.scene.Node;
 import javafx.scene.control.Button;
 import javafx.scene.control.Label;
-import javafx.scene.image.Image;
-import javafx.scene.image.ImageView;
 import javafx.scene.layout.AnchorPane;
-import javafx.scene.layout.GridPane;
 import javafx.scene.layout.Pane;
-import javafx.scene.paint.Color;
-import javafx.scene.text.Font;
 
 import java.io.*;
 import java.net.URL;
 import java.nio.charset.StandardCharsets;
 import java.util.*;
-
-import static java.awt.Color.red;
 
 public class ContestController implements Initializable {
 
@@ -172,7 +165,7 @@ public class ContestController implements Initializable {
     public void out() {
         Node node;
         try {
-            node = FXMLLoader.load(getClass().getResource("Controller.fxml"));
+            node = FXMLLoader.load(getClass().getResource("controller.fxml"));
         } catch (IOException e) {
             throw new RuntimeException(e);
         }

@@ -31,7 +31,7 @@ public class LearnEnglishController implements Initializable {
     }
     public void Menu() throws IOException {
         Node node;
-        node = FXMLLoader.load(getClass().getResource("Controller.fxml"));
+        node = FXMLLoader.load(getClass().getResource("controller.fxml"));
         anchorParentLearn.getChildren().setAll(node);
 
     }

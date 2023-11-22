@@ -1,11 +1,13 @@
-package Controller;
+package data.api;
+
+import domain.api.IParaTransWithAPI;
 
 import java.io.*;
 import java.net.HttpURLConnection;
 import java.net.URL;
 import java.net.URLEncoder;
 
-public class ParaTransWithAPI {
+public class ParaTransWithAPI implements IParaTransWithAPI {
 
     private class paragraph{
         private String text;

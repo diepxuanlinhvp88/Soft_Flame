@@ -1,7 +1,6 @@
-package Model;
+package domain.model;
 
 import java.util.ArrayList;
-import java.util.DuplicateFormatFlagsException;
 import java.util.List;
 
 /**

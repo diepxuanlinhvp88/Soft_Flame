@@ -1,4 +1,4 @@
-package Controller;
+package data.api;
 //
 //import javax.sound.sampled.AudioSystem;
 //import javax.sound.sampled.AudioInputStream;
@@ -62,6 +62,8 @@ package Controller;
 //
 //}
 
+import domain.api.ITextToSpeech;
+
 import javax.speech.AudioException;
 import javax.speech.Central;
 import javax.speech.EngineException;
@@ -72,7 +74,7 @@ import javax.speech.synthesis.Voice;
 import java.beans.PropertyVetoException;
 import java.util.Locale;
 
-public class textToSpeech {
+public class TextToSpeech implements ITextToSpeech {
 
 
     SynthesizerModeDesc desc;
@@ -121,7 +123,4 @@ public class textToSpeech {
         synthesizer.waitEngineState(Synthesizer.QUEUE_EMPTY);
 
     }
-
-
-
 }

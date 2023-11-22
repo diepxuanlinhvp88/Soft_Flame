@@ -5,7 +5,6 @@ import javafx.fxml.Initializable;
 import javafx.scene.control.Slider;
 import javafx.scene.image.ImageView;
 import javafx.scene.layout.Pane;
-import view.LoginController;
 
 import java.io.IOException;
 import java.net.URL;
