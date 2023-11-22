@@ -4,7 +4,6 @@ import Controller.DictionaryManagement;
 import Controller.DatabaseManagement;
 
 
-
 import com.sun.speech.freetts.Voice;
 import com.sun.speech.freetts.VoiceManager;
 import javafx.beans.value.ChangeListener;
@@ -57,7 +56,6 @@ public class FindController implements Initializable {
     Label Wrongsellect;
 
 
-
     public void showListWord() {
 
         FindA.textProperty().addListener(new ChangeListener<String>() {
@@ -69,8 +67,8 @@ public class FindController implements Initializable {
                 ListW.setItems(observableList);
                 if (stringList.size() == 0) {
                     worongtext.setText("Có phải từ bạn cần tìm là : ");
-                   Wrongsellect.setText(LoginController.dic.findWithWrong(FindA.getText()));
-                  // FindA.setText(LoginController.dic.findWithWrong(FindA.getText()));
+                    Wrongsellect.setText(LoginController.dic.findWithWrong(FindA.getText()));
+                    // FindA.setText(LoginController.dic.findWithWrong(FindA.getText()));
 
                 }
 
@@ -78,44 +76,9 @@ public class FindController implements Initializable {
 
         });
 
-    public void showListWord(){
-
-        FindA.textProperty().addListener(new ChangeListener<String>() {
-            @Override
-            public void changed(ObservableValue<? extends String> observable, String oldValue, String newValue) {
-                List<String> stringList = LoginController.dic.wordListTarget(FindA.getText());
-                ObservableList<String> observableList = FXCollections.observableList(stringList);
-
-                ListW.setItems(observableList);
-
-            }
-        });
-
 
 
     }
-
-
-
-
-        FindA.setText(ListW.getSelectionModel().getSelectedItems().toString().replace("[","").replace("]",""));
-        webEngine.loadContent(LoginController.dic.getHtml(FindA.getText()));
-       // LoginController.data.setWord(FindA.getText());
-
-
-    }
-
-    public void Find(){
-
-        if(FindA.getText() == "") {
-            text.setText("Bạn chưa nhập từ cần điền");
-            System.out.println("chua nhap tu ");
-        }
-        else {
-            FindA.setText(LoginController.dic.findWithWrong(FindA.getText()));
-            webEngine.loadContent(LoginController.dic.getHtml(FindA.getText()));
-           // LoginController.data.setWord(FindA.getText());
-        }
 
     public void sellect() {
 
@@ -128,7 +91,6 @@ public class FindController implements Initializable {
     }
 
     public void Find() {
-
 
         if (FindA.getText() == "") {
             text.setText("Bạn chưa nhập từ cần điền");
@@ -151,16 +113,9 @@ public class FindController implements Initializable {
 //
 //    }
 
-
-
-    }
-    public void voice(){
-        LoginController.tts.Speak(FindA.getText(),"en-us");
-
     public void sellectWordWrong() {
         FindA.setText(LoginController.dic.findWithWrong(Wrongsellect.getText()));
         webEngine.loadContent(LoginController.dic.getHtml(FindA.getText()));
-
     }
 
     public void voice() throws PropertyVetoException, AudioException, EngineException, InterruptedException {
@@ -173,6 +128,7 @@ public class FindController implements Initializable {
     public void initialize(URL url, ResourceBundle resourceBundle) {
 
         showListWord();
+
         webEngine = webView.getEngine();
         //webEngine.loadContent(LoginController.dic.find(FindA.getText()));
 
