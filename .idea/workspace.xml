@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="73d70507-e844-4e96-a40e-319ceb06e4da" name="Changes" comment="fixed">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Dictionary/data/EngtoV.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Dictionary/data/EngtoV.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Dictionary/data/dict_hh.db" beforeDir="false" afterPath="$PROJECT_DIR$/Dictionary/data/dict_hh.db" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Dictionary/data/infoEditWord.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Dictionary/data/infoEditWord.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Dictionary/src/main/java/data/db/DatabaseManagement.java" beforeDir="false" afterPath="$PROJECT_DIR$/Dictionary/src/main/java/data/db/DatabaseManagement.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Dictionary/src/main/java/data/db/DictionaryManagement.java" beforeDir="false" afterPath="$PROJECT_DIR$/Dictionary/src/main/java/data/db/DictionaryManagement.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Dictionary/src/main/java/domain/db/IDatabaseManagement.java" beforeDir="false" afterPath="$PROJECT_DIR$/Dictionary/src/main/java/domain/db/IDatabaseManagement.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Dictionary/src/main/java/domain/db/IDictionaryManagement.java" beforeDir="false" afterPath="$PROJECT_DIR$/Dictionary/src/main/java/domain/db/IDictionaryManagement.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Dictionary/src/main/java/domain/model/Dictionary.java" beforeDir="false" afterPath="$PROJECT_DIR$/Dictionary/src/main/java/domain/model/Dictionary.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Dictionary/src/main/java/domain/model/Word.java" beforeDir="false" afterPath="$PROJECT_DIR$/Dictionary/src/main/java/domain/model/Word.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Dictionary/src/main/java/view/EditController.java" beforeDir="false" afterPath="$PROJECT_DIR$/Dictionary/src/main/java/view/EditController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Dictionary/src/main/resources/view/Edit.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/Dictionary/src/main/resources/view/Edit.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Dictionary/src/main/resources/view/find.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/Dictionary/src/main/resources/view/find.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "git-widget-placeholder": "Merging main",
+    "ignore.preview.features.used": "true",
+    "last_opened_file_path": "D:/java_code/Data_Structure_and_Algorithms",
+    "list.type.of.created.stylesheet": "CSS",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "project.structure.last.edited": "Project",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.4597701",
+    "settings.editor.selected.configurable": "reference.settings.project.maven.repository.indices",
+    "vue.rearranger.settings.migration": "true"
+  }
+}]]></component>
+  <component name="Push.Settings">
+    <option name="SHOW_DETAILS_PANEL" value="false" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\UET\Soft_Flame\Dictionary\src\main\resources\view" />
+    </key>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="73d70507-e844-4e96-a40e-319ceb06e4da" name="Changes" comment="" />
+      <created>1698215249046</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1698215249046</updated>
+      <workItem from="1698215250459" duration="3207000" />
+      <workItem from="1698219133759" duration="1948000" />
+      <workItem from="1698301197101" duration="778000" />
+      <workItem from="1698314470059" duration="24000" />
+      <workItem from="1698389122084" duration="675000" />
+      <workItem from="1698391728677" duration="1289000" />
+      <workItem from="1698484795926" duration="4794000" />
+      <workItem from="1698585606368" duration="11108000" />
+      <workItem from="1698631472911" duration="1842000" />
+      <workItem from="1698639993396" duration="17447000" />
+      <workItem from="1698714215713" duration="1382000" />
+      <workItem from="1698736159689" duration="56000" />
+      <workItem from="1698762543567" duration="3602000" />
+      <workItem from="1698824086627" duration="1842000" />
+      <workItem from="1698854771484" duration="1974000" />
+      <workItem from="1698862632099" duration="3340000" />
+      <workItem from="1699177138834" duration="247000" />
+      <workItem from="1699334871031" duration="1000" />
+      <workItem from="1699334894907" duration="6376000" />
+      <workItem from="1699347625256" duration="9000" />
+      <workItem from="1699349295929" duration="2666000" />
+      <workItem from="1699351982789" duration="538000" />
+      <workItem from="1699372258516" duration="9064000" />
+      <workItem from="1699411525683" duration="14500000" />
+      <workItem from="1699586597018" duration="217000" />
+      <workItem from="1699596823498" duration="7906000" />
+      <workItem from="1699631381550" duration="8274000" />
+      <workItem from="1699674224782" duration="273000" />
+      <workItem from="1699675256301" duration="1227000" />
+      <workItem from="1699707599403" duration="10644000" />
+      <workItem from="1699727232809" duration="3290000" />
+      <workItem from="1700197880019" duration="1514000" />
+      <workItem from="1700314959650" duration="3342000" />
+      <workItem from="1700444611941" duration="20311000" />
+      <workItem from="1700495498678" duration="14405000" />
+      <workItem from="1700534521248" duration="2292000" />
+      <workItem from="1700551525017" duration="2038000" />
+      <workItem from="1700557115528" duration="2611000" />
+      <workItem from="1700563777103" duration="15911000" />
+      <workItem from="1699726134784" duration="13000" />
+      <workItem from="1699726169786" duration="678000" />
+      <workItem from="1700382610673" duration="4379000" />
+      <workItem from="1700410372269" duration="806000" />
+      <workItem from="1700596406718" duration="6423000" />
+      <workItem from="1700652810438" duration="24000" />
+      <workItem from="1700654551204" duration="10337000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="commit" />
+    <MESSAGE value="fixed" />
+    <option name="LAST_COMMIT_MESSAGE" value="fixed" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <breakpoint enabled="true" type="java-exception">
+          <properties class="java.util.UnknownFormatConversionException" package="java.util" />
+          <option name="timeStamp" value="1" />
+        </breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+</project>
