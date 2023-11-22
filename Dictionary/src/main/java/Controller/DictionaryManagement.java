@@ -1,3 +1,4 @@
+
 package Controller;
 
 import Model.DatabaseOfDict;
@@ -156,7 +157,7 @@ public class DictionaryManagement {
 //                    System.out.println(words.length);
 //                }
                 if (words.length >= 4) {
-                    Word word = new Word(words[1], words[3]);
+                    Word word = new Word(words[1], words[3],words[2]);
                     if (dictionary.find(words[1]) == null)
                         dictionary.add(word);
                 }
@@ -169,7 +170,9 @@ public class DictionaryManagement {
     }
 
     public String addedWords() {
+
         String fileName = ".\\/Dictionary/data/infoEditWord.txt";
+
         List<String> tmp = new ArrayList<>();
         try (BufferedReader reader = new BufferedReader(new FileReader(fileName))) {
 
@@ -206,7 +209,9 @@ public class DictionaryManagement {
 
     public static void main(String[] args) throws FileNotFoundException {
         DictionaryManagement tmp = new DictionaryManagement();
-        System.out.println(tmp.find("zonal"));
+
+        System.out.println(tmp.reNewtxtFileFromDB());
+
 
 
     }

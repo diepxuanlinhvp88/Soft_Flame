@@ -42,6 +42,22 @@ public class LearnEnglishController implements Initializable {
 
     }
 
+    /**
+     * anh them cái Fmxl game vào đi nhé em set action rồi đó, em tạo 1 anchorpane chứa 2 anchor pane nhỏ, 1 cái chứa các button, 1 cái chứa nội dung kích thước là 720 x 405.
+     * @throws IOException
+     */
+    public void Game() throws IOException{
+        Node node;
+        node = FXMLLoader.load(getClass().getResource("v.fxml"));
+        anchorPaneChild.getChildren().setAll(node);
+
+
+    }
+    public void Exit() throws IOException{
+        System.exit(0);
+
+    }
+
     @Override
     public void initialize(URL url, ResourceBundle resourceBundle) {
         try {
@@ -49,20 +65,18 @@ public class LearnEnglishController implements Initializable {
         } catch (IOException e) {
             throw new RuntimeException(e);
         }
-
 //        try {
 //            Findcontroller();
 //        } catch (IOException e) {
 //            throw new RuntimeException(e);
 //        }
-
-        Node node;
-        try {
-            node = FXMLLoader.load(getClass().getResource("find.fxml"));
-        } catch (IOException e) {
-            throw new RuntimeException(e);
-        }
-        anchorPaneChild.getChildren().setAll(node);
+//        Node node;
+//        try {
+//            node = FXMLLoader.load(getClass().getResource("find.fxml"));
+//        } catch (IOException e) {
+//            throw new RuntimeException(e);
+//        }
+//        anchorPaneChild.getChildren().setAll(node);
 
     }
 
