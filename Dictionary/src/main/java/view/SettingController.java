@@ -60,7 +60,7 @@ public class SettingController implements Initializable {
         volumeSlider.setShowTickMarks(true);
 
         volumeSlider.valueProperty().addListener((observable, oldValue, newValue) -> {
-           LoginController.mediaPlayer.setVolume(newValue.doubleValue());
+            LoginController.mediaPlayer.setVolume(newValue.doubleValue());
         });
 
     }

@@ -5,9 +5,25 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="73d70507-e844-4e96-a40e-319ceb06e4da" name="Changes" comment="fixed">
-      <change afterPath="$PROJECT_DIR$/Dictionary/data/New Text Document.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Dictionary/data/LearnVocab.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Dictionary/data/LearnVocab.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Dictionary/callAPIOCR.py" beforeDir="false" afterPath="$PROJECT_DIR$/Dictionary/callAPIOCR.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Dictionary/data/EngtoV.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Dictionary/data/EngtoV.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Dictionary/data/dict_hh.db" beforeDir="false" afterPath="$PROJECT_DIR$/Dictionary/data/dict_hh.db" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Dictionary/data/infoEditWord.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Dictionary/data/infoEditWord.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Dictionary/export_data.py" beforeDir="false" afterPath="$PROJECT_DIR$/Dictionary/export_data.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Dictionary/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Dictionary/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Dictionary/src/main/java/Controller/DatabaseManagement.java" beforeDir="false" afterPath="$PROJECT_DIR$/Dictionary/src/main/java/Controller/DatabaseManagement.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Dictionary/src/main/java/Controller/DictionaryManagement.java" beforeDir="false" afterPath="$PROJECT_DIR$/Dictionary/src/main/java/Controller/DictionaryManagement.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Dictionary/src/main/java/Controller/ParaTransWithAPI.java" beforeDir="false" afterPath="$PROJECT_DIR$/Dictionary/src/main/java/Controller/ParaTransWithAPI.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Dictionary/src/main/java/Controller/textToSpeech.java" beforeDir="false" afterPath="$PROJECT_DIR$/Dictionary/src/main/java/Controller/textToSpeech.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Dictionary/src/main/java/Model/DatabaseOfDict.java" beforeDir="false" afterPath="$PROJECT_DIR$/Dictionary/src/main/java/Model/DatabaseOfDict.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Dictionary/src/main/java/view/SettingController.java" beforeDir="false" afterPath="$PROJECT_DIR$/Dictionary/src/main/java/view/SettingController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Dictionary/src/main/java/view/TranslateController.java" beforeDir="false" afterPath="$PROJECT_DIR$/Dictionary/src/main/java/view/TranslateController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Dictionary/src/main/resources/view/Edit.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/Dictionary/src/main/resources/view/Edit.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Dictionary/src/main/resources/view/SignUp.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/Dictionary/src/main/resources/view/SignUp.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Dictionary/src/main/resources/view/Translate.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/Dictionary/src/main/resources/view/Translate.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Dictionary/src/main/resources/view/find.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/Dictionary/src/main/resources/view/find.fxml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -21,6 +37,7 @@
         <option value="CSS File" />
         <option value="FxmlFile" />
         <option value="Class" />
+        <option value="FxmlFile" />
       </list>
     </option>
   </component>
@@ -65,10 +82,9 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
-    "git-widget-placeholder": "Cherry-picking in culinh",
+    "git-widget-placeholder": "Merging culinh",
     "ignore.preview.features.used": "true",
-    "ignore.virus.scanning.warn.message": "true",
-    "last_opened_file_path": "D:/java_code/DSA",
+    "last_opened_file_path": "D:/java_code/Data_Structure_and_Algorithms",
     "list.type.of.created.stylesheet": "CSS",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
@@ -137,6 +153,10 @@
       <workItem from="1700551525017" duration="2038000" />
       <workItem from="1700557115528" duration="2611000" />
       <workItem from="1700563777103" duration="15911000" />
+      <workItem from="1699726134784" duration="13000" />
+      <workItem from="1699726169786" duration="678000" />
+      <workItem from="1700382610673" duration="4379000" />
+      <workItem from="1700410372269" duration="806000" />
     </task>
     <servers />
   </component>
@@ -147,15 +167,5 @@
     <MESSAGE value="commit" />
     <MESSAGE value="fixed" />
     <option name="LAST_COMMIT_MESSAGE" value="fixed" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <breakpoint enabled="true" type="java-exception">
-          <properties class="java.util.UnknownFormatConversionException" package="java.util" />
-          <option name="timeStamp" value="1" />
-        </breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
   </component>
 </project>

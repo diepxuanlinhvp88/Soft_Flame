@@ -170,7 +170,9 @@ public class DictionaryManagement {
     }
 
     public String addedWords() {
-        String fileName = "D:\\UET\\hk3\\oop\\Soft_Flame\\Dictionary\\data\\infoEditWord.txt";
+
+        String fileName = ".\\/Dictionary/data/infoEditWord.txt";
+
         List<String> tmp = new ArrayList<>();
         try (BufferedReader reader = new BufferedReader(new FileReader(fileName))) {
 
@@ -207,7 +209,9 @@ public class DictionaryManagement {
 
     public static void main(String[] args) throws FileNotFoundException {
         DictionaryManagement tmp = new DictionaryManagement();
+
         System.out.println(tmp.reNewtxtFileFromDB());
+
 
 
     }

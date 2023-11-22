@@ -48,26 +48,26 @@ public class TranslateController implements Initializable {
         Image Eng = new Image(getClass().getResource("image/16.jpg").toExternalForm());
         Image Vie = new Image(getClass().getResource("image/15.png").toExternalForm());
         cnt++;
-      if(cnt % 2 == 0) {
-          En.setText("en");
-          Vi.setText("vi");
+        if(cnt % 2 == 0) {
+            En.setText("en");
+            Vi.setText("vi");
 //          Anh.setImage(new Image(getClass().getResource("view/image/16.jpg").toExternalForm()));
 //          Viet.setImage(new Image(getClass().getResource("view/image/15.png").toExternalForm()));
-          Anh.setImage(Eng);
-          Viet.setImage(Vie);
-          System.out.println("anhviet");
+            Anh.setImage(Eng);
+            Viet.setImage(Vie);
+            System.out.println("anhviet");
 
 
-      }
-      else {
-          En.setText("vi");
-          Vi.setText("en");
+        }
+        else {
+            En.setText("vi");
+            Vi.setText("en");
 //          Anh.setImage(new Image(getClass().getResource("/view/image/15.png").toExternalForm()));
 //          Viet.setImage(new Image(getClass().getResource("/view/image/16.jpg").toExternalForm()));
-          Anh.setImage(Vie);
-          Viet.setImage(Eng);
-          System.out.println("vietanh");
-      }
+            Anh.setImage(Vie);
+            Viet.setImage(Eng);
+            System.out.println("vietanh");
+        }
 //        TextTarget.textProperty().addListener(new ChangeListener<String>() {
 //
 //
