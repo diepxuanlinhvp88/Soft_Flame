@@ -7,6 +7,7 @@ module view {
     requires java.desktop;
     requires freetts;
     requires javafx.media;
+    requires org.kordamp.bootstrapfx.core;
 
     exports view;
     opens view to javafx.fxml;
