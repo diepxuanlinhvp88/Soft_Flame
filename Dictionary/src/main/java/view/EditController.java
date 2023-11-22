@@ -46,31 +46,20 @@ public class EditController implements Initializable {
      */
     public void Add(){
 
-        if(LoginController.data.addWordtoDatabase("av",target.getText(),
-                meaning.getText(),pronpunce.getText(),html.getText())){
-            System.out.println("ss");
+        LoginController.data.addWordtoDatabase("av",target.getText(),
+                meaning.getText(),pronpunce.getText(),html.getText(),true);
 
-        };
-<<<<<<< HEAD
 //        LoginController.dic.reNewtxtFileFromDB();
-=======
 
->>>>>>> c41102f264fc238b02ad5ef3b8332fc7c065de8e
-        try {
-            LoginController.dic.reLoadDictionaryFromFile("dfg");
-        } catch (FileNotFoundException e) {
-            throw new RuntimeException(e);
-        }
-<<<<<<< HEAD
-=======
+
         addwordsuccess.setText("Add Word success!");
->>>>>>> c41102f264fc238b02ad5ef3b8332fc7c065de8e
 
 
     }
 
-    public void Remove(){
+    public void Remove() throws FileNotFoundException {
         LoginController.data.removeWord(wordremove.getText(),"av");
+        LoginController.dic.remove(wordremove.getText());
         try {
             LoginController.dic.reLoadDictionaryFromFile("dfg");
         } catch (FileNotFoundException e) {
@@ -108,11 +97,11 @@ public class EditController implements Initializable {
 
 
     }
-    public void editw(){
+    public void editw() throws FileNotFoundException {
         LoginController.data.removeWord(targetEdit.getText(),"av");
-        LoginController.data.addWordtoDatabase("av",meaningEdit.getText(),
-                meaningEdit.getText(),meaningEdit.getText(),meaningEdit.getText());
-
+        LoginController.data.addWordtoDatabase("av",targetEdit.getText(),
+                meaningEdit.getText(),"","",false);
+        LoginController.dic.update(targetEdit.getText(),meaningEdit.getText());
         editss.setText("Edit Word success!");
     }
 

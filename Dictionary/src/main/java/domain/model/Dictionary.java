@@ -136,6 +136,10 @@ public class Dictionary {
         return tmp;
     }
 
+    public Word getWordFromtree(String target){
+        return find(target).getWord();
+    }
+
     /**
      * Update the Word.
      * @param oldWord old.

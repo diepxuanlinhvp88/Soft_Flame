@@ -51,8 +51,7 @@
                 </TitledPane>
                 <TitledPane animated="false" styleClass="title-pane" stylesheets="@graphic.css" text="Remove" textFill="#c60f0f">
                     <content>
-                        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="720.0" styleClass="title-pane" stylesheets="@graphic.css">
-                            <style>-fx-background-image: image/1.png;</style>
+                        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="720.0" style="-fx-background-image: image/1.png;" styleClass="title-pane" stylesheets="@graphic.css">
                             <children>
                                 <ImageView fitHeight="405.0" fitWidth="720.0" pickOnBounds="true" preserveRatio="true">
                                     <image>
@@ -60,7 +59,7 @@
                                     </image>
                                 </ImageView>
                                 <TextField fx:id="wordremove" layoutX="152.0" layoutY="39.0" maxWidth="206.0" prefHeight="50.0" prefWidth="206.0" promptText="Nhập từ cần xóa" styleClass="text-field1" />
-                                <ListView fx:id="listToRemove" layoutX="151.0" layoutY="98.0" prefHeight="200.0" prefWidth="209.0" />
+                                <ListView fx:id="listToRemove" layoutX="151.0" layoutY="98.0" onMouseClicked="#selectRemove" prefHeight="200.0" prefWidth="209.0" />
                                 <Button layoutX="405.0" layoutY="39.0" mnemonicParsing="false" onAction="#Remove" prefHeight="79.0" prefWidth="82.0" style="-fx-background-color: #ffffff; -fx-background-radius: 10;">
                                     <graphic>
                                         <ImageView fitHeight="67.0" fitWidth="65.0" rotate="40.2" styleClass="button-confirm">
@@ -91,9 +90,9 @@
                                         <Image url="@image/Soft/8.png" />
                                     </image>
                                 </ImageView>
-                                <ListView fx:id="listToEdit" layoutX="111.0" layoutY="108.0" prefHeight="200.0" prefWidth="200.0" />
+                                <ListView fx:id="listToEdit" layoutX="111.0" layoutY="108.0" onMouseClicked="#selectEdit" prefHeight="200.0" prefWidth="200.0" />
                                 <TextField fx:id="targetEdit" layoutX="111.0" layoutY="38.0" prefHeight="41.0" prefWidth="201.0" promptText="Nhập từ cần sửa " styleClass="text-field1" />
-                                <TextField fx:id="meaningEdit" layoutX="401.0" layoutY="38.0" prefHeight="41.0" prefWidth="201.0" promptText="Từ mới" styleClass="text-field1" />
+                                <TextField fx:id="meaningEdit" layoutX="401.0" layoutY="38.0" prefHeight="41.0" prefWidth="201.0" promptText="Nghĩa" styleClass="text-field1" />
                                 <Button layoutX="462.0" layoutY="131.0" mnemonicParsing="false" onAction="#editw" styleClass="button-confirm" text="OK!" />
                                 <Label fx:id="editss" layoutX="111.0" layoutY="14.0" prefHeight="17.0" prefWidth="437.0" textFill="WHITE">
                                     <font>

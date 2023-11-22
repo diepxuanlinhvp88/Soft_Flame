@@ -25,8 +25,9 @@ public class DictionaryManagement implements IDictionaryManagement {
         try {
             while ((line = bufferedReader.readLine()) != null) {
                 words = line.split("<token>");
-                if (words.length >= 4) {
-                    Word word = new Word(words[1], words[3], words[2]);
+                if (words.length == 5) {
+                    long id = Long.parseLong(words[0]);
+                    Word word = new Word(id,words[1], words[3], words[4],words[2]);
                     if (dictionary.find(words[1]) == null)
                         dictionary.add(word);
                 }
@@ -121,14 +122,65 @@ public class DictionaryManagement implements IDictionaryManagement {
 
     public void add(Word word) {
         dictionary.add(word);
+        String data = String.valueOf(word.getWordId())+"<token>"+word.getWordTarget()+"<token>"
+                +word.getHtml()+"<token>"+word.getWordExplain()+"<token>"+word.getPronounce()+"\n";
+        try (BufferedWriter writer = new BufferedWriter(new FileWriter(".\\/Dictionary/data/EngtoV.txt", true))) {
+            writer.write(data);
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+    }
+    private List<String> getList() throws FileNotFoundException {
+        FileInputStream fileInputStream = new FileInputStream(".\\/Dictionary/data/EngtoV.txt");
+        InputStreamReader inputStreamReader = new InputStreamReader(fileInputStream
+                , StandardCharsets.UTF_8);
+        BufferedReader bufferedReader = new BufferedReader(inputStreamReader);
+        String line;
+        List<String> words = new ArrayList<>();
+        try {
+            while ((line = bufferedReader.readLine()) != null) {
+                words.add(line);
+            }
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+        return words;
     }
 
-    public Word remove(String target) {
-        return dictionary.erase_from_tree(target);
+    public void remove(String target) throws FileNotFoundException {
+        dictionary.erase_from_tree(target);
+        List<String> tmp = getList();
+        for(int i = 0; i < tmp.size(); i++){
+            String[] word = tmp.get(i).split("<token>");
+            if(word.length>=2){
+                if(word[1].equals(target)){
+                    tmp.remove(i);
+                    break;
+                }
+            }
+            }
+        reloadDicWhenExit(tmp);
     }
 
-    public boolean update(Word oldWord, Word newWord) {
-        return dictionary.update(oldWord, newWord);
+
+    public void update(String oldWord, String newWord) throws FileNotFoundException {
+        Word tmp = dictionary.getWordFromtree(oldWord);
+        String html = String.format("<h1>%s</h1><h3><i>//</i></h3><ul><li>%s</li></ul>",oldWord,newWord);
+        Word tmp2 = new Word(tmp.getWordId(),tmp.getWordTarget(),newWord,tmp.getPronounce(),html);
+        remove(oldWord);
+        add(tmp2);
+    }
+
+    public boolean reloadDicWhenExit(List<String> tmp){
+        try (BufferedWriter writer = new BufferedWriter(new FileWriter(".\\/Dictionary/data/EngtoV.txt"))) {
+            for(String i: tmp) {
+                writer.write(i + "\n");
+            }
+            return true;
+        } catch (IOException e) {
+            e.printStackTrace();
+            return false;
+        }
     }
 
     /**
@@ -196,7 +248,6 @@ public class DictionaryManagement implements IDictionaryManagement {
     public boolean reNewtxtFileFromDB() {
 
         String tmp = addedWords();
-        System.out.println(tmp);
         try (BufferedWriter writer = new BufferedWriter(new FileWriter(".\\/Dictionary/data/EngtoV.txt", true))) {
             writer.write(tmp);
             return true;
@@ -209,12 +260,8 @@ public class DictionaryManagement implements IDictionaryManagement {
 
     public static void main(String[] args) throws FileNotFoundException {
         DictionaryManagement tmp = new DictionaryManagement();
-<<<<<<< HEAD:Dictionary/src/main/java/Controller/DictionaryManagement.java
-        System.out.println(tmp.reNewtxtFileFromDB());
-
-=======
->>>>>>> c41102f264fc238b02ad5ef3b8332fc7c065de8e:Dictionary/src/main/java/data/db/DictionaryManagement.java
-
-        System.out.println(tmp.reNewtxtFileFromDB());
+        tmp.update("hello","hey bro");
+//        tmp.reloadDicWhenExit();
+        System.out.println(tmp.find("hello"));
     }
 }

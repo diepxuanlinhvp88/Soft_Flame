@@ -50,29 +50,24 @@ public class DatabaseManagement implements IDatabaseManagement {
         return conn.getInfoWord(querry);
     }
 
-    public boolean addWordtoDatabase(String language,String wordTarget, String meaning, String pronpunce, String html){
-        if(pronpunce.isEmpty()){
-            pronpunce = " ";
-        }
-        if(html.isEmpty()){
-<<<<<<< HEAD:Dictionary/src/main/java/Controller/DatabaseManagement.java
-            html = String.format("<h1>%s</h1><h3><i>//</i></h3><ul><li>%s</li></ul>",wordTarget, meaning);
-=======
+    public void addWordtoDatabase(String language,String wordTarget, String meaning, String pronpunce, String html,boolean reload) {
+            if (pronpunce.isEmpty()) {
+                pronpunce = " ";
+            }
+            if (html.isEmpty()) {
+                html = String.format("<h1>%s</h1><h3><i>//</i></h3><ul><li>%s</li></ul>", wordTarget, meaning);
+            }
+            boolean tmp = conn.addWord(language, wordTarget, meaning, pronpunce, html);
+            long id = DatabaseOfDict.getMaxId();
+            if(reload) {
+                try (BufferedWriter writer = new BufferedWriter(new FileWriter(".\\/Dictionary/data/infoEditWord.txt"))) {
+                    writer.write(String.valueOf(id) + "\n");
+                    System.out.println("Ghi vào file thành công!");
+                } catch (IOException e) {
+                    e.printStackTrace();
+                }
+            }
 
-            html = String.format("<h1>%s</h1><h3><i>//</i></h3><ul><li>%s</li></ul>",wordTarget,meaning);
-
->>>>>>> c41102f264fc238b02ad5ef3b8332fc7c065de8e:Dictionary/src/main/java/data/db/DatabaseManagement.java
-        }
-        boolean tmp = conn.addWord(language,wordTarget,meaning,pronpunce,html);
-        long id = DatabaseOfDict.getMaxId();
-        try (BufferedWriter writer = new BufferedWriter(new FileWriter(".\\/Dictionary/data/infoEditWord.txt"))) {
-            writer.write(String.valueOf(id)+"\n");
-            System.out.println("Ghi vào file thành công!");
-            return tmp;
-        } catch (IOException e) {
-            e.printStackTrace();
-            return false;
-        }
 
     }
     public void removeWord(String word, String language){
@@ -85,6 +80,5 @@ public class DatabaseManagement implements IDatabaseManagement {
     public static  void main(String[] args){
 
         DatabaseManagement tmp = new DatabaseManagement("asdf");
-        System.out.println(tmp.connectAndQuerry("av"));
     }
 }

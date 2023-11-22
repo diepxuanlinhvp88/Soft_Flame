@@ -5,7 +5,7 @@ public interface IDatabaseManagement {
     public String connectAndQuerry(String language);
     public String connectAndQuerry(String language,String word);
     public String connectAndQuerry(String language,long id);
-    public boolean addWordtoDatabase(String language,String wordTarget, String meaning, String pronpunce, String html);
+    public void addWordtoDatabase(String language,String wordTarget, String meaning, String pronpunce, String html,boolean reload);
     public void removeWord(String word, String language);
     public void bookMark(String word);
 }

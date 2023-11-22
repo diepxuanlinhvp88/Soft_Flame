@@ -13,8 +13,8 @@ public interface IDictionaryManagement {
     public String findWithWrong(String target);
     public List<String> wordListTarget(String target);
     public void add(Word word);
-    public Word remove(String target);
-    public boolean update(Word oldWord, Word newWord);
+    public void remove(String target) throws FileNotFoundException;
+    public void update(String oldWord, String newWord) throws FileNotFoundException;
     public boolean reLoadDictionaryFromFile(String filePath) throws FileNotFoundException;
     public String addedWords();
     public boolean reNewtxtFileFromDB();
