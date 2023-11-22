@@ -43,7 +43,7 @@ public class DatabaseOfDict {
             Statement stmt = conn.createStatement();
             ResultSet rs = stmt.executeQuery("select max(id) from av");
             if (rs.next()) {
-                lastID = rs.getInt(1);
+                lastID = rs.getLong(1);
             }
             conn.close();
         } catch (Exception ex) {

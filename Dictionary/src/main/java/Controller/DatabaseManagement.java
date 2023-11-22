@@ -55,7 +55,7 @@ public class DatabaseManagement {
             pronpunce = " ";
         }
         if(html.isEmpty()){
-            html = " ";
+            html = String.format("<h1>%s</h1><h3><i>//</i></h3><ul><li>%s</li></ul>",wordTarget, meaning);
         }
         boolean tmp = conn.addWord(language,wordTarget,meaning,pronpunce,html);
         long id = DatabaseOfDict.getMaxId();

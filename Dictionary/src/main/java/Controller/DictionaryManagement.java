@@ -156,7 +156,7 @@ public class DictionaryManagement {
 //                    System.out.println(words.length);
 //                }
                 if (words.length >= 4) {
-                    Word word = new Word(words[1], words[3]);
+                    Word word = new Word(words[1], words[3],words[2]);
                     if (dictionary.find(words[1]) == null)
                         dictionary.add(word);
                 }
@@ -194,6 +194,7 @@ public class DictionaryManagement {
     public boolean reNewtxtFileFromDB() {
 
         String tmp = addedWords();
+        System.out.println(tmp);
         try (BufferedWriter writer = new BufferedWriter(new FileWriter(".\\/Dictionary/data/EngtoV.txt", true))) {
             writer.write(tmp);
             return true;
@@ -206,7 +207,7 @@ public class DictionaryManagement {
 
     public static void main(String[] args) throws FileNotFoundException {
         DictionaryManagement tmp = new DictionaryManagement();
-        System.out.println(tmp.find("zonal"));
+        System.out.println(tmp.reNewtxtFileFromDB());
 
 
     }

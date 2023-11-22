@@ -50,8 +50,12 @@ public class EditController implements Initializable {
             System.out.println("ss");
 
         };
-
-
+//        LoginController.dic.reNewtxtFileFromDB();
+        try {
+            LoginController.dic.reLoadDictionaryFromFile("dfg");
+        } catch (FileNotFoundException e) {
+            throw new RuntimeException(e);
+        }
 
 
     }
