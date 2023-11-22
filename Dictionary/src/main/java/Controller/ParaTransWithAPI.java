@@ -97,10 +97,6 @@ public class ParaTransWithAPI {
             return "cannot resolve python file";
         }
     }
-    public static  void main(String[] args){
-        ParaTransWithAPI tmp = new ParaTransWithAPI();
-        System.out.println(tmp.lookUp(tmp.imageToText("D:/UET/Soft_Flame/Dictionary/testImageToText.jpg"),"vi","en"));
-        //System.out.println(tmp.imageToText("D:/UET/Soft_Flame/Dictionary/testImageToText.png"));
-    }
+
 
 }
