@@ -17,8 +17,8 @@ import java.util.ArrayList;
 import java.util.Objects;
 import java.util.Random;
 
-import static com.example.javafxwordle.MainApplication.dictionaryWords;
-import static com.example.javafxwordle.MainApplication.winningWords;
+import static com.example.javafxwordle.WordleApplication.dictionaryWords;
+import static com.example.javafxwordle.WordleApplication.winningWords;
 
 public class MainHelper {
 
@@ -281,14 +281,14 @@ public class MainHelper {
                 CURRENT_ROW++;
                 CURRENT_COLUMN = 1;
             } else {
-                MainApplication.showToast();
+                WordleApplication.showToast();
             }
             if (ScoreWindow.resetGame.get()) {
                 resetGame(gridPane, keyboardRow1, keyboardRow2, keyboardRow3);
                 ScoreWindow.resetGame.set(false);
             }
             if (ScoreWindow.quitApplication.get())
-                MainApplication.quit();
+                WordleApplication.quit();
         }
     }
 

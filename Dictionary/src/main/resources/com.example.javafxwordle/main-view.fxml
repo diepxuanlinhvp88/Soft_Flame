@@ -9,7 +9,7 @@
 <BorderPane xmlns:fx="http://javafx.com/fxml/1" maxHeight="Infinity" maxWidth="Infinity" prefHeight="715"
             prefWidth="500"
             styleClass="main-screen" xmlns="http://javafx.com/javafx/11"
-            fx:controller="com.example.javafxwordle.MainController">
+            fx:controller="com.example.javafxwordle.WordleController">
 
     <stylesheets>
         <URL value="@wordle.css"/>
@@ -22,12 +22,6 @@
                 <padding>
                     <Insets left="30" bottom="8" />
                 </padding>
-                <Pane>
-                    <padding>
-                        <Insets right="7" />
-                    </padding>
-                    <ImageView fx:id="githubIcon" fitHeight="32" fitWidth="32" />
-                </Pane>
                 <Pane>
                     <ImageView fx:id="helpIcon" fitHeight="32" fitWidth="32" onMouseClicked="#showHelp" />
                 </Pane>
