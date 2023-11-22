@@ -67,8 +67,8 @@ public class FindController implements Initializable {
                 ListW.setItems(observableList);
                 if (stringList.size() == 0) {
                     worongtext.setText("Có phải từ bạn cần tìm là : ");
-                   Wrongsellect.setText(LoginController.dic.findWithWrong(FindA.getText()));
-                  // FindA.setText(LoginController.dic.findWithWrong(FindA.getText()));
+                    Wrongsellect.setText(LoginController.dic.findWithWrong(FindA.getText()));
+                    // FindA.setText(LoginController.dic.findWithWrong(FindA.getText()));
 
                 }
 

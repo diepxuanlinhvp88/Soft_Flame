@@ -54,7 +54,7 @@ public class LearnEnglishController implements Initializable {
 
     }
     public void Exit() throws IOException{
-       System.exit(0);
+        System.exit(0);
 
     }
 
