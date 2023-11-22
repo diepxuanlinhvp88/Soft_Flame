@@ -4,11 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="73d70507-e844-4e96-a40e-319ceb06e4da" name="Changes" comment="fixed">
-      <change beforePath="$PROJECT_DIR$/Dictionary/data/EngtoV.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Dictionary/data/EngtoV.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Dictionary/data/dict_hh.db" beforeDir="false" afterPath="$PROJECT_DIR$/Dictionary/data/dict_hh.db" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Dictionary/data/infoEditWord.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Dictionary/data/infoEditWord.txt" afterDir="false" />
-    </list>
+    <list default="true" id="73d70507-e844-4e96-a40e-319ceb06e4da" name="Changes" comment="fixed" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -139,7 +135,7 @@
       <workItem from="1700563777103" duration="15911000" />
       <workItem from="1700595384644" duration="277000" />
       <workItem from="1700625144298" duration="11180000" />
-      <workItem from="1700641078876" duration="315000" />
+      <workItem from="1700641078876" duration="1667000" />
     </task>
     <servers />
   </component>
