@@ -9,7 +9,7 @@ import java.sql.Statement;
 
 public class DatabaseOfDict {
 
-    private static String DB_URL = "jdbc:sqlite:.\\/Dictionary/data/dict_hh.db";
+    private static String DB_URL = "jdbc:sqlite:.\\/data/dict_hh.db";
 
 
 

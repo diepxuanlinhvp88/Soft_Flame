@@ -63,7 +63,7 @@ public class LoginController implements Initializable {
 
         try {
 
-            BufferedWriter writer = new BufferedWriter(new FileWriter(".\\/Dictionary/data/account.txt", true));
+            BufferedWriter writer = new BufferedWriter(new FileWriter(".\\/data/account.txt", true));
             writer.write(username + "," + pass + System.lineSeparator());
             writer.close();
         } catch (FileNotFoundException e) {
@@ -76,7 +76,7 @@ public class LoginController implements Initializable {
     }
 
     public boolean checkAccount(String username, String pass) throws IOException {
-        FileInputStream fileInputStream = new FileInputStream(".\\/Dictionary/data/account.txt");
+        FileInputStream fileInputStream = new FileInputStream(".\\/data/account.txt");
         InputStreamReader inputStreamReader = new InputStreamReader(fileInputStream
                 , StandardCharsets.UTF_8);
         BufferedReader bufferedReader = new BufferedReader(inputStreamReader);

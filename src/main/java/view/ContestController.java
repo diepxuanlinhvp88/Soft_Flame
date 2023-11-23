@@ -30,7 +30,7 @@ public class ContestController implements Initializable {
 
 
     public List<String> Listquestion() throws FileNotFoundException {
-        FileInputStream fileInputStream = new FileInputStream(".\\/Dictionary/data/question.txt");
+        FileInputStream fileInputStream = new FileInputStream(".\\/data/question.txt");
         InputStreamReader inputStreamReader = new InputStreamReader(fileInputStream
                 , StandardCharsets.UTF_8);
         BufferedReader bufferedReader = new BufferedReader(inputStreamReader);
@@ -54,7 +54,7 @@ public class ContestController implements Initializable {
     public String answer(String question) {
         FileInputStream fileInputStream = null;
         try {
-            fileInputStream = new FileInputStream(".\\/Dictionary/data/question.txt");
+            fileInputStream = new FileInputStream(".\\/data/question.txt");
         } catch (FileNotFoundException e) {
             throw new RuntimeException(e);
         }
@@ -95,7 +95,7 @@ public class ContestController implements Initializable {
     }
 
     public String explainQuestion(String question) throws IOException {
-        FileInputStream fileInputStream = new FileInputStream(".\\/Dictionary/data/question.txt");
+        FileInputStream fileInputStream = new FileInputStream(".\\/data/question.txt");
         InputStreamReader inputStreamReader = new InputStreamReader(fileInputStream
                 , StandardCharsets.UTF_8);
         BufferedReader bufferedReader = new BufferedReader(inputStreamReader);
