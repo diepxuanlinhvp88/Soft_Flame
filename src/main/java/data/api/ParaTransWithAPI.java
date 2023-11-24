@@ -78,7 +78,7 @@ public class ParaTransWithAPI implements IParaTransWithAPI {
 
     public String imageToText(String path) {
         try {
-            String pythonFile = ".\\/Dictionary/callAPIOCR.py";
+            String pythonFile = ".\\/callAPIOCR.py";
 
             ProcessBuilder pb = new ProcessBuilder("python", pythonFile,path);
 

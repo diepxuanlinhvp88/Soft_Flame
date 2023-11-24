@@ -60,7 +60,7 @@ public class DatabaseManagement implements IDatabaseManagement {
             boolean tmp = conn.addWord(language, wordTarget, meaning, pronpunce, html);
             long id = DatabaseOfDict.getMaxId();
             if(reload) {
-                try (BufferedWriter writer = new BufferedWriter(new FileWriter(".\\/Dictionary/data/infoEditWord.txt"))) {
+                try (BufferedWriter writer = new BufferedWriter(new FileWriter(".\\/data/infoEditWord.txt"))) {
                     writer.write(String.valueOf(id) + "\n");
                     System.out.println("Ghi vào file thành công!");
                 } catch (IOException e) {
