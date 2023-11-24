@@ -2945,7 +2945,7 @@
 * verb
 - To disparage, to run down
 =bài bác công lao của ai+to disparage someone's merits
-=bài bác những quan điểm tiến bộ+to run down progressive views
+=bài bác những quan điểm tiến bộ+to run down progressive view
 
 @bài bạc
 - (khẩu ngữ) như cờ bạc
@@ -3433,7 +3433,7 @@
 
 @bàn bạc
 * verb
-- To discuss, to deliberate, to consult, to exchange views on
+- To discuss, to deliberate, to consult, to exchange view on
 =chúng ta nên bàn bạc kỹ xem phải hành động như thế nào+we should deliberate what action to take
 =cần phải bàn bạc với các đối tác trước khi ký hợp đồng+it is advisable to consult with one's partners before signing the contract
 
@@ -6501,7 +6501,7 @@
 -Different, dissimilar
 =ngôn ngữ bất đồng+speaking different languages, not having a common language, not sharing the same language
 =ý kiến bất đồng+different ideas
-=bất đồng về quan điểm+to differ in opinion, to hold dissimilar views
+=bất đồng về quan điểm+to differ in opinion, to hold dissimilar view
 
 @bất động
 * adj
@@ -31387,7 +31387,7 @@
 - to take (train, plane) to land; to come to ground
 
 @đáp án
-- Detailed schemed solution (answer), model solution, key (to exercises, problems..)
+- Detailed schemed solution (answer), domain.model solution, key (to exercises, problems..)
 
 @đáp lễ
 * verb
@@ -41765,7 +41765,7 @@
 @gương
 * noun
 - mirror; glass; looking-glass
-=sửa tóc trước gương+to do one's hair before the glass example; model; pattern
+=sửa tóc trước gương+to do one's hair before the glass example; domain.model; pattern
 =theo gương người nào+to take pattern by someone
 
 @gương lõm
@@ -44795,7 +44795,7 @@
 - Penal laws
 
 @hình mẫu
-- Model
+- domain.model
 
 @hình nhân
 - Paper and bamboo pupet (to be burned on worship)
@@ -46899,7 +46899,7 @@
 - Meet, gather
 
 @hội kiến
-- Meet for a talk, meet for an exchange of views
+- Meet for a talk, meet for an exchange of view
 
 @hội kín
 - Underground society
@@ -52629,7 +52629,7 @@
 
 @khuôn mẫu
 * noun
-- model, pattern
+- domain.model, pattern
 
 @khuôn phép
 - Rule of behaviour, rule of conduct, discipline
@@ -53082,7 +53082,7 @@
 - to control; to examine
 
 @kiểm soát viên
-- Controller, comptroller
+- controller, comptroller
 
 @kiểm thảo
 - Criticize, self-criticize
@@ -53421,15 +53421,15 @@
 
 @kiểu
 * noun
-- model; pattern; design
+- domain.model; pattern; design
 
 @kiểu cách
-- Model and model
+- domain.model and domain.model
 -Mannered
 
 @kiểu mẫu
 * noun
-- model; simple; pattern
+- domain.model; simple; pattern
 
 @kiểu sức
 - (văn chương) showy, spuriously brilliant; affected
@@ -54810,7 +54810,7 @@
 
 @làm mẫu
 * verb
-- to serve as a model
+- to serve as a domain.model
 
 @làm mồi
 - Fall a prey tọ
@@ -56763,7 +56763,7 @@
 =lỗi hẹn+to fail to keep one's promise
 
 @lỗi thời
-- out - of - date; out - model
+- out - of - date; out - domain.model
 
 @lối
 * noun
@@ -58424,7 +58424,7 @@ _trash
 
 @ma két
 * noun
--model
+-domain.model
 
 @ma lem
 - begrimed, bedaubed, soiled
@@ -59177,7 +59177,7 @@ _trash
 
 @mẫu
 * noun
-- acre. model; pattern; specimen
+- acre. domain.model; pattern; specimen
 
 @mẫu đơn
 * noun
@@ -59194,7 +59194,7 @@ _trash
 
 @mẫu mã
 * noun
--mode, model; style
+-mode, domain.model; style
 
 @mẫu số
 * noun
@@ -59816,14 +59816,14 @@ _trash
 - mound
 
 @mô hình
-- clay model
+- clay domain.model
 
 @mô học
 - (sinh vật) Histology
 
 @mô phạm
 * noun
-- model, pattern
+- domain.model, pattern
 
 @mô phật
 - Buddha bless you
@@ -61002,7 +61002,7 @@ _trash
 - Indian ink
 
 @mực thước
-- Examplary, model-setting, regular
+- Examplary, domain.model-setting, regular
 =Ăn ở mực thước+To behave in a most exemplary way
 
 @mưng
@@ -61948,7 +61948,7 @@ _trash
 
 @nắn
 * verb
-- to mould; to model; to set
+- to mould; to domain.model; to set
 =nắn xương gãy+to set a broken bone
 
 @nắn bóp
@@ -61966,9 +61966,9 @@ _trash
 =Nắn nót viết tên mình vào bìa sách+To write painstakingly one's name on a book cover
 
 @nặn
-- Knead, model
+- Knead, domain.model
 =Nặn bột thành những con giống+To knead coloured dough into coloured paste animals
-=Nặn tượng ai+To model someone's effigy
+=Nặn tượng ai+To domain.model someone's effigy
 -Squeeze out
 =Nặn mủ ở nhọt ra+To squeeze matter out of a boil
 
@@ -66635,7 +66635,7 @@ _trash
 
 @nhãn quan
 - View, range of knowledge
-=Người có nhãn quan rộng+A person with a broad of knowledge, a erson with board views
+=Người có nhãn quan rộng+A person with a broad of knowledge, a erson with board view
 
 @nhãn thức
 - Taste
@@ -71066,7 +71066,7 @@ _trash
 
 @nống
 - (địa phương) Broad flat drying basket
--Plaiting model
+-Plaiting domain.model
 -Prop up
 =Nống cột nhà+To prop up a pillar. endeavour, push up
 =Nống sức+To try one's best.
@@ -82047,7 +82047,7 @@ _trash
 =to prolapse (tử cung)
 
 @sa bàn
-- danh từ model
+- danh từ domain.model
 
 @sa bồi
 - Alluvial
@@ -82267,7 +82267,7 @@ _trash
 - fruitful, bearing much fruit false
 =tin đồn sai+false numerer failing to keep
 =sai lời+to fail to keep one's words out of
-=sai kiểu+out of model
+=sai kiểu+out of domain.model
 =sai khớp+out of joint
 * verb
 - to order, to send
@@ -88133,7 +88133,7 @@ _trash
 -Western personal, private
 
 @Tây Bắc
-- DISCOVERING Tây Bắc (North-West). There was a time, not so long ago, when Tây Bắc or the north-west region of Vietnam, was so remote an area that people were scared to go there. In retrospect, the remoteness seems to have been a blessing in disguise. The region's wilderness, its mountains and culture that are unique to it have been drawing an increasing number of domestic and foreign tourists. Tourist facilities in the region are still insufficient, but that cannot stop the back-packers from going there and taking in the splendid scenic vistas on offer. The ethnic minorities and their way of life as yet untouched by modern civilisation are another alluring factor They come here in organised tours, informal groups, or even individually on motorbikes. The sharp bends and curves in the mountainous area are thrilling to negotiate and offer marvellous views of the Thái and Tày tribal villages from the heights, and of the H'Mông houses rising out of the rocks and clouds atop the mountains. Visitors can also meet ethnic people in colourful attire on their way to the market or the fields. The population here lives on rice and handloom cloth which are woven with colourful ethnic motifs. The cloth is sold in every housẹIn Tây Bắc, weekly markets held every Sunday has presented the same scenes for decades  a couple going to the market with the husband on a horse and the wife walking behind; youngsters dressed in their best, chatting, drinking and playing the traditional flute. Friendly as they are, the H'Mông and Dao boys do not shy away having a drink with a foreigner and sharing a piece of (maize cake). Sapa is already a popular tourist destination in the Tây Bắc region. Here also, the visitor can get glimpses of the ethnic minority way of life. These communities cultivate, maize, rice and other grains and vegetables on terraced fields that are major attraction. The age-old practice of the market being the rendez-vous for young people to court still continues, though there have been concerns about it being disturbed by domestic and foreign tourists. In the Tây Bắc region, however, there remains plenty for the visitor to discover and savour
+- DISCOVERING Tây Bắc (North-West). There was a time, not so long ago, when Tây Bắc or the north-west region of Vietnam, was so remote an area that people were scared to go there. In retrospect, the remoteness seems to have been a blessing in disguise. The region's wilderness, its mountains and culture that are unique to it have been drawing an increasing number of domestic and foreign tourists. Tourist facilities in the region are still insufficient, but that cannot stop the back-packers from going there and taking in the splendid scenic vistas on offer. The ethnic minorities and their way of life as yet untouched by modern civilisation are another alluring factor They come here in organised tours, informal groups, or even individually on motorbikes. The sharp bends and curves in the mountainous area are thrilling to negotiate and offer marvellous view of the Thái and Tày tribal villages from the heights, and of the H'Mông houses rising out of the rocks and clouds atop the mountains. Visitors can also meet ethnic people in colourful attire on their way to the market or the fields. The population here lives on rice and handloom cloth which are woven with colourful ethnic motifs. The cloth is sold in every housẹIn Tây Bắc, weekly markets held every Sunday has presented the same scenes for decades  a couple going to the market with the husband on a horse and the wife walking behind; youngsters dressed in their best, chatting, drinking and playing the traditional flute. Friendly as they are, the H'Mông and Dao boys do not shy away having a drink with a foreigner and sharing a piece of (maize cake). Sapa is already a popular tourist destination in the Tây Bắc region. Here also, the visitor can get glimpses of the ethnic minority way of life. These communities cultivate, maize, rice and other grains and vegetables on terraced fields that are major attraction. The age-old practice of the market being the rendez-vous for young people to court still continues, though there have been concerns about it being disturbed by domestic and foreign tourists. In the Tây Bắc region, however, there remains plenty for the visitor to discover and savour
 
 @tây bắc
 * noun, adj

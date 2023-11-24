@@ -47,6 +47,14 @@
             <version>22-ea+16</version>
         </dependency>
 
+        <!-- https://mvnrepository.com/artifact/org.kordamp.bootstrapfx/bootstrapfx-core -->
+        <dependency>
+            <groupId>org.kordamp.bootstrapfx</groupId>
+            <artifactId>bootstrapfx-core</artifactId>
+            <version>0.4.0</version>
+        </dependency>
+
+
 
         <dependency>
             <groupId>net.sf.sociaal</groupId>
@@ -115,7 +123,7 @@
                         <!-- Default configuration for running with: mvn clean javafx:run -->
                         <id>default-cli</id>
                         <configuration>
-                            <mainClass>com.example.dictionary/view.HelloApplication</mainClass>
+                            <mainClass>com.example.dictionary/view.DictApp</mainClass>
                             <launcher>app</launcher>
                             <jlinkZipName>app</jlinkZipName>
                             <jlinkImageName>app</jlinkImageName>

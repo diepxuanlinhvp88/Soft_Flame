@@ -22,21 +22,28 @@
             <Image url="@image/Soft/9.png" />
          </image>
       </ImageView>
-
       <TextField id="textfield" fx:id="FindA" layoutX="49.0" layoutY="72.0" prefHeight="62.0" prefWidth="200.0" promptText="Điền từ cần tìm" styleClass="text-field1" stylesheets="@graphic.css" />
       <ListView fx:id="ListW" layoutX="49.0" layoutY="166.0" onMouseClicked="#sellect" prefHeight="218.0" prefWidth="200.0" stylesheets="@graphic.css" />
       <Button id="button1" layoutX="287.0" layoutY="78.0" mnemonicParsing="false" onAction="#Find" text="Find" />
       <WebView fx:id="webView" layoutX="437.0" layoutY="72.0" prefHeight="306.0" prefWidth="225.0" stylesheets="@graphic.css" />
-
       <Button layoutX="593.0" layoutY="76.0" mnemonicParsing="false" onAction="#voice" style="-fx-background-color: #ffffff;">
          <graphic>
             <ImageView fitHeight="46.0" fitWidth="46.0" opacity="0.79">
                <image>
-
                   <Image url="@image/17.png" />
                </image>
             </ImageView>
          </graphic>
       </Button>
+      <Text fx:id="worongtext" layoutX="49.0" layoutY="56.0" strokeType="OUTSIDE" strokeWidth="0.0">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Text>
+      <Label fx:id="Wrongsellect" layoutX="268.0" layoutY="35.0" onMouseClicked="#sellectWordWrong" style="-fx-background-color: #ffffff; -fx-background-radius: 5;">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
    </children>
 </AnchorPane>

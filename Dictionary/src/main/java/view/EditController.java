@@ -1,6 +1,4 @@
 package view;
-import Controller.DictionaryManagement;
-import Controller.DatabaseManagement;
 import javafx.beans.value.ChangeListener;
 import javafx.beans.value.ObservableValue;
 import javafx.collections.FXCollections;
@@ -48,24 +46,20 @@ public class EditController implements Initializable {
      */
     public void Add(){
 
-        if(LoginController.data.addWordtoDatabase("av",target.getText(),
-                meaning.getText(),pronpunce.getText(),html.getText())){
-            System.out.println("ss");
+        LoginController.data.addWordtoDatabase("av",target.getText(),
+                meaning.getText(),pronpunce.getText(),html.getText(),true);
 
-        };
+//        LoginController.dic.reNewtxtFileFromDB();
 
-        try {
-            LoginController.dic.reLoadDictionaryFromFile("dfg");
-        } catch (FileNotFoundException e) {
-            throw new RuntimeException(e);
-        }
+
         addwordsuccess.setText("Add Word success!");
 
 
     }
 
-    public void Remove(){
+    public void Remove() throws FileNotFoundException {
         LoginController.data.removeWord(wordremove.getText(),"av");
+        LoginController.dic.remove(wordremove.getText());
         try {
             LoginController.dic.reLoadDictionaryFromFile("dfg");
         } catch (FileNotFoundException e) {
@@ -103,11 +97,11 @@ public class EditController implements Initializable {
 
 
     }
-    public void editw(){
+    public void editw() throws FileNotFoundException {
         LoginController.data.removeWord(targetEdit.getText(),"av");
-        LoginController.data.addWordtoDatabase("av",meaningEdit.getText(),
-                meaningEdit.getText(),meaningEdit.getText(),meaningEdit.getText());
-
+        LoginController.data.addWordtoDatabase("av",targetEdit.getText(),
+                meaningEdit.getText(),"","",false);
+        LoginController.dic.update(targetEdit.getText(),meaningEdit.getText());
         editss.setText("Edit Word success!");
     }
 
