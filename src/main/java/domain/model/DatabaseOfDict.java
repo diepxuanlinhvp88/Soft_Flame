@@ -9,7 +9,7 @@ import java.sql.Statement;
 
 public class DatabaseOfDict {
 
-    private static String DB_URL = "jdbc:sqlite:.\\/Dictionary/data/dict_hh.db";
+    private static String DB_URL = "jdbc:sqlite:.\\/data/dict_hh.db";
 
 
 
@@ -20,7 +20,6 @@ public class DatabaseOfDict {
     public static Connection getConnection(String dbURL) {
         Connection conn = null;
         try {
-//            Class.forName("org.sqlite.JDBC");
             conn = DriverManager.getConnection(dbURL);
             System.out.println("connect successfully!");
         } catch (Exception ex) {

@@ -16,7 +16,7 @@ public class DictionaryManagement implements IDictionaryManagement {
     private static final Word word = new Word();
 
     public DictionaryManagement() throws FileNotFoundException {
-        FileInputStream fileInputStream = new FileInputStream(".\\/Dictionary/data/EngtoV.txt");
+        FileInputStream fileInputStream = new FileInputStream(".\\/data/EngtoV.txt");
         InputStreamReader inputStreamReader = new InputStreamReader(fileInputStream
                 , StandardCharsets.UTF_8);
         BufferedReader bufferedReader = new BufferedReader(inputStreamReader);
@@ -124,14 +124,14 @@ public class DictionaryManagement implements IDictionaryManagement {
         dictionary.add(word);
         String data = String.valueOf(word.getWordId())+"<token>"+word.getWordTarget()+"<token>"
                 +word.getHtml()+"<token>"+word.getWordExplain()+"<token>"+word.getPronounce()+"\n";
-        try (BufferedWriter writer = new BufferedWriter(new FileWriter(".\\/Dictionary/data/EngtoV.txt", true))) {
+        try (BufferedWriter writer = new BufferedWriter(new FileWriter(".\\/data/EngtoV.txt", true))) {
             writer.write(data);
         } catch (IOException e) {
             e.printStackTrace();
         }
     }
     private List<String> getList() throws FileNotFoundException {
-        FileInputStream fileInputStream = new FileInputStream(".\\/Dictionary/data/EngtoV.txt");
+        FileInputStream fileInputStream = new FileInputStream(".\\/data/EngtoV.txt");
         InputStreamReader inputStreamReader = new InputStreamReader(fileInputStream
                 , StandardCharsets.UTF_8);
         BufferedReader bufferedReader = new BufferedReader(inputStreamReader);
@@ -172,7 +172,7 @@ public class DictionaryManagement implements IDictionaryManagement {
     }
 
     public boolean reloadDicWhenExit(List<String> tmp){
-        try (BufferedWriter writer = new BufferedWriter(new FileWriter(".\\/Dictionary/data/EngtoV.txt"))) {
+        try (BufferedWriter writer = new BufferedWriter(new FileWriter(".\\/data/EngtoV.txt"))) {
             for(String i: tmp) {
                 writer.write(i + "\n");
             }
@@ -193,7 +193,7 @@ public class DictionaryManagement implements IDictionaryManagement {
     public boolean reLoadDictionaryFromFile(String filePath) throws FileNotFoundException {
         if (!reNewtxtFileFromDB()) return false;
 
-        FileInputStream fileInputStream = new FileInputStream(".\\/Dictionary/data/EngtoV.txt");
+        FileInputStream fileInputStream = new FileInputStream(".\\/data/EngtoV.txt");
 
         InputStreamReader inputStreamReader = new InputStreamReader(fileInputStream
                 , StandardCharsets.UTF_8);
@@ -222,7 +222,7 @@ public class DictionaryManagement implements IDictionaryManagement {
 
     public String addedWords() {
 
-        String fileName = ".\\/Dictionary/data/infoEditWord.txt";
+        String fileName = ".\\/data/infoEditWord.txt";
 
         List<String> tmp = new ArrayList<>();
         try (BufferedReader reader = new BufferedReader(new FileReader(fileName))) {
@@ -248,7 +248,7 @@ public class DictionaryManagement implements IDictionaryManagement {
     public boolean reNewtxtFileFromDB() {
 
         String tmp = addedWords();
-        try (BufferedWriter writer = new BufferedWriter(new FileWriter(".\\/Dictionary/data/EngtoV.txt", true))) {
+        try (BufferedWriter writer = new BufferedWriter(new FileWriter(".\\/data/EngtoV.txt", true))) {
             writer.write(tmp);
             return true;
         } catch (IOException e) {
