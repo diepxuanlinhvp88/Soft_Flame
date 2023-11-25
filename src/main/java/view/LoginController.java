@@ -1,9 +1,12 @@
 package view;
 
+import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.fxml.Initializable;
 import javafx.scene.Node;
+import javafx.scene.Parent;
+import javafx.scene.Scene;
 import javafx.scene.control.*;
 import javafx.scene.layout.AnchorPane;
 import data.db.DictionaryManagement;
@@ -13,6 +16,7 @@ import data.api.TextToSpeech;
 import javafx.scene.layout.Pane;
 import javafx.scene.media.Media;
 import javafx.scene.media.MediaPlayer;
+import javafx.stage.Stage;
 
 import java.io.*;
 import java.net.URL;
@@ -34,46 +38,26 @@ public class LoginController implements Initializable {
     public static DatabaseManagement data = new DatabaseManagement();
     public static ParaTransWithAPI tranapi = new ParaTransWithAPI();
     public static TextToSpeech tts = new TextToSpeech();
-    public static MediaPlayer mediaPlayer;
-    public static String songs ="music/1.mp3";
+
     @FXML
     public AnchorPane anchorPaneLogin;
     @FXML
     Pane LogPane;
-    @FXML
-    Pane SignPane;
+
     @FXML
     TextField acc;
-    @FXML
-    TextField newAcc;
-    @FXML
-    PasswordField newpassword;
+
     @FXML
     PasswordField password;
     @FXML
     Label er;
     @FXML
-    Label sc;
-    @FXML
     Pane setPane;
     @FXML
     ComboBox<String> comboBox;
 
-    public void saveAccout(String username, String pass) throws IOException {
-
-        try {
-
-            BufferedWriter writer = new BufferedWriter(new FileWriter(".\\/data/account.txt", true));
-            writer.write(username + "," + pass + System.lineSeparator());
-            writer.close();
-        } catch (FileNotFoundException e) {
-            System.out.println("khong tim duoc file");
-
-            e.printStackTrace();
-        }
 
 
-    }
 
     public boolean checkAccount(String username, String pass) throws IOException {
         FileInputStream fileInputStream = new FileInputStream(".\\/data/account.txt");
@@ -111,6 +95,7 @@ public class LoginController implements Initializable {
     }
 
     public void SignUp() throws IOException {
+//        LoginController.mediaPlayer.pause();
         Node node;
         node = FXMLLoader.load(getClass().getResource("SignUp.fxml"));
         anchorPaneLogin.getChildren().setAll(node);
@@ -118,54 +103,20 @@ public class LoginController implements Initializable {
 
     }
 
-    public void SignUpStart() throws IOException {
-        //        Node node;
-        //        node = FXMLLoader.load(getClass().getResource("Login.fxml"));
-        //        anchorPaneLogin.getChildren().setAll(node);
-        if (!newAcc.getText().equals("")) {
-            saveAccout(newAcc.getText(), newpassword.getText());
-            //        sc.setText("create an account success ! learn now ");
-            showAlert();
-        } else sc.setText("cannot be left blank");
-
-    }
-
-    private void showAlert() throws IOException {
-        Node node;
-        node = FXMLLoader.load(getClass().getResource("Login.fxml"));
-        anchorPaneLogin.getChildren().setAll(node);
-
-        Alert alert = new Alert(Alert.AlertType.INFORMATION);
-
-        alert.setHeaderText(null);
-        alert.setContentText("Your account has been created, please log in");
-        alert.showAndWait().ifPresent(response -> {
-            if (response == javafx.scene.control.ButtonType.OK) {
-                anchorPaneLogin.getChildren().setAll(node);
-            } else {
-
-
-            }
-        });
-
-    }
-
-
-
-    public void musicBg() throws IOException {
-
-        System.out.println(songs);
-
-        URL musicFilePath = getClass().getResource(songs);
-        Media media = new Media(musicFilePath.toString());
-        mediaPlayer = new MediaPlayer(media);
-
-        // Chạy nhạc nền liên tục
-        mediaPlayer.setCycleCount(MediaPlayer.INDEFINITE);
-        mediaPlayer.play();
-
-    }
-
+//    public static void musicBg(String songs) throws IOException {
+//
+//
+//        URL musicFilePath = LoginController.class.getResource(songs);
+//        media = new Media(musicFilePath.toString());
+//        mediaPlayer = new MediaPlayer(media);
+//
+//               // Chạy nhạc nền liên tục
+//        mediaPlayer.setCycleCount(MediaPlayer.INDEFINITE);
+//        mediaPlayer.stop();
+//        System.out.println(LoginController.mediaPlayer.getMedia() + "Lo ");
+//        mediaPlayer.play();
+//
+//    }
 
 
     public void setting() throws IOException {
@@ -177,12 +128,7 @@ public class LoginController implements Initializable {
 
     @Override
     public void initialize(URL url, ResourceBundle resourceBundle) {
-        try {
-            musicBg();
-        } catch (IOException e) {
-            throw new RuntimeException(e);
-        }
-
-
+        // musicBg(songs);
+        Audio.playmusic();
     }
 }

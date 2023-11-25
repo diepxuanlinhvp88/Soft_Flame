@@ -4,150 +4,24 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c2739e3f-f03b-4cbc-a9ea-530cc7a6d050" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/.name" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.name" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/Soft_Flame.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/Soft_Flame.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+    <list default="true" id="73d70507-e844-4e96-a40e-319ceb06e4da" name="Changes" comment="fixed">
+      <change afterPath="$PROJECT_DIR$/Dictionary/.idea/compiler.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Dictionary/.idea/jarRepositories.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Dictionary/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/view/Audio.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/view/SigUpController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Dictionary/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Dictionary/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Dictionary/.idea/.name" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Dictionary/.idea/encodings.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Dictionary/.idea/inspectionProfiles/profiles_settings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/profiles_settings.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Dictionary/.idea/misc.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Dictionary/.idea/uiDesigner.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Dictionary/.idea/vcs.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Dictionary/.mvn/wrapper/maven-wrapper.jar" beforeDir="false" afterPath="$PROJECT_DIR$/.mvn/wrapper/maven-wrapper.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Dictionary/.mvn/wrapper/maven-wrapper.properties" beforeDir="false" afterPath="$PROJECT_DIR$/.mvn/wrapper/maven-wrapper.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Dictionary/Create_database_ForVE.py" beforeDir="false" afterPath="$PROJECT_DIR$/Create_database_ForVE.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Dictionary/callAPIOCR.py" beforeDir="false" afterPath="$PROJECT_DIR$/callAPIOCR.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Dictionary/crawlData.py" beforeDir="false" afterPath="$PROJECT_DIR$/crawlData.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Dictionary/data/EngtoV.txt" beforeDir="false" afterPath="$PROJECT_DIR$/data/EngtoV.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Dictionary/data/ViEn.db" beforeDir="false" afterPath="$PROJECT_DIR$/data/ViEn.db" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Dictionary/data/account.txt" beforeDir="false" afterPath="$PROJECT_DIR$/data/account.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Dictionary/data/dict_hh.db" beforeDir="false" afterPath="$PROJECT_DIR$/data/dict_hh.db" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Dictionary/data/infoEditWord.txt" beforeDir="false" afterPath="$PROJECT_DIR$/data/infoEditWord.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Dictionary/data/question.txt" beforeDir="false" afterPath="$PROJECT_DIR$/data/question.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Dictionary/data/vietanh.txt" beforeDir="false" afterPath="$PROJECT_DIR$/data/vietanh.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Dictionary/export_data.py" beforeDir="false" afterPath="$PROJECT_DIR$/export_data.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Dictionary/mvnw" beforeDir="false" afterPath="$PROJECT_DIR$/mvnw" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Dictionary/mvnw.cmd" beforeDir="false" afterPath="$PROJECT_DIR$/mvnw.cmd" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Dictionary/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Dictionary/request.py" beforeDir="false" afterPath="$PROJECT_DIR$/request.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Dictionary/src/main/java/com/example/javafxwordle/HelpWindow.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/javafxwordle/HelpWindow.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Dictionary/src/main/java/com/example/javafxwordle/MainHelper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/javafxwordle/MainHelper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Dictionary/src/main/java/com/example/javafxwordle/ScoreWindow.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/javafxwordle/ScoreWindow.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Dictionary/src/main/java/com/example/javafxwordle/Toast.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/javafxwordle/Toast.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Dictionary/src/main/java/com/example/javafxwordle/WordleApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/javafxwordle/WordleApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Dictionary/src/main/java/com/example/javafxwordle/WordleController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/javafxwordle/WordleController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Dictionary/src/main/java/data/api/ParaTransWithAPI.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/data/api/ParaTransWithAPI.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Dictionary/src/main/java/data/api/TextToSpeech.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/data/api/TextToSpeech.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Dictionary/src/main/java/data/db/DatabaseManagement.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/data/db/DatabaseManagement.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Dictionary/src/main/java/data/db/DictionaryManagement.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/data/db/DictionaryManagement.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Dictionary/src/main/java/domain/api/IParaTransWithAPI.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/domain/api/IParaTransWithAPI.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Dictionary/src/main/java/domain/api/ITextToSpeech.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/domain/api/ITextToSpeech.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Dictionary/src/main/java/domain/db/IDatabaseManagement.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/domain/db/IDatabaseManagement.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Dictionary/src/main/java/domain/db/IDictionaryManagement.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/domain/db/IDictionaryManagement.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Dictionary/src/main/java/domain/model/DatabaseOfDict.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/domain/model/DatabaseOfDict.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Dictionary/src/main/java/domain/model/Dictionary.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/domain/model/Dictionary.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Dictionary/src/main/java/domain/model/Word.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/domain/model/Word.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Dictionary/src/main/java/module-info.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/module-info.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Dictionary/src/main/java/view/ContestController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/view/ContestController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Dictionary/src/main/java/view/Controller.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/view/Controller.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Dictionary/src/main/java/view/DictApp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/view/DictApp.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Dictionary/src/main/java/view/EditController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/view/EditController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Dictionary/src/main/java/view/FindController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/view/FindController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Dictionary/src/main/java/view/JavaFX-Wordle.jar" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/view/JavaFX-Wordle.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Dictionary/src/main/java/view/LearnEnglishController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/view/LearnEnglishController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Dictionary/src/main/java/view/LoginController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/view/LoginController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Dictionary/src/main/java/view/SettingController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/view/SettingController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Dictionary/src/main/java/view/SuccessContestController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/view/SuccessContestController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Dictionary/src/main/java/view/TranslateController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/view/TranslateController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Dictionary/src/main/resources/com.example.javafxwordle/dictionary.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com.example.javafxwordle/dictionary.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Dictionary/src/main/resources/com.example.javafxwordle/images/github.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com.example.javafxwordle/images/github.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Dictionary/src/main/resources/com.example.javafxwordle/images/help.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com.example.javafxwordle/images/help.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Dictionary/src/main/resources/com.example.javafxwordle/images/icon.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com.example.javafxwordle/images/icon.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Dictionary/src/main/resources/com.example.javafxwordle/images/icons8-restart-40.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com.example.javafxwordle/images/icons8-restart-40.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Dictionary/src/main/resources/com.example.javafxwordle/main-view.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com.example.javafxwordle/main-view.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Dictionary/src/main/resources/com.example.javafxwordle/winning-words.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com.example.javafxwordle/winning-words.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Dictionary/src/main/resources/com.example.javafxwordle/wordle.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com.example.javafxwordle/wordle.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Dictionary/src/main/resources/view/Controller.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/view/Controller.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Dictionary/src/main/resources/view/Edit.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/view/Edit.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Dictionary/src/main/resources/view/LearnEnglish.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/view/LearnEnglish.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Dictionary/src/main/resources/view/Login.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/view/Login.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Dictionary/src/main/resources/view/Setting.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/view/Setting.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Dictionary/src/main/resources/view/SignUp.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/view/SignUp.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Dictionary/src/main/resources/view/Translate.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/view/Translate.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Dictionary/src/main/resources/view/contest.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/view/contest.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Dictionary/src/main/resources/view/find.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/view/find.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Dictionary/src/main/resources/view/graphic.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/view/graphic.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Dictionary/src/main/resources/view/image/1.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/view/image/1.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Dictionary/src/main/resources/view/image/12.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/view/image/12.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Dictionary/src/main/resources/view/image/13.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/view/image/13.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Dictionary/src/main/resources/view/image/15.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/view/image/15.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Dictionary/src/main/resources/view/image/16.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/view/image/16.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Dictionary/src/main/resources/view/image/17.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/view/image/17.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Dictionary/src/main/resources/view/image/2.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/view/image/2.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Dictionary/src/main/resources/view/image/2606505_5844.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/view/image/2606505_5844.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Dictionary/src/main/resources/view/image/36.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/view/image/36.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Dictionary/src/main/resources/view/image/3643734-high-sound-speaker-voice-volume_113403.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/view/image/3643734-high-sound-speaker-voice-volume_113403.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Dictionary/src/main/resources/view/image/Soft (1).jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/view/image/Soft (1).jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Dictionary/src/main/resources/view/image/Soft (1).png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/view/image/Soft (1).png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Dictionary/src/main/resources/view/image/Soft(2).png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/view/image/Soft(2).png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Dictionary/src/main/resources/view/image/Soft.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/view/image/Soft.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Dictionary/src/main/resources/view/image/Soft.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/view/image/Soft.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Dictionary/src/main/resources/view/image/Soft/1.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/view/image/Soft/1.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Dictionary/src/main/resources/view/image/Soft/10.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/view/image/Soft/10.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Dictionary/src/main/resources/view/image/Soft/2.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/view/image/Soft/2.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Dictionary/src/main/resources/view/image/Soft/3.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/view/image/Soft/3.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Dictionary/src/main/resources/view/image/Soft/4.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/view/image/Soft/4.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Dictionary/src/main/resources/view/image/Soft/5.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/view/image/Soft/5.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Dictionary/src/main/resources/view/image/Soft/6.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/view/image/Soft/6.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Dictionary/src/main/resources/view/image/Soft/7.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/view/image/Soft/7.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Dictionary/src/main/resources/view/image/Soft/8.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/view/image/Soft/8.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Dictionary/src/main/resources/view/image/Soft/9.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/view/image/Soft/9.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Dictionary/src/main/resources/view/image/add.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/view/image/add.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Dictionary/src/main/resources/view/image/cameraIcon.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/view/image/cameraIcon.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Dictionary/src/main/resources/view/image/edit.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/view/image/edit.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Dictionary/src/main/resources/view/image/find.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/view/image/find.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Dictionary/src/main/resources/view/image/home.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/view/image/home.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Dictionary/src/main/resources/view/image/next.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/view/image/next.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Dictionary/src/main/resources/view/image/playgame.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/view/image/playgame.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Dictionary/src/main/resources/view/image/questionbg.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/view/image/questionbg.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Dictionary/src/main/resources/view/image/rate.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/view/image/rate.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Dictionary/src/main/resources/view/image/read_book_study_icon-icons.com_51077.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/view/image/read_book_study_icon-icons.com_51077.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Dictionary/src/main/resources/view/image/setting (1).png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/view/image/setting (1).png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Dictionary/src/main/resources/view/image/setting.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/view/image/setting.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Dictionary/src/main/resources/view/image/successContest.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/view/image/successContest.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Dictionary/src/main/resources/view/image/sync_alt_FILL0_wght400_GRAD0_opsz24.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/view/image/sync_alt_FILL0_wght400_GRAD0_opsz24.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Dictionary/src/main/resources/view/image/trans1.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/view/image/trans1.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Dictionary/src/main/resources/view/image/voice.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/view/image/voice.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Dictionary/src/main/resources/view/image/voice1.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/view/image/voice1.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Dictionary/src/main/resources/view/image/voiceM.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/view/image/voiceM.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Dictionary/src/main/resources/view/image/voiceX.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/view/image/voiceX.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Dictionary/src/main/resources/view/music/1.mp3" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/view/music/1.mp3" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Dictionary/src/main/resources/view/music/2.mp3" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/view/music/2.mp3" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Dictionary/src/main/resources/view/music/3.mp3" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/view/music/3.mp3" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Dictionary/src/main/resources/view/successContest.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/view/successContest.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Dictionary/test.bin" beforeDir="false" afterPath="$PROJECT_DIR$/test.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Dictionary/test.mp3" beforeDir="false" afterPath="$PROJECT_DIR$/test.mp3" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Dictionary/testImageToText.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/testImageToText.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Dictionary/textToSpeech.py" beforeDir="false" afterPath="$PROJECT_DIR$/textToSpeech.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/account.txt" beforeDir="false" afterPath="$PROJECT_DIR$/data/account.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/view/DictApp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/view/DictApp.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/view/LearnEnglishController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/view/LearnEnglishController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/view/LoginController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/view/LoginController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/view/SettingController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/view/SettingController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/view/SignUp.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/view/SignUp.fxml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
-  </component>
-  <component name="FileTemplateManagerImpl">
-    <option name="RECENT_TEMPLATES">
-      <list>
-        <option value="Class" />
-      </list>
-    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -163,20 +37,20 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "git-widget-placeholder": "Merging main",
-    "last_opened_file_path": "D:/java_code/backup/Soft_Flame",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;Merging main&quot;,
+    &quot;last_opened_file_path&quot;: &quot;D:/java_code/backup/Soft_Flame&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RunManager">
     <configuration default="true" type="DjangoTestsConfigurationType">
       <module name="Soft_Flame" />
@@ -275,18 +149,76 @@
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="c2739e3f-f03b-4cbc-a9ea-530cc7a6d050" name="Changes" comment="" />
-      <created>1700814317588</created>
+      <changelist id="73d70507-e844-4e96-a40e-319ceb06e4da" name="Changes" comment="" />
+      <created>1698215249046</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1700814317588</updated>
-      <workItem from="1700814318748" duration="140000" />
-      <workItem from="1700814468810" duration="551000" />
-      <workItem from="1700825669224" duration="8766000" />
+      <updated>1698215249046</updated>
+      <workItem from="1698215250459" duration="3207000" />
+      <workItem from="1698219133759" duration="1948000" />
+      <workItem from="1698301197101" duration="778000" />
+      <workItem from="1698314470059" duration="24000" />
+      <workItem from="1698389122084" duration="675000" />
+      <workItem from="1698391728677" duration="1289000" />
+      <workItem from="1698484795926" duration="4794000" />
+      <workItem from="1698585606368" duration="11108000" />
+      <workItem from="1698631472911" duration="1842000" />
+      <workItem from="1698639993396" duration="17447000" />
+      <workItem from="1698714215713" duration="1382000" />
+      <workItem from="1698736159689" duration="56000" />
+      <workItem from="1698762543567" duration="3602000" />
+      <workItem from="1698824086627" duration="1842000" />
+      <workItem from="1698854771484" duration="1974000" />
+      <workItem from="1698862632099" duration="3340000" />
+      <workItem from="1699177138834" duration="247000" />
+      <workItem from="1699334871031" duration="1000" />
+      <workItem from="1699334894907" duration="6376000" />
+      <workItem from="1699347625256" duration="9000" />
+      <workItem from="1699349295929" duration="2666000" />
+      <workItem from="1699351982789" duration="538000" />
+      <workItem from="1699372258516" duration="9064000" />
+      <workItem from="1699411525683" duration="14500000" />
+      <workItem from="1699586597018" duration="217000" />
+      <workItem from="1699596823498" duration="7906000" />
+      <workItem from="1699631381550" duration="8274000" />
+      <workItem from="1699674224782" duration="273000" />
+      <workItem from="1699675256301" duration="1227000" />
+      <workItem from="1699707599403" duration="10644000" />
+      <workItem from="1699727232809" duration="3290000" />
+      <workItem from="1700197880019" duration="1514000" />
+      <workItem from="1700314959650" duration="3342000" />
+      <workItem from="1700444611941" duration="20311000" />
+      <workItem from="1700495498678" duration="14405000" />
+      <workItem from="1700534521248" duration="2292000" />
+      <workItem from="1700551525017" duration="2038000" />
+      <workItem from="1700557115528" duration="2611000" />
+      <workItem from="1700563777103" duration="15911000" />
+      <workItem from="1699726134784" duration="13000" />
+      <workItem from="1699726169786" duration="678000" />
+      <workItem from="1700382610673" duration="4379000" />
+      <workItem from="1700410372269" duration="806000" />
+      <workItem from="1700596406718" duration="6423000" />
+      <workItem from="1700652810438" duration="24000" />
+      <workItem from="1700654551204" duration="10337000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="commit" />
+    <MESSAGE value="fixed" />
+    <option name="LAST_COMMIT_MESSAGE" value="fixed" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <breakpoint enabled="true" type="java-exception">
+          <properties class="java.util.UnknownFormatConversionException" package="java.util" />
+          <option name="timeStamp" value="1" />
+        </breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>

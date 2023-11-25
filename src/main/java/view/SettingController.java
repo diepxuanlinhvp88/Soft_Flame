@@ -22,28 +22,28 @@ public class SettingController implements Initializable {
 
     }
     public void action1() throws IOException {
-        LoginController.songs = "music/1.mp3";
-        System.out.println(LoginController.songs);
-        LoginController.mediaPlayer.pause();
-        LoginController tmp = new LoginController();
-        tmp.musicBg();
+        Audio.songs = "music/1.mp3";
+        Audio.mediaPlayer.pause();
+        Audio.playmusic();
+
 
 
     }
     public void action2() throws IOException {
-        LoginController.songs = "music/2.mp3";
-        System.out.println(LoginController.songs);
-        LoginController.mediaPlayer.pause();
-        LoginController tmp = new LoginController();
-        tmp.musicBg();
+        Audio.songs = "music/2.mp3";
+        System.out.println(Audio.mediaPlayer.getMedia() + "set");
+        Audio.mediaPlayer.pause();
+        Audio.playmusic();
+        System.out.println(Audio.mediaPlayer.getMedia() + "set");
+
 
     }
     public void action3() throws IOException {
-        LoginController.songs = "music/3.mp3";
-        System.out.println(LoginController.songs);
-        LoginController.mediaPlayer.pause();
-        LoginController tmp = new LoginController();
-        tmp.musicBg();
+        Audio.songs = "music/3.mp3";
+        System.out.println(Audio.mediaPlayer.getMedia() + "set");
+        Audio.mediaPlayer.pause();
+        Audio.playmusic();
+        System.out.println(Audio.mediaPlayer.getMedia() + "set");
 
 
     }
@@ -59,7 +59,7 @@ public class SettingController implements Initializable {
         volumeSlider.setShowTickMarks(true);
 
         volumeSlider.valueProperty().addListener((observable, oldValue, newValue) -> {
-            LoginController.mediaPlayer.setVolume(newValue.doubleValue());
+            Audio.mediaPlayer.setVolume(newValue.doubleValue());
         });
 
     }
