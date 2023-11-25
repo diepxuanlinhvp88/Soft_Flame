@@ -56,7 +56,8 @@ public class LearnEnglishController implements Initializable {
     }
 
     private void executeWordleGame() throws InterruptedException, IOException {
-        final String command = "java --module-path \"D:\\openjfx-21.0.1_windows-x64_bin-sdk\\javafx-sdk-21.0.1\\lib\" --add-modules javafx.controls,javafx.fxml -jar \"D:\\UET\\hk3\\oop\\Soft_Flame\\Dictionary\\src\\main\\java\\view\\JavaFX-Wordle.jar\"";
+        final String command = "java  --module-path \"D:\\javafx\\javafx-sdk-21.0.1\\lib\" --add-modules javafx.controls,javafx.fxml -jar \"D:\\java_code\\backup\\Soft_Flame\\Dictionary\\src\\main\\java\\view\\JavaFX-Wordle.jar\"";
+
         // Create process builder
         ProcessBuilder processBuilder = new ProcessBuilder();
 

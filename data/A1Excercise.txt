@@ -1,0 +1,330 @@
+Từ vựng<token>Nghĩa
+a<token>Một
+about<token>Về
+above<token>Ở trên
+across<token>Băng qua
+action<token>Hoạt động,hành động
+activity<token>Hoạt động
+actor<token>Diễn viên nam
+actress<token>Diễn viên nữ
+add<token>Thêm
+address<token>Địa chỉ
+adult<token>Người lớn
+advice<token>Lời khuyên
+afraid<token>Sợ hãi
+after<token>Sau
+afternoon<token>Buổi chiều
+again<token>Bắt đầu lại,lần nửa
+age<token>Tuổi
+ago<token>Trước kia
+agree<token>Đồng ý
+air<token>Không khí
+airport<token>Sân bay
+baby<token>Trẻ nhỏ
+back<token>Trở lại
+bag<token>Túi
+ball<token>Trái bóng
+banana<token>Chuối
+band<token>Ban nhạc
+bank<token>Ngân hàng
+bathroom<token>Phòng tắm
+beach<token>Bờ biển
+beautiful<token>Xinh đẹp
+because<token>Bởi vì
+become<token>Trở thành
+bed<token>Giường
+bedroom<token>Phòng ngủ
+beer<token>Bia
+before<token>Trước
+birthday<token>Ngày sinh nhật
+black<token>Đen
+boot<token>Khởi động
+break<token>Phá vỡ
+breakfast<token>Bữa ăn sáng
+busy<token>Bận rộn
+cafe<token>Quán cà phê
+cake<token>Bánh ngọt
+call<token>Gọi đến
+camera<token>Máy ảnh
+can<token>Có thể
+capital<token>Thủ đô
+car<token>Ô tô
+card<token>Thẻ
+career<token>Sự nghiệp
+carrot<token>Củ cà rốt
+carry<token>Mang
+century<token>Thế kỷ
+chair<token>Ghế
+change<token>Thay đổi
+cheese<token>Phô mai
+chicken<token>Gà
+child<token>Trẻ em
+chocolate<token>Sô cô la
+choose<token>Chọn
+cinema<token>Rạp chiếu phim
+city<token>Thành phố
+classroom<token>Lớp học
+close<token>Đóng
+clothes<token>Quần áo
+club<token>Câu lạc bộ
+coffee<token>Cà phê
+colour<token>Màu sắc
+common<token>Thông thường
+company<token>Công ty
+cook<token>Nấu
+concert<token>Buổi hòa nhạc
+customer<token>Khách hàng
+dad<token>Bố
+dance<token>Nhảy
+dangerous<token>Nguy hiểm
+dark<token>Tối
+date<token>Ngày
+daughter<token>Con gái
+day<token>Ngày
+dear<token>Thân mến
+December<token>Tháng mười hai
+decide<token>Quyết định
+delicious<token>Ngon
+describe<token>Mô tả
+description<token>Sự mô tả
+designer<token>Nhà thiết kế
+design<token>Thiết kế
+dictionary<token>Từ điển
+dinner<token>Buổi tối
+discuss<token>Thảo luận
+doctor<token>Bác sĩ
+dollar<token>Đô la
+door<token>Cửa
+dress<token>Váy
+drink<token>Uống
+during<token>Trong khi
+each<token>Mỗi
+ear<token>Tai
+eat<token>Ăn
+egg<token>Trứng
+evening<token>Tối
+example<token>Ví dụ
+exercise<token>Bài tập
+eye<token>Mắt
+face<token>Mặt
+family<token>Gia đình
+famous<token>Nổi tiếng
+fantastic<token>Tuyệt vời
+far<token>Xa
+farm<token>Nông trại
+farmer<token>Người nông
+garden<token>Vườn
+geography<token>Địa lý
+girl<token>Con gái
+girlfriend<token>Bạn gái
+grandfather<token>Ông nội
+grandmother<token>Bà ngoại
+grandparent<token>Ông bà
+green<token>Màu xanh lá
+grow<token>Lớn lên
+hair<token>Tóc
+hand<token>Tay
+happy<token>Vui vẻ
+he<token>Anh ấy
+health<token>Sức khỏe
+healthy<token>Khỏe mạnh
+hear<token>Nghe
+him<token>Anh ấy
+history<token>Lịch sử
+holiday<token>Ngày lễ
+hobby<token>Sở thích
+home<token>Nhà
+hope<token>Hi vọng
+hospital<token>Bệnh viện
+hot<token>Nóng
+hotel<token>Khách sạn
+however<token>Tuy nhiên
+hungry<token>Đói
+husband<token>Chồng
+ice<token>Nước đá
+include<token>Bao gồm
+information<token>Thông tin
+interested<token>Hứng thú
+introduce<token>Giới thiệu
+island<token>Đảo
+jacket<token>Áo khoác
+January<token>Tháng một
+jeans<token>Quần jean
+job<token>Công việc
+join<token>Tham gia
+journey<token>Chuyến đi
+juice<token>Nước ép
+July<token>Tháng bảy
+June<token>Tháng sáu
+just<token>Chỉ
+key<token>Chìa khóa
+kilometre<token>Ki lô mét
+kind<token>Loại
+kitchen<token>Nhà bếp
+know<token>Biết
+land<token>Đất
+language<token>Ngôn ngữ
+large<token>Rộng
+last<token>Cuối cùng
+late<token>Trễ
+later<token>Sau
+laugh<token>Cười
+learn<token>Học
+leave<token>Rời đi
+lesson<token>Bài học
+library<token>Thư viện
+light<token>Nhẹ
+lion<token>Sư tử
+list<token>Danh sách
+listen<token>Nghe
+live<token>Sống
+lunch<token>Bữa trưa
+machine<token>Máy
+magazine<token>Tạp chí
+map<token>Bản đồ
+March<token>Tháng ba
+market<token>Chợ
+married<token>Cưới nhau
+match<token>Nối
+May<token>Có thể
+me<token>Tôi
+meal<token>Bữa ăn
+meat<token>Thịt
+meet<token>Gặp
+member<token>Thành viên
+menu<token>Thực đơn
+message<token>Tin nhắn
+midnight<token>Nửa đêm
+Monday<token>Thứ hai
+month<token>Tháng
+museum<token>Viện bảo tàng
+music<token>Âm nhạc
+name<token>Tên
+natural<token>Thiên nhiên
+neighbour<token>Láng giềng
+never<token>Không bao giờ
+new<token>Mới
+news<token>Tin tức
+newspaper<token>Báo chí
+nice<token>Đẹp
+north<token>Bắc
+nose<token>Mũi
+nothing<token>Không có gì
+November<token>Tháng mười một
+now<token>Bây giờ
+number<token>Số
+October<token>Tháng mười
+of<token>Của
+open<token>Mở
+opinion<token>Ý kiến
+orange<token>Trái cam
+outside<token>Ngoài trời
+own<token>Làm chủ
+page<token>Trang
+paint<token>Sơn
+pair<token>Đôi
+paper<token>Giấy
+paragraph<token>Đoạn văn
+parent<token>Bố mẹ
+park<token>Công viên
+partner<token>Bạn đồng hành
+party<token>Buổi tiệc
+pepper<token>Hạt tiêu
+pink<token>Màu hồng
+please<token>Vui lòng
+police<token>Công an
+product<token>Sản phẩm
+pretty<token>Đẹp
+read<token>Đọc
+ready<token>Sẵn sàng
+reason<token>Lý do
+red<token>Màu đỏ
+relax<token>Thư giãn
+restaurant<token>Nhà hàng
+river<token>Sông
+road<token>Đường
+salt<token>Muối
+sandwich<token>Bánh mì sandwich
+Saturday<token>Thứ bảy
+Sunday<token>Chủ nhật
+school<token>Trường học
+science<token>Khoa học
+see<token>Thấy
+send<token>Gửi
+September<token>Tháng chín
+seven<token>Số bảy
+she<token>Cô ấy
+similar<token>Giống
+singer<token>Ca sĩ
+sister<token>Chị em gái
+sleep<token>Ngủ
+small<token>Nhỏ
+son<token>Con trai
+spring<token>Mùa xuân
+statement<token>Bản tường trình
+still<token>Vẫn
+story<token>Câu chuyện
+telephone<token>Điện thoại
+teenager<token>Thanh thiếu niên
+teacher<token>Giáo viên
+team<token>Đội
+television<token>Ti vi
+terrible<token>Kinh khủng
+test<token>Kiểm tra
+Thursday<token>Thứ năm
+three<token>Số ba
+together<token>Cùng nhau
+toilet<token>Nhà vệ sinh
+tomato<token>Cà chua
+topic<token>Chủ đề
+traffic<token>Giao thông
+Tuesday<token>Thứ ba
+twelve<token>Số mười hai
+type<token>Loại
+thousand<token>Ngàn
+umbrella<token>Cái ô
+uncle<token>Chú,bác
+understand<token>Hiểu
+university<token>Trường đại học
+until<token>Cho đến khi
+us<token>Chúng ta
+use<token>Sử dụng
+useful<token>Có ích
+usually<token>Thường xuyên
+vacation<token>Kỳ nghỉ
+vegetable<token>Rau quả
+video<token>Chiếu phim
+village<token>Làng quê
+visit<token>Thăm quan
+visitor<token>Khách thăm quan
+wait<token>Đợi
+waiter<token>Phục vụ nam
+wake<token>Thức dậy
+walk<token>Đi bộ
+want<token>Muốn
+warm<token>Ấm áp
+wash<token>Rửa
+watch<token>Xem
+water<token>Nước
+weather<token>Thời tiết
+website<token>Trang web
+Wednesday<token>Thứ tư
+weekend<token>Ngày cuối tuần
+welcome<token>Chào mừng
+west<token>Hướng tây
+what<token>Cái gì
+white<token>Trắng
+wife<token>Vợ
+window<token>Cửa sổ
+woman<token>Phụ nữ
+wonderful<token>Tuyệt vời
+work<token>Làm việc
+world<token>Thế giới
+would<token>Sẽ
+write<token>Viết
+year<token>Năm
+yellow<token>Màu vàng
+yes<token>Vâng
+yesterday<token>Hôm qua
+young<token>Trẻ
+yourself<token>Chính bạn

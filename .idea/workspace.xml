@@ -4,23 +4,20 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="44075a79-8d5a-4a07-87c4-6ea1b53c997d" name="Changes" comment="">
+    <list default="true" id="ac83e67c-7ff2-4d07-99da-d6bba4c24106" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/ExtracQuestionToDB.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/A1Excercise.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/OtherStuff/ImportData.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/data/Account/Account.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/data/Account/AccountManagement.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/data/Account/IntermediateAccount.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/data/Account/NewbieAccount.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/data/Exercise/Exercise.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/data/account.txt" beforeDir="false" afterPath="$PROJECT_DIR$/data/account.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/dict_hh.db" beforeDir="false" afterPath="$PROJECT_DIR$/data/dict_hh.db" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/data/db/DatabaseManagement.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/data/db/DatabaseManagement.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/domain/model/DatabaseOfDict.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/domain/model/DatabaseOfDict.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/view/EditController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/view/EditController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/view/FindController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/view/FindController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/view/SettingController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/view/SettingController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/view/SigUpController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/view/SigUpController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/view/Controller.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/view/Controller.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/view/LearnEnglish.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/view/LearnEnglish.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/view/Login.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/view/Login.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/view/Setting.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/view/Setting.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/view/SignUp.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/view/SignUp.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/view/find.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/view/find.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/view/graphic.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/view/graphic.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/view/LearnEnglishController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/view/LearnEnglishController.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -33,11 +30,10 @@
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
-  <component name="ProjectColorInfo">{
-  &quot;customColor&quot;: &quot;&quot;,
-  &quot;associatedIndex&quot;: 4
-}</component>
-  <component name="ProjectId" id="2YcAMwFMPDSmeg3HxF8WGWqAnzl" />
+  <component name="ProjectColorInfo"><![CDATA[{
+  "associatedIndex": 7
+}]]></component>
+  <component name="ProjectId" id="2YfVE5pzFgaZDTR7a5iAwdmJKJi" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -47,10 +43,8 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
-    "git-widget-placeholder": "main",
-    "last_opened_file_path": "D:/UET/hk3/oop/Soft_Flame",
+    "git-widget-placeholder": "Merging main",
     "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
     "vue.rearranger.settings.migration": "true"
@@ -59,16 +53,12 @@
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="44075a79-8d5a-4a07-87c4-6ea1b53c997d" name="Changes" comment="" />
-      <created>1700814454280</created>
+      <changelist id="ac83e67c-7ff2-4d07-99da-d6bba4c24106" name="Changes" comment="" />
+      <created>1700916505851</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1700814454280</updated>
-      <workItem from="1700814457723" duration="69000" />
-      <workItem from="1700814557092" duration="212000" />
-      <workItem from="1700814797518" duration="250000" />
-      <workItem from="1700836765860" duration="13242000" />
-      <workItem from="1700915506470" duration="597000" />
+      <updated>1700916505851</updated>
+      <workItem from="1700916507087" duration="450000" />
     </task>
     <servers />
   </component>

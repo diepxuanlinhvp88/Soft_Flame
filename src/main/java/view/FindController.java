@@ -78,8 +78,8 @@ public class FindController implements Initializable {
 
 
         FindA.setText(ListW.getSelectionModel().getSelectedItems().toString().replace("[", "").replace("]", ""));
-        webEngine.loadContent(LoginController.data.connectAndQuerry(av.getText(), FindA.getText()));
-        // LoginController.data.setWord(FindA.getText());
+        //webEngine.loadContent(LoginController.data.connectAndQuerry(av.getText(), FindA.getText()));
+        webEngine.loadContent(LoginController.dic.getHtml(FindA.getText()));
 
 
     }
@@ -90,8 +90,8 @@ public class FindController implements Initializable {
             text.setText("Bạn chưa nhập từ cần điền");
             System.out.println("chua nhap tu ");
         } else {
-            //webEngine.loadContent(LoginController.dic.getHtml(FindA.getText()));
-            webEngine.loadContent(LoginController.data.connectAndQuerry(av.getText(), FindA.getText()));
+            webEngine.loadContent(LoginController.dic.getHtml(FindA.getText()));
+            //webEngine.loadContent(LoginController.data.connectAndQuerry(av.getText(), FindA.getText()));
 
         }
 
@@ -102,7 +102,8 @@ public class FindController implements Initializable {
 
     public void sellectWordWrong() {
         FindA.setText(LoginController.dic.findWithWrong(Wrongsellect.getText()));
-        webEngine.loadContent(LoginController.data.connectAndQuerry(av.getText(), FindA.getText()));
+       //webEngine.loadContent(LoginController.data.connectAndQuerry(av.getText(), FindA.getText()));
+        webEngine.loadContent(LoginController.dic.getHtml(FindA.getText()));
     }
 
     public void voice() throws PropertyVetoException, AudioException, EngineException, InterruptedException {

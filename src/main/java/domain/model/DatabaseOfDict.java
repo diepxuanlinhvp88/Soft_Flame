@@ -20,7 +20,6 @@ public class DatabaseOfDict {
     public static Connection getConnection(String dbURL) {
         Connection conn = null;
         try {
-//            Class.forName("org.sqlite.JDBC");
             conn = DriverManager.getConnection(dbURL);
             System.out.println("connect successfully!");
         } catch (Exception ex) {
