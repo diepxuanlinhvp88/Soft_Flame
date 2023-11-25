@@ -4,318 +4,28 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-<<<<<<< HEAD
-    <list default="true" id="e3e5db1d-8c84-456f-95a8-074f62a4e650" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/Dictionary/src/main/java/com/example/javafxwordle/HelpWindow.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Dictionary/src/main/java/com/example/javafxwordle/MainHelper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Dictionary/src/main/java/com/example/javafxwordle/ScoreWindow.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Dictionary/src/main/java/com/example/javafxwordle/Toast.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Dictionary/src/main/java/com/example/javafxwordle/WordleApplication.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Dictionary/src/main/java/com/example/javafxwordle/WordleController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Dictionary/src/main/java/domain/api/IParaTransWithAPI.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Dictionary/src/main/java/domain/api/ITextToSpeech.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Dictionary/src/main/java/domain/db/IDatabaseManagement.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Dictionary/src/main/java/domain/db/IDictionaryManagement.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Dictionary/src/main/java/view/JavaFX-Wordle.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Dictionary/src/main/resources/com.example.javafxwordle/dictionary.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Dictionary/src/main/resources/com.example.javafxwordle/images/github.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Dictionary/src/main/resources/com.example.javafxwordle/images/help.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Dictionary/src/main/resources/com.example.javafxwordle/images/icon.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Dictionary/src/main/resources/com.example.javafxwordle/images/icons8-restart-40.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Dictionary/src/main/resources/com.example.javafxwordle/main-view.fxml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Dictionary/src/main/resources/com.example.javafxwordle/winning-words.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Dictionary/src/main/resources/com.example.javafxwordle/wordle.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Dictionary/src/main/resources/view/image/17.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Dictionary/src/main/resources/view/image/sync_alt_FILL0_wght400_GRAD0_opsz24.png" afterDir="false" />
+    <list default="true" id="44075a79-8d5a-4a07-87c4-6ea1b53c997d" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Dictionary/data/EngtoV.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Dictionary/data/EngtoV.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Dictionary/data/account.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Dictionary/data/account.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Dictionary/data/dict_hh.db" beforeDir="false" afterPath="$PROJECT_DIR$/Dictionary/data/dict_hh.db" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Dictionary/data/infoEditWord.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Dictionary/data/infoEditWord.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Dictionary/data/question.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Dictionary/data/question.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Dictionary/data/vietanh.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Dictionary/data/vietanh.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Dictionary/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Dictionary/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Dictionary/src/main/java/Controller/DatabaseManagement.java" beforeDir="false" afterPath="$PROJECT_DIR$/Dictionary/src/main/java/data/db/DatabaseManagement.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Dictionary/src/main/java/Controller/DictionaryManagement.java" beforeDir="false" afterPath="$PROJECT_DIR$/Dictionary/src/main/java/data/db/DictionaryManagement.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Dictionary/src/main/java/Controller/ParaTransWithAPI.java" beforeDir="false" afterPath="$PROJECT_DIR$/Dictionary/src/main/java/data/api/ParaTransWithAPI.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Dictionary/src/main/java/Controller/textToSpeech.java" beforeDir="false" afterPath="$PROJECT_DIR$/Dictionary/src/main/java/data/api/TextToSpeech.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Dictionary/src/main/java/Model/DatabaseOfDict.java" beforeDir="false" afterPath="$PROJECT_DIR$/Dictionary/src/main/java/domain/model/DatabaseOfDict.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Dictionary/src/main/java/Model/Dictionary.java" beforeDir="false" afterPath="$PROJECT_DIR$/Dictionary/src/main/java/domain/model/Dictionary.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Dictionary/src/main/java/Model/Word.java" beforeDir="false" afterPath="$PROJECT_DIR$/Dictionary/src/main/java/domain/model/Word.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Dictionary/src/main/java/module-info.java" beforeDir="false" afterPath="$PROJECT_DIR$/Dictionary/src/main/java/module-info.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Dictionary/src/main/java/view/ContestController.java" beforeDir="false" afterPath="$PROJECT_DIR$/Dictionary/src/main/java/view/ContestController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Dictionary/src/main/java/view/Controller.java" beforeDir="false" afterPath="$PROJECT_DIR$/Dictionary/src/main/java/view/Controller.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Dictionary/src/main/java/view/EditController.java" beforeDir="false" afterPath="$PROJECT_DIR$/Dictionary/src/main/java/view/EditController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Dictionary/src/main/java/view/FindController.java" beforeDir="false" afterPath="$PROJECT_DIR$/Dictionary/src/main/java/view/FindController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Dictionary/src/main/java/view/HelloApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/Dictionary/src/main/java/view/DictApp.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Dictionary/src/main/java/view/LearnEnglishController.java" beforeDir="false" afterPath="$PROJECT_DIR$/Dictionary/src/main/java/view/LearnEnglishController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Dictionary/src/main/java/view/LoginController.java" beforeDir="false" afterPath="$PROJECT_DIR$/Dictionary/src/main/java/view/LoginController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Dictionary/src/main/java/view/SettingController.java" beforeDir="false" afterPath="$PROJECT_DIR$/Dictionary/src/main/java/view/SettingController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Dictionary/src/main/java/view/TranslateController.java" beforeDir="false" afterPath="$PROJECT_DIR$/Dictionary/src/main/java/view/TranslateController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Dictionary/src/main/resources/view/Edit.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/Dictionary/src/main/resources/view/Edit.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Dictionary/src/main/resources/view/SignUp.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/Dictionary/src/main/resources/view/SignUp.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Dictionary/src/main/resources/view/find.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/Dictionary/src/main/resources/view/find.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-=======
-    <list default="true" id="73d70507-e844-4e96-a40e-319ceb06e4da" name="Changes" comment="fixed">
-      <change afterPath="$PROJECT_DIR$/../SoftFlame/src/main/java/com/softflame/dictapp/domain/api/api/IParaTransWithAPI.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../SoftFlame/src/main/java/com/softflame/dictapp/domain/api/api/ITextToSpeech.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../SoftFlame/src/main/java/com/softflame/dictapp/domain/api/database/IDatabaseManagement.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../SoftFlame/src/main/java/com/softflame/dictapp/domain/api/database/IDictionaryManagement.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Dictionary/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Dictionary/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Dictionary/.idea/.name" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Dictionary/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../SoftFlame/.idea/encodings.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Dictionary/.idea/inspectionProfiles/profiles_settings.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Dictionary/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../SoftFlame/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Dictionary/.idea/uiDesigner.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Dictionary/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../SoftFlame/.idea/vcs.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Dictionary/.mvn/wrapper/maven-wrapper.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Dictionary/.mvn/wrapper/maven-wrapper.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Dictionary/Create_database_ForVE.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Dictionary/audio/a b c - book.mp3" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Dictionary/audio/a b c.mp3" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Dictionary/audio/a font.mp3" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Dictionary/audio/a fortiori.mp3" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Dictionary/audio/a la carte.mp3" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Dictionary/audio/a la mode.mp3" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Dictionary/audio/a posteriori.mp3" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Dictionary/audio/a priori.mp3" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Dictionary/audio/a-bomb.mp3" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Dictionary/audio/a-going.mp3" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Dictionary/audio/a-plenty.mp3" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Dictionary/audio/a-power.mp3" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Dictionary/audio/a.d..mp3" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Dictionary/audio/a.m..mp3" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Dictionary/audio/a.mp3" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Dictionary/audio/aard-wolf.mp3" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Dictionary/audio/aasvogel.mp3" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Dictionary/audio/aba.WAV" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Dictionary/audio/abaci.mp3" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Dictionary/audio/aback.mp3" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Dictionary/audio/abacus.mp3" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Dictionary/audio/abaddon.mp3" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Dictionary/audio/abaft.mp3" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Dictionary/audio/abalone.mp3" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Dictionary/audio/abandon.mp3" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Dictionary/audio/abandoned.mp3" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Dictionary/audio/abandoner.mp3" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Dictionary/audio/abandonment.mp3" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Dictionary/audio/abase.mp3" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Dictionary/audio/abasement.mp3" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Dictionary/audio/abash.mp3" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Dictionary/audio/abashment.mp3" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Dictionary/audio/abask.mp3" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Dictionary/audio/abatable.mp3" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Dictionary/audio/abate.mp3" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Dictionary/audio/abatement.mp3" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Dictionary/audio/abatis.mp3" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Dictionary/audio/abatised.mp3" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Dictionary/audio/abattoir.mp3" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Dictionary/audio/abb.mp3" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Dictionary/audio/abbacy.mp3" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Dictionary/audio/abbatial.mp3" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Dictionary/audio/abbess.mp3" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Dictionary/audio/abbey.mp3" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Dictionary/audio/abbot.mp3" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Dictionary/audio/abbreviate.mp3" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Dictionary/audio/abbreviated.mp3" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Dictionary/audio/abbreviation.mp3" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Dictionary/audio/abbreviator.mp3" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Dictionary/audio/abdicant.mp3" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Dictionary/audio/abdicate.mp3" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Dictionary/audio/abdication.mp3" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Dictionary/audio/abdicator.mp3" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Dictionary/audio/abdomen.mp3" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Dictionary/audio/abdominal.mp3" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Dictionary/audio/abdominous.mp3" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Dictionary/audio/abducent.mp3" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Dictionary/audio/abduct.mp3" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Dictionary/audio/abduction.mp3" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Dictionary/audio/abductor.mp3" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Dictionary/audio/abeam.mp3" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Dictionary/audio/abecedarian.mp3" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Dictionary/audio/abed.mp3" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Dictionary/audio/abele.mp3" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Dictionary/audio/abelmosk.mp3" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Dictionary/audio/aberrance.mp3" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Dictionary/audio/aberrancy.mp3" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Dictionary/audio/aberrant.mp3" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Dictionary/audio/aberration.mp3" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Dictionary/audio/abet.mp3" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Dictionary/audio/abetment.mp3" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Dictionary/audio/abettal.mp3" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Dictionary/audio/abette.mp3" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Dictionary/audio/abettor.mp3" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Dictionary/audio/abeyance.mp3" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Dictionary/audio/abeyant.mp3" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Dictionary/audio/abhor.mp3" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Dictionary/audio/abhorrence.mp3" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Dictionary/audio/abhorrent.mp3" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Dictionary/audio/abidance.mp3" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Dictionary/audio/abide.mp3" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Dictionary/audio/abiding.mp3" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Dictionary/audio/abietene.mp3" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Dictionary/audio/abigail.mp3" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Dictionary/audio/abilitate.mp3" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Dictionary/audio/ability.mp3" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Dictionary/audio/abiogenesis.mp3" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Dictionary/audio/abiogenetic.mp3" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Dictionary/audio/abiogenetically.mp3" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Dictionary/audio/abiogenist.mp3" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Dictionary/audio/abiogenous.mp3" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Dictionary/audio/abiogeny.mp3" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Dictionary/audio/abiological.mp3" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Dictionary/audio/abiotic.mp3" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Dictionary/audio/abject.mp3" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Dictionary/audio/abjection.mp3" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Dictionary/audio/abjectness.mp3" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Dictionary/audio/abjuration.mp3" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Dictionary/audio/abjure.mp3" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Dictionary/audio/ablactation.mp3" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Dictionary/callAPIOCR.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Dictionary/crawlData.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Dictionary/data/EngtoV.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Dictionary/data/LearnVocab.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Dictionary/data/New Text Document.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Dictionary/data/ViEn.db" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Dictionary/data/account.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Dictionary/data/dict_hh.db" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Dictionary/data/infoEditWord.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Dictionary/data/question.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Dictionary/data/vietanh.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Dictionary/export_data.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Dictionary/mvnw" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Dictionary/mvnw.cmd" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Dictionary/pom.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Dictionary/request.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Dictionary/src/main/java/Controller/DatabaseManagement.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Dictionary/src/main/java/Controller/DictionaryManagement.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Dictionary/src/main/java/Controller/ParaTransWithAPI.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Dictionary/src/main/java/Controller/textToSpeech.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Dictionary/src/main/java/Model/DatabaseOfDict.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Dictionary/src/main/java/Model/Dictionary.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Dictionary/src/main/java/Model/Word.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Dictionary/src/main/java/module-info.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Dictionary/src/main/java/view/ContestController.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Dictionary/src/main/java/view/Controller.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Dictionary/src/main/java/view/Edit.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Dictionary/src/main/java/view/EditController.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Dictionary/src/main/java/view/FindController.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Dictionary/src/main/java/view/HelloApplication.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Dictionary/src/main/java/view/LearnEnglishController.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Dictionary/src/main/java/view/LoginController.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Dictionary/src/main/java/view/SettingController.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Dictionary/src/main/java/view/SuccessContestController.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Dictionary/src/main/java/view/TranslateController.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Dictionary/src/main/resources/view/Controller.fxml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Dictionary/src/main/resources/view/Edit.fxml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Dictionary/src/main/resources/view/LearnEnglish.fxml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Dictionary/src/main/resources/view/Login.fxml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Dictionary/src/main/resources/view/Setting.fxml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Dictionary/src/main/resources/view/SignUp.fxml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Dictionary/src/main/resources/view/Translate.fxml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Dictionary/src/main/resources/view/contest.fxml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Dictionary/src/main/resources/view/find.fxml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Dictionary/src/main/resources/view/graphic.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Dictionary/src/main/resources/view/image/1.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Dictionary/src/main/resources/view/image/10.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Dictionary/src/main/resources/view/image/11.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Dictionary/src/main/resources/view/image/12.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Dictionary/src/main/resources/view/image/13.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Dictionary/src/main/resources/view/image/14.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Dictionary/src/main/resources/view/image/15.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Dictionary/src/main/resources/view/image/16.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Dictionary/src/main/resources/view/image/17.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Dictionary/src/main/resources/view/image/18.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Dictionary/src/main/resources/view/image/19.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Dictionary/src/main/resources/view/image/2.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Dictionary/src/main/resources/view/image/20.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Dictionary/src/main/resources/view/image/21.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Dictionary/src/main/resources/view/image/22.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Dictionary/src/main/resources/view/image/23.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Dictionary/src/main/resources/view/image/24.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Dictionary/src/main/resources/view/image/25.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Dictionary/src/main/resources/view/image/26.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Dictionary/src/main/resources/view/image/2606505_5844.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Dictionary/src/main/resources/view/image/27.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Dictionary/src/main/resources/view/image/28.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Dictionary/src/main/resources/view/image/29.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Dictionary/src/main/resources/view/image/3.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Dictionary/src/main/resources/view/image/30.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Dictionary/src/main/resources/view/image/31.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Dictionary/src/main/resources/view/image/32.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Dictionary/src/main/resources/view/image/33.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Dictionary/src/main/resources/view/image/34.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Dictionary/src/main/resources/view/image/35.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Dictionary/src/main/resources/view/image/36.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Dictionary/src/main/resources/view/image/3643734-high-sound-speaker-voice-volume_113403.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Dictionary/src/main/resources/view/image/37.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Dictionary/src/main/resources/view/image/38.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Dictionary/src/main/resources/view/image/39.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Dictionary/src/main/resources/view/image/4.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Dictionary/src/main/resources/view/image/5.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Dictionary/src/main/resources/view/image/6.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Dictionary/src/main/resources/view/image/7.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Dictionary/src/main/resources/view/image/8.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Dictionary/src/main/resources/view/image/9.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Dictionary/src/main/resources/view/image/Soft (1).jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Dictionary/src/main/resources/view/image/Soft (1).png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Dictionary/src/main/resources/view/image/Soft(2).png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Dictionary/src/main/resources/view/image/Soft.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Dictionary/src/main/resources/view/image/Soft.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Dictionary/src/main/resources/view/image/Soft/1.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Dictionary/src/main/resources/view/image/Soft/10.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Dictionary/src/main/resources/view/image/Soft/2.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Dictionary/src/main/resources/view/image/Soft/3.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Dictionary/src/main/resources/view/image/Soft/4.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Dictionary/src/main/resources/view/image/Soft/5.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Dictionary/src/main/resources/view/image/Soft/6.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Dictionary/src/main/resources/view/image/Soft/7.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Dictionary/src/main/resources/view/image/Soft/8.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Dictionary/src/main/resources/view/image/Soft/9.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Dictionary/src/main/resources/view/image/cameraIcon.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Dictionary/src/main/resources/view/image/cameraIcon2.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Dictionary/src/main/resources/view/image/gameButton.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Dictionary/src/main/resources/view/image/gameButton.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Dictionary/src/main/resources/view/image/next.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Dictionary/src/main/resources/view/image/questionbg.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Dictionary/src/main/resources/view/image/rate.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Dictionary/src/main/resources/view/image/read_book_study_icon-icons.com_51077.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Dictionary/src/main/resources/view/image/setting (1).png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Dictionary/src/main/resources/view/image/setting.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Dictionary/src/main/resources/view/image/stadia_controller_FILL0_wght400_GRAD0_opsz24.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Dictionary/src/main/resources/view/image/successContest.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Dictionary/src/main/resources/view/image/sync_alt_FILL0_wght400_GRAD0_opsz24.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Dictionary/src/main/resources/view/image/undo_FILL0_wght400_GRAD0_opsz24.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Dictionary/src/main/resources/view/image/voice.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Dictionary/src/main/resources/view/image/voice1.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Dictionary/src/main/resources/view/image/voiceM.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Dictionary/src/main/resources/view/image/voiceX.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Dictionary/src/main/resources/view/music/1.mp3" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Dictionary/src/main/resources/view/music/2.mp3" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Dictionary/src/main/resources/view/music/3.mp3" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Dictionary/src/main/resources/view/successContest.fxml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Dictionary/test.bin" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Dictionary/test.mp3" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Dictionary/testImageToText.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Dictionary/textToSpeech.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/data/db/DictionaryManagement.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/data/db/DictionaryManagement.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/account.txt" beforeDir="false" afterPath="$PROJECT_DIR$/data/account.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/dict_hh.db" beforeDir="false" afterPath="$PROJECT_DIR$/data/dict_hh.db" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/data/db/DatabaseManagement.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/data/db/DatabaseManagement.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/domain/model/DatabaseOfDict.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/domain/model/DatabaseOfDict.java" afterDir="false" />
->>>>>>> f8fad3ed88f2fbf3935629b3543c34194969142c
+      <change beforePath="$PROJECT_DIR$/src/main/java/view/EditController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/view/EditController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/view/FindController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/view/FindController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/view/SettingController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/view/SettingController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/view/SigUpController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/view/SigUpController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/view/Controller.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/view/Controller.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/view/LearnEnglish.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/view/LearnEnglish.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/view/Login.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/view/Login.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/view/Setting.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/view/Setting.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/view/SignUp.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/view/SignUp.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/view/find.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/view/find.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/view/graphic.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/view/graphic.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
-  </component>
-<<<<<<< HEAD
-  <component name="FileTemplateManagerImpl">
-    <option name="RECENT_TEMPLATES">
-      <list>
-        <option value="Class" />
-      </list>
-    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -324,115 +34,45 @@
     <option name="stateVersion" value="1" />
   </component>
   <component name="ProjectColorInfo">{
+  &quot;customColor&quot;: &quot;&quot;,
   &quot;associatedIndex&quot;: 4
 }</component>
-  <component name="ProjectId" id="2YXLaIfYUN5XnPso9RnAq0vxgIy" />
+  <component name="ProjectId" id="2YcAMwFMPDSmeg3HxF8WGWqAnzl" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
-  </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;Merging main&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
-  }
-}</component>
-=======
-  <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
-    "dart.analysis.tool.window.visible": "false",
-    "git-widget-placeholder": "refactor/project-structure",
-    "ignore.preview.features.used": "true",
-    "last_opened_file_path": "E:/env/javafx/javafx-sdk-21.0.1/lib",
-    "list.type.of.created.stylesheet": "CSS",
+    "git-widget-placeholder": "main",
+    "last_opened_file_path": "D:/UET/hk3/oop/Soft_Flame",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "project.structure.last.edited": "Modules",
-    "project.structure.proportion": "0.15",
-    "project.structure.side.proportion": "0.4597701",
-    "settings.editor.selected.configurable": "reference.settings.project.maven.repository.indices",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
-  <component name="Push.Settings">
-    <option name="SHOW_DETAILS_PANEL" value="false" />
-  </component>
-  <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="D:\UET\Soft_Flame\Dictionary\src\main\resources\view" />
-    </key>
-  </component>
-  <component name="RunManager">
-    <configuration name="DictApp" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="view.DictApp" />
-      <module name="Dictionary" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="view.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <recent_temporary>
-      <list>
-        <item itemvalue="Application.DictApp" />
-      </list>
-    </recent_temporary>
-  </component>
->>>>>>> f8fad3ed88f2fbf3935629b3543c34194969142c
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="e3e5db1d-8c84-456f-95a8-074f62a4e650" name="Changes" comment="" />
-      <created>1700667065785</created>
+      <changelist id="44075a79-8d5a-4a07-87c4-6ea1b53c997d" name="Changes" comment="" />
+      <created>1700814454280</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1700667065785</updated>
-      <workItem from="1700667071908" duration="5230000" />
-      <workItem from="1700735590988" duration="765000" />
-      <workItem from="1700755770201" duration="1071000" />
-      <workItem from="1700798781529" duration="3412000" />
-      <workItem from="1700807101878" duration="6857000" />
+      <updated>1700814454280</updated>
+      <workItem from="1700814457723" duration="69000" />
+      <workItem from="1700814557092" duration="212000" />
+      <workItem from="1700814797518" duration="250000" />
+      <workItem from="1700836765860" duration="13242000" />
+      <workItem from="1700915506470" duration="597000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
-<<<<<<< HEAD
-=======
-  <component name="VcsManagerConfiguration">
-    <MESSAGE value="commit" />
-    <MESSAGE value="fixed" />
-    <option name="LAST_COMMIT_MESSAGE" value="fixed" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <breakpoint enabled="true" type="java-exception">
-          <properties class="java.util.UnknownFormatConversionException" package="java.util" />
-          <option name="timeStamp" value="1" />
-        </breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
-  </component>
->>>>>>> f8fad3ed88f2fbf3935629b3543c34194969142c
 </project>

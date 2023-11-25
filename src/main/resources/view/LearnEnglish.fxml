@@ -1,44 +1,63 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<?import javafx.geometry.Insets?>
 <?import javafx.scene.image.Image?>
 <?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
 
-<AnchorPane fx:id="anchorParentLearn" prefHeight="505.0" prefWidth="720.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="view.LearnEnglishController">
+<AnchorPane fx:id="anchorParentLearn" prefHeight="600.0" prefWidth="960.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="view.LearnEnglishController">
     <children>
-        <AnchorPane fx:id="anchorPaneChild" layoutY="100.0" prefHeight="405.0" prefWidth="720.0" />
-        <AnchorPane prefHeight="100.0" prefWidth="720.0" style="-fx-background-color: #B48D77;">
+        <AnchorPane fx:id="anchorPaneChild" layoutY="80.0" prefHeight="520.0" prefWidth="960.0" />
+        <AnchorPane prefHeight="80.0" prefWidth="960.0" style="-fx-background-color: #47bcd9;">
          <children>
-            <ImageView fitHeight="77.0" fitWidth="75.0" layoutX="500.0" layoutY="22.0" onMouseClicked="#Game" pickOnBounds="true" preserveRatio="true">
-               <image>
-                  <Image url="@image/playgame.png" />
-               </image>
-            </ImageView>
-            <ImageView fitHeight="50.0" fitWidth="75.0" layoutX="619.0" layoutY="25.0" onMouseClicked="#Exit" pickOnBounds="true" preserveRatio="true">
-               <image>
-                  <Image url="@image/2606505_5844.png" />
-               </image>
-            </ImageView>
-            <ImageView fitHeight="71.0" fitWidth="66.0" layoutX="282.0" layoutY="15.0" onMouseClicked="#Editcontroller">
-               <image>
-                  <Image url="@image/edit.png" />
-               </image>
-            </ImageView>
-            <ImageView fitHeight="50.0" fitWidth="119.0" layoutX="122.0" layoutY="26.0" onMouseClicked="#Findcontroller" opacity="0.71">
-               <image>
-                  <Image url="@image/find.png" />
-               </image>
-            </ImageView>
-            <ImageView fitHeight="54.0" fitWidth="49.0" layoutX="408.0" layoutY="23.0" onMouseClicked="#Translate" opacity="0.66" preserveRatio="true">
-               <image>
-                  <Image url="@image/trans1.png" />
-               </image>
-            </ImageView>
-            <ImageView fitHeight="59.0" fitWidth="58.0" layoutX="27.0" layoutY="21.0" onMouseClicked="#Menu">
-               <image>
-                  <Image url="@image/home.png" />
-               </image>
-            </ImageView>
+            <HBox prefHeight="80.0" prefWidth="960.0" spacing="55.0">
+               <children>
+                  <ImageView fitHeight="59.0" fitWidth="58.0" onMouseClicked="#Menu">
+                     <image>
+                        <Image url="@image/home.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="77.0" fitWidth="75.0" onMouseClicked="#Game" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@image/playgame.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="61.0" fitWidth="66.0" onMouseClicked="#Editcontroller">
+                     <image>
+                        <Image url="@image/edit.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="48.0" fitWidth="119.0" onMouseClicked="#Findcontroller" opacity="0.71">
+                     <image>
+                        <Image url="@image/find.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="54.0" fitWidth="49.0" onMouseClicked="#Translate" opacity="0.66" preserveRatio="true">
+                     <image>
+                        <Image url="@image/trans1.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="62.0" fitWidth="114.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@image/setting%20(1).png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="60.0" fitWidth="102.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@image/profile2.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="50.0" fitWidth="75.0" onMouseClicked="#Exit" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@image/2606505_5844.png" />
+                     </image>
+                  </ImageView>
+               </children>
+               <padding>
+                  <Insets left="5.0" right="5.0" top="5.0" />
+               </padding>
+            </HBox>
          </children>
         </AnchorPane>
     </children>

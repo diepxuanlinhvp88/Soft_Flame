@@ -19,6 +19,7 @@ public class SettingController implements Initializable {
     Pane paneset;
     public void outAction(){
         paneset.setVisible(false);
+        //paneset.getChildren().clear();
 
     }
     public void action1() throws IOException {

@@ -7,7 +7,7 @@
 <?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.Pane?>
 
-<Pane fx:id="paneset" prefHeight="207.0" prefWidth="243.0" style="-fx-background-color: #B48D77; -fx-background-radius: 5;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="view.SettingController">
+<Pane fx:id="paneset" prefHeight="246.0" prefWidth="284.0" style="-fx-background-color: #B48D77; -fx-background-radius: 5;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="view.SettingController">
    <children>
       <ImageView fitHeight="61.0" fitWidth="71.0" layoutX="15.0" layoutY="87.0">
          <image>
@@ -19,15 +19,15 @@
             <Image url="@image/voice1.png" />
          </image>
       </ImageView>
-      <Slider fx:id="volumeSlider" layoutX="97.0" layoutY="109.0" max="1.0" prefHeight="16.0" prefWidth="140.0" value="0.5" />
-      <MenuButton layoutX="97.0" layoutY="35.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="131.0" text="Song">
+      <Slider fx:id="volumeSlider" layoutX="97.0" layoutY="109.0" max="1.0" prefHeight="16.0" prefWidth="156.0" value="0.5" />
+      <MenuButton layoutX="97.0" layoutY="35.0" mnemonicParsing="false" prefHeight="28.0" prefWidth="156.0" style="-fx-background-color: f4b8b8;" text="Song" textFill="#e82020">
          <items>
             <MenuItem mnemonicParsing="false" onAction="#action1" text="1.mp3" />
             <MenuItem mnemonicParsing="false" onAction="#action2" text="2.mp3" />
             <MenuItem mnemonicParsing="false" onAction="#action3" text="3.mp3" />
          </items>
       </MenuButton>
-      <ImageView fx:id="out" fitHeight="55.0" fitWidth="71.0" layoutX="90.0" layoutY="148.0" onMouseClicked="#outAction" pickOnBounds="true" preserveRatio="true">
+      <ImageView fx:id="out" fitHeight="55.0" fitWidth="71.0" layoutX="117.0" layoutY="164.0" onMouseClicked="#outAction" pickOnBounds="true" preserveRatio="true">
          <image>
             <Image url="@image/2606505_5844.png" />
          </image>

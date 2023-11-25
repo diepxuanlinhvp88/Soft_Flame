@@ -12,34 +12,34 @@
 <?import javafx.scene.text.Font?>
 <?import javafx.scene.text.Text?>
 
-<AnchorPane fx:id="anchorpaneSignUp" prefHeight="505.0" prefWidth="720.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="view.SigUpController">
+<AnchorPane fx:id="anchorpaneSignUp" prefHeight="600.0" prefWidth="960.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="view.SigUpController">
    <children>
-      <ImageView fitHeight="505.0" fitWidth="720.0" pickOnBounds="true" preserveRatio="true">
+      <ImageView fitHeight="601.0" fitWidth="1000.0" pickOnBounds="true" preserveRatio="true">
          <image>
-            <Image url="@image/13.png" />
+            <Image url="@image/bg.png" />
          </image>
       </ImageView>
-      <Pane fx:id="LogPane" layoutX="239.0" layoutY="206.0" prefHeight="277.0" prefWidth="243.0" styleClass="form" stylesheets="@graphic.css">
+      <Pane fx:id="LogPane" layoutX="343.0" layoutY="266.0" opacity="0.95" prefHeight="328.0" prefWidth="306.0" styleClass="form" stylesheets="@graphic.css">
          <children>
-            <TextField fx:id="newAcc" layoutX="22.0" layoutY="87.0" promptText="username" styleClass="input" stylesheets="@graphic.css">
+            <TextField fx:id="newAcc" layoutX="22.0" layoutY="87.0" prefHeight="48.0" prefWidth="247.0" promptText="username" styleClass="input" stylesheets="@graphic.css">
                <cursor>
                   <Cursor fx:constant="DEFAULT" />
                </cursor>
             </TextField>
-            <Text layoutX="18.0" layoutY="29.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="title" text="Welcome" />
-            <PasswordField fx:id="newpassword" layoutX="22.0" layoutY="139.0" promptText="password" styleClass="input" stylesheets="@graphic.css" />
-            <Text layoutX="18.0" layoutY="52.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="span" text="Create an account!">
+            <Text layoutX="33.0" layoutY="41.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="title" text="Welcome" wrappingWidth="103.50000240281224" />
+            <PasswordField fx:id="newpassword" layoutX="23.0" layoutY="147.0" prefHeight="48.0" prefWidth="246.0" promptText="password" styleClass="input" stylesheets="@graphic.css" />
+            <Text layoutX="34.0" layoutY="68.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="span" text="Create an account!">
                <font>
                   <Font name="Bell MT" size="20.0" />
                </font>
             </Text>
-            <Button layoutX="62.0" layoutY="199.0" mnemonicParsing="false" onAction="#SignUpStart" styleClass="button-confirm" text="SignUp" />
+            <Button layoutX="90.0" layoutY="244.0" mnemonicParsing="false" onAction="#SignUpStart" styleClass="button-confirm" text="SignUp" />
 
-            <Label fx:id="sc" layoutX="53.0" layoutY="179.0" prefHeight="20.0" prefWidth="138.0" textFill="#fa0000">
+                  <Label fx:id="sc" layoutX="70.0" layoutY="207.0" prefHeight="31.0" prefWidth="154.0" textFill="#fa0000">
                <font>
                   <Font name="System Bold Italic" size="14.0" />
 
-               </font>
+                     </font>
             </Label>
          </children>
       </Pane>

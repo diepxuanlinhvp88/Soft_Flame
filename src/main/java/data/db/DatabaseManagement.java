@@ -39,9 +39,9 @@ public class DatabaseManagement implements IDatabaseManagement {
     }
     public String connectAndQuerry(String language,String word){
         String querry = String.format("SELECT * FROM %s WHERE word  = '%s';",language, word);
-        System.out.println(querry);
-        System.out.println(conn.getInfoWord(querry));
-        return conn.getInfoWord(querry);
+        //System.out.println(querry);
+        //System.out.println(conn.getInfoWord(querry));
+        return conn.getHtmlWord(querry);
     }
     public String connectAndQuerry(String language,long id){
         String querry = String.format("SELECT * FROM %s WHERE id = %d;",language, id);
@@ -79,6 +79,7 @@ public class DatabaseManagement implements IDatabaseManagement {
     }
     public static  void main(String[] args){
 
-        DatabaseManagement tmp = new DatabaseManagement("asdf");
+        DatabaseManagement tmp = new DatabaseManagement();
+        System.out.println(tmp.connectAndQuerry("va","phiến"));
     }
 }

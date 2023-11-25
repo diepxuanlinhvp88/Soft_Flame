@@ -30,9 +30,7 @@ public class FindController implements Initializable {
     }
 
     @FXML
-    TextField FindA;
-    @FXML
-    TextArea FindB;
+    TextField FindA,targetAdd,meaningAdd, meaningEdit;
     @FXML
     ListView ListW;
     @FXML
@@ -40,32 +38,37 @@ public class FindController implements Initializable {
     @FXML
     WebEngine webEngine;
     @FXML
-    Label text;
+    Label text, Wrongsellect, av;
     @FXML
     Text worongtext;
-    @FXML
-    Label Wrongsellect;
+
+
+
 
 
     public void showListWord() {
+        System.out.println(cnttran);
 
-        FindA.textProperty().addListener(new ChangeListener<String>() {
-            @Override
-            public void changed(ObservableValue<? extends String> observable, String oldValue, String newValue) {
-                List<String> stringList = LoginController.dic.wordListTarget(FindA.getText());
-                ObservableList<String> observableList = FXCollections.observableList(stringList);
+            FindA.textProperty().addListener(new ChangeListener<String>() {
 
-                ListW.setItems(observableList);
-                if (stringList.size() == 0) {
-                    worongtext.setText("Có phải từ bạn cần tìm là : ");
-                    Wrongsellect.setText(LoginController.dic.findWithWrong(FindA.getText()));
-                    // FindA.setText(LoginController.dic.findWithWrong(FindA.getText()));
+                @Override
+                public void changed(ObservableValue<? extends String> observable, String oldValue, String newValue) {
+                    if (cnttran % 2 == 0) {
+                        List<String> stringList = LoginController.dic.wordListTarget(FindA.getText());
+                        ObservableList<String> observableList = FXCollections.observableList(stringList);
+
+                        ListW.setItems(observableList);
+                        if (stringList.size() == 0) {
+                            worongtext.setText("Có phải từ bạn cần tìm là : ");
+                            Wrongsellect.setText(LoginController.dic.findWithWrong(FindA.getText()));
+                            // FindA.setText(LoginController.dic.findWithWrong(FindA.getText()));
+
+                        }
+                    }
 
                 }
 
-            }
-
-        });
+            });
 
 
 
@@ -75,7 +78,7 @@ public class FindController implements Initializable {
 
 
         FindA.setText(ListW.getSelectionModel().getSelectedItems().toString().replace("[", "").replace("]", ""));
-        webEngine.loadContent(LoginController.dic.getHtml(FindA.getText()));
+        webEngine.loadContent(LoginController.data.connectAndQuerry(av.getText(), FindA.getText()));
         // LoginController.data.setWord(FindA.getText());
 
 
@@ -87,26 +90,19 @@ public class FindController implements Initializable {
             text.setText("Bạn chưa nhập từ cần điền");
             System.out.println("chua nhap tu ");
         } else {
-            webEngine.loadContent(LoginController.dic.getHtml(FindA.getText()));
-            // LoginController.data.setWord(FindA.getText());
+            //webEngine.loadContent(LoginController.dic.getHtml(FindA.getText()));
+            webEngine.loadContent(LoginController.data.connectAndQuerry(av.getText(), FindA.getText()));
 
         }
 
 
     }
 
-//    public void findWrong() {
-//        if (ListW.getItems().isEmpty()) {
-//            worongtext.setText("Có phải từ bạn cần tìm là : ");
-//            Wrongsellect.setText(LoginController.dic.findWithWrong(FindA.getText()));
-//
-//        }
-//
-//    }
+
 
     public void sellectWordWrong() {
         FindA.setText(LoginController.dic.findWithWrong(Wrongsellect.getText()));
-        webEngine.loadContent(LoginController.dic.getHtml(FindA.getText()));
+        webEngine.loadContent(LoginController.data.connectAndQuerry(av.getText(), FindA.getText()));
     }
 
     public void voice() throws PropertyVetoException, AudioException, EngineException, InterruptedException {
@@ -114,11 +110,69 @@ public class FindController implements Initializable {
         LoginController.tts.doSpeak(FindA.getText());
     }
 
+    int cnttran = 0;
+
+    public void tranLanguage() {
+        cnttran++;
+        System.out.println(cnttran);
+        if (cnttran % 2 == 0) {
+            av.setText("av");
+            worongtext.setText("");
+            Wrongsellect.setText("");
+            FindA.setText("");
+            ListW.getItems().clear();
+            webEngine.loadContent("");
+            //va.setText("va");
+        } else {
+            av.setText("va");
+            worongtext.setText("");
+            Wrongsellect.setText("");
+            FindA.setText("");
+            ListW.getItems().clear();
+            webEngine.loadContent("");
+            // va.setText("av");
+        }
+
+    }
+
+
+    /**
+     * add db .
+     */
+    public void Add(){
+        if(cnttran % 2 == 0){
+            LoginController.data.addWordtoDatabase(av.getText(),FindA.getText(),
+                    meaningAdd.getText(),"","",true);
+        }
+
+    }
+
+    public void Remove() throws FileNotFoundException {
+        if(cnttran % 2 == 0) {
+            LoginController.data.removeWord(FindA.getText(), "av");
+            LoginController.dic.remove(FindA.getText());
+            try {
+                LoginController.dic.reLoadDictionaryFromFile("dfg");
+            } catch (FileNotFoundException e) {
+                throw new RuntimeException(e);
+            }
+        }
+
+    }
+    public void editw() throws FileNotFoundException {
+        LoginController.data.removeWord(FindA.getText(),"av");
+        LoginController.data.addWordtoDatabase("av",FindA.getText(),
+                meaningEdit.getText(),"","",false);
+        LoginController.dic.update(FindA.getText(),meaningEdit.getText());
+
+    }
+
 
     @Override
     public void initialize(URL url, ResourceBundle resourceBundle) {
 
-        showListWord();
+            showListWord();
+
 
         webEngine = webView.getEngine();
         //webEngine.loadContent(LoginController.dic.find(FindA.getText()));
