@@ -11,8 +11,8 @@ public class ImportData {
         StringBuilder stm = new StringBuilder();
         try {
             while ((line = bufferedReader.readLine()) != null) {
-                String[] data = line.split("<token>");
-                String tmp = String.format("Insert into A1Ex (question,answer) Values('%s','%s');",data[0],data[1]);
+                String[] data = line.split("<tokens>");
+                String tmp = String.format("Insert into Exercise (question,answer,typeOfLevel) Values('%s','%s',%d);",data[0],data[1],1);
                 stm.append(tmp).append("\n");
             }
             return String.valueOf(stm);
@@ -21,8 +21,10 @@ public class ImportData {
         }
         return "cannot import";
     }
+
+
     public static void main(String[] args) throws FileNotFoundException {
-        File file = new File("D:\\java_code\\backup\\Soft_Flame\\data\\A1Excercise.txt");
+        File file = new File("D:\\java_code\\backup\\Soft_Flame\\data\\IntermediaEx.txt");
         InputStream inputStream = new FileInputStream(file);
         System.out.println(ImportData.CreateStatement(inputStream));
     }

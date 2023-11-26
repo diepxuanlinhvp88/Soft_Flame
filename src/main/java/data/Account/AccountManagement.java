@@ -1,4 +1,8 @@
 package data.Account;
+import data.Exercise.Exercise;
+import data.Exercise.FillBlankEx;
+import data.Exercise.RerangeEx;
+
 import java.sql.*;
 import java.time.LocalDateTime;
 import java.time.format.DateTimeFormatter;
@@ -7,7 +11,7 @@ import java.util.Hashtable;
 import java.util.List;
 
 public class AccountManagement {
-    private static final String[] type = {"Newbie","Intermediate","Master","Premium"};
+    private static final String[] type = {"Newbie","Intermediate","Expert","Premium"};
     private static final Hashtable<String,Integer> map = new Hashtable<String, Integer>();
     public AccountManagement(){
         for(int i = 0; i <4; i++){
@@ -41,7 +45,7 @@ public class AccountManagement {
         }
         return conn;
     }
-    private Connection conn = getConnection();
+    public static Connection conn = getConnection();
 
     public Account initAccountFromDB(String username, String password){
         String tmp = String.format("Select typeOfAccount,time,process from Accounts where username = '%s' and password = '%s';",username,password);
@@ -101,7 +105,7 @@ public class AccountManagement {
 
                 int rowsAffected = preparedStatement.executeUpdate();
 
-                if (rowsAffected > 0) {
+                if (rowsAffected > 0&&createUserTable(username)) {
                     System.out.println("Dữ liệu đã được chèn thành công!");
                     return true;
                 } else {
@@ -111,7 +115,45 @@ public class AccountManagement {
                 e.printStackTrace();
             }
         }
+        System.out.println(username+"đã tồn tại");
         return false;
+    }
+
+    private boolean createUserTable(String username){
+        String sqlQ =String.format("Create table %s ( activity varchar(255),time datetime);",username);
+        try{
+            Statement stm = conn.createStatement();
+            stm.executeUpdate(sqlQ);
+            System.out.println("tạo bảng cho người dùng thành công");
+            return true;
+        } catch (Exception e){
+            e.printStackTrace();
+        }
+        System.out.println("tạo bảng thất bại");
+        return false;
+    }
+
+    public static boolean addAcivities(String username, Exercise ex){
+        String insetQuerry = String.format("INSERT INTO %s (activity,time) VALUES (?,?);",username);
+        System.out.println(insetQuerry);
+        try{
+            PreparedStatement stm = conn.prepareStatement(insetQuerry);
+            stm.setString(1,String.format("do %s",ex.getInfo()));
+            stm.setString(2,getCurrentDateTime());
+            int rowsAffected = stm.executeUpdate();
+            if(rowsAffected>0) {
+                System.out.println("update success");
+            }
+            else{
+                System.out.println("update failed");
+                return false;
+            }
+            return true;
+        } catch(Exception e){
+            e.printStackTrace();
+            System.out.println("update failed");
+            return false;
+        }
     }
 
     private String getInfo(){
@@ -132,11 +174,39 @@ public class AccountManagement {
         }
     }
 
-    public static void main(String[] args){
-        AccountManagement tmp = new AccountManagement();
-        tmp.Register("hoa","hoa","Intermediate");
-        tmp.Register("linh","linh","Newbie");
-        System.out.println(tmp.getInfo());
+    public static List<String> getActivities(String userName){
+        List<String> tmp = new ArrayList<>();
+        try{
+            Statement stm = conn.createStatement();
+            ResultSet rs = stm.executeQuery(String.format("select activity, time from %s;",userName));
+            String line;
+            while(rs.next()){
+                line = rs.getString(1) + "/" + rs.getString(2);
+                tmp.add(line);
+            }
+            System.out.println("Lấy dữ liệu hoạt động thành công");
+            return tmp;
+        } catch (Exception e){
+            e.printStackTrace();
+        }
+        System.out.println("lấy dữ liệu thất bại");
+        return null;
     }
+
+
+//    public static void main(String[] args){
+//        AccountManagement tmp = new AccountManagement();
+//        tmp.initAccountFromDB("hoa1","hoa1");
+//        Exercise tmp1 = new RerangeEx("q","sdf");
+//        Exercise tmp2 = new RerangeEx("adsf","as");
+//        AccountManagement.addAcivities("hoa1",tmp1);
+//        AccountManagement.addAcivities("hoa1",tmp2);
+//        List<String> tmp4 = AccountManagement.getActivities("hoa1");
+//        System.out.println(tmp4.size());
+//        for(String i: tmp4){
+//            System.out.println(i);
+//        }
+//
+//    }
 
 }

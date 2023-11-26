@@ -1,0 +1,70 @@
+She (go) _____ to school by bus every day<tokens>goes<token>Hiện tại đơn)
+Yesterday, they (watch) _____ a movie at the cinema<tokens>watched<token>Quá khứ đơn)
+I (have) _____ dinner at 7 PM tonight<tokens>will have<token>Tương lai đơn)
+We (not understand) _____ the lesson last Monday<tokens>did not understand<token>Quá khứ đơn và phủ định)
+He (want) _____ to become a doctor in the future<tokens>wants<token>Hiện tại đơn)
+They (play) _____ soccer when it started to rain<tokens>were playing<token>Quá khứ tiếp diễn)
+She (write) _____ an email to her friend right now<tokens>is writing<token>Hiện tại tiếp diễn)
+He (not be) _____ happy about the results<tokens>is not<token>Hiện tại đơn và phủ định)
+Tomorrow, I (visit) _____ my grandmother<tokens>will visit<token>Tương lai đơn)
+She (study) _____ for the exam since last week<tokens>has been studying<token>Hiện tại hoàn thành tiếp diễn)
+When I called, they (have) _____ dinner<tokens>were having<token>Quá khứ tiếp diễn)
+He always (wake) _____ up early in the morning<tokens>wakes<token>Thói quen)
+They (not finish) _____ their homework yet<tokens>have not finished<token>Hiện tại hoàn thành và phủ định)
+Next year, she (travel) _____ to Japan<tokens>will travel<token>Tương lai đơn)
+We (be) _____ friends for many years<tokens>have been<token>Hiện tại hoàn thành)
+Yesterday, he (forget) _____ to bring his book<tokens>forgot<token>Quá khứ đơn)
+I (never see) _____ that movie before<tokens>have never seen<token>Hiện tại hoàn thành và phủ định)
+They (play) _____ in the park at 4 PM tomorrow<tokens>will be playing<token>Tương lai tiếp diễn)
+He (write) _____ a letter to his friend last night<tokens>wrote<token>Quá khứ đơn)
+I (be) _____ sick last week<tokens>was<token>Quá khứ đơn)
+We (plan) _____ to go on a holiday next month<tokens>plan<token>Hiện tại đơn)
+She (not do) _____ her exercises this morning<tokens>did not do<token>Hiện tại đơn và phủ định)
+He (study) _____ French for two years<tokens>has been studying<token>Hiện tại hoàn thành tiếp diễn)
+Tomorrow, we (have) _____ a meeting at 9 AM<tokens>will have<token>Tương lai đơn)
+They (go) _____ to the beach every summer<tokens>go<token>Hiện tại đơn)
+He (not understand) _____ the question during the test<tokens>did not understand<token>Quá khứ đơn và phủ định)
+I (read) _____ a book when she called<tokens>read<token>Quá khứ đơn)
+She (not be) _____ to Europe before<tokens>has not been<token>Hiện tại hoàn thành và phủ định)
+Next week, they (start) _____ a new project<tokens>will start<token>Tương lai đơn)
+He (work) _____ at this company since 2010<tokens>has been working<token>Hiện tại hoàn thành tiếp diễn)
+school / goes / to / she / every day<tokens>She goes to school every day.
+watched / a / they / last night / movie<tokens>They watched a movie last night.
+dinner / am / I / cooking / tonight<tokens>I am cooking dinner tonight.
+the / did / not / we / understand / lesson<tokens>We did not understand the lesson.
+to / wants / he / a / become / doctor<tokens>He wants to become a doctor.
+playing / were / they / started / when / it / to rain<tokens>They were playing when it started to rain.
+an / writing / right / is / she / now / email<tokens>She is writing an email right now.
+happy / about / was / not / he / the / results<tokens>He was not happy about the results.
+will / visit / I / my / tomorrow / grandmother<tokens>I will visit my grandmother tomorrow.
+since / studying / been / has / she / last week / for / the / exam<tokens>She has been studying for the exam since last week.
+eat / we / breakfast / every morning<tokens>We eat breakfast every morning.
+yesterday / to / the cinema / went / they<tokens>They went to the cinema yesterday.
+is / she / a / writing / letter<tokens>She is writing a letter.
+do / not / understand / I / this problem<tokens>I do not understand this problem.
+wants / to / be / an / he / engineer<tokens>He wants to be an engineer.
+were / they / when / sleeping / called / I<tokens>They were sleeping when I called.
+driving / was / he / work / to<tokens>He was driving to work.
+will / not / be / they / home / at<tokens>They will not be home.
+will / have / we / a / test / tomorrow<tokens>We will have a test tomorrow.
+been / has / she / Paris / to<tokens>She has been to Paris.
+playing / was / he / guitar / the<tokens>He was playing the guitar.
+did / see / you / her / yesterday<tokens>Did you see her yesterday?
+am / I / meeting / friends / my / tonight<tokens>I am meeting my friends tonight.
+are / they / for / waiting / someone<tokens>They are waiting for someone.
+was / the / weather / how / yesterday<tokens>How was the weather yesterday?
+will / go / we / shopping / tomorrow<tokens>We will go shopping tomorrow.
+is / the / where / station / train<tokens>Where is the train station?
+did / not / he / the / answer / know<tokens>He did not know the answer.
+have / I / a / headache<tokens>I have a headache.
+watch / like / to / TV / they<tokens>They like to watch TV.
+was / last / at / night / home / she<tokens>She was at home last night.
+will / call / you / back / I<tokens>I will call you back.
+was / the / where / party<tokens>Where was the party?
+did / go / where / they<tokens>Where did they go?
+was / movie / the / good<tokens>Was the movie good?
+are / you / where / going<tokens>Where are you going?
+did / make / who / this / cake<tokens>Who made this cake?
+does / live / where / he<tokens>Where does he live?
+are / these / whose / shoes<tokens>Whose shoes are these?
+did / wake / up / what / time / you<tokens>What time did you wake up?
