@@ -6,23 +6,18 @@
 <?import javafx.scene.image.Image?>
 <?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
 <?import javafx.scene.text.Font?>
 
 
 <AnchorPane fx:id="anchorpaneEx" prefHeight="600.0" prefWidth="960.0" style="-fx-background-color: #A1D6E2;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="view.ExerciseController">
    <children>
-      <Label fx:id="question" layoutX="286.0" layoutY="143.0" textFill="#ff6d6d">
+      <TextField fx:id="answer" layoutX="286.0" layoutY="267.0" prefHeight="104.0" prefWidth="389.0">
          <font>
-            <Font size="25.0" />
+            <Font size="20.0" />
          </font>
-      </Label>
-      <TextField fx:id="answer" layoutX="286.0" layoutY="267.0" prefHeight="104.0" prefWidth="389.0" />
-      <Button fx:id="Ok" layoutX="454.0" layoutY="436.0" mnemonicParsing="false" onAction="#Ok" text="Ok" />
-      <Label fx:id="alert" layoutX="286.0" layoutY="74.0" textFill="#ff02a2">
-         <font>
-            <Font size="22.0" />
-         </font>
-      </Label>
+      </TextField>
+      <Button fx:id="Ok" layoutX="454.0" layoutY="436.0" mnemonicParsing="false" onAction="#Ok" prefHeight="41.0" prefWidth="60.0" text="Ok" />
       <ImageView fitHeight="104.0" fitWidth="151.0" layoutX="798.0" layoutY="267.0" onMouseClicked="#next" pickOnBounds="true" preserveRatio="true">
          <image>
             <Image url="@image/next.png" />
@@ -55,10 +50,24 @@
             <Font size="48.0" />
          </font>
       </Label>
-      <Label fx:id="res" layoutX="295.0" layoutY="204.0" textFill="#ff02a2">
-         <font>
-            <Font size="22.0" />
-         </font>
-      </Label>
+      <Pane layoutX="263.0" layoutY="104.0" prefHeight="137.0" prefWidth="444.0">
+         <children>
+            <Label fx:id="res" textFill="#ff02a2">
+               <font>
+                  <Font size="22.0" />
+               </font>
+            </Label>
+            <Label fx:id="alert" textFill="#ff02a2">
+               <font>
+                  <Font size="22.0" />
+               </font>
+            </Label>
+            <Label fx:id="question" textFill="#ff6d6d">
+               <font>
+                  <Font size="25.0" />
+               </font>
+            </Label>
+         </children>
+      </Pane>
    </children>
 </AnchorPane>
