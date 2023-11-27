@@ -246,7 +246,6 @@ public class DictionaryManagement implements IDictionaryManagement {
     }
 
     public boolean reNewtxtFileFromDB() {
-
         String tmp = addedWords();
         try (BufferedWriter writer = new BufferedWriter(new FileWriter(".\\/data/EngtoV.txt", true))) {
             writer.write(tmp);

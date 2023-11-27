@@ -1,0 +1,40 @@
+school / goes / to / she / every day<tokens>She goes to school every day.
+watched / a / they / last night / movie<tokens>They watched a movie last night.
+dinner / am / I / cooking / tonight<tokens>I am cooking dinner tonight.
+the / did / not / we / understand / lesson<tokens>We did not understand the lesson.
+to / wants / he / a / become / doctor<tokens>He wants to become a doctor.
+playing / were / they / started / when / it / to rain<tokens>They were playing when it started to rain.
+an / writing / right / is / she / now / email<tokens>She is writing an email right now.
+happy / about / was / not / he / the / results<tokens>He was not happy about the results.
+will / visit / I / my / tomorrow / grandmother<tokens>I will visit my grandmother tomorrow.
+since / studying / been / has / she / last week / for / the / exam<tokens>She has been studying for the exam since last week.
+eat / we / breakfast / every morning<tokens>We eat breakfast every morning.
+yesterday / to / the cinema / went / they<tokens>They went to the cinema yesterday.
+is / she / a / writing / letter<tokens>She is writing a letter.
+do / not / understand / I / this problem<tokens>I do not understand this problem.
+wants / to / be / an / he / engineer<tokens>He wants to be an engineer.
+were / they / when / sleeping / called / I<tokens>They were sleeping when I called.
+driving / was / he / work / to<tokens>He was driving to work.
+will / not / be / they / home / at<tokens>They will not be home.
+will / have / we / a / test / tomorrow<tokens>We will have a test tomorrow.
+been / has / she / Paris / to<tokens>She has been to Paris.
+playing / was / he / guitar / the<tokens>He was playing the guitar.
+did / see / you / her / yesterday<tokens>Did you see her yesterday?
+am / I / meeting / friends / my / tonight<tokens>I am meeting my friends tonight.
+are / they / for / waiting / someone<tokens>They are waiting for someone.
+was / the / weather / how / yesterday<tokens>How was the weather yesterday?
+will / go / we / shopping / tomorrow<tokens>We will go shopping tomorrow.
+is / the / where / station / train<tokens>Where is the train station?
+did / not / he / the / answer / know<tokens>He did not know the answer.
+have / I / a / headache<tokens>I have a headache.
+watch / like / to / TV / they<tokens>They like to watch TV.
+was / last / at / night / home / she<tokens>She was at home last night.
+will / call / you / back / I<tokens>I will call you back.
+was / the / where / party<tokens>Where was the party?
+did / go / where / they<tokens>Where did they go?
+was / movie / the / good<tokens>Was the movie good?
+are / you / where / going<tokens>Where are you going?
+did / make / who / this / cake<tokens>Who made this cake?
+does / live / where / he<tokens>Where does he live?
+are / these / whose / shoes<tokens>Whose shoes are these?
+did / wake / up / what / time / you<tokens>What time did you wake up?
