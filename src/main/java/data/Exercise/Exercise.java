@@ -7,6 +7,7 @@ public abstract class Exercise {
     protected String answer;
     public abstract boolean checkAnswer(String input);
 
+
     public Exercise(String question, String answer) {
         this.question = question;
         this.answer = answer;

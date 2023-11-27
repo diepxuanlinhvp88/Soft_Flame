@@ -1,6 +1,7 @@
 package data.Account;
 
 import data.Exercise.Exercise;
+import data.Exercise.FillBlankEx;
 import data.Exercise.NewbieEx;
 
 import java.sql.ResultSet;
@@ -22,7 +23,7 @@ public class NewbieAccount extends Account{
 
     @Override
     public void setProcess() {
-        this.process+= (float) (1.0/40);
+        this.process+= (float) (1.0/40 * 100);
     }
 
     @Override
@@ -43,10 +44,11 @@ public class NewbieAccount extends Account{
         }
     }
     public static void main(String[] args){
-        NewbieAccount tmp = new NewbieAccount("h","h","12");
-        tmp.addExerciseList();
-        for(Exercise i: tmp.getExercises()){
-            System.out.println(i.getQuestion()+":"+i.getAnswer());
-        }
+        NewbieAccount tmp = new NewbieAccount("hoa1234","hoa1234","12");
+        Exercise a1 = new NewbieEx("hello","djf");
+        tmp.AddInfoActivities(a1);
+
+
+
     }
 }

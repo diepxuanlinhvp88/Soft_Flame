@@ -22,8 +22,8 @@
 }
 .button2 {
     -fx-margin: 12px;
-    -fx-pref-height: 34px;
-    -fx-pref-width: 236px;
+    /*-fx-pref-height: 34px;*/
+    /*-fx-pref-width: 236px;*/
     -fx-background-radius: 10;
     -fx-background-color: #ffffff;
     -fx-alignment: center;
@@ -69,7 +69,7 @@
     dropshadow(gaussian, #c5c5c5, -6, -6, 12, 0);
     -fx-font-size: medium;
     -fx-font-weight: bold;
-    -fx-max-width: 200px;
+    /*-fx-max-width: 200px;*/
 }
 
 
@@ -179,8 +179,8 @@
 }
 
 .input {
-    -fx-pref-width: 200px;
-    -fx-pref-height: 40px;
+    /*-fx-pref-width: 200px;*/
+    /*-fx-pref-height: 40px;*/
     -fx-background-color: #fff;
     -fx-border-radius: 5px;
     -fx-border-width: 1px;

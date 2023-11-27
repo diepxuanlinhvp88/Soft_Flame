@@ -30,6 +30,10 @@ public abstract class Account {
         this.process = 0;
     }
 
+    public Account() {
+
+    }
+
     public String getUserName() {
         return userName;
     }
@@ -54,5 +58,6 @@ public abstract class Account {
 
     public abstract void setProcess();
     public abstract void addExerciseList();
+
 
 }

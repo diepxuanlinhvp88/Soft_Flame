@@ -11,17 +11,20 @@ import java.util.Hashtable;
 import java.util.List;
 
 public class AccountManagement {
-    private static final String[] type = {"Newbie","Intermediate","Expert","Premium"};
-    private static final Hashtable<String,Integer> map = new Hashtable<String, Integer>();
-    public AccountManagement(){
-        for(int i = 0; i <4; i++){
-            map.put(type[i],i);
+    private static final String[] type = {"Newbie", "Intermediate", "Expert", "Premium"};
+    private static final Hashtable<String, Integer> map = new Hashtable<String, Integer>();
+
+    public AccountManagement() {
+        for (int i = 0; i < 4; i++) {
+            map.put(type[i], i);
         }
     }
+
     private static final String jdbcURL = "jdbc:mysql://sql.freedb.tech:3306/freedb_tienhoa";
     private static final String passWord = "kGDwFjf6$7Vjyr7";
     private static final String userName = "freedb_tienhoa";
     private List<Account> accountList = new ArrayList<>();
+
     private static String getCurrentDateTime() {
         // Lấy ngày giờ tháng hiện tại
         LocalDateTime currentDateTime = LocalDateTime.now();
@@ -34,10 +37,11 @@ public class AccountManagement {
 
         return formattedDateTime;
     }
+
     public static Connection getConnection() {
         Connection conn = null;
         try {
-            conn = DriverManager.getConnection(jdbcURL,userName,passWord);
+            conn = DriverManager.getConnection(jdbcURL, userName, passWord);
             System.out.println("connect successfully!");
         } catch (Exception ex) {
             System.out.println("connect failure!");
@@ -45,53 +49,52 @@ public class AccountManagement {
         }
         return conn;
     }
+
     public static Connection conn = getConnection();
 
-    public Account initAccountFromDB(String username, String password){
-        String tmp = String.format("Select typeOfAccount,time,process from Accounts where username = '%s' and password = '%s';",username,password);
-        try{
+    public Account initAccountFromDB(String username, String password) {
+        String tmp = String.format("Select typeOfAccount,time,process from Accounts where username = '%s' and password = '%s';", username, password);
+        try {
             Statement stm = conn.createStatement();
             ResultSet rs = stm.executeQuery(tmp);
             Account acc = null;
-            if(rs.next()){
+            if (rs.next()) {
                 String dtype = AccountManagement.type[rs.getInt("typeOfAccount")];
                 String datetime = rs.getString("time");
                 float process = Float.parseFloat(rs.getString("process"));
-                if(dtype.equals(Account.NewbieAccount)){
-                    acc = new NewbieAccount(username,password,datetime,process);
-                }
-                else if(dtype.equals((Account.IntermediateAccount))){
-                    acc = new IntermediateAccount(username,password,datetime,process);
-                }
-                else{
+                if (dtype.equals(Account.NewbieAccount)) {
+                    acc = new NewbieAccount(username, password, datetime, process);
+                } else if (dtype.equals((Account.IntermediateAccount))) {
+                    acc = new IntermediateAccount(username, password, datetime, process);
+                } else {
                     acc = null;
                 }
             }
-            System.out.println(rs.getString("typeOfAccount") +"\n"+rs.getString("time"));
+            System.out.println(rs.getString("typeOfAccount") + "\n" + rs.getString("time"));
             return acc;
-        } catch(Exception e){
+        } catch (Exception e) {
             e.printStackTrace();
             return null;
         }
     }
 
-    private boolean check(String username){
-        String tmp = String.format("Select time from Accounts where username = '%s';",username);
-        try{
+    private boolean check(String username) {
+        String tmp = String.format("Select time from Accounts where username = '%s';", username);
+        try {
             Statement stm = conn.createStatement();
             ResultSet rs = stm.executeQuery(tmp);
-            if(!rs.next()){
+            if (!rs.next()) {
                 return false;
             }
             return true;
-        } catch(Exception e){
+        } catch (Exception e) {
             e.printStackTrace();
             return false;
         }
     }
 
-    public boolean Register(String username, String password,String typeOfAccount){
-        if(!check(username)){
+    public boolean Register(String username, String password, String typeOfAccount) {
+        if (!check(username)) {
             String insertQuery = "INSERT INTO Accounts (username, password, typeOfAccount,process,time) VALUES (?, ?,?,?,?)";
 
             try (
@@ -100,12 +103,12 @@ public class AccountManagement {
                 preparedStatement.setString(1, username);
                 preparedStatement.setString(2, password);
                 preparedStatement.setInt(3, map.get(typeOfAccount));
-                preparedStatement.setFloat(4,0);
-                preparedStatement.setString(5,getCurrentDateTime());
+                preparedStatement.setFloat(4, 0);
+                preparedStatement.setString(5, getCurrentDateTime());
 
                 int rowsAffected = preparedStatement.executeUpdate();
 
-                if (rowsAffected > 0&& createUserTable(username)) {
+                if (rowsAffected > 0 && createUserTable(username)) {
                     System.out.println("Dữ liệu đã được chèn thành công!");
                     return true;
                 } else {
@@ -115,122 +118,118 @@ public class AccountManagement {
                 e.printStackTrace();
             }
         }
-        System.out.println(username+"đã tồn tại");
+        System.out.println(username + "đã tồn tại");
         return false;
     }
 
-    private boolean createUserTable(String username){
-        String sqlQ =String.format("Create table %s ( activity varchar(255),time datetime);",username);
-        try{
+    private boolean createUserTable(String username) {
+        String sqlQ = String.format("Create table %s ( activity varchar(255),time datetime);", username);
+        try {
             Statement stm = conn.createStatement();
             stm.executeUpdate(sqlQ);
+
             System.out.println("tạo bảng cho người dùng thành công");
             return true;
-        } catch (Exception e){
+
+        } catch (Exception e) {
             e.printStackTrace();
         }
         System.out.println("tạo bảng thất bại");
         return false;
     }
 
-    public static boolean addAcivities(String username, Exercise ex){
-        String insetQuerry = String.format("INSERT INTO %s (activity,time) VALUES (?,?);",username);
+    public static boolean addAcivities(String username, Exercise ex) {
+        String insetQuerry = String.format("INSERT INTO %s (activity,time) VALUES (?,?);", username);
         System.out.println(insetQuerry);
-        try{
+        try {
             PreparedStatement stm = conn.prepareStatement(insetQuerry);
-            stm.setString(1,String.format("do %s",ex.getInfo()));
-            stm.setString(2,getCurrentDateTime());
+            stm.setString(1, String.format("do %s", ex.getInfo()));
+            stm.setString(2, getCurrentDateTime());
             int rowsAffected = stm.executeUpdate();
-            if(rowsAffected>0) {
+            if (rowsAffected > 0) {
                 System.out.println("update success");
-            }
-            else{
+            } else {
                 System.out.println("update failed");
                 return false;
             }
             return true;
-        } catch(Exception e){
+        } catch (Exception e) {
             e.printStackTrace();
             System.out.println("update failed");
             return false;
         }
     }
 
-    private String getInfo(){
+    private String getInfo() {
         StringBuilder tmp = new StringBuilder();
-        try{
+        try {
             Statement stm = conn.createStatement();
             ResultSet rs = stm.executeQuery("Select * from Accounts order by typeOfAccount,process;");
-            while(rs.next()){
+            while (rs.next()) {
                 String line = "";
-                line+=rs.getString("username")+"<token>"+rs.getInt("typeOfAccount")
-                        +"<token>"+rs.getFloat("process");
+                line += rs.getString("username") + "<token>" + rs.getInt("typeOfAccount")
+                        + "<token>" + rs.getFloat("process");
                 tmp.append(line).append("\n");
             }
             return String.valueOf(tmp);
-        } catch (Exception e){
+        } catch (Exception e) {
             e.printStackTrace();
             return null;
         }
     }
-    public static boolean reLoadstatus(String username,float process){
-        String sql= String.format("Update Accounts SET process = %s Where username = '%s';",String.valueOf(process),username);
-        try{
+
+
+    public static List<String> getActivities(String userName) {
+        List<String> tmp = new ArrayList<>();
+        try {
             Statement stm = conn.createStatement();
-            int rowAffected = stm.executeUpdate(sql);
-            if(rowAffected>0){
-                System.out.println("update process success.");
-                return true;
+            ResultSet rs = stm.executeQuery(String.format("select activity, time from %s;", userName));
+            String line;
+            while (rs.next()) {
+                line = rs.getString(1) + "/" + rs.getString(2);
+                tmp.add(line);
             }
-        } catch(Exception e){
-            System.out.println("Something went wrong");
+            System.out.println("Lấy dữ liệu hoạt động thành công");
+            return tmp;
+        } catch (Exception e) {
             e.printStackTrace();
         }
-        return false;
+        System.out.println("lấy dữ liệu thất bại");
+        return null;
+
     }
 
-    public static boolean setAccountLevel(String username,int type){
-        String sql = String.format("UPDATE Accounts SET typeOfAccount = %d WHERE username = '%s';",type,username);
-        try{
+    public static boolean setAccountLevel(String username, int type) {
+        String sql = String.format("UPDATE Accounts SET typeOfAccount = %d WHERE username = '%s';", type, username);
+        try {
             Statement stm = conn.createStatement();
             int rowAffected = stm.executeUpdate(sql);
-            if(rowAffected>0){
+            if (rowAffected > 0) {
                 System.out.println("update level success.");
                 return true;
             }
-        } catch (Exception e){
+        } catch (Exception e) {
             e.printStackTrace();
             System.out.println("Failed to update level.");
         }
         return false;
     }
 
-    public static List<String> getActivities(String userName){
-        List<String> tmp = new ArrayList<>();
-        try{
+    public static boolean reLoadstatus(String username, float process) {
+        String sql = String.format("Update Accounts SET process = %s Where username = '%s';", String.valueOf(process), username);
+        System.out.println(sql);
+        try {
             Statement stm = conn.createStatement();
-            ResultSet rs = stm.executeQuery(String.format("select activity, time from %s;",userName));
-            String line;
-            while(rs.next()){
-                line = rs.getString(1) + "/" + rs.getString(2);
-                tmp.add(line);
+            int rowAffected = stm.executeUpdate(sql);
+            if (rowAffected > 0) {
+                System.out.println("update process success.");
+                return true;
             }
-            System.out.println("Lấy dữ liệu hoạt động thành công");
-            return tmp;
-        } catch (Exception e){
+        } catch (Exception e) {
+            System.out.println("Something went wrong");
             e.printStackTrace();
         }
-        System.out.println("lấy dữ liệu thất bại");
-        return null;
+
+        return false;
     }
-
-
-    public static void main(String[] args){
-        AccountManagement tmp = new AccountManagement();
-        AccountManagement.setAccountLevel("hoa",2);
-        AccountManagement.reLoadstatus("hoa",(float)50.5);
-        }
-//
-//    }
-
 }

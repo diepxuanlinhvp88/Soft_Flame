@@ -9,7 +9,7 @@ import java.util.ResourceBundle;
 
 public class Audio implements Initializable {
     public static MediaPlayer mediaPlayer;
-    public static String songs = "music/3.mp3";
+    public static String songs = "music/1.mp3";
     public static Media media;
     public static void playmusic(){
         if(mediaPlayer!=null){

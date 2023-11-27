@@ -73,7 +73,7 @@ public class TranslateController implements Initializable {
 
     }
     public void tran(){
-        TextExplain.setText(LoginController.tranapi.lookUp(TextTarget.getText(), Vi.getText(), En.getText()));
+        TextExplain.setText(Static_variable.tranapi.lookUp(TextTarget.getText(), Vi.getText(), En.getText()));
 
 
 
@@ -98,7 +98,7 @@ public class TranslateController implements Initializable {
             System.out.println("Đường dẫn hình ảnh: " + selectedFile.getAbsolutePath());
 
             // Gọi phương thức xử lý tìm kiếm hình ảnh với đường dẫn này
-            TextTarget.setText(LoginController.tranapi.imageToText(selectedFile.getAbsolutePath()));
+            TextTarget.setText(Static_variable.tranapi.imageToText(selectedFile.getAbsolutePath()));
         }
 
     }

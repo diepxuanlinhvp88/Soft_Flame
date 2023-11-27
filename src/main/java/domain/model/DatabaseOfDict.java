@@ -74,6 +74,23 @@ public class DatabaseOfDict {
         if(tmp.length() !=0) return tmp;
         return "Not Found";
     }
+    public String getHtmlWord(String querry) {
+        String tmp = "";
+        try {
+            Connection conn = getConnection(DB_URL);
+            Statement stmt = conn.createStatement();
+            ResultSet rs = stmt.executeQuery(querry);
+            while (rs.next()) {
+                tmp +=  rs.getString("html") + "\n";
+
+            }
+            conn.close();
+        } catch (Exception ex) {
+            ex.printStackTrace();
+        }
+        if(tmp.length() !=0) return tmp;
+        return "Not Found";
+    }
 
     public String remove(String word,String language) {
         String tmp = this.getInfoWord(word);

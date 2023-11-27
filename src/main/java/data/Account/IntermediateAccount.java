@@ -20,7 +20,7 @@ public class IntermediateAccount extends  Account{
 
     @Override
     public void setProcess() {
-        this.process+=(float)1/60;
+        this.process+=(float)1/60 * 100;
     }
 
     @Override
@@ -45,17 +45,17 @@ public class IntermediateAccount extends  Account{
             e.printStackTrace();
         }
     }
-//    public static void main(String[] args){
-//        IntermediateAccount tmp = new IntermediateAccount("12","12","12");
-//        tmp.addExerciseList();
-//        for(Exercise i: tmp.getExercises()){
-//            if(i instanceof FillBlankEx){
-//                System.out.println("Fill");
-//            }
-//            else{
-//                System.out.println("rerange");
-//            }
-//            System.out.println(i.getQuestion()+":"+i.getAnswer());
-//        }
-//    }
+    public static void main(String[] args){
+        IntermediateAccount tmp = new IntermediateAccount("12","12","12");
+        tmp.addExerciseList();
+        for(Exercise i : tmp.getExercises()){
+            if(i instanceof RerangeEx){
+                for(String tmp1 : ((RerangeEx) i).shuffleAnswer()){
+                    System.out.print(tmp1+" ");
+                }
+                System.out.println();
+            }
+        }
+
+    }
 }
