@@ -20,7 +20,7 @@ public class IntermediateAccount extends  Account{
 
     @Override
     public void setProcess() {
-        this.process+=(float)1/60;
+        this.process+=(float)1/60 * 100;
     }
 
     @Override

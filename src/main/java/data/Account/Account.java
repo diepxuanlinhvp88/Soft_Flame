@@ -55,5 +55,8 @@ public abstract class Account {
 
     public abstract void setProcess();
     public abstract void addExerciseList();
+    public boolean updateProcess(){
+        return AccountManagement.reLoadstatus(this.userName,this.process);
+    }
 
 }

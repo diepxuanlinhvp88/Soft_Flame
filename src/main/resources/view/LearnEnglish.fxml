@@ -33,7 +33,7 @@
                         <Image url="@image/playgame.png" />
                      </image>
                   </ImageView>
-                  <ImageView fitHeight="62.0" fitWidth="114.0" pickOnBounds="true" preserveRatio="true">
+                  <ImageView fitHeight="62.0" fitWidth="114.0" onMouseClicked="#setting" pickOnBounds="true" preserveRatio="true">
                      <image>
                         <Image url="@image/setting%20(1).png" />
                      </image>

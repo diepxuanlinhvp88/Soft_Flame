@@ -7,9 +7,6 @@ import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
-import javafx.geometry.Insets;
-import javafx.geometry.Pos;
-import javafx.scene.Node;
 import javafx.scene.control.*;
 import javafx.scene.layout.AnchorPane;
 import javafx.scene.layout.HBox;
@@ -26,6 +23,7 @@ import java.net.URL;
 import java.util.List;
 import java.util.Optional;
 import java.util.ResourceBundle;
+import view.Static_variable;
 
 public class FindController implements Initializable {
 
@@ -57,13 +55,13 @@ public class FindController implements Initializable {
             @Override
             public void changed(ObservableValue<? extends String> observable, String oldValue, String newValue) {
                 if (cnttran % 2 == 0) {
-                    List<String> stringList = LoginController.dic.wordListTarget(FindA.getText());
+                    List<String> stringList = Static_variable.dic.wordListTarget(FindA.getText());
                     ObservableList<String> observableList = FXCollections.observableList(stringList);
 
                     ListW.setItems(observableList);
                     if (stringList.size() == 0) {
                         worongtext.setText("Có phải từ bạn cần tìm là : ");
-                        Wrongsellect.setText(LoginController.dic.findWithWrong(FindA.getText()));
+                        Wrongsellect.setText(Static_variable.dic.findWithWrong(FindA.getText()));
                         // FindA.setText(LoginController.dic.findWithWrong(FindA.getText()));
 
                     }
@@ -81,7 +79,7 @@ public class FindController implements Initializable {
 
         FindA.setText(ListW.getSelectionModel().getSelectedItems().toString().replace("[", "").replace("]", ""));
         //webEngine.loadContent(LoginController.data.connectAndQuerry(av.getText(), FindA.getText()));
-        webEngine.loadContent(LoginController.dic.getHtml(FindA.getText()));
+        webEngine.loadContent(Static_variable.dic.getHtml(FindA.getText()));
 
 
     }
@@ -93,13 +91,13 @@ public class FindController implements Initializable {
             System.out.println("chua nhap tu ");
         } else {
             if (cnttran % 2 == 0) {
-                webEngine.loadContent(LoginController.dic.getHtml(FindA.getText()));
+                webEngine.loadContent(Static_variable.dic.getHtml(FindA.getText()));
             } else {
-                if (LoginController.data.connectAndQuerry(av.getText(), FindA.getText()) == "") {
+                if (Static_variable.data.connectAndQuerry(av.getText(), FindA.getText()) == "") {
                     webEngine.loadContent("<h1 style=\"color: red;\">Từ bạn cần tìm không có trong từ điển</h1>\n" +
                             "<h2 style=\"color: black;\">Hãy thêm vào từ điển</h2>\n");
                 } else
-                    webEngine.loadContent(LoginController.data.connectAndQuerry(av.getText(), FindA.getText()));
+                    webEngine.loadContent(Static_variable.data.connectAndQuerry(av.getText(), FindA.getText()));
             }
             //webEngine.loadContent(LoginController.data.connectAndQuerry(av.getText(), FindA.getText()));
 
@@ -110,14 +108,14 @@ public class FindController implements Initializable {
 
 
     public void sellectWordWrong() {
-        FindA.setText(LoginController.dic.findWithWrong(Wrongsellect.getText()));
+        FindA.setText(Static_variable.dic.findWithWrong(Wrongsellect.getText()));
         //webEngine.loadContent(LoginController.data.connectAndQuerry(av.getText(), FindA.getText()));
-        webEngine.loadContent(LoginController.dic.getHtml(FindA.getText()));
+        webEngine.loadContent(Static_variable.dic.getHtml(FindA.getText()));
     }
 
     public void voice() throws PropertyVetoException, AudioException, EngineException, InterruptedException {
-        LoginController.tts.init("kevin16");
-        LoginController.tts.doSpeak(FindA.getText());
+        Static_variable.tts.init("kevin16");
+        Static_variable.tts.doSpeak(FindA.getText());
     }
 
     int cnttran = 0;
@@ -168,10 +166,10 @@ public class FindController implements Initializable {
             dialog.getDialogPane().setContent(inputFields);
             dialog.showAndWait();
 
-            LoginController.data.addWordtoDatabase(av.getText(), target.getText(),
+            Static_variable.data.addWordtoDatabase(av.getText(), target.getText(),
                     meaning.getText(), "", "", true);
             try {
-                LoginController.dic.reLoadDictionaryFromFile("d");
+                Static_variable.dic.reLoadDictionaryFromFile("d");
             } catch (FileNotFoundException e) {
                 throw new RuntimeException(e);
             }
@@ -199,10 +197,10 @@ public class FindController implements Initializable {
             if (result.orElse(buttonTypeCancel) == buttonTypeOK) {
                 System.out.println("User clicked OK");
                 webEngine.loadContent("");
-                LoginController.data.removeWord(target, "av");
-                LoginController.dic.remove(target);
+                Static_variable.data.removeWord(target, "av");
+                Static_variable.dic.remove(target);
                 try {
-                    LoginController.dic.reLoadDictionaryFromFile("dfg");
+                    Static_variable.dic.reLoadDictionaryFromFile("dfg");
                 } catch (FileNotFoundException e) {
                     throw new RuntimeException(e);
                 }
@@ -231,10 +229,10 @@ public class FindController implements Initializable {
         dialog.getDialogPane().setContent(inputFields);
         dialog.showAndWait();
 
-        LoginController.data.removeWord(target, "av");
-        LoginController.data.addWordtoDatabase("av", target,
+        Static_variable.data.removeWord(target, "av");
+        Static_variable.data.addWordtoDatabase("av", target,
                 meaning.getText(), "", "", false);
-        LoginController.dic.update(target, meaning.getText());
+        Static_variable.dic.update(target, meaning.getText());
 
     }
 

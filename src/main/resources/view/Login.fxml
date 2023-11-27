@@ -44,7 +44,7 @@
                </font>
             </Label>
             <Text layoutX="64.0" layoutY="293.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Don't have an account ?" />
-            <Label fx:id="er" layoutX="16.0" layoutY="210.0" textFill="#fa0000">
+            <Label fx:id="er" layoutX="50.0" layoutY="255.0" textFill="#fa0000">
                <font>
                   <Font name="System Italic" size="13.0" />
                </font>

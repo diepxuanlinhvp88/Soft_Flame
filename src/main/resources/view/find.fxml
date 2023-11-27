@@ -34,7 +34,7 @@
       </ImageView>
       <ImageView fitHeight="37.0" fitWidth="38.0" layoutX="646.0" layoutY="153.0" onMouseClicked="#voice" opacity="0.79">
          <image>
-            <Image url="@image/voiceM.png" />
+            <Image url="@image/voice.png" />
          </image>
       </ImageView>
       <ImageView fitHeight="46.0" fitWidth="38.0" layoutX="761.0" layoutY="154.0" pickOnBounds="true" preserveRatio="true">
@@ -56,11 +56,6 @@
       <ImageView fitHeight="56.0" fitWidth="46.0" layoutX="134.0" layoutY="78.0" onMouseClicked="#Add" pickOnBounds="true" preserveRatio="true">
          <image>
             <Image url="@image/add.png" />
-         </image>
-      </ImageView>
-      <ImageView fitHeight="47.0" fitWidth="46.0" layoutX="615.0" layoutY="211.0" onMouseClicked="#exit" pickOnBounds="true" preserveRatio="true">
-         <image>
-            <Image url="@image/voice.png" />
          </image>
       </ImageView>
    </children>

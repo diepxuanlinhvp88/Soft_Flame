@@ -5,7 +5,10 @@ import java.util.List;
 public abstract class Exercise {
     protected String question;
     protected String answer;
-    public abstract boolean checkAnswer(String input);
+    public  boolean checkAnswer(String input) {
+        return input.equalsIgnoreCase(answer);
+
+    }
 
     public Exercise(String question, String answer) {
         this.question = question;

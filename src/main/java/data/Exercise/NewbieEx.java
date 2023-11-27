@@ -11,8 +11,8 @@ public class NewbieEx extends Exercise{
         return "NewbieEx";
     }
 
-    @Override
-    public boolean checkAnswer(String input) {
-        return input.equals(this.answer);
+
+    public static void main(String[] args){
+
     }
 }

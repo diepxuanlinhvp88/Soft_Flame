@@ -10,8 +10,5 @@ public class RerangeEx extends Exercise{
         return "RerangeEx";
     }
 
-    @Override
-    public boolean checkAnswer(String input) {
-        return false;
-    }
+
 }

@@ -10,8 +10,5 @@ public class FillBlankEx extends Exercise{
         return "FillBlankEx";
     }
 
-    @Override
-    public boolean checkAnswer(String input) {
-        return false;
-    }
+
 }
