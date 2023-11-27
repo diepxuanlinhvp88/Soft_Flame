@@ -260,8 +260,9 @@ public class DictionaryManagement implements IDictionaryManagement {
 
     public static void main(String[] args) throws FileNotFoundException {
         DictionaryManagement tmp = new DictionaryManagement();
-        tmp.update("hello","hey bro");
+       // tmp.update("hello","hey bro");
 //        tmp.reloadDicWhenExit();
-        System.out.println(tmp.find("hello"));
+        System.out.println(tmp.find("linhlinh"));
+        System.out.println(tmp.findWithWrong("linhlinh"));
     }
 }

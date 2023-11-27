@@ -76,6 +76,22 @@ public class SigUpController implements Initializable {
         } else sc.setText("cannot be left blank");
 
     }
+    public void newbie(){
+        LoginController.accountmanagement.initAccountFromDB(newAcc.getText(),newpassword.getText());
+        LoginController.accountmanagement.Register(newAcc.getText(),newpassword.getText(),"Newbie");
+    }
+    public void inter(){
+        LoginController.accountmanagement.initAccountFromDB(newAcc.getText(),newpassword.getText());
+        LoginController.accountmanagement.Register(newAcc.getText(),newpassword.getText(),"Intermediate");
+    }
+    public void master(){
+        LoginController.accountmanagement.initAccountFromDB(newAcc.getText(),newpassword.getText());
+        LoginController.accountmanagement.Register(newAcc.getText(),newpassword.getText(),"Master");
+    }
+    public void premium(){
+        LoginController.accountmanagement.initAccountFromDB(newAcc.getText(),newpassword.getText());
+        LoginController.accountmanagement.Register(newAcc.getText(),newpassword.getText(),"Premium");
+    }
     @Override
     public void initialize(URL url, ResourceBundle resourceBundle) {
         Audio.mediaPlayer.play();

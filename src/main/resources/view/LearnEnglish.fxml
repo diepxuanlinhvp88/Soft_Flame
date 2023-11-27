@@ -18,16 +18,6 @@
                         <Image url="@image/home.png" />
                      </image>
                   </ImageView>
-                  <ImageView fitHeight="77.0" fitWidth="75.0" onMouseClicked="#Game" pickOnBounds="true" preserveRatio="true">
-                     <image>
-                        <Image url="@image/playgame.png" />
-                     </image>
-                  </ImageView>
-                  <ImageView fitHeight="61.0" fitWidth="66.0" onMouseClicked="#Editcontroller">
-                     <image>
-                        <Image url="@image/edit.png" />
-                     </image>
-                  </ImageView>
                   <ImageView fitHeight="48.0" fitWidth="119.0" onMouseClicked="#Findcontroller" opacity="0.71">
                      <image>
                         <Image url="@image/find.png" />
@@ -36,6 +26,11 @@
                   <ImageView fitHeight="54.0" fitWidth="49.0" onMouseClicked="#Translate" opacity="0.66" preserveRatio="true">
                      <image>
                         <Image url="@image/trans1.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="77.0" fitWidth="75.0" onMouseClicked="#Game" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@image/playgame.png" />
                      </image>
                   </ImageView>
                   <ImageView fitHeight="62.0" fitWidth="114.0" pickOnBounds="true" preserveRatio="true">

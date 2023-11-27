@@ -134,6 +134,7 @@ public class AccountManagement {
 
     public static void main(String[] args){
         AccountManagement tmp = new AccountManagement();
+        tmp.initAccountFromDB("linhh","linhh");
         tmp.Register("hoa","hoa","Intermediate");
         tmp.Register("linh","linh","Newbie");
         System.out.println(tmp.getInfo());

@@ -49,6 +49,11 @@
                   <Font name="System Italic" size="13.0" />
                </font>
             </Label>
+            <Label layoutX="64.0" layoutY="299.0" onMouseClicked="#NotLogin" prefHeight="20.0" prefWidth="134.0" text="Use without logging in" textAlignment="CENTER">
+               <font>
+                  <Font name="System Italic" size="13.0" />
+               </font>
+            </Label>
          </children>
       </Pane>
       <Pane fx:id="setPane" layoutX="345.0" layoutY="35.0" prefHeight="246.0" prefWidth="284.0" />

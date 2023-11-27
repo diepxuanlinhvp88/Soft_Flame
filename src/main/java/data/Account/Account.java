@@ -25,6 +25,10 @@ public abstract class Account {
         this.process = 0;
     }
 
+    public Account() {
+
+    }
+
     public String getUserName() {
         return userName;
     }

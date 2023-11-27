@@ -22,7 +22,7 @@ import java.io.*;
 import java.net.URL;
 import java.nio.charset.StandardCharsets;
 import java.util.ResourceBundle;
-
+import data.Account.*;
 
 public class LoginController implements Initializable {
     public static DictionaryManagement dic;
@@ -38,6 +38,9 @@ public class LoginController implements Initializable {
     public static DatabaseManagement data = new DatabaseManagement();
     public static ParaTransWithAPI tranapi = new ParaTransWithAPI();
     public static TextToSpeech tts = new TextToSpeech();
+    public static final AccountManagement accountmanagement = new AccountManagement();
+
+
 
     @FXML
     public AnchorPane anchorPaneLogin;
@@ -102,6 +105,13 @@ public class LoginController implements Initializable {
 
 
     }
+    public void NotLogin() throws IOException {
+        Node node;
+        node = FXMLLoader.load(getClass().getResource("find.fxml"));
+        anchorPaneLogin.getChildren().setAll(node);
+        anchorPaneLogin.autosize();
+    }
+
 
 //    public static void musicBg(String songs) throws IOException {
 //

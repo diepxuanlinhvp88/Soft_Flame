@@ -1,13 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<?import javafx.geometry.Insets?>
 <?import javafx.scene.Cursor?>
 <?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
 <?import javafx.scene.control.Label?>
 <?import javafx.scene.control.PasswordField?>
 <?import javafx.scene.control.TextField?>
 <?import javafx.scene.image.Image?>
 <?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
 <?import javafx.scene.layout.Pane?>
 <?import javafx.scene.text.Font?>
 <?import javafx.scene.text.Text?>
@@ -33,14 +36,29 @@
                   <Font name="Bell MT" size="20.0" />
                </font>
             </Text>
-            <Button layoutX="90.0" layoutY="244.0" mnemonicParsing="false" onAction="#SignUpStart" styleClass="button-confirm" text="SignUp" />
+            <Button layoutX="93.0" layoutY="272.0" mnemonicParsing="false" onAction="#SignUpStart" styleClass="button-confirm" text="SignUp" />
 
-                  <Label fx:id="sc" layoutX="70.0" layoutY="207.0" prefHeight="31.0" prefWidth="154.0" textFill="#fa0000">
+                        <Label fx:id="sc" prefHeight="31.0" prefWidth="82.0" textFill="#fa0000">
                <font>
                   <Font name="System Bold Italic" size="14.0" />
 
-                     </font>
+                           </font>
             </Label>
+            <HBox layoutX="23.0" layoutY="206.0" prefHeight="42.0" prefWidth="277.0" spacing="5.0">
+               <children>
+                  <CheckBox mnemonicParsing="false" onAction="#newbie" text="Newbie" />
+                  <CheckBox mnemonicParsing="false" onAction="#inter" text="Inter" />
+                  <CheckBox mnemonicParsing="false" onAction="#master" text="Master" />
+                  <CheckBox mnemonicParsing="false" onAction="#premium" text="Premium">
+                     <padding>
+                        <Insets top="10.0" />
+                     </padding>
+                  </CheckBox>
+               </children>
+               <padding>
+                  <Insets top="10.0" />
+               </padding>
+            </HBox>
          </children>
       </Pane>
    </children>
