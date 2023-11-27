@@ -78,6 +78,87 @@
     -fx-focus-color: white;
     -fx-prompt-text: "Enter your message!";
 }
+.button3 {
+    -fx-background-color: transparent;
+    -fx-padding: 5px 15px;
+    -fx-display: flex;
+    -fx-alignment: center;
+    -fx-font-size: 17px;
+    -fx-font-weight: bold;
+    -fx-text-decoration: none;
+    -fx-cursor: hand;
+    -fx-border-color: rgb(255, 0, 0);
+    -fx-border-radius: 25px;
+    -fx-outline: none;
+    -fx-text-fill: rgb(255, 0, 0);
+    -fx-transition: -fx-text-fill 0.3s 0.1s ease-out;
+    -fx-text-alignment: center;
+}
+
+.button3 span {
+    -fx-margin: 10px;
+}
+
+.button3:hover {
+    -fx-text-fill: #fff;
+    -fx-border-color: rgb(255, 0, 0);
+    -fx-background-color: red;
+}
+.button4 {
+    -fx-padding: 1.3em 3em;
+    -fx-font-size: 12px;
+    -fx-text-transform: uppercase;
+    -fx-letter-spacing: 2.5px;
+    -fx-font-weight: 500;
+    -fx-text-fill: #000;
+    -fx-background-color: #fff;
+    -fx-border-color: transparent;
+    -fx-border-radius: 45px;
+
+    -fx-transition: all 0.3s ease;
+    -fx-cursor: hand;
+    -fx-outline: none;
+}
+
+.button4:hover {
+    -fx-background-color: #23c483;
+
+    -fx-text-fill: #fff;
+    -fx-translate-y: -7;
+}
+
+.button4:pressed {
+    -fx-translate-y: -1;
+}
+
+
+.text-field2 {
+
+    -fx-border: 15;
+    -fx-background-radius: 15px;
+    -fx-padding: 15px;
+    -fx-background-color: #e8e8e8;
+    -fx-effect: dropshadow(gaussian, #ffffff, 1, 0, 1, 0),
+    dropshadow(gaussian, #c5c5c5, -6, -6, 12, 0);
+    -fx-font-size: 28 px;
+    -fx-font-weight: bold;
+    /*-fx-max-width: 200px;*/
+}
+
+
+.text-field2:focused {
+
+    -fx-focus-color: white;
+    -fx-prompt-text: "Enter your message!";
+}
+.text-field2:hover{
+    -fx-effect: dropshadow(gaussian, #b44545, 5, 0, 5, -5),
+    dropshadow(gaussian, #00ff4b, 5, 0, 5, 5),
+    innershadow(gaussian, #fd0061, 5, 0, 5, 5);
+    -fx-text-fill: #fa0606;
+    -fx-transition: 500ms;
+
+}
 
 .text-area1 {
     -fx-border: none;

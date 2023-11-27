@@ -48,6 +48,9 @@ public abstract class Account {
     public List<String> getActivities(){
         return AccountManagement.getActivities(this.userName);
     }
+    public boolean updateProcess(){
+        return AccountManagement.reLoadstatus(this.userName,this.process);
+    }
 
     public float getProcess() {
         return process;
@@ -55,8 +58,6 @@ public abstract class Account {
 
     public abstract void setProcess();
     public abstract void addExerciseList();
-    public boolean updateProcess(){
-        return AccountManagement.reLoadstatus(this.userName,this.process);
-    }
+
 
 }

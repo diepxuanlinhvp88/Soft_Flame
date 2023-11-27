@@ -30,7 +30,9 @@ import data.Account.*;
 
 
 public class LoginController implements Initializable {
+
     Static_variable tmp = new Static_variable();
+
     @FXML
     public AnchorPane anchorPaneLogin;
     @FXML
@@ -186,3 +188,4 @@ public class LoginController implements Initializable {
         Audio.playmusic();
     }
 }
+

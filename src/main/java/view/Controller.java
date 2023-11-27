@@ -1,6 +1,9 @@
 package view;
 
 import data.Exercise.Exercise;
+import data.Exercise.FillBlankEx;
+import data.Exercise.NewbieEx;
+import data.Exercise.RerangeEx;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.fxml.Initializable;
@@ -22,6 +25,7 @@ public class Controller implements Initializable {
     @FXML
     Pane setPane;
     public static List<Exercise> ex =  Static_variable.account.getExercises();
+    public static int exCnt = 0;
 
 
     @FXML
@@ -43,9 +47,20 @@ public class Controller implements Initializable {
 
     }
     public void Exercise() throws IOException {
-        Node node;
-        node = FXMLLoader.load(getClass().getResource("Exercise.fxml"));
-        anchorPaneParent.getChildren().setAll(node);
+        if(ex.get(exCnt) instanceof NewbieEx) {
+            Node node;
+            node = FXMLLoader.load(getClass().getResource("NewbieEx.fxml"));
+            anchorPaneParent.getChildren().setAll(node);
+        } else if(ex.get(exCnt) instanceof FillBlankEx){
+            Node node;
+            node = FXMLLoader.load(getClass().getResource("NewbieEx.fxml"));
+            anchorPaneParent.getChildren().setAll(node);
+        }
+        else if(ex.get(exCnt) instanceof RerangeEx){
+            Node node;
+            node = FXMLLoader.load(getClass().getResource("RerangEx.fxml"));
+            anchorPaneParent.getChildren().setAll(node);
+        }
     }
     @FXML
     private void setting() throws IOException {

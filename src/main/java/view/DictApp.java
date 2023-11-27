@@ -6,8 +6,10 @@ import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.scene.image.Image;
+import javafx.scene.layout.StackPane;
 import javafx.stage.Stage;
 
+import java.awt.*;
 import java.io.IOException;
 
 public class DictApp extends Application {
@@ -29,3 +31,5 @@ public class DictApp extends Application {
         launch();
     }
 }
+
+
