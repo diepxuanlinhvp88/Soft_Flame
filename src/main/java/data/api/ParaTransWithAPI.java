@@ -9,17 +9,6 @@ import java.net.URLEncoder;
 
 public class ParaTransWithAPI implements IParaTransWithAPI {
 
-    private class paragraph{
-        private String text;
-        private String targetLanguage;
-        private String sourceLanguage;
-
-        public paragraph(String text, String targetLanguage, String sourceLanguage) {
-            this.text = text;
-            this.targetLanguage = targetLanguage;
-            this.sourceLanguage = sourceLanguage;
-        }
-    }
 
     /**
      * request a post to server and get the meaning of text.
@@ -98,6 +87,48 @@ public class ParaTransWithAPI implements IParaTransWithAPI {
             e.printStackTrace();
             return "cannot resolve python file";
         }
+    }
+
+    public void textToSpeechAPI(String language, String text) throws UnsupportedEncodingException {
+        String Context = URLEncoder.encode(text,"UTF-8");
+
+        try {
+            String url = "https://translate.google.com/translate_tts?ie=UTF-8&client=tw-ob&tl="
+                    + language + "&q=" + Context;
+            System.out.println(url);
+
+            URL obj = new URL(url);
+            HttpURLConnection con = (HttpURLConnection) obj.openConnection();
+            con.setRequestMethod("GET");
+
+            int responseCode = con.getResponseCode();
+
+            // Đọc dữ liệu phản hồi từ API
+            InputStream inputStream = con.getInputStream();
+
+            // Ghi dữ liệu vào file MP3
+            String filePath = ".\\/data/output.mp3";
+            FileOutputStream outputStream = new FileOutputStream(filePath);
+            byte[] buffer = new byte[4096];
+            int bytesRead;
+            while ((bytesRead = inputStream.read(buffer)) != -1) {
+                outputStream.write(buffer, 0, bytesRead);
+            }
+
+            // Đóng luồng và hoàn thành quá trình ghi file
+            inputStream.close();
+            outputStream.close();
+            System.out.println("File saved: " + filePath);
+
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+    }
+
+    public static void main(String[] args) throws UnsupportedEncodingException {
+        ParaTransWithAPI tmp = new ParaTransWithAPI();
+        tmp.textToSpeechAPI("vi","học mẹ đi");
+
     }
 
 

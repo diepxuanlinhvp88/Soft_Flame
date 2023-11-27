@@ -5,68 +5,63 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="aa996ca5-9df7-4c2e-936f-74874939cdfc" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/view/ExerciseController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/view/Static_variable.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/view/Exercise.fxml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/view/RerangEx.fxml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/view/image/bg.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/view/image/bg.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/view/image/bg2.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/view/image/exit.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/view/image/mart.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/view/image/mart2.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/view/image/mart2pl.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/view/image/profile.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/view/image/profile2.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/view/image/remove.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/view/image/tranfind.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/EngtoV.txt" beforeDir="false" afterPath="$PROJECT_DIR$/data/EngtoV.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/account.txt" beforeDir="false" afterPath="$PROJECT_DIR$/data/account.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/dict_hh.db" beforeDir="false" afterPath="$PROJECT_DIR$/data/dict_hh.db" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/infoEditWord.txt" beforeDir="false" afterPath="$PROJECT_DIR$/data/infoEditWord.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/data/Account/Account.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/data/Account/Account.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/data/Account/AccountManagement.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/data/Account/AccountManagement.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/data/Account/IntermediateAccount.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/data/Account/IntermediateAccount.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/data/Account/NewbieAccount.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/data/Account/NewbieAccount.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/data/Exercise/Exercise.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/data/Exercise/Exercise.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/data/Exercise/FillBlankEx.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/data/Exercise/FillBlankEx.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/data/Exercise/NewbieEx.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/data/Exercise/NewbieEx.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/data/Exercise/RerangeEx.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/data/Exercise/RerangeEx.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/data/db/DatabaseManagement.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/data/db/DatabaseManagement.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/data/db/DictionaryManagement.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/data/db/DictionaryManagement.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/domain/model/DatabaseOfDict.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/domain/model/DatabaseOfDict.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/view/Audio.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/view/Audio.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/view/Controller.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/view/Controller.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/view/EditController.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/view/FindController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/view/FindController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/view/LearnEnglishController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/view/LearnEnglishController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/view/LoginController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/view/LoginController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/view/SettingController.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/view/SigUpController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/view/SigUpController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/view/TranslateController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/view/TranslateController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/view/Controller.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/view/Controller.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/view/LearnEnglish.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/view/LearnEnglish.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/view/Login.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/view/Login.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/view/Setting.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/view/Setting.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/view/SignUp.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/view/SignUp.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/view/Translate.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/view/Translate.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/view/find.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/view/find.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/view/graphic.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/view/graphic.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/OtherStuff/ImportData.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/OtherStuff/ImportData.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/data/Account/ExpertAccount.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/data/Account/ExpertAccount.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/data/api/ParaTransWithAPI.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/data/api/ParaTransWithAPI.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProjectColorInfo"><![CDATA[{
+  "associatedIndex": 2
+}]]></component>
+  <component name="ProjectId" id="2Yl1dOO9FIc2oZunPvfnoTpW6Wk" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
-    "git-widget-placeholder": "Merging main",
-    "node.js.selected.package.tslint": "(autodetect)"
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "git-widget-placeholder": "main",
+    "last_opened_file_path": "D:/java_code/BankingSystem",
+    "node.js.detected.package.eslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="aa996ca5-9df7-4c2e-936f-74874939cdfc" name="Changes" comment="" />
+      <created>1701085438527</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1701085438527</updated>
+      <workItem from="1701085440578" duration="7029000" />
+    </task>
     <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
   </component>
 </project>
