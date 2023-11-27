@@ -54,13 +54,13 @@ public class AccountManagement {
             ResultSet rs = stm.executeQuery(tmp);
             Account acc = null;
             if(rs.next()){
-                String type = rs.getString("typeOfAccount");
+                String dtype = AccountManagement.type[rs.getInt("typeOfAccount")];
                 String datetime = rs.getString("time");
                 float process = Float.parseFloat(rs.getString("process"));
-                if(type.equals(Account.NewbieAccount)){
+                if(dtype.equals(Account.NewbieAccount)){
                     acc = new NewbieAccount(username,password,datetime,process);
                 }
-                else if(type.equals((Account.IntermediateAccount))){
+                else if(dtype.equals((Account.IntermediateAccount))){
                     acc = new IntermediateAccount(username,password,datetime,process);
                 }
                 else{
@@ -105,7 +105,7 @@ public class AccountManagement {
 
                 int rowsAffected = preparedStatement.executeUpdate();
 
-                if (rowsAffected > 0&&createUserTable(username)) {
+                if (rowsAffected > 0&& createUserTable(username)) {
                     System.out.println("Dữ liệu đã được chèn thành công!");
                     return true;
                 } else {
@@ -173,6 +173,37 @@ public class AccountManagement {
             return null;
         }
     }
+    public static boolean reLoadstatus(String username,float process){
+        String sql= String.format("Update Accounts SET process = %s Where username = '%s';",String.valueOf(process),username);
+        try{
+            Statement stm = conn.createStatement();
+            int rowAffected = stm.executeUpdate(sql);
+            if(rowAffected>0){
+                System.out.println("update process success.");
+                return true;
+            }
+        } catch(Exception e){
+            System.out.println("Something went wrong");
+            e.printStackTrace();
+        }
+        return false;
+    }
+
+    public static boolean setAccountLevel(String username,int type){
+        String sql = String.format("UPDATE Accounts SET typeOfAccount = %d WHERE username = '%s';",type,username);
+        try{
+            Statement stm = conn.createStatement();
+            int rowAffected = stm.executeUpdate(sql);
+            if(rowAffected>0){
+                System.out.println("update level success.");
+                return true;
+            }
+        } catch (Exception e){
+            e.printStackTrace();
+            System.out.println("Failed to update level.");
+        }
+        return false;
+    }
 
     public static List<String> getActivities(String userName){
         List<String> tmp = new ArrayList<>();
@@ -194,18 +225,11 @@ public class AccountManagement {
     }
 
 
-//    public static void main(String[] args){
-//        AccountManagement tmp = new AccountManagement();
-//        tmp.initAccountFromDB("hoa1","hoa1");
-//        Exercise tmp1 = new RerangeEx("q","sdf");
-//        Exercise tmp2 = new RerangeEx("adsf","as");
-//        AccountManagement.addAcivities("hoa1",tmp1);
-//        AccountManagement.addAcivities("hoa1",tmp2);
-//        List<String> tmp4 = AccountManagement.getActivities("hoa1");
-//        System.out.println(tmp4.size());
-//        for(String i: tmp4){
-//            System.out.println(i);
-//        }
+    public static void main(String[] args){
+        AccountManagement tmp = new AccountManagement();
+        AccountManagement.setAccountLevel("hoa",2);
+        AccountManagement.reLoadstatus("hoa",(float)50.5);
+        }
 //
 //    }
 

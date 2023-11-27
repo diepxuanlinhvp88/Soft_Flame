@@ -39,6 +39,8 @@ public class LoginController implements Initializable {
     public static DatabaseManagement data = new DatabaseManagement();
     public static ParaTransWithAPI tranapi = new ParaTransWithAPI();
     public static TextToSpeech tts = new TextToSpeech();
+    public AccountManagement tmp = new AccountManagement();
+    public Account account;
 
     @FXML
     public AnchorPane anchorPaneLogin;
@@ -84,10 +86,9 @@ public class LoginController implements Initializable {
 
     @FXML
     private void Letgo() throws IOException {
-
         Node node;
-        if (checkAccount(acc.getText(), password.getText())) {
-
+        account = tmp.initAccountFromDB(acc.getText(),password.getText());
+        if(account!=null){
             node = FXMLLoader.load(getClass().getResource("controller.fxml"));
             anchorPaneLogin.getChildren().setAll(node);
         } else er.setText("username or password is not correct");
