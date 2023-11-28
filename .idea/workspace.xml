@@ -5,13 +5,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="aa996ca5-9df7-4c2e-936f-74874939cdfc" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/data/Account/Account.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/data/Account/Account.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/data/Account/AccountManagement.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/data/Account/AccountManagement.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/data/Account/ExpertAccount.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/data/Account/ExpertAccount.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/data/Account/NewbieAccount.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/data/Account/NewbieAccount.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/data/db/DictionaryManagement.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/data/db/DictionaryManagement.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Create_database_ForVE.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/data/api/ParaTransWithAPI.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/data/api/ParaTransWithAPI.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/module-info.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/module-info.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -39,20 +38,20 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
-    &quot;last_opened_file_path&quot;: &quot;D:/java_code/backup&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;reference.settings.ide.settings.uml&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "git-widget-placeholder": "main",
+    "last_opened_file_path": "D:/java_code/backup/Soft_Flame",
+    "node.js.detected.package.eslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "settings.editor.selected.configurable": "reference.settings.ide.settings.uml",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -63,6 +62,7 @@
       <updated>1701085438527</updated>
       <workItem from="1701085440578" duration="9055000" />
       <workItem from="1701132438449" duration="3937000" />
+      <workItem from="1701153478590" duration="12889000" />
     </task>
     <servers />
   </component>
