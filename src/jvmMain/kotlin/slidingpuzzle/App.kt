@@ -8,9 +8,7 @@ import androidx.compose.foundation.layout.*
 import androidx.compose.foundation.lazy.LazyRow
 import androidx.compose.foundation.lazy.items
 import androidx.compose.foundation.shape.RoundedCornerShape
-import androidx.compose.material.Icon
-import androidx.compose.material.MaterialTheme
-import androidx.compose.material.Text
+import androidx.compose.material.*
 import androidx.compose.material.icons.Icons
 import androidx.compose.material.icons.filled.Create
 import androidx.compose.material.icons.filled.Menu
@@ -28,27 +26,39 @@ import androidx.compose.ui.unit.dp
 @Composable
 fun App() {
     MaterialTheme {
+        val refreshIndex = remember { mutableStateOf(0) }
         val isSideMenuOpen = remember { mutableStateOf(false) }
-        val selectedPuzzleSize = remember { mutableStateOf(3) }
+        val selectedPuzzleSize = remember() { mutableStateOf(3) }
+
         Box(
             Modifier.fillMaxSize()
         ) {
-            PuzzleBoard(selectedPuzzleSize.value)
-            Box(
-                Modifier.padding(16.dp).border(
-                    border = BorderStroke(
-                        2.dp,
-                        color = Color.White.copy(alpha = 0.6f),
-                    ), shape = RoundedCornerShape(16.dp)
-                )
-            ) {
-                Icon(imageVector = Icons.Default.Menu,
-                    contentDescription = null,
-                    tint = Color.White,
-                    modifier = Modifier.padding(16.dp).size(24.dp).clickable {
-                        isSideMenuOpen.value = true
-                    })
+            PuzzleBoard(selectedPuzzleSize.value, refreshIndex.value)
+            Row {
+                Box(
+                    Modifier.padding(16.dp).border(
+                        border = BorderStroke(
+                            2.dp,
+                            color = Color.White.copy(alpha = 0.6f),
+                        ), shape = RoundedCornerShape(16.dp)
+                    )
+                ) {
+                    Icon(imageVector = Icons.Default.Menu,
+                        contentDescription = null,
+                        tint = Color.White,
+                        modifier = Modifier.padding(16.dp).size(24.dp).clickable {
+                            isSideMenuOpen.value = true
+                        })
+                }
+                TextButton(onClick = {
+                    refreshIndex.value++
+                },
+                    Modifier.padding(16.dp),
+                    ) {
+                    Text("Refresh", style = MaterialTheme.typography.h6.copy(Color.White))
+                }
             }
+
             if (isSideMenuOpen.value) {
                 Box(
                     modifier = Modifier.fillMaxSize().background(Color.Black.copy(alpha = 0.2f))
@@ -71,7 +81,6 @@ fun App() {
                                     text = "Slide Puzzle",
                                     style = MaterialTheme.typography.h5.copy(Color.White),
                                     modifier = Modifier.padding(16.dp).align(Alignment.TopStart)
-
                                 )
                                 Icon(
                                     imageVector = Icons.Default.Create,

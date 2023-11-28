@@ -11,6 +11,7 @@ import androidx.compose.foundation.shape.RoundedCornerShape
 import androidx.compose.material.MaterialTheme
 import androidx.compose.material.OutlinedButton
 import androidx.compose.material.Text
+import androidx.compose.material.TextButton
 import androidx.compose.runtime.*
 import androidx.compose.runtime.snapshots.SnapshotStateList
 import androidx.compose.ui.Alignment
@@ -31,11 +32,11 @@ import java.io.IOException
 import kotlin.random.Random
 
 @Composable
-fun PuzzleBoard(value: Int) {
+fun PuzzleBoard(value: Int, refreshIndex: Int) {
     val boxWidth = remember { mutableStateOf(-1f) }
     StarsBackground { boxWidth.value = it }
     MeteoroidAnimation(Modifier)
-    PuzzleGame(value, boxWidth.value)
+    PuzzleGame(value, boxWidth.value, refreshIndex= refreshIndex)
 }
 
 private fun loadWords(puzzleSize: Int): List<Pair<String, String>> {
@@ -59,6 +60,10 @@ private fun loadWords(puzzleSize: Int): List<Pair<String, String>> {
         }
 
         wordPairlist.sortBy { (_) -> Random.nextInt(1, 2) == 1 }
+        for (i in 0..wordPairlist.size - 1) {
+            val j = (0..wordPairlist.size - 1).random()
+            wordPairlist.swap(i, j)
+        }
         bufferedReader.close()
     } catch (e: IOException) {
         e.printStackTrace()
@@ -68,22 +73,23 @@ private fun loadWords(puzzleSize: Int): List<Pair<String, String>> {
 }
 
 @Composable
-fun PuzzleGame(puzzleSize: Int, boxWidth: Float) {
-    val wordPairList = remember(key1 = puzzleSize) { loadWords(puzzleSize) }
+fun PuzzleGame(puzzleSize: Int, boxWidth: Float, refreshIndex: Int) {
+    val key1 = "$refreshIndex $puzzleSize"
+    val wordPairList = remember(key1 = key1) { loadWords(puzzleSize) }
 
-    val moves = remember(key1 = puzzleSize) { mutableStateOf(0) }
+    val moves = remember(key1 = key1) { mutableStateOf(0) }
 
     val numTiles = puzzleSize * puzzleSize
 
     val charList: SnapshotStateList<Char> = wordPairList.flatMap { it.first.toList() }.toMutableStateList()
 
-    val emptyTilePosition = remember(key1 = puzzleSize) { mutableStateOf(Pair(charList.size - 1, charList.last())) }
+    val emptyTilePosition = remember(key1 = key1) { mutableStateOf(Pair(charList.size - 1, charList.last())) }
 
-    val tileValues = remember(key1 = puzzleSize) {
+    val tileValues = remember(key1 = key1) {
         charList.indices.map { Pair(it, charList[it]) }.toMutableStateList()
     }
 
-    val correctTiles = remember(key1 = puzzleSize) { mutableStateOf(0) }
+    val correctTiles = remember(key1 = key1) { mutableStateOf(0) }
 
     Column(
         modifier = Modifier.fillMaxWidth().padding(top = 16.dp, start = 16.dp, end = 16.dp),
@@ -103,17 +109,17 @@ fun PuzzleGame(puzzleSize: Int, boxWidth: Float) {
         Spacer(modifier = Modifier.padding(all = 8.dp))
         Text(
             text = "Keywords: " + wordPairList.map { it.second }.joinToString(", "),
-            style = MaterialTheme.typography.body1,
+            style = MaterialTheme.typography.body1.copy(fontWeight = FontWeight.Bold),
             color = Color.White,
         )
         Spacer(modifier = Modifier.padding(all = 8.dp))
         Row {
-            Text(
-                text = "Time",
-                style = MaterialTheme.typography.body1,
-                fontWeight = FontWeight.W700,
-                color = Color.White,
-            )
+//            Text(
+//                text = "Time",
+//                style = MaterialTheme.typography.body1,
+//                fontWeight = FontWeight.W700,
+//                color = Color.White,
+//            )
             Text(
                 text = "Moves:",
                 style = MaterialTheme.typography.body1,
@@ -202,7 +208,7 @@ fun PuzzleTiles(
     }
 
     fun isTileInRightPosition(position: Int): Boolean {
-        return tileValues[position] == initialCharList[position]
+        return tileValues[position].second == initialCharList[position].second
     }
 
     fun moveTile(position: Int) {
@@ -260,7 +266,7 @@ fun PuzzleTiles(
                             }
                             Box(modifier = modifier.align(alignment = Alignment.Center)) {
                                 Text(
-                                    text = tile.toString(),
+                                    text = tile.second.toString(),
                                     color = Color.White,
                                     fontSize = (tileSize / puzzleSize * 0.3).sp,
                                     fontWeight = FontWeight.Bold,
