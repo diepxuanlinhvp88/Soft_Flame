@@ -42,3 +42,4 @@ This Java-based dictionary app is designed not only to provide word definitions 
 ## License
 
 This project is licensed under Soft Flame team - see the LICENSE file for details.
+https://s.net.vn/9UjD

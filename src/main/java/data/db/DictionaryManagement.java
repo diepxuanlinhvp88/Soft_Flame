@@ -257,11 +257,43 @@ public class DictionaryManagement implements IDictionaryManagement {
     }
 
 
+    public void bookMarkInLocal(Word word){
+        try {
+            String content = word.getWordTarget()+"<token>"+word.getHtml()+"<token>"+word.getWordExplain()+"\n";
+            System.out.println(content);
+            FileWriter writer = new FileWriter(".\\/data/BookMarkInLocal.txt",true);
+            BufferedWriter buffer = new BufferedWriter(writer);
+            buffer.write(content);
+            buffer.close();
+        } catch(Exception e){
+            e.printStackTrace();
+        }
+    }
+    private static List<String> listBookmarkLocal(){
+        try{
+            BufferedReader bufferedReader = new BufferedReader( new FileReader(".\\/data/BookMarkInLocal.txt"));
+            String line;
+            List<String> list = new ArrayList<>();
+            while((line = bufferedReader.readLine()) != null){
+                list.add(line);
+            }
+            return list;
+        } catch(IOException e){
+            e.printStackTrace();
+            return null;
+        }
+    }
+    public boolean checkBookmark(String target){
+        List<String> list = listBookmarkLocal();
+        if(list.contains(target)){
+            return true;
+        }
+        return false;
+    }
+
     public static void main(String[] args) throws FileNotFoundException {
         DictionaryManagement tmp = new DictionaryManagement();
-       // tmp.update("hello","hey bro");
-//        tmp.reloadDicWhenExit();
-        System.out.println(tmp.find("linhlinh"));
-        System.out.println(tmp.findWithWrong("linhlinh"));
+       Word word = new Word("find","find","find");
+       tmp.bookMarkInLocal(word);
     }
 }
