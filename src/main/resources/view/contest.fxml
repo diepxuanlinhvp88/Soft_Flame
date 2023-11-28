@@ -8,48 +8,48 @@
 <?import javafx.scene.layout.Pane?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane fx:id="anchorPane" prefHeight="505.0" prefWidth="720.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="view.ContestController">
+<AnchorPane fx:id="anchorPane" prefHeight="600.0" prefWidth="960.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="view.ContestController">
    <children>
-      <ImageView fitHeight="505.0" fitWidth="768.0" pickOnBounds="true" preserveRatio="true">
+      <ImageView fitHeight="601.0" fitWidth="1168.0" pickOnBounds="true">
          <image>
             <Image url="@image/questionbg.jpg" />
          </image>
       </ImageView>
-      <Label fx:id="question" layoutX="66.0" layoutY="71.0" prefHeight="25.0" prefWidth="603.0" style="-fx-background-color: #ffffff; -fx-background-radius: 10; -fx-border-color: red;">
+      <Label fx:id="question" layoutX="244.0" layoutY="66.0" prefHeight="25.0" prefWidth="603.0" scaleX="1.3" scaleY="1.3" style="-fx-background-color: #ffffff; -fx-background-radius: 10; -fx-border-color: red;">
          <font>
             <Font size="15.0" />
          </font>
       </Label>
-      <Label fx:id="success" layoutX="66.0" layoutY="96.0" prefHeight="17.0" prefWidth="479.0">
+      <Label fx:id="success" layoutX="66.0" layoutY="96.0" prefHeight="17.0" prefWidth="479.0" scaleX="1.3" scaleY="1.3">
          <font>
             <Font size="14.0" />
          </font>
       </Label>
-      <Button fx:id="A" layoutX="93.0" layoutY="253.0" mnemonicParsing="false" prefHeight="105.0" prefWidth="89.0" />
-      <Button fx:id="B" layoutX="246.0" layoutY="253.0" mnemonicParsing="false" prefHeight="105.0" prefWidth="89.0" />
-      <Button fx:id="C" layoutX="413.0" layoutY="253.0" mnemonicParsing="false" prefHeight="105.0" prefWidth="89.0" />
-      <Button fx:id="D" layoutX="563.0" layoutY="253.0" mnemonicParsing="false" prefHeight="105.0" prefWidth="89.0" />
-      <Label fx:id="explainquestion" layoutX="66.0" layoutY="128.0" prefHeight="105.0" prefWidth="603.0" wrapText="true" />
-      <ImageView fitHeight="42.0" fitWidth="46.0" layoutY="5.0" onMouseClicked="#out" pickOnBounds="true" preserveRatio="true" rotate="180.0">
+      <Button fx:id="A" layoutX="185.0" layoutY="256.0" mnemonicParsing="false" prefHeight="105.0" prefWidth="89.0" scaleX="1.3" scaleY="1.3" />
+      <Button fx:id="B" layoutX="404.0" layoutY="252.0" mnemonicParsing="false" prefHeight="105.0" prefWidth="89.0" scaleX="1.3" scaleY="1.3" />
+      <Button fx:id="C" layoutX="602.0" layoutY="252.0" mnemonicParsing="false" prefHeight="105.0" prefWidth="89.0" scaleX="1.3" scaleY="1.3" />
+      <Button fx:id="D" layoutX="804.0" layoutY="250.0" mnemonicParsing="false" prefHeight="105.0" prefWidth="89.0" scaleX="1.3" scaleY="1.3" />
+      <ImageView fitHeight="42.0" fitWidth="46.0" layoutY="5.0" onMouseClicked="#out" pickOnBounds="true" preserveRatio="true" rotate="180.0" scaleX="1.3" scaleY="1.3">
          <image>
             <Image url="@image/2606505_5844.png" />
          </image>
       </ImageView>
-      <ImageView fitHeight="98.0" fitWidth="156.0" layoutX="283.0" layoutY="382.0" onMouseClicked="#next" pickOnBounds="true" preserveRatio="true">
+      <ImageView fitHeight="98.0" fitWidth="156.0" layoutX="489.0" layoutY="446.0" onMouseClicked="#next" pickOnBounds="true" preserveRatio="true" scaleX="1.3" scaleY="1.3">
          <image>
             <Image url="@image/next.png" />
          </image>
       </ImageView>
-      <ImageView fitHeight="62.0" fitWidth="54.0" layoutX="66.0" layoutY="1.0" pickOnBounds="true" preserveRatio="true">
+      <ImageView fitHeight="62.0" fitWidth="54.0" layoutX="71.0" layoutY="17.0" pickOnBounds="true" preserveRatio="true" scaleX="1.3" scaleY="1.3">
          <image>
             <Image url="@image/rate.png" />
          </image>
       </ImageView>
-      <Label fx:id="rate" layoutX="119.0" layoutY="8.0" prefHeight="33.0" prefWidth="38.0" textFill="RED">
+      <Label fx:id="rate" layoutX="119.0" layoutY="8.0" prefHeight="33.0" prefWidth="38.0" scaleX="1.3" scaleY="1.3" textFill="RED">
          <font>
             <Font name="System Bold" size="12.0" />
          </font>
       </Label>
-      <Pane fx:id="pane" layoutX="158.0" layoutY="25.0" prefHeight="239.0" prefWidth="443.0" />
+      <Label fx:id="explainquestion" layoutX="184.0" layoutY="129.0" prefHeight="105.0" prefWidth="712.0" wrapText="true" />
+      <Pane fx:id="pane" layoutX="295.0" layoutY="21.0" prefHeight="239.0" prefWidth="443.0" />
    </children>
 </AnchorPane>

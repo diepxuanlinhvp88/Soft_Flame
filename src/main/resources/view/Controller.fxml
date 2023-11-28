@@ -4,7 +4,6 @@
 <?import javafx.scene.image.Image?>
 <?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.AnchorPane?>
-<?import javafx.scene.layout.Pane?>
 
 <AnchorPane fx:id="anchorPaneParent" prefHeight="600.0" prefWidth="960.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="view.Controller">
     <children>
@@ -13,14 +12,13 @@
             <Image url="@image/bg2.png" />
          </image>
       </ImageView>
-        <Button fx:id="SkillButton" layoutX="369.0" layoutY="461.0" mnemonicParsing="false" onAction="#SkillTestController" prefHeight="52.0" prefWidth="293.0" styleClass="button2" stylesheets="@graphic.css" text="Contest" />
+        <Button fx:id="SkillButton" layoutX="280.0" layoutY="300.0" mnemonicParsing="false" onAction="#SkillTestController" prefHeight="90.0" prefWidth="450.0" styleClass="button2" stylesheets="@graphic.css" text="Contest" />
       <ImageView fitHeight="65.0" fitWidth="68.0" layoutX="900.0" onMouseClicked="#setting" pickOnBounds="true" preserveRatio="true">
          <image>
             <Image url="@image/setting%20(1).png" />
          </image>
       </ImageView>
-      <Pane fx:id="setPane" layoutX="366.0" layoutY="58.0" prefHeight="246.0" prefWidth="284.0" />
-        <Button fx:id="LearnButton" layoutX="370.0" layoutY="389.0" mnemonicParsing="false" onAction="#LearnEngController" prefHeight="52.0" prefWidth="292.0" styleClass="button2" stylesheets="@graphic.css" text="Learn English" />
-      <Button layoutX="369.0" layoutY="527.0" mnemonicParsing="false" onAction="#Exercise" prefHeight="52.0" prefWidth="293.0" styleClass="button2" stylesheets="@graphic.css" text="Exercise" />
+        <Button fx:id="LearnButton" layoutX="280.0" layoutY="169.0" mnemonicParsing="false" onAction="#LearnEngController" prefHeight="90.0" prefWidth="450.0" styleClass="button2" stylesheets="@graphic.css" text="Learn English" />
+      <Button layoutX="280.0" layoutY="430.0" mnemonicParsing="false" onAction="#Exercise" prefHeight="90.0" prefWidth="450.0" styleClass="button2" stylesheets="@graphic.css" text="Exercise" />
     </children>
 </AnchorPane>

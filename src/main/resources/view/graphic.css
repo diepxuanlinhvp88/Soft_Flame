@@ -177,20 +177,14 @@
 }
 
 .list-view {
-    -fx-border: none;
-    -fx-background-radius: 15px;
-    -fx-padding: 3px;
-    -fx-background-color: #ffffff;
-    -fx-effect: dropshadow(gaussian, #ffffff, 1, 1, 1, 0),
-    dropshadow(gaussian, #f5f5f5, -6, -6, 12, 0);
-    -fx-font-size: medium;
-    -fx-font-weight: bold;
-
+    -fx-background-color: #f0f0f0; /* Màu nền của ListView */
+    -fx-border-width: 1px; /* Độ rộng của viền ngoài */
+    -fx-border-color: #8fffff; /* Màu của viền ngoài */
+    -fx-padding: 0px; /* Khoảng trắng giữa viền và nội dung của ListView */
 }
 
 .list-view:focused {
-    -fx-focus-color: white;
-    -fx-prompt-text: "Enter your message!";
+    -fx-background-color: transparent; /* Loại bỏ đường viền khi ListView được chọn */
 }
 .title-pane  {
 
@@ -215,22 +209,6 @@
 
 }
 
-/*@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');*/
-
-/*.root {*/
-/*    -fx-font-family: 'Poppins', sans-serif;*/
-/*    -fx-background-image: url('image/1.png');*/
-/*    -fx-background-repeat: no-repeat;*/
-/*    -fx-background-size: cover;*/
-/*    -fx-background-position: center;*/
-/*    -fx-display: flex;*/
-/*    -fx-justify-content: center;*/
-/*    -fx-align-items: center;*/
-/*    -fx-min-height: 100vh;*/
-/*    -fx-margin: 0;*/
-/*    -fx-padding: 0;*/
-/*    -fx-box-sizing: border-box;*/
-/*}*/
 
 .form {
     -fx-padding: 20px;
@@ -310,4 +288,21 @@
     -fx-background-color: #ffffff;
 
 }
+.cyberpunk-checkbox {
+    -fx-appearance: none;
+    -fx-min-width: 20px;
+    -fx-min-height: 20px;
+    -fx-max-width: 20px;
+    -fx-max-height: 20px;
+    -fx-border-width: 2px;
+    -fx-border-color: #30cfd0;
+    -fx-border-radius: 5px;
+    -fx-background-color: transparent;
+    -fx-display: inline-block;
+    -fx-position: relative;
+    -fx-margin-right: 10px;
+    -fx-cursor: hand;
+}
+
+
 

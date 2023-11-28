@@ -5,26 +5,87 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="77bfa14c-ec6f-415b-9d9e-b22c3a5f77fc" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/data/BookMarkInLocal.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/EngtoV.txt" beforeDir="false" afterPath="$PROJECT_DIR$/data/EngtoV.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/dict_hh.db" beforeDir="false" afterPath="$PROJECT_DIR$/data/dict_hh.db" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/infoEditWord.txt" beforeDir="false" afterPath="$PROJECT_DIR$/data/infoEditWord.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/output.mp3" beforeDir="false" afterPath="$PROJECT_DIR$/data/output.mp3" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/data/Account/Account.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/data/Account/Account.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/data/Account/AccountManagement.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/data/Account/AccountManagement.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/data/Account/ExpertAccount.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/data/Account/ExpertAccount.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/data/Account/NewbieAccount.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/data/Account/NewbieAccount.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/data/db/DictionaryManagement.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/data/db/DictionaryManagement.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/view/Audio.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/view/Audio.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/view/Controller.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/view/Controller.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/view/LearnEnglishController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/view/LearnEnglishController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/view/NewbieExController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/view/NewbieExController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/view/RerangeExController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/view/RerangeExController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/view/TranslateController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/view/TranslateController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/view/Controller.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/view/Controller.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/view/LearnEnglish.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/view/LearnEnglish.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/view/RerangEx.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/view/RerangEx.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/view/contest.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/view/contest.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/view/graphic.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/view/graphic.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/view/test.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/view/test.fxml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+        <option value="FxmlFile" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProjectColorInfo"><![CDATA[{
+  "associatedIndex": 1
+}]]></component>
+  <component name="ProjectId" id="2Yo4X9lKQ7IN9S85v5tdmOMT5ad" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
-    "git-widget-placeholder": "Merging main"
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "git-widget-placeholder": "main",
+    "node.js.detected.package.eslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
+  <component name="RunManager">
+    <configuration name="Dict" type="Application" factoryName="Application">
+      <option name="MAIN_CLASS_NAME" value="view.DictApp" />
+      <module name="Dictionary" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="77bfa14c-ec6f-415b-9d9e-b22c3a5f77fc" name="Changes" comment="" />
+      <created>1701178669642</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1701178669642</updated>
+      <workItem from="1701178694005" duration="11045000" />
+    </task>
     <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
   </component>
 </project>

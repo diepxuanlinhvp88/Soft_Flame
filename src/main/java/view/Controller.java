@@ -61,6 +61,11 @@ public class Controller implements Initializable {
             node = FXMLLoader.load(getClass().getResource("RerangEx.fxml"));
             anchorPaneParent.getChildren().setAll(node);
         }
+        else {
+            Node node;
+            node = FXMLLoader.load(getClass().getResource("ExpertEx.fxml"));
+            anchorPaneParent.getChildren().setAll(node);
+        }
     }
     @FXML
     private void setting() throws IOException {

@@ -37,6 +37,9 @@ public abstract class Account {
     public String getUserName() {
         return userName;
     }
+    public String getDateTime(){
+        return dateTime;
+    }
 
     public List<Exercise> getExercises() {
         return exercises;

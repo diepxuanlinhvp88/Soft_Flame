@@ -10,7 +10,7 @@
 
 <AnchorPane fx:id="anchorpaneEx" prefHeight="600.0" prefWidth="960.0" style="-fx-background-color: #80BD9E;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="view.RerangeExController">
    <children>
-      <ImageView fitHeight="58.0" fitWidth="111.0" layoutX="9.0" layoutY="12.0" pickOnBounds="true" preserveRatio="true">
+      <ImageView fitHeight="58.0" fitWidth="111.0" layoutX="9.0" layoutY="12.0" onMouseClicked="#Ok" pickOnBounds="true" preserveRatio="true">
          <image>
             <Image url="@image/home.png" />
          </image>
@@ -29,7 +29,7 @@
       </Label>
       <Rectangle fx:id="process" arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="10.0" layoutX="450.0" layoutY="36.0" stroke="BLACK" strokeType="INSIDE" width="200.0" />
       <Rectangle fx:id="process" arcHeight="5.0" arcWidth="5.0" fill="#76dbae" height="10.0" layoutX="450.0" layoutY="36.0" stroke="BLACK" strokeType="INSIDE" />
-      <ImageView fitHeight="58.0" fitWidth="61.0" layoutX="899.0" layoutY="10.0" pickOnBounds="true" preserveRatio="true">
+      <ImageView fitHeight="58.0" fitWidth="61.0" layoutX="899.0" layoutY="10.0" onMouseClicked="#exit" pickOnBounds="true" preserveRatio="true">
          <image>
             <Image url="@image/2606505_5844.png" />
          </image>
@@ -46,5 +46,6 @@
             <Image url="@image/no.png" />
          </image>
       </ImageView>
+      <ImageView fx:id="imageView" fitHeight="160.0" fitWidth="200.0" layoutX="385.0" layoutY="310.0" pickOnBounds="true" preserveRatio="true" />
    </children>
 </AnchorPane>

@@ -16,10 +16,14 @@ import java.util.ResourceBundle;
 
 import javafx.scene.Node;
 import javafx.scene.control.*;
+import javafx.scene.image.Image;
+import javafx.scene.image.ImageView;
 import javafx.scene.layout.AnchorPane;
 import javafx.scene.layout.Pane;
 import javafx.scene.shape.Rectangle;
+import javafx.scene.text.Font;
 
+import static view.Controller.ex;
 import static view.Controller.exCnt;
 
 public class NewbieExController implements Initializable {
@@ -37,22 +41,49 @@ public class NewbieExController implements Initializable {
     Rectangle pro, max;
 
     public void Ok() {
-        if(Static_variable.account.getProcess() >=0){
-            if(Static_variable.account instanceof ExpertAccount){
+        if (Static_variable.account.getProcess() >= 100) {
+            if (Static_variable.account instanceof ExpertAccount) {
                 return;
             }
-            if(Static_variable.account instanceof NewbieAccount) {
+            if (Static_variable.account instanceof NewbieAccount) {
                 Static_variable.accountmanagement.setAccountLevel(Static_variable.username, 1);
-            }
-            else if(Static_variable.account instanceof IntermediateAccount){
-                Static_variable.accountmanagement.setAccountLevel(Static_variable.username,2);
+            } else if (Static_variable.account instanceof IntermediateAccount) {
+                Static_variable.accountmanagement.setAccountLevel(Static_variable.username, 2);
             }
             Pane root = new Pane();
-            root.setPrefSize(600, 400);
+
+            root.setPrefWidth(600.0);
+            root.setPrefHeight(400.0);
+            ImageView imageView = new ImageView();
+            Image image = new Image(getClass().getResource("image/ok.jpg").toExternalForm());
+            imageView.setImage(image);
+            imageView.setFitWidth(284.0);
+            imageView.setFitHeight(268.0);
+            imageView.setLayoutX(151.0);
+            imageView.setLayoutY(70.0);
+            Label titleLabel = new Label();
+            Label messageLabel = new Label();
+            titleLabel.setPrefWidth(488.0);
+            titleLabel.setPrefHeight(93.0);
+            titleLabel.setLayoutX(56.0);
+            titleLabel.setLayoutY(6.0);
+
+            messageLabel.setPrefWidth(402.0);
+            messageLabel.setPrefHeight(68.0);
+            messageLabel.setLayoutX(167.0);
+            messageLabel.setLayoutY(318.0);
+
+            // Thiết lập nội dung và font cho các Label
+            titleLabel.setText("Xin chúc mừng tài khoản của bạn đã được nâng cấp");
+            titleLabel.setTextFill(javafx.scene.paint.Color.RED);
+            titleLabel.setFont(new Font(20.0));
+
+            messageLabel.setText("Vui lòng đăng nhập lại để tiếp tục");
+            messageLabel.setFont(new Font(20.0));
 
             root.setStyle("-fx-background-color: #5fcbb1; -fx-background-radius: 5;");
-            Label sc = new Label("xin chúc mừng, tài khoản của bạn đã được nâng cấp");
-            Label sc1 = new Label("Hãy khởi động lại để tiếp tục nhé !!");
+
+            root.getChildren().addAll(titleLabel, messageLabel);
 
             Alert alert = new Alert(Alert.AlertType.INFORMATION);
             alert.setTitle("Nâng cấp tài khoản");
@@ -74,23 +105,43 @@ public class NewbieExController implements Initializable {
 
 
         }
-        if (answer.getText().equalsIgnoreCase(Controller.ex.get(exCnt).getAnswer())) {
-            alert.setText("Bạn đã trả lời chính xác");
-            Static_variable.account.setProcess();
-            pro.setWidth(Static_variable.account.getProcess());
+        String[] ans = null;
+        if (Controller.ex.get(exCnt) instanceof FillBlankEx) {
+            ans = Controller.ex.get(exCnt).getAnswer().split("<token>");
+            if (ans[0].equalsIgnoreCase(answer.getText())) {
+                alert.setText("Bạn đã trả lời chính xác");
+                Static_variable.account.setProcess();
+                pro.setWidth(Static_variable.account.getProcess());
 
-            Static_variable.account.updateProcess();
-            Static_variable.account.AddInfoActivities(Controller.ex.get(exCnt));
-            System.out.println(Static_variable.account.getProcess());
+                Static_variable.account.updateProcess();
+                Static_variable.account.AddInfoActivities(Controller.ex.get(exCnt));
+                System.out.println(Static_variable.account.getProcess());
+            } else {
+                alert.setText("Sai rồi nè !");
+                res.setText("Đáp án phải là : " + ans[0] + "\n"
+                        + "<(" + ans[1] + ">");
+
+            }
         } else {
-            alert.setText("Sai rồi nè !");
-            res.setText("Đáp án phải là : " + Controller.ex.get(exCnt).getAnswer());
+            if (answer.getText().equalsIgnoreCase(Controller.ex.get(exCnt).getAnswer())) {
+                alert.setText("Bạn đã trả lời chính xác");
+                Static_variable.account.setProcess();
+                pro.setWidth(Static_variable.account.getProcess());
+
+                Static_variable.account.updateProcess();
+                Static_variable.account.AddInfoActivities(Controller.ex.get(exCnt));
+                System.out.println(Static_variable.account.getProcess());
+            } else {
+                alert.setText("Sai rồi nè !");
+                res.setText("Đáp án phải là : " + Controller.ex.get(exCnt).getAnswer());
+
+            }
+
+
+            System.out.println(Static_variable.account.getProcess());
+
 
         }
-
-
-        System.out.println(Static_variable.account.getProcess());
-
     }
     public void next() throws IOException {
         exCnt++;

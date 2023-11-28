@@ -38,11 +38,7 @@
                         <Image url="@image/setting%20(1).png" />
                      </image>
                   </ImageView>
-                  <ImageView fitHeight="60.0" fitWidth="102.0" pickOnBounds="true" preserveRatio="true">
-                     <image>
-                        <Image url="@image/profile2.png" />
-                     </image>
-                  </ImageView>
+                  <ImageView fx:id="profile" fitHeight="60.0" fitWidth="102.0" onMouseClicked="#profile" pickOnBounds="true" preserveRatio="true" />
                   <ImageView fitHeight="50.0" fitWidth="75.0" onMouseClicked="#Exit" pickOnBounds="true" preserveRatio="true">
                      <image>
                         <Image url="@image/2606505_5844.png" />
