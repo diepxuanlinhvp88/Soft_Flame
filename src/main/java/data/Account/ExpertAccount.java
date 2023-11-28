@@ -17,6 +17,7 @@ public class ExpertAccount extends Account{
 
     @Override
     public void setProcess() {
+        this.process+=(float)1/15 * 100;
 
     }
 

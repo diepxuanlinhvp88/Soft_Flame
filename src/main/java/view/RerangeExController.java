@@ -237,7 +237,7 @@ public class RerangeExController implements Initializable {
         System.out.println(answer);
 
 
-        if(Static_variable.account.getProcess() >=100){
+        if(Static_variable.account.getProcess() >=10){
             if(Static_variable.account instanceof ExpertAccount){
                 return;
             }

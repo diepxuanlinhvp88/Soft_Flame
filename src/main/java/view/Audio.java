@@ -30,7 +30,7 @@ public class Audio implements Initializable {
 
             mediaPlayer.setCycleCount(MediaPlayer.INDEFINITE);
 
-            //mediaPlayer.play();
+            mediaPlayer.play();
             System.out.println(mediaPlayer.getMedia());
 
     }

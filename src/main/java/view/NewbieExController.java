@@ -41,7 +41,7 @@ public class NewbieExController implements Initializable {
     Rectangle pro, max;
 
     public void Ok() {
-        if (Static_variable.account.getProcess() >= 100) {
+        if (Static_variable.account.getProcess() >= 20) {
             if (Static_variable.account instanceof ExpertAccount) {
                 return;
             }
@@ -54,9 +54,10 @@ public class NewbieExController implements Initializable {
 
             root.setPrefWidth(600.0);
             root.setPrefHeight(400.0);
-            ImageView imageView = new ImageView();
+
             Image image = new Image(getClass().getResource("image/ok.jpg").toExternalForm());
-            imageView.setImage(image);
+            ImageView imageView = new ImageView(image);
+
             imageView.setFitWidth(284.0);
             imageView.setFitHeight(268.0);
             imageView.setLayoutX(151.0);
