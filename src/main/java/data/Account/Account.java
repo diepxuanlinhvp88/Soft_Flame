@@ -55,6 +55,13 @@ public abstract class Account {
     public float getProcess() {
         return process;
     }
+    public boolean addBookMark(String target){
+        return AccountManagement.AddBookmark(target,this.userName);
+    }
+
+    public boolean checkBookMark(String target){
+        return AccountManagement.checkBookmark(target,this.userName);
+    }
 
     public abstract void setProcess();
     public abstract void addExerciseList();

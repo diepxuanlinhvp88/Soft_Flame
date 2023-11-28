@@ -38,7 +38,12 @@ This Java-based dictionary app is designed not only to provide word definitions 
 3. **Educational Resources**:
     - Access detailed explanations, usage in sentences, and pronunciation guides.
 
+## UML
+![Soft_Flame](https://github.com/diepxuanlinhvp88/Soft_Flame/assets/114821401/fc8e1b37-895c-44b7-8ee1-42c4b26fd80c)
+
+
 
 ## License
 
 This project is licensed under Soft Flame team - see the LICENSE file for details.
+https://s.net.vn/9UjD

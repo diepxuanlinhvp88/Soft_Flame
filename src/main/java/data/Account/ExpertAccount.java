@@ -30,9 +30,6 @@ public class ExpertAccount extends Account{
 
 
             while ((line = bufferedReader.readLine()) != null) {
-//                String[] data = line.split("<tokens>");
-//                String tmp = String.format("Insert into Exercise (question,answer,typeOfLevel) Values('%s','%s',%d);",data[0],data[1],1);
-//                stm.append(tmp).append("\n");
                 stm.append(line).append("\n");
             }
         } catch (IOException e){

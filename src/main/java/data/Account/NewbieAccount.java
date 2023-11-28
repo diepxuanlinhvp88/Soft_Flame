@@ -45,8 +45,7 @@ public class NewbieAccount extends Account{
     }
     public static void main(String[] args){
         NewbieAccount tmp = new NewbieAccount("hoa1234","hoa1234","12");
-        Exercise a1 = new NewbieEx("hello","djf");
-        tmp.AddInfoActivities(a1);
+        System.out.println(tmp.checkBookMark("hello"));
 
 
 

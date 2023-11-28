@@ -66,8 +66,11 @@ public class AccountManagement {
                     acc = new NewbieAccount(username, password, datetime, process);
                 } else if (dtype.equals((Account.IntermediateAccount))) {
                     acc = new IntermediateAccount(username, password, datetime, process);
-                } else {
-                    acc = null;
+                } else if(dtype.equals(Account.ProAccount)){
+                    acc = new ExpertAccount(userName,passWord,datetime,process);
+                }
+                else{
+                    return null;
                 }
             }
             System.out.println(rs.getString("typeOfAccount") + "\n" + rs.getString("time"));
@@ -197,6 +200,38 @@ public class AccountManagement {
         System.out.println("lấy dữ liệu thất bại");
         return null;
 
+    }
+    public static boolean AddBookmark(String target,String username){
+        String insetQuerry = String.format("INSERT INTO %s (activity,time) VALUES (?,?);", username);
+        String token = target+"<mark>";
+        try{
+            PreparedStatement stm = conn.prepareStatement(insetQuerry);
+            stm.setString(1,token);
+            stm.setString(2,getCurrentDateTime());
+            int rowAffected = stm.executeUpdate();
+            if(rowAffected>0){
+                System.out.println("InsertBookMark success");
+                return true;
+            }
+        } catch(Exception e){
+            e.printStackTrace();
+        }
+        System.out.println("Insert bookmark failed");
+        return false;
+    }
+    public static boolean checkBookmark(String target,String username){
+        String token = target+"<mark>";
+        String sql =String.format("Select activity,time from %s where activity ='%s'",username,token);
+        try{
+            Statement stm = conn.createStatement();
+            ResultSet rs = stm.executeQuery(sql);
+            if(rs.next()){
+                return true;
+            }
+        } catch(Exception e){
+            e.printStackTrace();
+        }
+        return false;
     }
 
     public static boolean setAccountLevel(String username, int type) {
