@@ -11,15 +11,11 @@ import androidx.compose.foundation.shape.RoundedCornerShape
 import androidx.compose.material.MaterialTheme
 import androidx.compose.material.OutlinedButton
 import androidx.compose.material.Text
-import androidx.compose.runtime.Composable
-import androidx.compose.runtime.LaunchedEffect
-import androidx.compose.runtime.MutableState
-import androidx.compose.runtime.mutableStateListOf
-import androidx.compose.runtime.mutableStateOf
-import androidx.compose.runtime.remember
+import androidx.compose.runtime.*
 import androidx.compose.runtime.snapshots.SnapshotStateList
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
+import androidx.compose.ui.draw.alpha
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.text.style.TextAlign
@@ -28,6 +24,11 @@ import androidx.compose.ui.unit.sp
 import androidx.compose.ui.window.Popup
 import slidingpuzzle.background.MeteoroidAnimation
 import slidingpuzzle.background.StarsBackground
+import java.io.BufferedReader
+import java.io.File
+import java.io.FileReader
+import java.io.IOException
+import kotlin.random.Random
 
 @Composable
 fun PuzzleBoard(value: Int) {
@@ -37,22 +38,55 @@ fun PuzzleBoard(value: Int) {
     PuzzleGame(value, boxWidth.value)
 }
 
+private fun loadWords(puzzleSize: Int): List<Pair<String, String>> {
+    val file = File("src/jvmMain/resources/words.txt")
+    val wordPairlist: MutableList<Pair<String, String>> = mutableStateListOf()
+    try {
+        val fileReader = FileReader(file)
+        val bufferedReader = BufferedReader(fileReader)
+        var line: String? = bufferedReader.readLine()
+        while (line != null) {
+            line = bufferedReader.readLine()
+            if (line?.contains(":") == true) {
+                val splitedLine = line.split(":")
+
+                val word = splitedLine[0].uppercase()
+                val meaning = splitedLine[1].trim()
+                if (word.length == puzzleSize) {
+                    wordPairlist.add(Pair(word, meaning))
+                }
+            }
+        }
+
+        wordPairlist.sortBy { (_) -> Random.nextInt(1, 2) == 1 }
+        bufferedReader.close()
+    } catch (e: IOException) {
+        e.printStackTrace()
+    }
+
+    return wordPairlist.subList(0, puzzleSize)
+}
+
 @Composable
 fun PuzzleGame(puzzleSize: Int, boxWidth: Float) {
+    val wordPairList = remember(key1 = puzzleSize) { loadWords(puzzleSize) }
 
-    val moves = remember { mutableStateOf(0) }
+    val moves = remember(key1 = puzzleSize) { mutableStateOf(0) }
 
     val numTiles = puzzleSize * puzzleSize
-    val tilePositions = remember(key1 = puzzleSize) {
-        mutableStateListOf(
-            *(1 until numTiles).toList().toTypedArray(), 0
-        )
+
+    val charList: SnapshotStateList<Char> = wordPairList.flatMap { it.first.toList() }.toMutableStateList()
+
+    val emptyTilePosition = remember(key1 = puzzleSize) { mutableStateOf(Pair(charList.size - 1, charList.last())) }
+
+    val tileValues = remember(key1 = puzzleSize) {
+        charList.indices.map { Pair(it, charList[it]) }.toMutableStateList()
     }
-    val emptyTilePosition = remember { mutableStateOf(numTiles - 1) }
-    val correctTiles = remember { mutableStateOf(0) }
+
+    val correctTiles = remember(key1 = puzzleSize) { mutableStateOf(0) }
 
     Column(
-        modifier = Modifier.fillMaxWidth().padding(top = 96.dp, start = 16.dp, end = 16.dp),
+        modifier = Modifier.fillMaxWidth().padding(top = 16.dp, start = 16.dp, end = 16.dp),
         horizontalAlignment = Alignment.CenterHorizontally
     ) {
         Text(
@@ -60,11 +94,19 @@ fun PuzzleGame(puzzleSize: Int, boxWidth: Float) {
             style = MaterialTheme.typography.h4,
             color = Color.White,
         )
+        Spacer(modifier = Modifier.padding(all = 8.dp))
         Text(
             text = "Solve this Puzzle ",
             style = MaterialTheme.typography.body1,
             color = Color.White,
         )
+        Spacer(modifier = Modifier.padding(all = 8.dp))
+        Text(
+            text = "Keywords: " + wordPairList.map { it.second }.joinToString(", "),
+            style = MaterialTheme.typography.body1,
+            color = Color.White,
+        )
+        Spacer(modifier = Modifier.padding(all = 8.dp))
         Row {
             Text(
                 text = "Time",
@@ -103,7 +145,7 @@ fun PuzzleGame(puzzleSize: Int, boxWidth: Float) {
             puzzleSize,
             boxWidth,
             numTiles,
-            tilePositions,
+            tileValues,
             emptyTilePosition,
             correctTiles,
             moves
@@ -116,8 +158,8 @@ fun PuzzleTiles(
     puzzleSize: Int,
     boxWidth: Float,
     numTiles: Int,
-    tilePositions: SnapshotStateList<Int>,
-    emptyTilePosition: MutableState<Int>,
+    tileValues: SnapshotStateList<Pair<Int, Char>>,
+    emptyTilePosition: MutableState<Pair<Int, Char>>,
     correctTiles: MutableState<Int>,
     moves: MutableState<Int>,
 ) {
@@ -125,14 +167,15 @@ fun PuzzleTiles(
         mutableStateOf(false)
     }
 
-    fun shuffleTiles() {
+    val initialCharList = remember(puzzleSize) { tileValues.map { it } }
 
+    fun shuffleTiles() {
         // Shuffle the tiles using Fisher-Yates shuffle algorithm
         for (i in 1..50) {
             val j = (1..numTiles - 3).random()
-            tilePositions.swap(j, j+1)
+            tileValues.swap(j, j+1)
         }
-        emptyTilePosition.value = tilePositions.indexOf(0)
+        // emptyTilePosition.value = tileValues.indexOf(initialCharList.last())
     }
 
     LaunchedEffect(puzzleSize) {
@@ -140,7 +183,7 @@ fun PuzzleTiles(
     }
 
     fun canMoveTile(position: Int): Boolean {
-        val emptyPosition = emptyTilePosition.value
+        val emptyPosition = emptyTilePosition.value.first
         val row = position / puzzleSize
         val col = position % puzzleSize
         val emptyRow = emptyPosition / puzzleSize
@@ -152,23 +195,22 @@ fun PuzzleTiles(
     }
 
     fun isPuzzleSolved(): Boolean {
-        val initialNumTiles = (1 until numTiles).toList()
-        for (i in 0 until initialNumTiles.size) {
-            if (tilePositions[i] != initialNumTiles[i]) return false
+        for (i in 0 until initialCharList.size) {
+            if (tileValues[i] != initialCharList[i]) return false
         }
         return true
     }
 
     fun isTileInRightPosition(position: Int): Boolean {
-        return tilePositions[position] == position + 1
+        return tileValues[position] == initialCharList[position]
     }
 
     fun moveTile(position: Int) {
         if (canMoveTile(position)) {
             val emptyPosition = emptyTilePosition.value
-            tilePositions.swap(emptyPosition, position)
-            emptyTilePosition.value = position
-            correctTiles.value = countElementsInCorrectPosition(tilePositions)
+            tileValues.swap(emptyPosition.first, position)
+            emptyTilePosition.value = Pair(position,  emptyTilePosition.value.second)
+            correctTiles.value = countElementsInCorrectPosition(tileValues, expectedTileValues = initialCharList)
             moves.value = moves.value + 1
 
             if (isPuzzleSolved()) {
@@ -189,9 +231,9 @@ fun PuzzleTiles(
                 LazyRow {
                     items(puzzleSize) { col ->
                         val position = row * puzzleSize + col
-                        val tile = tilePositions[position]
+                        val tile = tileValues[position]
                         val isTileInRightPos = isTileInRightPosition(position)
-                        val isEmptyTile = tile == 0
+                        val isEmptyTile = tile.first == tileValues.size - 1
                         Box(Modifier.padding(4.dp).border(
                             border = BorderStroke(
                                 width = 1.dp,
@@ -210,7 +252,13 @@ fun PuzzleTiles(
                         ).clickable {
                             moveTile(position)
                         }) {
-                            if (tile != 0) {
+                            val modifier: Modifier
+                            if (tile.first != tileValues.size - 1) {
+                                modifier = Modifier
+                            } else {
+                                modifier = Modifier.alpha(0.4f)
+                            }
+                            Box(modifier = modifier.align(alignment = Alignment.Center)) {
                                 Text(
                                     text = tile.toString(),
                                     color = Color.White,
@@ -267,11 +315,11 @@ fun PuzzleSolvedDialog(
     }
 }
 
-private fun countElementsInCorrectPosition(list: List<Int>): Int {
+private fun countElementsInCorrectPosition(list: List<Pair<Int, Char?>>, expectedTileValues: List<Pair<Int, Char?>>): Int {
     var count = 0
 
     for (index in list.indices) {
-        val expectedValue = index + 1
+        val expectedValue = expectedTileValues[index]
         if (list.getOrNull(index) == expectedValue) {
             count++
         }
