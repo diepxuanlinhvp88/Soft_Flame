@@ -24,6 +24,19 @@ import kotlin.random.Random
 fun MeteoroidAnimation(modifier: Modifier) {
     val meteoroids = remember { mutableStateListOf<Meteoroid>() }
 
+    LaunchedEffect(true) {
+        // Add meteoroids to the list
+        repeat(20) {
+            meteoroids.add(
+                Meteoroid(
+                    x = Random.nextFloat(),
+                    y = Random.nextFloat(),
+                    size = Random.nextFloat().coerceIn(10f, 20f),
+                    speed = Random.nextInt(10, 30).toFloat()
+                )
+            )
+        }
+    }
 
     Canvas(modifier = modifier.fillMaxSize()) {
         val width = size.width
@@ -57,6 +70,20 @@ fun MeteoroidAnimation(modifier: Modifier) {
 fun StarsBackground(updateBoxWidth: (Float) -> Unit) {
     val stars = remember { mutableStateListOf<Star>() }
 
+    LaunchedEffect(true) {
+
+        // Add stars to the list
+        repeat(200) {
+            stars.add(
+                Star(
+                    x = Random.nextFloat(),
+                    y = Random.nextFloat(),
+                    radius = Random.nextFloat().coerceIn(3f, 10f),
+                    brightness = Random.nextFloat().coerceIn(0.1f, 0.3f)
+                )
+            )
+        }
+    }
 
     val infiniteTransition = rememberInfiniteTransition()
 

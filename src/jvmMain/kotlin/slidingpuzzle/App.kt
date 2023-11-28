@@ -42,6 +42,12 @@ fun App() {
                     ), shape = RoundedCornerShape(16.dp)
                 )
             ) {
+                Icon(imageVector = Icons.Default.Menu,
+                    contentDescription = null,
+                    tint = Color.White,
+                    modifier = Modifier.padding(16.dp).size(24.dp).clickable {
+                        isSideMenuOpen.value = true
+                    })
             }
             if (isSideMenuOpen.value) {
                 Box(
