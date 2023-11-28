@@ -21,7 +21,6 @@ import androidx.compose.runtime.snapshots.SnapshotStateList
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.Color
-import androidx.compose.ui.text.font.FontStyle
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.unit.dp
@@ -129,9 +128,9 @@ fun PuzzleTiles(
     fun shuffleTiles() {
 
         // Shuffle the tiles using Fisher-Yates shuffle algorithm
-        for (i in numTiles - 1 downTo 1) {
-            val j = (0..i).random()
-            tilePositions.swap(i, j)
+        for (i in 1..50) {
+            val j = (1..numTiles - 3).random()
+            tilePositions.swap(j, j+1)
         }
         emptyTilePosition.value = tilePositions.indexOf(0)
     }
@@ -153,7 +152,11 @@ fun PuzzleTiles(
     }
 
     fun isPuzzleSolved(): Boolean {
-        return tilePositions == (1 until numTiles).toList() + listOf(0)
+        val initialNumTiles = (1 until numTiles).toList()
+        for (i in 0 until initialNumTiles.size) {
+            if (tilePositions[i] != initialNumTiles[i]) return false
+        }
+        return true
     }
 
     fun isTileInRightPosition(position: Int): Boolean {
@@ -233,7 +236,7 @@ fun PuzzleTiles(
 fun PuzzleSolvedDialog(
     visible: MutableState<Boolean>,
 ) {
-    if (!visible.value) {
+    if (visible.value) {
         Popup(
             alignment = Alignment.Center
         ) {
@@ -254,7 +257,7 @@ fun PuzzleSolvedDialog(
                     )
 
                     OutlinedButton(onClick = {
-                        visible.value = true
+                        visible.value = false
                     }) {
                         Text("OK", style = MaterialTheme.typography.h6.copy(Color(0xFF202840)))
                     }
