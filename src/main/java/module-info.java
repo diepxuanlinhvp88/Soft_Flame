@@ -8,6 +8,7 @@ module view {
     requires freetts;
     requires javafx.media;
     requires org.kordamp.bootstrapfx.core;
+    requires com.google.gson;
 
     exports view;
     opens view to javafx.fxml;

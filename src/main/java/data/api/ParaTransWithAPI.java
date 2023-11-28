@@ -10,6 +10,11 @@ import java.net.HttpURLConnection;
 import java.net.MalformedURLException;
 import java.net.URL;
 import java.net.URLEncoder;
+import java.util.ArrayList;
+import java.util.List;
+import com.google.gson.Gson;
+import com.google.gson.JsonObject;
+import com.google.gson.JsonParser;
 
 
 
@@ -134,8 +139,6 @@ public class ParaTransWithAPI implements IParaTransWithAPI {
     public static void main(String[] args) throws UnsupportedEncodingException {
         ParaTransWithAPI tmp = new ParaTransWithAPI();
        tmp.textToSpeechAPI("en","My best friend is called Tony. We are classmates. We sit in the class on   ");
-
-
 
 
     }
