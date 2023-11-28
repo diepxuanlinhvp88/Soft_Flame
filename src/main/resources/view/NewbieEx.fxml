@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="anchorpaneEx" prefHeight="600.0" prefWidth="960.0" style="-fx-background-color: #A1D6E2;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="view.NewbieExController">
+   <children>
+      <TextField fx:id="answer" layoutX="286.0" layoutY="267.0" prefHeight="104.0" prefWidth="389.0" styleClass="text-field2" stylesheets="@graphic.css">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </TextField>
+      <Button fx:id="Ok" layoutX="454.0" layoutY="436.0" mnemonicParsing="false" onAction="#Ok" prefHeight="41.0" prefWidth="60.0" styleClass="button3" stylesheets="@graphic.css" text="Ok" />
+      <ImageView fitHeight="104.0" fitWidth="151.0" layoutX="798.0" layoutY="267.0" onMouseClicked="#next" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@image/next.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="104.0" fitWidth="151.0" layoutX="46.0" layoutY="267.0" onMouseClicked="#prev" pickOnBounds="true" preserveRatio="true" rotate="180.0">
+         <image>
+            <Image url="@image/next.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="85.0" fitWidth="80.0" layoutX="873.0" layoutY="8.0" onMouseClicked="#exit" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@image/exit.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="78.0" fitWidth="74.0" layoutX="9.0" layoutY="9.0" onMouseClicked="#home" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@image/home.png" />
+         </image>
+      </ImageView>
+      <Label fx:id="score" layoutX="263.0" layoutY="2.0" prefHeight="85.0" prefWidth="199.0" textFill="#f50000">
+         <graphic>
+            <ImageView fitHeight="91.0" fitWidth="122.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@image/rate.png" />
+               </image>
+            </ImageView>
+         </graphic>
+         <font>
+            <Font size="48.0" />
+         </font>
+      </Label>
+      <Pane layoutX="263.0" layoutY="104.0" prefHeight="137.0" prefWidth="444.0">
+         <children>
+            <ImageView fitHeight="150.0" fitWidth="447.0" pickOnBounds="true">
+               <image>
+                  <Image url="@image/questionbg.jpg" />
+               </image>
+            </ImageView>
+            <Label fx:id="res" layoutX="27.0" layoutY="76.0" textFill="#ff02a2">
+               <font>
+                  <Font name="System Bold" size="22.0" />
+               </font>
+            </Label>
+            <Label fx:id="alert" layoutX="21.0" layoutY="-1.0" textFill="#ff02a2">
+               <font>
+                  <Font size="22.0" />
+               </font>
+            </Label>
+            <Label fx:id="question" layoutX="24.0" layoutY="38.0" textFill="#ff0d0d">
+               <font>
+                  <Font name="System Bold Italic" size="25.0" />
+               </font>
+            </Label>
+         </children>
+      </Pane>
+      <Rectangle fx:id="max" arcHeight="5.0" arcWidth="5.0" fill="#00fffb" height="10.0" layoutX="397.0" layoutY="47.0" stroke="BLACK" strokeType="INSIDE" width="100.0" />
+      <Rectangle fx:id="pro" arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="10.0" layoutX="397.0" layoutY="47.0" stroke="BLACK" strokeType="INSIDE" />
+   </children>
+</AnchorPane>

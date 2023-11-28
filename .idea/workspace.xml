@@ -4,73 +4,45 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="aa996ca5-9df7-4c2e-936f-74874939cdfc" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+    <list default="true" id="cf93e28a-2c20-4996-9ef4-2cacef92b1dc" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/java/view/NewbieExController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/view/RerangeExController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/view/image/QElH.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/view/image/no.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/view/image/process.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/view/image/process2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/view/image/rate2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/view/image/rate3.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/view/rerangButton.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/view/test.fxml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Create_database_ForVE.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/output.mp3" beforeDir="false" afterPath="$PROJECT_DIR$/data/output.mp3" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/data/Account/AccountManagement.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/data/Account/AccountManagement.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/data/api/ParaTransWithAPI.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/data/api/ParaTransWithAPI.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/module-info.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/module-info.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/view/Audio.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/view/Audio.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/view/Controller.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/view/Controller.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/view/DictApp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/view/DictApp.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/view/ExerciseController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/view/LoginController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/view/LoginController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/view/Static_variable.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/view/Static_variable.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/view/TranslateController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/view/TranslateController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/view/Exercise.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/view/NewbieEx.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/view/RerangEx.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/view/RerangEx.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/view/SignUp.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/view/SignUp.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/view/Translate.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/view/Translate.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/view/graphic.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/view/graphic.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="FileTemplateManagerImpl">
-    <option name="RECENT_TEMPLATES">
-      <list>
-        <option value="Class" />
-      </list>
-    </option>
-  </component>
-  <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
-  </component>
-  <component name="MarkdownSettingsMigration">
-    <option name="stateVersion" value="1" />
-  </component>
-  <component name="ProjectColorInfo">{
-  &quot;associatedIndex&quot;: 2
-}</component>
-  <component name="ProjectId" id="2Yl1dOO9FIc2oZunPvfnoTpW6Wk" />
-  <component name="ProjectViewState">
-    <option name="hideEmptyMiddlePackages" value="true" />
-    <option name="showLibraryContents" value="true" />
-  </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "git-widget-placeholder": "main",
-    "last_opened_file_path": "D:/java_code/backup/Soft_Flame",
-    "node.js.detected.package.eslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "settings.editor.selected.configurable": "reference.settings.ide.settings.uml",
-    "vue.rearranger.settings.migration": "true"
+    "git-widget-placeholder": "Merging main"
   }
 }]]></component>
-  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
-    <task active="true" id="Default" summary="Default task">
-      <changelist id="aa996ca5-9df7-4c2e-936f-74874939cdfc" name="Changes" comment="" />
-      <created>1701085438527</created>
-      <option name="number" value="Default" />
-      <option name="presentableId" value="Default" />
-      <updated>1701085438527</updated>
-      <workItem from="1701085440578" duration="9055000" />
-      <workItem from="1701132438449" duration="3937000" />
-      <workItem from="1701153478590" duration="12889000" />
-    </task>
     <servers />
-  </component>
-  <component name="TypeScriptGeneratedFilesManager">
-    <option name="version" value="3" />
-  </component>
-  <component name="XSLT-Support.FileAssociations.UIState">
-    <expand />
-    <select />
   </component>
 </project>

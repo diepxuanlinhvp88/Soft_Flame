@@ -45,7 +45,7 @@
             <ChoiceBox fx:id="choiceBox" layoutX="26.0" layoutY="219.0" prefHeight="25.0" prefWidth="246.0" />
          </children>
       </Pane>
-      <ImageView fitHeight="47.0" fitWidth="47.0" layoutX="10.0" layoutY="21.0" pickOnBounds="true" preserveRatio="true" rotate="180.0">
+      <ImageView fitHeight="47.0" fitWidth="47.0" layoutX="10.0" layoutY="21.0" onMouseClicked="#out" pickOnBounds="true" preserveRatio="true" rotate="180.0">
          <image>
             <Image url="@image/next.png" />
          </image>

@@ -58,6 +58,16 @@
             <Image url="@image/cameraIcon.png" />
          </image>
       </ImageView>
+      <ImageView fx:id="auVi" fitHeight="49.0" fitWidth="45.0" layoutX="844.0" layoutY="259.0" onMouseClicked="#AuVi" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@image/17.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="auEn" fitHeight="49.0" fitWidth="45.0" layoutX="80.0" layoutY="259.0" onMouseClicked="#AuEn" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@image/17.png" />
+         </image>
+      </ImageView>
 
    </children>
 </AnchorPane>

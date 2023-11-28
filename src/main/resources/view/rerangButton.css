@@ -1,0 +1,26 @@
+.button {
+    -fx-background-color: transparent;
+    -fx-padding: 5px 15px;
+    -fx-display: flex;
+    -fx-alignment: center;
+    -fx-font-size: 17px;
+    -fx-font-weight: bold;
+    -fx-text-decoration: none;
+    -fx-cursor: hand;
+    -fx-border-color: rgb(255, 0, 0);
+    -fx-border-radius: 25px;
+    -fx-outline: none;
+    -fx-text-fill: rgb(255, 255, 255);
+    -fx-transition: -fx-text-fill 0.3s 0.1s ease-out;
+    -fx-text-alignment: center;
+}
+
+.button span {
+    -fx-margin: 10px;
+}
+
+.button:hover {
+    -fx-text-fill: #fff;
+    -fx-border-color: rgb(255, 0, 0);
+    -fx-background-color: red;
+}
