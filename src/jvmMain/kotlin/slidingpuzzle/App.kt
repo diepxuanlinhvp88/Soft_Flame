@@ -65,7 +65,6 @@ fun App() {
                         ).clipToBounds()
 
                     ) {
-
                         Column {
                             Box(modifier = Modifier.fillMaxWidth()) {
                                 Text(

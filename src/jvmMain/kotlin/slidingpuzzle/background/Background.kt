@@ -90,7 +90,7 @@ fun StarsBackground(updateBoxWidth: (Float) -> Unit) {
     // Add moon to the list
     val moon = remember {
         Star(
-            x = 0f, y = 0.4f, radius = 80f, brightness = 1f
+            x = 0f, y = 0.4f, radius = 24f, brightness = 1f
         )
     }
 

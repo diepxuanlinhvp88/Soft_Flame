@@ -4,17 +4,12 @@ import androidx.compose.foundation.BorderStroke
 import androidx.compose.foundation.background
 import androidx.compose.foundation.border
 import androidx.compose.foundation.clickable
-import androidx.compose.foundation.layout.Box
-import androidx.compose.foundation.layout.Column
-import androidx.compose.foundation.layout.Row
-import androidx.compose.foundation.layout.aspectRatio
-import androidx.compose.foundation.layout.fillMaxWidth
-import androidx.compose.foundation.layout.padding
-import androidx.compose.foundation.layout.width
+import androidx.compose.foundation.layout.*
 import androidx.compose.foundation.lazy.LazyColumn
 import androidx.compose.foundation.lazy.LazyRow
 import androidx.compose.foundation.shape.RoundedCornerShape
 import androidx.compose.material.MaterialTheme
+import androidx.compose.material.OutlinedButton
 import androidx.compose.material.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.runtime.LaunchedEffect
@@ -26,13 +21,14 @@ import androidx.compose.runtime.snapshots.SnapshotStateList
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.Color
+import androidx.compose.ui.text.font.FontStyle
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
+import androidx.compose.ui.window.Popup
 import slidingpuzzle.background.MeteoroidAnimation
 import slidingpuzzle.background.StarsBackground
-
 
 @Composable
 fun PuzzleBoard(value: Int) {
@@ -58,6 +54,7 @@ fun PuzzleGame(puzzleSize: Int, boxWidth: Float) {
 
     Column(
         modifier = Modifier.fillMaxWidth().padding(top = 96.dp, start = 16.dp, end = 16.dp),
+        horizontalAlignment = Alignment.CenterHorizontally
     ) {
         Text(
             text = "Puzzle Slide",
@@ -102,6 +99,7 @@ fun PuzzleGame(puzzleSize: Int, boxWidth: Float) {
                 modifier = Modifier.padding(start = 16.dp)
             )
         }
+        Spacer(modifier = Modifier.height(16.dp))
         PuzzleTiles(
             puzzleSize,
             boxWidth,
@@ -124,6 +122,9 @@ fun PuzzleTiles(
     correctTiles: MutableState<Int>,
     moves: MutableState<Int>,
 ) {
+    val puzzleVisibility = remember {
+        mutableStateOf(false)
+    }
 
     fun shuffleTiles() {
 
@@ -168,7 +169,7 @@ fun PuzzleTiles(
             moves.value = moves.value + 1
 
             if (isPuzzleSolved()) {
-                //TODO add dialog when puzzle solved
+                puzzleVisibility.value = true
             }
         }
     }
@@ -179,6 +180,7 @@ fun PuzzleTiles(
         modifier = Modifier.fillMaxWidth(),
         contentAlignment = Alignment.Center,
     ) {
+        PuzzleSolvedDialog(puzzleVisibility)
         LazyColumn {
             items(puzzleSize) { row ->
                 LazyRow {
@@ -227,7 +229,42 @@ fun PuzzleTiles(
     }
 }
 
-fun countElementsInCorrectPosition(list: List<Int>): Int {
+@Composable
+fun PuzzleSolvedDialog(
+    visible: MutableState<Boolean>,
+) {
+    if (!visible.value) {
+        Popup(
+            alignment = Alignment.Center
+        ) {
+            Box(
+                modifier = Modifier
+                    .padding(8.dp).background(
+                    Color(0xFF202840),
+                    shape = RoundedCornerShape(8.dp),
+                ),
+                contentAlignment = Alignment.Center,
+            ) {
+                Column(modifier = Modifier.padding(16.dp), horizontalAlignment = Alignment.CenterHorizontally) {
+                    Text(
+                        text = "Congratulations, you have successfully solved the puzzle",
+                        style = MaterialTheme.typography.body1,
+                        color = Color.White,
+                        modifier = Modifier.padding(start = 16.dp)
+                    )
+
+                    OutlinedButton(onClick = {
+                        visible.value = true
+                    }) {
+                        Text("OK", style = MaterialTheme.typography.h6.copy(Color(0xFF202840)))
+                    }
+                }
+            }
+        }
+    }
+}
+
+private fun countElementsInCorrectPosition(list: List<Int>): Int {
     var count = 0
 
     for (index in list.indices) {
