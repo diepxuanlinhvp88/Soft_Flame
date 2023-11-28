@@ -200,7 +200,7 @@ public class AccountManagement {
     }
 
     public static boolean setAccountLevel(String username, int type) {
-        String sql = String.format("UPDATE Accounts SET typeOfAccount = %d WHERE username = '%s';", type, username);
+        String sql = String.format("UPDATE Accounts SET typeOfAccount = %d,process = 0 WHERE username = '%s';", type, username);
         try {
             Statement stm = conn.createStatement();
             int rowAffected = stm.executeUpdate(sql);

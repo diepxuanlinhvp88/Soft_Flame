@@ -8,15 +8,18 @@ import javafx.scene.control.TextArea;
 import javafx.scene.image.Image;
 import javafx.scene.image.ImageView;
 import javafx.scene.layout.AnchorPane;
+import javafx.scene.media.Media;
+import javafx.scene.media.MediaPlayer;
 import javafx.stage.FileChooser;
 
 
 import java.io.File;
+import java.io.UnsupportedEncodingException;
 import java.net.URL;
 import java.util.ResourceBundle;
 
 public class TranslateController implements Initializable {
-    int cnt = 0;
+    int cnt = -1;
     @FXML
     TextArea TextTarget;
     @FXML
@@ -29,18 +32,19 @@ public class TranslateController implements Initializable {
     ImageView CamereIcon;
     @FXML
     AnchorPane pane;
-
-
-
     @FXML
     ImageView Viet;
-
     @FXML
     Label Vi;
+
+    Media soundVi, soundEn;
+    MediaPlayer mediaPlayerEn, mediaPlayerVi;
     public void Swap(){
         Image Eng = new Image(getClass().getResource("image/16.jpg").toExternalForm());
         Image Vie = new Image(getClass().getResource("image/15.png").toExternalForm());
         cnt++;
+        TextTarget.setText("");
+        TextExplain.setText("");
         if(cnt % 2 == 0) {
             En.setText("en");
             Vi.setText("vi");
@@ -73,10 +77,33 @@ public class TranslateController implements Initializable {
 
     }
     public void tran(){
+        try {
+            Static_variable.tranapi.textToSpeechAPI(En.getText(), TextTarget.getText());
+        } catch (UnsupportedEncodingException e) {
+            throw new RuntimeException(e);
+        }
+        soundVi = new Media(new File(".\\/data/output.mp3").toURI().toString());
+        mediaPlayerVi = new MediaPlayer(soundVi);
+
+        soundEn = new Media(new File(".\\/data/output.mp3").toURI().toString());
+        mediaPlayerEn = new MediaPlayer(soundEn);
+
         TextExplain.setText(Static_variable.tranapi.lookUp(TextTarget.getText(), Vi.getText(), En.getText()));
 
 
 
+    }
+    public void AuEn(){
+        if(cnt % 2 == 0){
+            mediaPlayerEn.play();
+        }
+        else mediaPlayerVi.play();
+    }
+    public void AuVi(){
+        if(cnt % 2 == 0){
+            mediaPlayerVi.play();
+        }
+        else mediaPlayerEn.play();
     }
     public void FindwithImage(){
         // Tạo một FileChooser

@@ -39,19 +39,16 @@ public class LoginController implements Initializable {
     Pane LogPane;
 
     @FXML
-    TextField acc;
+     TextField acc;
 
     @FXML
-    PasswordField password;
+     PasswordField password;
     @FXML
     Label er;
     @FXML
     Pane setPane;
     @FXML
     ComboBox<String> comboBox;
-
-
-
 
     public boolean checkAccount(String username, String pass, String typeAccount) throws IOException {
        return Static_variable.accountmanagement.Register(username,pass, typeAccount);
@@ -67,6 +64,8 @@ public class LoginController implements Initializable {
         }
         else {
             Static_variable.account.addExerciseList();
+            Static_variable.username = acc.getText();
+            Static_variable.password = password.getText();
             Node node;
             node = FXMLLoader.load(getClass().getResource("controller.fxml"));
             anchorPaneLogin.getChildren().setAll(node);
@@ -84,26 +83,12 @@ public class LoginController implements Initializable {
     }
     public void NotLogin() throws IOException {
         Node node;
-        node = FXMLLoader.load(getClass().getResource("find.fxml"));
+        node = FXMLLoader.load(getClass().getResource("LearnEnglish.fxml"));
         anchorPaneLogin.getChildren().setAll(node);
         anchorPaneLogin.autosize();
     }
 
 
-//    public static void musicBg(String songs) throws IOException {
-//
-//
-//        URL musicFilePath = LoginController.class.getResource(songs);
-//        media = new Media(musicFilePath.toString());
-//        mediaPlayer = new MediaPlayer(media);
-//
-//               // Chạy nhạc nền liên tục
-//        mediaPlayer.setCycleCount(MediaPlayer.INDEFINITE);
-//        mediaPlayer.stop();
-//        System.out.println(LoginController.mediaPlayer.getMedia() + "Lo ");
-//        mediaPlayer.play();
-//
-//    }
 
 
     public void setting() throws IOException {

@@ -1,5 +1,8 @@
 package view;
 
+import data.Account.ExpertAccount;
+import data.Account.IntermediateAccount;
+import data.Account.NewbieAccount;
 import data.Exercise.FillBlankEx;
 import data.Exercise.NewbieEx;
 import data.Exercise.RerangeEx;
@@ -12,10 +15,9 @@ import java.net.URL;
 import java.util.ResourceBundle;
 
 import javafx.scene.Node;
-import javafx.scene.control.Button;
-import javafx.scene.control.Label;
-import javafx.scene.control.TextField;
+import javafx.scene.control.*;
 import javafx.scene.layout.AnchorPane;
+import javafx.scene.layout.Pane;
 import javafx.scene.shape.Rectangle;
 
 import static view.Controller.exCnt;
@@ -35,11 +37,42 @@ public class NewbieExController implements Initializable {
     Rectangle pro, max;
 
     public void Ok() {
-//
-//
-        if(Static_variable.account.getProcess() >= 100.0){
+        if(Static_variable.account.getProcess() >=0){
+            if(Static_variable.account instanceof ExpertAccount){
+                return;
+            }
+            if(Static_variable.account instanceof NewbieAccount) {
+                Static_variable.accountmanagement.setAccountLevel(Static_variable.username, 1);
+            }
+            else if(Static_variable.account instanceof IntermediateAccount){
+                Static_variable.accountmanagement.setAccountLevel(Static_variable.username,2);
+            }
+            Pane root = new Pane();
+            root.setPrefSize(600, 400);
 
-            System.out.println("nâng cấp");
+            root.setStyle("-fx-background-color: #5fcbb1; -fx-background-radius: 5;");
+            Label sc = new Label("xin chúc mừng, tài khoản của bạn đã được nâng cấp");
+            Label sc1 = new Label("Hãy khởi động lại để tiếp tục nhé !!");
+
+            Alert alert = new Alert(Alert.AlertType.INFORMATION);
+            alert.setTitle("Nâng cấp tài khoản");
+            DialogPane dialogPane = alert.getDialogPane();
+            dialogPane.setHeaderText(null);
+            dialogPane.setGraphic(null);
+
+            dialogPane.setContent(root);
+            dialogPane.setStyle("-fx-background-color: #5fcbb1;");
+//
+            alert.showAndWait();
+            Node node;
+            try {
+                node = FXMLLoader.load(getClass().getResource("Login.fxml"));
+            } catch (IOException e) {
+                throw new RuntimeException(e);
+            }
+            anchorpaneEx.getChildren().setAll(node);
+
+
         }
         if (answer.getText().equalsIgnoreCase(Controller.ex.get(exCnt).getAnswer())) {
             alert.setText("Bạn đã trả lời chính xác");

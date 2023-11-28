@@ -1,0 +1,75 @@
+Ex1
+Children less than five years old cannot go this ride alone
+Children in groups of five or more must have an adult with them
+Adults are not allowed on this ride
+1
+#Ex2
+There will only be entrance to the park after today.
+This entrance cannot be used before 11 am today.
+The park opens at 11 am today
+2
+#Ex3
+The ride starts when all the seats are full.
+Do not stand up when the ride moving.
+If the ride stops, wait until it begins again.
+2
+#Ex4
+The park shuts earlier than 6 pm on some days.
+The park stays open later for one month of the year.
+The park is open all year except in December.
+1
+#Ex5
+You can buy a hot meal in two different places.
+The restaurant near the lake serves hot food in the middle.
+Sandwiches and drinks are only available at lunchtime.
+2
+#Ex6: Whose test book does Natilie to borrow?
+Ken's
+Maria's
+Francesco's
+3
+#Ex7:
+Users must lock the car park after leaving.
+People can park here while they are at work.
+This car park is for employees only.
+2
+#Ex8:
+The basket ball team only wants to see experienced players
+There aren't enough team members available on Friday.
+The Barton College team will visit the gym later.
+2
+#Ex9:
+All Sunday evening tickets are already sold.
+You must book tickets for Sunday in advance.
+A ticket is not necessary for Sunday evening.
+1
+#Ex10:
+Giacomo will be able to see Charlotte early tomorrow morning.
+Charlotte needs to arrive in time for Giacomo's meeting tomorrow.
+Giacomo can collect Charlotte from the airport tomorrow afternoon.
+3
+#Ex11:
+Don't turn the lights on until it's necessary.
+Switch the lights on when you're in the room.
+Don't leave the lights on if the room is empty.
+3
+#Ex12:
+Sally has given a chain to someone as a present.
+Sally's boyfriend knows about the missing chain.
+Sally lost her chain when she got changed for sport.
+3
+#Ex13: This shop
+Has just opened and jobs are available.
+Is opening for longer and needs extra staff.
+Will open late because of job interviews.
+2
+#Ex14:
+You must show a receipt if you want to remove luggage.
+When you remove your luggage you are given a receipt.
+You can leave your luggage here without change.
+1
+#Ex15:For the festival, Anna should bring
+her ticket.
+a blanket.
+the programme.
+2

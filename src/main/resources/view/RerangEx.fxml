@@ -5,38 +5,11 @@
 <?import javafx.scene.image.Image?>
 <?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.AnchorPane?>
-<?import javafx.scene.layout.ColumnConstraints?>
-<?import javafx.scene.layout.GridPane?>
-<?import javafx.scene.layout.RowConstraints?>
 <?import javafx.scene.shape.Rectangle?>
 <?import javafx.scene.text.Font?>
 
 <AnchorPane fx:id="anchorpaneEx" prefHeight="600.0" prefWidth="960.0" style="-fx-background-color: #80BD9E;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="view.RerangeExController">
    <children>
-      <GridPane layoutX="74.0" layoutY="143.0" prefHeight="291.0" prefWidth="813.0">
-        <columnConstraints>
-          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
-            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
-          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
-            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
-            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
-            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
-            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
-            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
-            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
-            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
-            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
-            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
-            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
-        </columnConstraints>
-        <rowConstraints>
-          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
-          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
-        </rowConstraints>
-         <children>
-            <Button mnemonicParsing="false" text="Button" />
-         </children>
-      </GridPane>
       <ImageView fitHeight="58.0" fitWidth="111.0" layoutX="9.0" layoutY="12.0" pickOnBounds="true" preserveRatio="true">
          <image>
             <Image url="@image/home.png" />
@@ -61,15 +34,16 @@
             <Image url="@image/2606505_5844.png" />
          </image>
       </ImageView>
-      <Button layoutX="425.0" layoutY="481.0" mnemonicParsing="false" styleClass="button-confirm" stylesheets="@graphic.css" text="Button" />
-      <ImageView fitHeight="97.0" fitWidth="119.0" layoutX="806.0" layoutY="456.0" pickOnBounds="true" preserveRatio="true">
+      <Button layoutX="425.0" layoutY="481.0" mnemonicParsing="false" onAction="#Ok" styleClass="button-confirm" stylesheets="@graphic.css" text="Button" />
+      <ImageView fitHeight="97.0" fitWidth="119.0" layoutX="806.0" layoutY="456.0" onMouseClicked="#next" pickOnBounds="true" preserveRatio="true">
          <image>
             <Image url="@image/next.png" />
          </image>
       </ImageView>
-      <ImageView fitHeight="97.0" fitWidth="119.0" layoutX="53.0" layoutY="456.0" pickOnBounds="true" preserveRatio="true" rotate="180.0">
+      <Label fx:id="res" layoutX="76.0" layoutY="-17.0" />
+      <ImageView fitHeight="117.0" fitWidth="163.0" layoutY="483.0" pickOnBounds="true" preserveRatio="true">
          <image>
-            <Image url="@image/next.png" />
+            <Image url="@image/no.png" />
          </image>
       </ImageView>
    </children>

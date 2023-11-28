@@ -28,6 +28,8 @@ public  class  Static_variable implements Initializable {
     public static TextToSpeech tts = new TextToSpeech();
     public static final AccountManagement accountmanagement = new AccountManagement();
     public static Account account = null;
+    public static String username = null;
+    public static String password = null;
 
     @Override
     public void initialize(URL url, ResourceBundle resourceBundle) {

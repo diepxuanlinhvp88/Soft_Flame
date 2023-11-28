@@ -4,6 +4,7 @@ import javafx.fxml.Initializable;
 import javafx.scene.media.Media;
 import javafx.scene.media.MediaPlayer;
 
+import java.io.File;
 import java.net.URL;
 import java.util.ResourceBundle;
 
@@ -16,9 +17,15 @@ public class Audio implements Initializable {
             mediaPlayer.stop();
         }
 
+//        Media sound = new Media(new File("path/to/sound.mp3").toURI().toString());
+//        MediaPlayer mediaPlayer = new MediaPlayer(sound);
+//        mediaPlayer.play();
+
 
             URL musicFilePath = LoginController.class.getResource(songs);
-            media = new Media(musicFilePath.toString());
+
+
+        media = new Media(musicFilePath.toString());
             mediaPlayer = new MediaPlayer(media);
 
             mediaPlayer.setCycleCount(MediaPlayer.INDEFINITE);
