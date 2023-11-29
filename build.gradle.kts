@@ -34,10 +34,20 @@ kotlin {
 compose.desktop {
     application {
         mainClass = "MainKt"
+
         nativeDistributions {
             targetFormats(TargetFormat.Dmg, TargetFormat.Msi, TargetFormat.Deb)
+            modules("java.instrument", "java.prefs", "java.sql", "jdk.unsupported","jdk.crypto.ec","jdk.localedata")
+
             packageName = "WordGames"
             packageVersion = "1.0.0"
+
+            buildTypes.release {
+                proguard {
+                    isEnabled.set(false)
+                    // configurationFiles.from("compose.desktop.pro")
+                }
+            }
         }
     }
 }
