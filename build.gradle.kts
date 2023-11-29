@@ -37,10 +37,11 @@ compose.desktop {
 
         nativeDistributions {
             targetFormats(TargetFormat.Dmg, TargetFormat.Msi, TargetFormat.Deb)
-            modules("java.instrument", "java.prefs", "java.sql", "jdk.unsupported","jdk.crypto.ec","jdk.localedata")
+            modules("java.instrument", "java.prefs", "java.sql", "java.naming", "jdk.unsupported","jdk.crypto.ec","jdk.localedata")
 
             packageName = "WordGames"
             packageVersion = "1.0.0"
+            mainClass = "MainKt"
 
             buildTypes.release {
                 proguard {

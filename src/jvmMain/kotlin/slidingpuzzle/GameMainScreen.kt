@@ -29,6 +29,7 @@ import java.io.BufferedReader
 import java.io.File
 import java.io.FileReader
 import java.io.IOException
+import java.net.URL
 import kotlin.random.Random
 
 @Composable
@@ -39,34 +40,156 @@ fun PuzzleBoard(value: Int, refreshIndex: Int) {
     PuzzleGame(value, boxWidth.value, refreshIndex= refreshIndex)
 }
 
-private fun loadWords(puzzleSize: Int): List<Pair<String, String>> {
-    val file = File("src/jvmMain/resources/words.txt")
-    val wordPairlist: MutableList<Pair<String, String>> = mutableStateListOf()
-    try {
-        val fileReader = FileReader(file)
-        val bufferedReader = BufferedReader(fileReader)
-        var line: String? = bufferedReader.readLine()
-        while (line != null) {
-            line = bufferedReader.readLine()
-            if (line?.contains(":") == true) {
-                val splitedLine = line.split(":")
+private val words = listOf(
+    "Joy: niềm vui",
+    "Tea: trà",
+    "Sky: bầu trời",
+    "Sun: mặt trời",
+    "Cat: mèo",
+    "Dog: chó",
+    "Run: chạy",
+    "Key: chìa khóa",
+    "Ice: đá lạnh",
+    "Day: ngày",
+    "Box: hộp",
+    "Cup: cốc",
+    "Hat: mũ",
+    "Lip: môi",
+    "Bus: xe buýt",
+    "Pen: bút",
+    "Man: người đàn ông",
+    "Fox: cáo",
+    "Ink: mực",
+    "Jam: mứt",
+    "Toy: đồ chơi",
+    "Car: xe hơi",
+    "Map: bản đồ",
+    "Art: nghệ thuật",
+    "Egg: quả trứng",
+    "Elf: thần linh",
+    "Bow: cung",
+    "Fan: quạt",
+    "Joy: niềm vui",
+    "Lip: môi",
+    "Moon: mặt trăng",
+    "Song: bài hát",
+    "Tree: cây",
+    "Fire: lửa",
+    "Rose: hoa hồng",
+    "Gold: vàng",
+    "Baby: em bé",
+    "Wind: gió",
+    "Rain: mưa",
+    "Life: cuộc sống",
+    "Blue: màu xanh dương",
+    "Hand: bàn tay",
+    "Leaf: lá cây",
+    "Dark: tối",
+    "Gift: quà tặng",
+    "Land: đất đai",
+    "Star: ngôi sao",
+    "Time: thời gian",
+    "Eyes: đôi mắt",
+    "Bird: chim",
+    "Lady: phụ nữ",
+    "Mind: tâm trí",
+    "Home: nhà",
+    "Fish: cá",
+    "Skin: da",
+    "Song: bài hát",
+    "Snow: tuyết",
+    "Palm: cây cọ",
+    "Soft: mềm mại",
+    "Tiger: hổ",
+    "Smile: nụ cười",
+    "Beach: bãi biển",
+    "Music: âm nhạc",
+    "Cloud: đám mây",
+    "Horse: ngựa",
+    "Tiger: hổ",
+    "Green: màu xanh lá cây",
+    "Angel: thiên thần",
+    "Honey: mật ong",
+    "Happy: hạnh phúc",
+    "Plant: cây cỏ",
+    "White: màu trắng",
+    "Snake: con rắn",
+    "River: con sông",
+    "Smile: nụ cười",
+    "Beach: bãi biển",
+    "Magic: phép màu",
+    "Light: ánh sáng",
+    "Queen: nữ hoàng",
+    "Night: đêm",
+    "Space: không gian",
+    "Sweet: ngọt ngào",
+    "Storm: cơn bão",
+    "Water: nước",
+    "Heart: trái tim",
+    "Fruit: trái cây",
+    "Maple: cây phong",
+    "Panda: gấu trúc",
+    "Ocean: đại dương",
+    "Friend: bạn bè",
+    "Dragon: con rồng",
+    "Banana: chuối",
+    "Purple: màu tím",
+    "Rocket: tên lửa",
+    "Gentle: nhẹ nhàng",
+    "Shadow: bóng đen",
+    "Cherry: quả anh đào",
+    "Turtle: con rùa",
+    "Wisdom: sự khôn ngoan",
+    "Mellow: êm dịu",
+    "Marvel: kỳ diệu",
+    "Winter: mùa đông",
+    "Forest: khu rừng",
+    "Spirit: tâm hồn",
+    "Coffee: cà phê",
+    "Rocket: tên lửa",
+    "Spirit: tâm hồn",
+    "Autumn: mùa thu",
+    "Gentle: nhẹ nhàng",
+    "Breeze: làn gió",
+    "Garden: khu vườn",
+    "Candle: cây nến",
+    "Wisdom: sự khôn ngoan",
+    "Travel: du lịch",
+    "Island: hòn đảo",
+    "Yellow: màu vàng",
+    "Puzzle: câu đố",
+    "Serene: thanh bình",
+    "Sunset: hoàng hôn",
+    "Forest: khu rừng",
+    "Marvel: kỳ diệu",
+    "Blossom: nở hoa",
+    "Beauty: vẻ đẹp",
+    "Window: cửa sổ",
+    "Marvel: kỳ diệu",
+    "Spirit: tâm hồn",
+    "Gentle: nhẹ nhàng",
+    "Wisdom: sự khôn ngoan",
+    "Mellow: êm dịu"
+)
 
-                val word = splitedLine[0].uppercase()
-                val meaning = splitedLine[1].trim()
-                if (word.length == puzzleSize) {
-                    wordPairlist.add(Pair(word, meaning))
-                }
+private fun loadWords(puzzleSize: Int): List<Pair<String, String>> {
+    val wordPairlist: MutableList<Pair<String, String>> = mutableStateListOf()
+    for (line in words) {
+        if (line.contains(":")) {
+            val splitedLine = line.split(":")
+
+            val word = splitedLine[0].uppercase()
+            val meaning = splitedLine[1].trim()
+            if (word.length == puzzleSize) {
+                wordPairlist.add(Pair(word, meaning))
             }
         }
+    }
 
-        wordPairlist.sortBy { (_) -> Random.nextInt(1, 2) == 1 }
-        for (i in 0..wordPairlist.size - 1) {
-            val j = (0..wordPairlist.size - 1).random()
-            wordPairlist.swap(i, j)
-        }
-        bufferedReader.close()
-    } catch (e: IOException) {
-        e.printStackTrace()
+    wordPairlist.sortBy { (_) -> Random.nextInt(1, 2) == 1 }
+    for (i in 0..wordPairlist.size - 1) {
+        val j = (0..wordPairlist.size - 1).random()
+        wordPairlist.swap(i, j)
     }
 
     return wordPairlist.subList(0, puzzleSize)
