@@ -4,72 +4,45 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ee72d574-4bd6-44b7-b7ae-8e22edee2bd6" name="Changes" comment="">
+    <list default="true" id="4691e155-ef8e-4151-914b-db443e9730cd" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/WordGames-1.0.0.msi" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/Soft_Flame.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/Soft_Flame.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CallGPT.py" beforeDir="false" afterPath="$PROJECT_DIR$/CallGPT.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/EngtoV.txt" beforeDir="false" afterPath="$PROJECT_DIR$/data/EngtoV.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/dict_hh.db" beforeDir="false" afterPath="$PROJECT_DIR$/data/dict_hh.db" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/output.mp3" beforeDir="false" afterPath="$PROJECT_DIR$/data/output.mp3" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/view/Controller.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/view/Controller.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/view/ExpertExController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/view/ExpertExController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Dictionary/.idea/compiler.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Dictionary/.idea/jarRepositories.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Dictionary/.idea/workspace.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/javafxwordle/HelpWindow.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/javafxwordle/MainHelper.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/javafxwordle/ScoreWindow.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/javafxwordle/Toast.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/javafxwordle/WordleApplication.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/javafxwordle/WordleController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/module-info.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/module-info.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/view/DictApp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/view/DictApp.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/view/JavaFX-Wordle.jar" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/view/LearnEnglishController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/view/LearnEnglishController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/view/LoginController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/view/LoginController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/view/NewbieExController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/view/NewbieExController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/view/RerangeExController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/view/RerangeExController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/view/NewbieEx.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/view/NewbieEx.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/view/RerangEx.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/view/RerangEx.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/com.example.javafxwordle/dictionary.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/com.example.javafxwordle/images/github.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/com.example.javafxwordle/images/help.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/com.example.javafxwordle/images/icon.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/com.example.javafxwordle/images/icons8-restart-40.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/com.example.javafxwordle/main-view.fxml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/com.example.javafxwordle/winning-words.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/com.example.javafxwordle/wordle.css" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="FileTemplateManagerImpl">
-    <option name="RECENT_TEMPLATES">
-      <list>
-        <option value="FxmlFile" />
-        <option value="Class" />
-      </list>
-    </option>
-  </component>
-  <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
-  </component>
-  <component name="MarkdownSettingsMigration">
-    <option name="stateVersion" value="1" />
-  </component>
-  <component name="ProjectColorInfo">{
-  &quot;associatedIndex&quot;: 2
-}</component>
-  <component name="ProjectId" id="2YpLviD2k44ImIWz94aV9rHjvfr" />
-  <component name="ProjectViewState">
-    <option name="hideEmptyMiddlePackages" value="true" />
-    <option name="showLibraryContents" value="true" />
-  </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
-    "WebServerToolWindowFactoryState": "false",
-    "git-widget-placeholder": "main",
-    "node.js.detected.package.eslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "vue.rearranger.settings.migration": "true"
+    "git-widget-placeholder": "Merging main",
+    "node.js.selected.package.tslint": "(autodetect)"
   }
 }]]></component>
-  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
-    <task active="true" id="Default" summary="Default task">
-      <changelist id="ee72d574-4bd6-44b7-b7ae-8e22edee2bd6" name="Changes" comment="" />
-      <created>1701217851624</created>
-      <option name="number" value="Default" />
-      <option name="presentableId" value="Default" />
-      <updated>1701217851624</updated>
-      <workItem from="1701217869569" duration="5065000" />
-      <workItem from="1701233829426" duration="8859000" />
-    </task>
     <servers />
-  </component>
-  <component name="TypeScriptGeneratedFilesManager">
-    <option name="version" value="3" />
   </component>
 </project>
