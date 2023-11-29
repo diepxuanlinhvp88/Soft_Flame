@@ -4,50 +4,97 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ee72d574-4bd6-44b7-b7ae-8e22edee2bd6" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/view/ExpertExController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/view/ExpertEx.fxml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/view/image/26875964_cuteanimated_473.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/view/image/26875966_cuteanimated_474.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/view/image/4e4a35064a1b1f760c5d1cd6cab3492e.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/view/image/82b447b7fc0986f0729569b4c2343205.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/view/image/ok.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/view/image/profile0.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/view/image/profile1.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/view/image/profile3.png" afterDir="false" />
+    <list default="true" id="89045a24-4271-4f35-94d5-1c91d4b5799e" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/EngtoV.txt" beforeDir="false" afterPath="$PROJECT_DIR$/data/EngtoV.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/dict_hh.db" beforeDir="false" afterPath="$PROJECT_DIR$/data/dict_hh.db" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/infoEditWord.txt" beforeDir="false" afterPath="$PROJECT_DIR$/data/infoEditWord.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/output.mp3" beforeDir="false" afterPath="$PROJECT_DIR$/data/output.mp3" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/data/Account/Account.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/data/Account/Account.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/data/Account/ExpertAccount.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/data/Account/ExpertAccount.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/view/ContestController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/view/ContestController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/view/Controller.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/view/Controller.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/view/FindController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/view/FindController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/module-info.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/module-info.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/view/DictApp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/view/DictApp.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/view/JavaFX-Wordle.jar" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/view/LearnEnglishController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/view/LearnEnglishController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/view/NewbieExController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/view/NewbieExController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/view/RerangeExController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/view/RerangeExController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/view/TranslateController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/view/TranslateController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/view/Controller.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/view/Controller.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/view/LearnEnglish.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/view/LearnEnglish.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/view/RerangEx.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/view/RerangEx.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/view/contest.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/view/contest.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/view/graphic.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/view/graphic.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/view/test.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/view/test.fxml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "git-widget-placeholder": "Merging main",
-    "node.js.selected.package.tslint": "(autodetect)"
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="mavenHome" value="Use Maven wrapper" />
+      </MavenGeneralSettings>
+    </option>
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 8
+}</component>
+  <component name="ProjectId" id="2Ypsay6AHIHApavW7taMjJdke03" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;D:/java/SoftFlame2&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Libraries&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.4597701&quot;
   }
-}]]></component>
+}</component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\java\SoftFlame2" />
+    </key>
+  </component>
+  <component name="RunManager">
+    <configuration name="DictApp" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="view.DictApp" />
+      <module name="Dictionary" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="view.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="JetRunConfigurationType">
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="KotlinStandaloneScriptRunConfigurationType">
+      <option name="filePath" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.DictApp" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="89045a24-4271-4f35-94d5-1c91d4b5799e" name="Changes" comment="" />
+      <created>1701233922757</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1701233922757</updated>
+    </task>
     <servers />
   </component>
 </project>

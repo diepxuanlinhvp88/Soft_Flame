@@ -9,6 +9,7 @@ module view {
     requires javafx.media;
     requires org.kordamp.bootstrapfx.core;
     requires com.google.gson;
+    requires org.slf4j;
 
     exports view;
     opens view to javafx.fxml;
