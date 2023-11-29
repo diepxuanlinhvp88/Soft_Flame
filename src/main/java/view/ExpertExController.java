@@ -1,9 +1,9 @@
 package view;
 
-import data.Exercise.ExpertEx;
-import data.Exercise.FillBlankEx;
-import data.Exercise.NewbieEx;
-import data.Exercise.RerangeEx;
+import data.Account.ExpertAccount;
+import data.Account.IntermediateAccount;
+import data.Account.NewbieAccount;
+import data.Exercise.*;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
@@ -55,10 +55,15 @@ public class ExpertExController implements Initializable {
         imageView.setImage(tmp);
 
         System.out.println(ques[0]);
-        exx.setText(ques[1]);
+       if(ques.length >4) {
+           exx.setText(ques[1]);
         a.setText(ques[2]);
         b.setText(ques[3]);
         c.setText(ques[4]);
+       }
+        for(String i : ques){
+            System.out.println(i);
+        }
 
     }
 
@@ -89,25 +94,33 @@ public class ExpertExController implements Initializable {
 
     public void Next() throws IOException {
         exCnt++;
-        if (exCnt == ex.size())exCnt = 0;
-        a.setSelected(false);
-        b.setSelected(false);
-        c.setSelected(false);
-        trueLb.setText("");
-        System.out.println("next");
-        if (ex.get(exCnt) instanceof FillBlankEx) {
+        if(exCnt >= ex.size()){
+            exCnt = 0;
+        }
+        if(Controller.ex.get(exCnt) instanceof FillBlankEx){
             Node node;
             node = FXMLLoader.load(getClass().getResource("NewbieEx.fxml"));
             anchorPaneEx.getChildren().setAll(node);
-        } else if (ex.get(exCnt) instanceof NewbieEx) {
+        }
+        else if(Controller.ex.get(exCnt) instanceof NewbieEx){
             Node node;
             node = FXMLLoader.load(getClass().getResource("NewbieEx.fxml"));
             anchorPaneEx.getChildren().setAll(node);
-        } else if (ex.get(exCnt) instanceof RerangeEx) {
+        }
+        else if (Controller.ex.get(exCnt) instanceof Writing){
+            Node node;
+            node = FXMLLoader.load(getClass().getResource("PremiumEx.fxml"));
+            anchorPaneEx.getChildren().setAll(node);
+        }else if (Controller.ex.get(exCnt) instanceof RerangeEx){
             Node node;
             node = FXMLLoader.load(getClass().getResource("RerangEx.fxml"));
             anchorPaneEx.getChildren().setAll(node);
-        } else {
+        }
+        else {
+            a.setSelected(false);
+            b.setSelected(false);
+            c.setSelected(false);
+            trueLb.setText("");
 
             initImage();
 
@@ -120,28 +133,38 @@ public class ExpertExController implements Initializable {
 
         root.setPrefWidth(600.0);
         root.setPrefHeight(400.0);
-        ImageView imageView = new ImageView();
         Image image = new Image(getClass().getResource("image/ok.jpg").toExternalForm());
-        imageView.setImage(image);
+        ImageView imageView = new ImageView(image);
         imageView.setFitWidth(284.0);
         imageView.setFitHeight(268.0);
         imageView.setLayoutX(151.0);
         imageView.setLayoutY(70.0);
         Label titleLabel = new Label();
+        Label messageLabel = new Label();
         titleLabel.setPrefWidth(488.0);
         titleLabel.setPrefHeight(93.0);
         titleLabel.setLayoutX(56.0);
         titleLabel.setLayoutY(6.0);
-        titleLabel.setText("Xin chúc mừng bạn đã hoàn thành khóa học");
+
+        messageLabel.setPrefWidth(402.0);
+        messageLabel.setPrefHeight(68.0);
+        messageLabel.setLayoutX(167.0);
+        messageLabel.setLayoutY(318.0);
+
+        // Thiết lập nội dung và font cho các Label
+        titleLabel.setText("Xin chúc mừng tài khoản của bạn đã được nâng cấp");
         titleLabel.setTextFill(javafx.scene.paint.Color.RED);
         titleLabel.setFont(new Font(20.0));
 
+        messageLabel.setText("Vui lòng đăng nhập lại để tiếp tục");
+        messageLabel.setFont(new Font(20.0));
+
         root.setStyle("-fx-background-color: #5fcbb1; -fx-background-radius: 5;");
 
-        root.getChildren().addAll(titleLabel);
+        root.getChildren().addAll(imageView, titleLabel, messageLabel);
 
         Alert alert = new Alert(Alert.AlertType.INFORMATION);
-        alert.setTitle("perfect");
+        alert.setTitle("Nâng cấp tài khoản");
         DialogPane dialogPane = alert.getDialogPane();
         dialogPane.setHeaderText(null);
         dialogPane.setGraphic(null);
@@ -150,12 +173,27 @@ public class ExpertExController implements Initializable {
         dialogPane.setStyle("-fx-background-color: #5fcbb1;");
 //
         alert.showAndWait();
+        Node node;
+        try {
+            node = FXMLLoader.load(getClass().getResource("Login.fxml"));
+        } catch (IOException e) {
+            throw new RuntimeException(e);
+        }
+        anchorPaneEx.getChildren().setAll(node);
+
     }
 
     public void Ok() {
-        if (Static_variable.account.getProcess() >= 100) {
+        if (Static_variable.account.getProcess() >= 10) {
+            if (Static_variable.account instanceof ExpertAccount) {
+                Static_variable.accountmanagement.setAccountLevel(Static_variable.username, 3);
+            } else if (Static_variable.account instanceof NewbieAccount) {
+                Static_variable.accountmanagement.setAccountLevel(Static_variable.username, 1);
+            } else if (Static_variable.account instanceof IntermediateAccount) {
+                Static_variable.accountmanagement.setAccountLevel(Static_variable.username, 2);
+            }
             showAlert();
-            return;
+
         }
         if (checkAnswer()) {
             System.out.println("ban tra loi dung ");

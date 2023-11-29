@@ -3,9 +3,7 @@ package view;
 import data.Account.ExpertAccount;
 import data.Account.IntermediateAccount;
 import data.Account.NewbieAccount;
-import data.Exercise.FillBlankEx;
-import data.Exercise.NewbieEx;
-import data.Exercise.RerangeEx;
+import data.Exercise.*;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.fxml.Initializable;
@@ -28,7 +26,7 @@ import static view.Controller.exCnt;
 
 public class NewbieExController implements Initializable {
     @FXML
-    Label question, alert,score, res,process;
+    Label question, alert, score, res, process;
     @FXML
     Button Ok;
     @FXML
@@ -41,11 +39,10 @@ public class NewbieExController implements Initializable {
     Rectangle pro, max;
 
     public void Ok() {
-        if (Static_variable.account.getProcess() >= 20) {
+        if (Static_variable.account.getProcess() >= 10) {
             if (Static_variable.account instanceof ExpertAccount) {
-                return;
-            }
-            if (Static_variable.account instanceof NewbieAccount) {
+                Static_variable.accountmanagement.setAccountLevel(Static_variable.username, 3);
+            } else if (Static_variable.account instanceof NewbieAccount) {
                 Static_variable.accountmanagement.setAccountLevel(Static_variable.username, 1);
             } else if (Static_variable.account instanceof IntermediateAccount) {
                 Static_variable.accountmanagement.setAccountLevel(Static_variable.username, 2);
@@ -84,7 +81,7 @@ public class NewbieExController implements Initializable {
 
             root.setStyle("-fx-background-color: #5fcbb1; -fx-background-radius: 5;");
 
-            root.getChildren().addAll(titleLabel, messageLabel);
+            root.getChildren().addAll(imageView, titleLabel, messageLabel);
 
             Alert alert = new Alert(Alert.AlertType.INFORMATION);
             alert.setTitle("Nâng cấp tài khoản");
@@ -112,7 +109,7 @@ public class NewbieExController implements Initializable {
             if (ans[0].equalsIgnoreCase(answer.getText())) {
                 alert.setText("Bạn đã trả lời chính xác");
                 Static_variable.account.setProcess();
-                pro.setWidth(Static_variable.account.getProcess());
+                pro.setWidth(Static_variable.account.getProcess() * 2);
 
                 Static_variable.account.updateProcess();
                 Static_variable.account.AddInfoActivities(Controller.ex.get(exCnt));
@@ -127,7 +124,7 @@ public class NewbieExController implements Initializable {
             if (answer.getText().equalsIgnoreCase(Controller.ex.get(exCnt).getAnswer())) {
                 alert.setText("Bạn đã trả lời chính xác");
                 Static_variable.account.setProcess();
-                pro.setWidth(Static_variable.account.getProcess());
+                pro.setWidth(Static_variable.account.getProcess()* 2);
 
                 Static_variable.account.updateProcess();
                 Static_variable.account.AddInfoActivities(Controller.ex.get(exCnt));
@@ -144,32 +141,41 @@ public class NewbieExController implements Initializable {
 
         }
     }
+
     public void next() throws IOException {
         exCnt++;
-         if(Controller.ex.get(exCnt) instanceof FillBlankEx){
+        if (Controller.ex.get(exCnt) instanceof FillBlankEx) {
             Node node;
             node = FXMLLoader.load(getClass().getResource("NewbieEx.fxml"));
             anchorpaneEx.getChildren().setAll(node);
-        }
-        else if(Controller.ex.get(exCnt) instanceof RerangeEx){
+        } else if (Controller.ex.get(exCnt) instanceof ExpertEx) {
+            Node node;
+            node = FXMLLoader.load(getClass().getResource("ExpertEx.fxml"));
+            anchorpaneEx.getChildren().setAll(node);
+        } else if (Controller.ex.get(exCnt) instanceof Writing) {
+            Node node;
+            node = FXMLLoader.load(getClass().getResource("PremiumEx.fxml"));
+            anchorpaneEx.getChildren().setAll(node);
+        } else if (Controller.ex.get(exCnt) instanceof RerangeEx) {
             Node node;
             node = FXMLLoader.load(getClass().getResource("RerangEx.fxml"));
             anchorpaneEx.getChildren().setAll(node);
+        } else {
+            showquestion();
+            alert.setText("");
+            res.setText("");
+            answer.setText("");
         }
-        else {
-             showquestion();
-             alert.setText("");
-             res.setText("");
-             answer.setText("");
-         }
 
     }
-    public void prev(){
+
+    public void prev() {
         exCnt--;
         showquestion();
 
     }
-    public void home(){
+
+    public void home() {
         Node node;
         try {
             node = FXMLLoader.load(getClass().getResource("Controller.fxml"));
@@ -178,19 +184,21 @@ public class NewbieExController implements Initializable {
         }
         anchorpaneEx.getChildren().setAll(node);
     }
-    public void exit(){
+
+    public void exit() {
         System.exit(0);
     }
-    public void showquestion(){
 
-            question.setText(Controller.ex.get(exCnt).getQuestion());
+    public void showquestion() {
+
+        question.setText(Controller.ex.get(exCnt).getQuestion());
 
     }
 
     @Override
     public void initialize(URL url, ResourceBundle resourceBundle) {
         showquestion();
-        pro.setWidth(Static_variable.account.getProcess());
+        pro.setWidth(Static_variable.account.getProcess() * 2);
 
     }
 }

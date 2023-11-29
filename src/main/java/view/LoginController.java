@@ -169,6 +169,8 @@ public class LoginController implements Initializable {
 
     @Override
     public void initialize(URL url, ResourceBundle resourceBundle) {
+        System.out.println(tmp);
+        Controller.exCnt = 0;
         // musicBg(songs);
         Audio.playmusic();
     }

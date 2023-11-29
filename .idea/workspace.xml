@@ -4,97 +4,45 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="89045a24-4271-4f35-94d5-1c91d4b5799e" name="Changes" comment="">
+    <list default="true" id="4691e155-ef8e-4151-914b-db443e9730cd" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/WordGames-1.0.0.msi" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/Soft_Flame.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/Soft_Flame.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Dictionary/.idea/compiler.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Dictionary/.idea/jarRepositories.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Dictionary/.idea/workspace.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/javafxwordle/HelpWindow.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/javafxwordle/MainHelper.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/javafxwordle/ScoreWindow.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/javafxwordle/Toast.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/javafxwordle/WordleApplication.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/javafxwordle/WordleController.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/module-info.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/module-info.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/view/DictApp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/view/DictApp.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/view/JavaFX-Wordle.jar" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/view/LearnEnglishController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/view/LearnEnglishController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/com.example.javafxwordle/dictionary.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/com.example.javafxwordle/images/github.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/com.example.javafxwordle/images/help.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/com.example.javafxwordle/images/icon.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/com.example.javafxwordle/images/icons8-restart-40.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/com.example.javafxwordle/main-view.fxml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/com.example.javafxwordle/winning-words.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/com.example.javafxwordle/wordle.css" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
-  </component>
-  <component name="MarkdownSettingsMigration">
-    <option name="stateVersion" value="1" />
-  </component>
-  <component name="MavenImportPreferences">
-    <option name="generalSettings">
-      <MavenGeneralSettings>
-        <option name="mavenHome" value="Use Maven wrapper" />
-      </MavenGeneralSettings>
-    </option>
-  </component>
-  <component name="ProjectColorInfo">{
-  &quot;associatedIndex&quot;: 8
-}</component>
-  <component name="ProjectId" id="2Ypsay6AHIHApavW7taMjJdke03" />
-  <component name="ProjectViewState">
-    <option name="hideEmptyMiddlePackages" value="true" />
-    <option name="showLibraryContents" value="true" />
-  </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
-    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;D:/java/SoftFlame2&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;Libraries&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.4597701&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "git-widget-placeholder": "Merging main",
+    "node.js.selected.package.tslint": "(autodetect)"
   }
-}</component>
-  <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="D:\java\SoftFlame2" />
-    </key>
-  </component>
-  <component name="RunManager">
-    <configuration name="DictApp" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="view.DictApp" />
-      <module name="Dictionary" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="view.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration default="true" type="JetRunConfigurationType">
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration default="true" type="KotlinStandaloneScriptRunConfigurationType">
-      <option name="filePath" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <recent_temporary>
-      <list>
-        <item itemvalue="Application.DictApp" />
-      </list>
-    </recent_temporary>
-  </component>
-  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+}]]></component>
   <component name="TaskManager">
-    <task active="true" id="Default" summary="Default task">
-      <changelist id="89045a24-4271-4f35-94d5-1c91d4b5799e" name="Changes" comment="" />
-      <created>1701233922757</created>
-      <option name="number" value="Default" />
-      <option name="presentableId" value="Default" />
-      <updated>1701233922757</updated>
-    </task>
     <servers />
   </component>
 </project>

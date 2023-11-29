@@ -74,7 +74,7 @@
             </Label>
          </children>
       </Pane>
-      <Rectangle fx:id="max" arcHeight="5.0" arcWidth="5.0" fill="#00fffb" height="10.0" layoutX="397.0" layoutY="47.0" stroke="BLACK" strokeType="INSIDE" width="100.0" />
-      <Rectangle fx:id="pro" arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="10.0" layoutX="397.0" layoutY="47.0" stroke="BLACK" strokeType="INSIDE" />
+      <Rectangle fx:id="max" arcHeight="5.0" arcWidth="5.0" fill="#00fffb" height="10.0" layoutX="374.0" layoutY="43.0" stroke="BLACK" strokeType="INSIDE" width="200.0" />
+      <Rectangle fx:id="pro" arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="10.0" layoutX="374.0" layoutY="43.0" stroke="BLACK" strokeType="INSIDE" />
    </children>
 </AnchorPane>

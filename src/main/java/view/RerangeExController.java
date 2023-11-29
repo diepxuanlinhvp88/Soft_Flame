@@ -3,10 +3,7 @@ package view;
 import data.Account.ExpertAccount;
 import data.Account.IntermediateAccount;
 import data.Account.NewbieAccount;
-import data.Exercise.ExpertEx;
-import data.Exercise.FillBlankEx;
-import data.Exercise.NewbieEx;
-import data.Exercise.RerangeEx;
+import data.Exercise.*;
 import javafx.event.ActionEvent;
 import javafx.event.EventHandler;
 import javafx.fxml.FXML;
@@ -99,8 +96,9 @@ public class RerangeExController implements Initializable {
             }
 
             grid.add(upperRow[i], i, 0);
+            grid.getStylesheets().add(getClass().getResource("rerangButton.css").toString());
         }
-        anchorpaneEx.getStylesheets().add(getClass().getResource("rerangButton.css").toString());
+
 
 
         anchorpaneEx.getChildren().add(grid);
@@ -164,6 +162,11 @@ public class RerangeExController implements Initializable {
             node = FXMLLoader.load(getClass().getResource("ExpertEx.fxml"));
             anchorpaneEx.getChildren().setAll(node);
         }
+        else if (Controller.ex.get(exCnt) instanceof Writing){
+            Node node;
+            node = FXMLLoader.load(getClass().getResource("PremiumEx.fxml"));
+            anchorpaneEx.getChildren().setAll(node);
+        }
         else {
             anchorpaneEx.getChildren().remove(grid);
             initbuton();
@@ -175,9 +178,8 @@ public class RerangeExController implements Initializable {
 
         root.setPrefWidth(600.0);
         root.setPrefHeight(400.0);
-        ImageView imageView = new ImageView();
         Image image = new Image(getClass().getResource("image/ok.jpg").toExternalForm());
-        imageView.setImage(image);
+        ImageView imageView = new ImageView(image);
         imageView.setFitWidth(284.0);
         imageView.setFitHeight(268.0);
         imageView.setLayoutX(151.0);
@@ -204,7 +206,7 @@ public class RerangeExController implements Initializable {
 
         root.setStyle("-fx-background-color: #5fcbb1; -fx-background-radius: 5;");
 
-        root.getChildren().addAll(titleLabel,messageLabel);
+        root.getChildren().addAll(imageView ,titleLabel,messageLabel);
 
         Alert alert = new Alert(Alert.AlertType.INFORMATION);
         alert.setTitle("Nâng cấp tài khoản");
@@ -239,7 +241,7 @@ public class RerangeExController implements Initializable {
 
         if(Static_variable.account.getProcess() >=10){
             if(Static_variable.account instanceof ExpertAccount){
-                return;
+                Static_variable.accountmanagement.setAccountLevel(Static_variable.username, 3);
             }
             else if (Static_variable.account instanceof NewbieAccount) {
                 Static_variable.accountmanagement.setAccountLevel(Static_variable.username, 1);

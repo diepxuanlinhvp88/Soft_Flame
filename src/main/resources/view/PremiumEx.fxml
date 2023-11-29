@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="anchorpaneEx" prefHeight="600.0" prefWidth="960.0" style="-fx-background-color: #FFCCFF;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="view.PremiumExController">
+   <children>
+      <TextArea fx:id="text" layoutX="119.0" layoutY="221.0" prefHeight="302.0" prefWidth="493.0" />
+      <ImageView fitHeight="58.0" fitWidth="111.0" layoutX="9.0" layoutY="12.0" onMouseClicked="#home" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@image/home.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="58.0" fitWidth="61.0" layoutX="899.0" layoutY="10.0" onMouseClicked="#exit" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@image/2606505_5844.png" />
+         </image>
+      </ImageView>
+      <Button layoutX="458.0" layoutY="532.0" mnemonicParsing="false" onAction="#Ok" styleClass="button-confirm" stylesheets="@graphic.css" text="Submit" />
+      <ImageView fitHeight="61.0" fitWidth="77.0" layoutX="874.0" layoutY="523.0" onMouseClicked="#Next" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@image/next.png" />
+         </image>
+      </ImageView>
+      <Label fx:id="question" layoutX="124.0" layoutY="154.0" text="Viết đoạn văn" textFill="#0fafff">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <TextArea fx:id="comment" layoutX="629.0" layoutY="221.0" prefHeight="302.0" prefWidth="307.0" />
+   </children>
+</AnchorPane>
