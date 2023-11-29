@@ -77,16 +77,7 @@ public class TranslateController implements Initializable {
 
     }
     public void tran(){
-        try {
-            Static_variable.tranapi.textToSpeechAPI(En.getText(), TextTarget.getText());
-        } catch (UnsupportedEncodingException e) {
-            throw new RuntimeException(e);
-        }
-        soundVi = new Media(new File(".\\/data/output.mp3").toURI().toString());
-        mediaPlayerVi = new MediaPlayer(soundVi);
 
-        soundEn = new Media(new File(".\\/data/output.mp3").toURI().toString());
-        mediaPlayerEn = new MediaPlayer(soundEn);
 
         TextExplain.setText(Static_variable.tranapi.lookUp(TextTarget.getText(), Vi.getText(), En.getText()));
 
@@ -94,16 +85,30 @@ public class TranslateController implements Initializable {
 
     }
     public void AuEn(){
-        if(cnt % 2 == 0){
+
+
+            try {
+                Static_variable.tranapi.textToSpeechAPI(En.getText(), TextTarget.getText());
+            } catch (UnsupportedEncodingException e) {
+                throw new RuntimeException(e);
+            }
+
+            soundEn = new Media(new File(".\\/data/output.mp3").toURI().toString());
+            mediaPlayerEn = new MediaPlayer(soundEn);
             mediaPlayerEn.play();
-        }
-        else mediaPlayerVi.play();
+
+
     }
     public void AuVi(){
-        if(cnt % 2 == 0){
-            mediaPlayerVi.play();
+        try {
+            Static_variable.tranapi.textToSpeechAPI(Vi.getText(), TextExplain.getText());
+        } catch (UnsupportedEncodingException e) {
+            throw new RuntimeException(e);
         }
-        else mediaPlayerEn.play();
+
+        soundEn = new Media(new File(".\\/data/output.mp3").toURI().toString());
+        mediaPlayerEn = new MediaPlayer(soundEn);
+        mediaPlayerEn.play();
     }
     public void FindwithImage(){
         // Tạo một FileChooser

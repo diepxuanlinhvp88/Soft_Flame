@@ -175,6 +175,9 @@ public class ContestController implements Initializable {
     }
 
     public void next() {
+        success.setText("");
+        explainquestion.setText("");
+
 
         if (cnt < 20) {
             try {

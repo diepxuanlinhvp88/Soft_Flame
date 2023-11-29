@@ -4,6 +4,7 @@ import data.Exercise.Exercise;
 import data.Exercise.ExpertEx;
 
 import java.io.*;
+import java.util.Collections;
 
 public class ExpertAccount extends Account{
     public ExpertAccount(String userName, String passWord, String dateTime, float process) {
@@ -16,7 +17,9 @@ public class ExpertAccount extends Account{
 
     @Override
     public void setProcess() {
+
         this.process+=1;
+
     }
 
     @Override
@@ -49,12 +52,14 @@ public class ExpertAccount extends Account{
             cnt++;
             this.exercises.add(new ExpertEx(question,answer));
         }
+        Collections.shuffle(exercises);
     }
     public static void main(String[] args){
         ExpertAccount tmp = new ExpertAccount("1","1","1");
         tmp.addExerciseList();
         for(Exercise i: tmp.getExercises()){
-            System.out.println(i.getQuestion()+":"+i.getAnswer());
+            String ques[] = i.getQuestion().split("\n");
+            System.out.println(i.getQuestion() + ques[0]);
         }
     }
 }

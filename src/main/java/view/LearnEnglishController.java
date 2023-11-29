@@ -1,5 +1,8 @@
 package view;
 
+import data.Account.ExpertAccount;
+import data.Account.IntermediateAccount;
+import data.Account.NewbieAccount;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.fxml.Initializable;
@@ -8,20 +11,28 @@ import javafx.scene.control.*;
 import javafx.scene.image.Image;
 import javafx.scene.image.ImageView;
 import javafx.scene.layout.AnchorPane;
+import javafx.scene.layout.HBox;
 import javafx.scene.layout.Pane;
+import javafx.scene.layout.VBox;
+import javafx.scene.paint.Color;
+import javafx.scene.text.Font;
 
 import java.io.BufferedReader;
+import java.io.File;
 import java.io.IOException;
 import java.io.InputStreamReader;
 import java.net.URL;
 import java.util.ResourceBundle;
+
+import static java.awt.Color.red;
 
 public class LearnEnglishController implements Initializable {
     @FXML
     AnchorPane anchorParentLearn;
     @FXML
     AnchorPane  anchorPaneChild;
-    Node node;
+    @FXML
+    ImageView profile;
 
 
 
@@ -156,6 +167,104 @@ public class LearnEnglishController implements Initializable {
         System.exit(0);
 
     }
+    public  void profile(){
+        Pane root = new Pane();
+        root.setPrefWidth(200.0);
+        root.setPrefHeight(200.0);
+
+        Image image = new Image(getClass().getResource("image/36.png").toExternalForm());
+        ImageView imageView = new ImageView(image);
+        imageView.setFitWidth(50);
+        imageView.setFitHeight(50);
+
+
+
+
+        root.setStyle("-fx-background-color: #6dd8fc;");
+
+        // Tạo VBox
+        VBox vBox = new VBox();
+        vBox.setLayoutX(0);
+        vBox.setLayoutY(0);
+        vBox.setPrefWidth(252);
+        vBox.setPrefHeight(200);
+
+        // Tạo các HBox và thêm Label vào mỗi HBox
+        HBox typeHBox = new HBox();
+        Label typeLabel = new Label();
+        typeLabel.setFont(Font.font(16));
+        typeLabel.setTextFill(Color.RED);
+        if(Static_variable.account instanceof NewbieAccount){
+            typeLabel.setText("Loại tài khoản : Newbie");
+        }else if(Static_variable.account instanceof IntermediateAccount){
+            typeLabel.setText("Loại tài khoản : Intermedia");
+        }
+        else {
+            typeLabel.setText("Loại tài khoản : Expert");
+        }
+
+        typeHBox.getChildren().add(typeLabel);
+
+        HBox userHBox = new HBox();
+        Label userLabel = new Label("Username : " + Static_variable.username);
+        userLabel.setFont(Font.font(16));
+        userLabel.setTextFill(Color.RED);
+        userHBox.getChildren().add(userLabel);
+
+        HBox processHBox = new HBox();
+        Label processLabel = new Label("Process : " + Static_variable.account.getProcess() + " % ");
+        processLabel.setFont(Font.font(16));
+        processLabel.setTextFill(Color.RED);
+        processHBox.getChildren().add(processLabel);
+
+        HBox dayHBox = new HBox();
+        Label dayLabel = new Label("Ngày tạo : " + Static_variable.account.getDateTime());
+        dayLabel.setFont(Font.font(16));
+        dayLabel.setTextFill(Color.RED);
+        dayHBox.getChildren().add(dayLabel);
+
+        HBox rankHBox = new HBox();
+        Label rankLabel = new Label("Xếp hạng");
+        rankLabel.setFont(Font.font(16));
+        rankLabel.setTextFill(Color.RED);
+        rankHBox.getChildren().add(rankLabel);
+
+        // Thêm các HBox vào VBox
+        vBox.getChildren().addAll(imageView,typeHBox, userHBox, processHBox, dayHBox, rankHBox);
+
+        // Thêm VBox vào AnchorPane
+        root.getChildren().add(vBox);
+
+        Alert alert = new Alert(Alert.AlertType.INFORMATION);
+        alert.setTitle("thông tin");
+        DialogPane dialogPane = alert.getDialogPane();
+        dialogPane.setHeaderText(null);
+        dialogPane.setGraphic(null);
+
+        dialogPane.setContent(root);
+        dialogPane.setStyle("-fx-background-color: #6dd8fc;");
+        alert.showAndWait();
+
+    }
+    public void setprofileImg() {
+        if (Static_variable.account instanceof NewbieAccount) {
+            Image newimage = new Image(String.valueOf(new File(getClass().getResource("image/profile1.png").toExternalForm())));
+            profile.setImage(newimage);
+
+        }
+        else if (Static_variable.account instanceof IntermediateAccount){
+            Image interimage = new Image(String.valueOf(new File(getClass().getResource("image/profile3.png").toExternalForm())));
+            profile.setImage(interimage);
+        }
+        else if (Static_variable.account instanceof ExpertAccount){
+            Image expertimage = new Image(String.valueOf(new File(getClass().getResource("image/profile2.png").toExternalForm())));
+            profile.setImage(expertimage);
+        }
+        else{
+            Image noimage = new Image(String.valueOf(new File(getClass().getResource("image/profile0.png").toExternalForm())));
+            profile.setImage(noimage);
+        }
+    }
 
     @Override
     public void initialize(URL url, ResourceBundle resourceBundle) {
@@ -164,18 +273,7 @@ public class LearnEnglishController implements Initializable {
         } catch (IOException e) {
             throw new RuntimeException(e);
         }
-//        try {
-//            Findcontroller();
-//        } catch (IOException e) {
-//            throw new RuntimeException(e);
-//        }
-//        Node node;
-//        try {
-//            node = FXMLLoader.load(getClass().getResource("find.fxml"));
-//        } catch (IOException e) {
-//            throw new RuntimeException(e);
-//        }
-//        anchorPaneChild.getChildren().setAll(node);
+        setprofileImg();
 
     }
 

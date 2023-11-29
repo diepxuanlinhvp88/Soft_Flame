@@ -11,6 +11,8 @@ import javafx.scene.control.*;
 import javafx.scene.layout.AnchorPane;
 import javafx.scene.layout.HBox;
 import javafx.scene.layout.VBox;
+import javafx.scene.media.Media;
+import javafx.scene.media.MediaPlayer;
 import javafx.scene.text.Text;
 import javafx.scene.web.WebView;
 import javafx.scene.web.WebEngine;
@@ -18,7 +20,9 @@ import javafx.scene.web.WebEngine;
 import javax.speech.AudioException;
 import javax.speech.EngineException;
 import java.beans.PropertyVetoException;
+import java.io.File;
 import java.io.FileNotFoundException;
+import java.io.UnsupportedEncodingException;
 import java.net.URL;
 import java.util.List;
 import java.util.Optional;
@@ -93,7 +97,7 @@ public class FindController implements Initializable {
             if (cnttran % 2 == 0) {
                 webEngine.loadContent(Static_variable.dic.getHtml(FindA.getText()));
             } else {
-                if (Static_variable.data.connectAndQuerry(av.getText(), FindA.getText()) == "") {
+                if (Static_variable.data.connectAndQuerry(av.getText(), FindA.getText()).equals("")) {
                     webEngine.loadContent("<h1 style=\"color: red;\">Từ bạn cần tìm không có trong từ điển</h1>\n" +
                             "<h2 style=\"color: black;\">Hãy thêm vào từ điển</h2>\n");
                 } else
@@ -114,8 +118,22 @@ public class FindController implements Initializable {
     }
 
     public void voice() throws PropertyVetoException, AudioException, EngineException, InterruptedException {
-        Static_variable.tts.init("kevin16");
-        Static_variable.tts.doSpeak(FindA.getText());
+
+        if(cnttran % 2 == 1){
+            try {
+                Static_variable.tranapi.textToSpeechAPI("vi", FindA.getText());
+            } catch (UnsupportedEncodingException e) {
+                throw new RuntimeException(e);
+            }
+
+           Media sound = new Media(new File(".\\/data/output.mp3").toURI().toString());
+           MediaPlayer mediaPlayerEn = new MediaPlayer(sound);
+            mediaPlayerEn.play();
+        }
+        else {
+            Static_variable.tts.init("kevin16");
+            Static_variable.tts.doSpeak(FindA.getText());
+        }
     }
 
     int cnttran = 0;
