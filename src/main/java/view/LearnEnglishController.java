@@ -3,6 +3,7 @@ package view;
 import data.Account.ExpertAccount;
 import data.Account.IntermediateAccount;
 import data.Account.NewbieAccount;
+import data.Account.PremiumAccount;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.fxml.Initializable;
@@ -30,10 +31,9 @@ public class LearnEnglishController implements Initializable {
     @FXML
     AnchorPane anchorParentLearn;
     @FXML
-    AnchorPane  anchorPaneChild;
+    AnchorPane anchorPaneChild;
     @FXML
     ImageView profile;
-
 
 
     public void Findcontroller() throws IOException {
@@ -42,19 +42,22 @@ public class LearnEnglishController implements Initializable {
         anchorPaneChild.getChildren().setAll(node);
 
     }
+
     public void Menu() throws IOException {
         Node node;
         node = FXMLLoader.load(getClass().getResource("controller.fxml"));
         anchorParentLearn.getChildren().setAll(node);
 
     }
-    public void Translate() throws IOException{
+
+    public void Translate() throws IOException {
         Node node;
         node = FXMLLoader.load(getClass().getResource("Translate.fxml"));
         anchorPaneChild.getChildren().setAll(node);
 
     }
-    public void setting(){
+
+    public void setting() {
         Slider volumeSlider = new Slider(0, 1, 0.5);
         volumeSlider.setLayoutX(97);
         volumeSlider.setLayoutY(109);
@@ -108,7 +111,7 @@ public class LearnEnglishController implements Initializable {
         menuButton.setPrefSize(156, 28);
         menuButton.setStyle("-fx-background-color: f4b8b8;");
         menuButton.setTextFill(javafx.scene.paint.Color.valueOf("#e82020"));
-        menuButton.getItems().addAll(menuitem1,menuitem2,menuitem3
+        menuButton.getItems().addAll(menuitem1, menuitem2, menuitem3
         );
         root.getChildren().setAll(imageView1, imageView2, volumeSlider, menuButton);
         Alert alert = new Alert(Alert.AlertType.INFORMATION);
@@ -163,11 +166,12 @@ public class LearnEnglishController implements Initializable {
         System.out.println("Process exited with code: " + exitCode);
     }
 
-    public void Exit() throws IOException{
+    public void Exit() throws IOException {
         System.exit(0);
 
     }
-    public  void profile(){
+
+    public void profile() {
         Pane root = new Pane();
         root.setPrefWidth(200.0);
         root.setPrefHeight(200.0);
@@ -176,8 +180,6 @@ public class LearnEnglishController implements Initializable {
         ImageView imageView = new ImageView(image);
         imageView.setFitWidth(50);
         imageView.setFitHeight(50);
-
-
 
 
         root.setStyle("-fx-background-color: #6dd8fc;");
@@ -194,13 +196,14 @@ public class LearnEnglishController implements Initializable {
         Label typeLabel = new Label();
         typeLabel.setFont(Font.font(16));
         typeLabel.setTextFill(Color.RED);
-        if(Static_variable.account instanceof NewbieAccount){
+        if (Static_variable.account instanceof NewbieAccount) {
             typeLabel.setText("Loại tài khoản : Newbie");
-        }else if(Static_variable.account instanceof IntermediateAccount){
+        } else if (Static_variable.account instanceof IntermediateAccount) {
             typeLabel.setText("Loại tài khoản : Intermedia");
-        }
-        else {
+        } else if (Static_variable.account instanceof ExpertAccount) {
             typeLabel.setText("Loại tài khoản : Expert");
+        } else {
+            typeLabel.setText("Loại tài khoản : Premium");
         }
 
         typeHBox.getChildren().add(typeLabel);
@@ -230,7 +233,7 @@ public class LearnEnglishController implements Initializable {
         rankHBox.getChildren().add(rankLabel);
 
         // Thêm các HBox vào VBox
-        vBox.getChildren().addAll(imageView,typeHBox, userHBox, processHBox, dayHBox, rankHBox);
+        vBox.getChildren().addAll(imageView, typeHBox, userHBox, processHBox, dayHBox, rankHBox);
 
         // Thêm VBox vào AnchorPane
         root.getChildren().add(vBox);
@@ -246,21 +249,22 @@ public class LearnEnglishController implements Initializable {
         alert.showAndWait();
 
     }
+
     public void setprofileImg() {
         if (Static_variable.account instanceof NewbieAccount) {
             Image newimage = new Image(String.valueOf(new File(getClass().getResource("image/profile1.png").toExternalForm())));
             profile.setImage(newimage);
 
-        }
-        else if (Static_variable.account instanceof IntermediateAccount){
+        } else if (Static_variable.account instanceof IntermediateAccount) {
             Image interimage = new Image(String.valueOf(new File(getClass().getResource("image/profile3.png").toExternalForm())));
             profile.setImage(interimage);
-        }
-        else if (Static_variable.account instanceof ExpertAccount){
+        } else if (Static_variable.account instanceof ExpertAccount) {
             Image expertimage = new Image(String.valueOf(new File(getClass().getResource("image/profile2.png").toExternalForm())));
             profile.setImage(expertimage);
-        }
-        else{
+        } else if (Static_variable.account instanceof PremiumAccount) {
+            Image expertimage = new Image(String.valueOf(new File(getClass().getResource("image/profile4.png").toExternalForm())));
+            profile.setImage(expertimage);
+        } else {
             Image noimage = new Image(String.valueOf(new File(getClass().getResource("image/profile0.png").toExternalForm())));
             profile.setImage(noimage);
         }

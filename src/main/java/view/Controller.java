@@ -1,9 +1,6 @@
 package view;
 
-import data.Exercise.Exercise;
-import data.Exercise.FillBlankEx;
-import data.Exercise.NewbieEx;
-import data.Exercise.RerangeEx;
+import data.Exercise.*;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.fxml.Initializable;
@@ -24,7 +21,7 @@ public class Controller implements Initializable {
     AnchorPane anchorPaneParent;
     @FXML
     Pane setPane;
-    public static List<Exercise> ex =  Static_variable.account.getExercises();
+    public static List<Exercise> ex;
     public static int exCnt = 0;
 
 
@@ -33,7 +30,6 @@ public class Controller implements Initializable {
         Node node;
         node = FXMLLoader.load(getClass().getResource("LearnEnglish.fxml"));
         anchorPaneParent.getChildren().setAll(node);
-
 
 
     }
@@ -46,27 +42,32 @@ public class Controller implements Initializable {
         anchorPaneParent.getChildren().setAll(node);
 
     }
+
     public void Exercise() throws IOException {
-        if(ex.get(exCnt) instanceof NewbieEx) {
+        if (ex.get(exCnt) instanceof NewbieEx) {
             Node node;
             node = FXMLLoader.load(getClass().getResource("NewbieEx.fxml"));
             anchorPaneParent.getChildren().setAll(node);
-        } else if(ex.get(exCnt) instanceof FillBlankEx){
+        } else if (ex.get(exCnt) instanceof FillBlankEx) {
             Node node;
             node = FXMLLoader.load(getClass().getResource("NewbieEx.fxml"));
             anchorPaneParent.getChildren().setAll(node);
-        }
-        else if(ex.get(exCnt) instanceof RerangeEx){
+        } else if (ex.get(exCnt) instanceof RerangeEx) {
             Node node;
             node = FXMLLoader.load(getClass().getResource("RerangEx.fxml"));
             anchorPaneParent.getChildren().setAll(node);
-        }
-        else {
+        } else if(ex.get(exCnt) instanceof ExpertEx) {
             Node node;
             node = FXMLLoader.load(getClass().getResource("ExpertEx.fxml"));
             anchorPaneParent.getChildren().setAll(node);
         }
+        else {
+            Node node;
+            node = FXMLLoader.load(getClass().getResource("PremiumEx.fxml"));
+            anchorPaneParent.getChildren().setAll(node);
+        }
     }
+
     @FXML
     private void setting() throws IOException {
         Slider volumeSlider = new Slider(0, 1, 0.5);
@@ -122,7 +123,7 @@ public class Controller implements Initializable {
         menuButton.setPrefSize(156, 28);
         menuButton.setStyle("-fx-background-color: f4b8b8;");
         menuButton.setTextFill(javafx.scene.paint.Color.valueOf("#e82020"));
-        menuButton.getItems().addAll(menuitem1,menuitem2,menuitem3
+        menuButton.getItems().addAll(menuitem1, menuitem2, menuitem3
         );
         root.getChildren().setAll(imageView1, imageView2, volumeSlider, menuButton);
         Alert alert = new Alert(Alert.AlertType.INFORMATION);
@@ -145,6 +146,8 @@ public class Controller implements Initializable {
     @Override
     public void initialize(URL url, ResourceBundle resourceBundle) {
 
-
+        ex = Static_variable.account.getExercises();
+        System.out.println(exCnt);
+        System.out.println(ex.size());
     }
 }

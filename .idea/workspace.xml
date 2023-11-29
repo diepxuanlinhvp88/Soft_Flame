@@ -5,49 +5,71 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="ee72d574-4bd6-44b7-b7ae-8e22edee2bd6" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/view/ExpertExController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/view/ExpertEx.fxml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/view/image/26875964_cuteanimated_473.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/view/image/26875966_cuteanimated_474.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/view/image/4e4a35064a1b1f760c5d1cd6cab3492e.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/view/image/82b447b7fc0986f0729569b4c2343205.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/view/image/ok.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/view/image/profile0.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/view/image/profile1.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/view/image/profile3.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CallGPT.py" beforeDir="false" afterPath="$PROJECT_DIR$/CallGPT.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/data/EngtoV.txt" beforeDir="false" afterPath="$PROJECT_DIR$/data/EngtoV.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/data/dict_hh.db" beforeDir="false" afterPath="$PROJECT_DIR$/data/dict_hh.db" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/infoEditWord.txt" beforeDir="false" afterPath="$PROJECT_DIR$/data/infoEditWord.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/data/output.mp3" beforeDir="false" afterPath="$PROJECT_DIR$/data/output.mp3" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/data/Account/Account.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/data/Account/Account.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/data/Account/ExpertAccount.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/data/Account/ExpertAccount.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/view/ContestController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/view/ContestController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/view/Controller.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/view/Controller.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/view/FindController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/view/FindController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/view/ExpertExController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/view/ExpertExController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/view/LearnEnglishController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/view/LearnEnglishController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/view/LoginController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/view/LoginController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/view/NewbieExController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/view/NewbieExController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/view/RerangeExController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/view/RerangeExController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/view/TranslateController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/view/TranslateController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/view/Controller.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/view/Controller.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/view/LearnEnglish.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/view/LearnEnglish.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/view/NewbieEx.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/view/NewbieEx.fxml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/view/RerangEx.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/view/RerangEx.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/view/contest.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/view/contest.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/view/graphic.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/view/graphic.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/view/test.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/view/test.fxml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="FxmlFile" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 2
+}</component>
+  <component name="ProjectId" id="2YpLviD2k44ImIWz94aV9rHjvfr" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
-    "git-widget-placeholder": "Merging main",
-    "node.js.selected.package.tslint": "(autodetect)"
+    "WebServerToolWindowFactoryState": "false",
+    "git-widget-placeholder": "main",
+    "node.js.detected.package.eslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="ee72d574-4bd6-44b7-b7ae-8e22edee2bd6" name="Changes" comment="" />
+      <created>1701217851624</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1701217851624</updated>
+      <workItem from="1701217869569" duration="5065000" />
+      <workItem from="1701233829426" duration="8859000" />
+    </task>
     <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
   </component>
 </project>
