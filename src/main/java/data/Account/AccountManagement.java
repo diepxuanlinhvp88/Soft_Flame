@@ -70,7 +70,7 @@ public class AccountManagement {
                     acc = new ExpertAccount(userName,passWord,datetime,process);
                 }
                 else{
-                    return null;
+                    acc = new PremiumAccount(userName,passWord,datetime,process);
                 }
             }
             System.out.println(rs.getString("typeOfAccount") + "\n" + rs.getString("time"));
