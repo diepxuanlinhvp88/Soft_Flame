@@ -277,7 +277,8 @@ fun PuzzleGame(puzzleSize: Int, boxWidth: Float, refreshIndex: Int) {
             tileValues,
             emptyTilePosition,
             correctTiles,
-            moves
+            moves,
+            refreshIndex,
         )
     }
 }
@@ -291,12 +292,15 @@ fun PuzzleTiles(
     emptyTilePosition: MutableState<Pair<Int, Char>>,
     correctTiles: MutableState<Int>,
     moves: MutableState<Int>,
+    refreshIndex: Int,
 ) {
     val puzzleVisibility = remember {
         mutableStateOf(false)
     }
 
-    val initialCharList = remember(puzzleSize) { tileValues.map { it } }
+    val key1 = "$refreshIndex $puzzleSize"
+
+    val initialCharList = remember(key1) { tileValues.map { it } }
 
     fun shuffleTiles() {
         // Shuffle the tiles using Fisher-Yates shuffle algorithm
@@ -307,7 +311,7 @@ fun PuzzleTiles(
         // emptyTilePosition.value = tileValues.indexOf(initialCharList.last())
     }
 
-    LaunchedEffect(puzzleSize) {
+    LaunchedEffect(key1) {
         shuffleTiles()
     }
 

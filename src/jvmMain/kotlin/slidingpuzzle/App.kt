@@ -52,8 +52,7 @@ fun App() {
                 }
                 TextButton(onClick = {
                     refreshIndex.value++
-                },
-                    Modifier.padding(16.dp),
+                }, Modifier.padding(16.dp),
                     ) {
                     Text("Refresh", style = MaterialTheme.typography.h6.copy(Color.White))
                 }
