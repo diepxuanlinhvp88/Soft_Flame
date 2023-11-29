@@ -1,6 +1,5 @@
 package view;
 
-import com.example.javafxwordle.WordleApplication;
 import javafx.application.Application;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
