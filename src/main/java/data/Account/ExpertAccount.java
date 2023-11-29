@@ -16,7 +16,7 @@ public class ExpertAccount extends Account{
 
     @Override
     public void setProcess() {
-
+        this.process+=1;
     }
 
     @Override

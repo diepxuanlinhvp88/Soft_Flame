@@ -5,41 +5,26 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="cf93e28a-2c20-4996-9ef4-2cacef92b1dc" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/view/NewbieExController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/view/RerangeExController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/view/image/QElH.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/view/image/no.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/view/image/process.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/view/image/process2.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/view/image/rate2.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/view/image/rate3.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/view/rerangButton.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/view/test.fxml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/output.mp3" beforeDir="false" afterPath="$PROJECT_DIR$/data/output.mp3" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/data/Account/AccountManagement.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/data/Account/AccountManagement.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/data/api/ParaTransWithAPI.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/data/api/ParaTransWithAPI.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/view/Audio.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/view/Audio.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/view/Controller.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/view/Controller.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/view/DictApp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/view/DictApp.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/view/ExerciseController.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/view/LoginController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/view/LoginController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/view/Static_variable.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/view/Static_variable.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/view/TranslateController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/view/TranslateController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/view/Exercise.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/view/NewbieEx.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/view/RerangEx.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/view/RerangEx.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/view/SignUp.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/view/SignUp.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/view/Translate.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/view/Translate.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/view/graphic.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/view/graphic.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/OtherStuff/ImportData.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/OtherStuff/ImportData.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/data/Account/ExpertAccount.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/data/Account/ExpertAccount.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
-    "git-widget-placeholder": "Merging main"
+    "git-widget-placeholder": "main",
+    "node.js.selected.package.tslint": "(autodetect)"
   }
 }]]></component>
   <component name="TaskManager">
