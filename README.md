@@ -39,7 +39,8 @@ This Java-based dictionary app is designed not only to provide word definitions 
     - Access detailed explanations, usage in sentences, and pronunciation guides.
 
 ## UML
-![Soft_Flame](https://github.com/diepxuanlinhvp88/Soft_Flame/assets/114821401/fc8e1b37-895c-44b7-8ee1-42c4b26fd80c)
+![UML](https://github.com/diepxuanlinhvp88/Soft_Flame/assets/114821401/fc961b0f-883e-49dc-8ed2-24a916ea2ec4)
+
 
 
 
